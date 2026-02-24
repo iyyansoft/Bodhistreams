@@ -6,18 +6,30 @@ import "./Navbar.css";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const navItems = [
     {
-      label: "Products",
+      label: "IT Services",
       title: "Digital Solutions Suite",
       desc: "Powerful AI & IT products built for modern businesses.",
       image:
@@ -31,7 +43,7 @@ const Navbar = () => {
       ]
     },
     {
-      label: "Solutions",
+      label: "Hardware & Electronic Solutions",
       title: "End-to-End IT Services",
       desc: "Customized digital transformation strategies.",
       image:
@@ -44,7 +56,7 @@ const Navbar = () => {
       ]
     },
     {
-      label: "Resources",
+      label: "Event Management",
       title: "Knowledge Hub",
       desc: "Explore insights & case studies.",
       image:
@@ -67,7 +79,6 @@ const Navbar = () => {
     >
       <div className="navbar-wrapper">
 
-        {/* ===== TOP UTILITY ROW ===== */}
         <div className="utility-row">
           <div className="utility-links">
             <Link to="#">Sign in</Link>
@@ -78,46 +89,53 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* ===== MAIN NAVBAR ROW ===== */}
         <div className="navbar-container">
 
           {/* LOGO */}
           <div className="logo">
             <Link to="/">
-              <img src="/logo.png" alt="BodhiStreams" />
+              <img src="/bodhi_logo.png" alt="BodhiStreams" />
             </Link>
           </div>
 
-          {/* CENTER MENU */}
-          <div className="nav-menu">
-            <Link to="/" className="nav-link">Home</Link>
+          {/* HAMBURGER */}
+          <div
+            className={`hamburger ${mobileOpen ? "active" : ""}`}
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          {/* NAV MENU */}
+          <div className={`nav-menu ${mobileOpen ? "active" : ""}`}>
+
+            <Link to="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
 
             {navItems.map((item, index) => (
               <div
                 key={index}
                 className="nav-item"
-                onMouseEnter={() => setActiveMenu(index)}
-                onMouseLeave={() => setActiveMenu(null)}
+                onMouseEnter={() => !isMobile && setActiveMenu(index)}
+                onMouseLeave={() => !isMobile && setActiveMenu(null)}
+                onClick={() => isMobile && setActiveMenu(activeMenu === index ? null : index)}
               >
-                <span className="nav-link">
-                  {item.label}
-                </span>
+                <span className="nav-link">{item.label}</span>
 
                 <AnimatePresence>
                   {activeMenu === index && (
                     <motion.div
                       className="dropdown"
-                      initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 20, scale: 0.95 }}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
                       transition={{ duration: 0.25 }}
                     >
                       <div className="dropdown-content">
-
                         <div className="dropdown-left">
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
-
                           <div className="image-wrapper">
                             <img src={item.image} alt="preview" />
                           </div>
@@ -131,7 +149,6 @@ const Navbar = () => {
                             ))}
                           </ul>
                         </div>
-
                       </div>
                     </motion.div>
                   )}
@@ -139,14 +156,12 @@ const Navbar = () => {
               </div>
             ))}
 
-          </div>
+            <div className="nav-actions">
+              <button className="btn-primary">Try it for free</button>
+              <button className="btn-outline">View demo</button>
+            </div>
 
-          {/* RIGHT BUTTONS */}
-          <div className="nav-actions">
-            <button className="btn-primary">Try it for free</button>
-            <button className="btn-outline">View demo</button>
           </div>
-
         </div>
       </div>
     </motion.nav>

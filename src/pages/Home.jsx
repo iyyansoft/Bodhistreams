@@ -172,7 +172,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }} >
             <h1 className="hero-main-heading"> Powering Digital Transformation <br /> <span>Through Technology & Innovation</span>
-            </h1> <p className="hero-subtext"> BodhiStreams Convergence Pvt Ltd delivers end-to-end software development, IT solutions, electronic equipment distribution, and a secure online event ticket booking platform — helping businesses scale with confidence. </p>
+            </h1> <p className="hero-subtext"> BodhiStreams Convergence Pvt Ltd provides complete software, IT, and electronic solutions along with a secure online ticketing platform to support modern business growth.</p>
             <div className="hero-input-wrapper">
               <div className="hero-input-group">
 
@@ -184,10 +184,6 @@ const Home = () => {
                 <button>
                   Get Started →
                 </button>
-
-
-
-
               </div>
 
             </div>
@@ -198,6 +194,11 @@ const Home = () => {
 
 
 
+
+
+
+
+      {/* Animated Stats Section */}
       {/* Animated Stats Section */}
       <section className="zendesk-style-section">
 
@@ -216,7 +217,6 @@ const Home = () => {
         </div>
 
 
-
         {/* CENTER CARD */}
         <div className="support-wrapper">
 
@@ -224,11 +224,11 @@ const Home = () => {
           <div className="chat-section">
 
             <div className="chat-header">
-              <h3>Update shipping</h3>
+              <h3>Core Business Activities</h3>
               <div className="chat-icons">
-                <span>✉️</span>
-                <span>☎️</span>
-                <span>💬</span>
+                <span>💻</span>
+                <span>🖥️</span>
+                <span>🎫</span>
               </div>
             </div>
 
@@ -237,27 +237,31 @@ const Home = () => {
               <div className="chat-row">
                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" />
                 <div className="chat-bubble">
-                  <strong>Cathy Lee</strong>
-                  <p>Hi Fran, how can I help you today?</p>
+                  <strong>Software & IT Services</strong>
+                  <p>
+                    We design and deliver web, mobile, cloud and enterprise software solutions.
+                  </p>
                 </div>
               </div>
 
               <div className="chat-row user">
                 <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="" />
                 <div className="chat-bubble">
-                  <strong>Fran Anderson</strong>
-                  <p>I forgot to select expedited shipping on my order, can you help me?</p>
+                  <strong>Hardware & Electronics</strong>
+                  <p>
+                    We trade, distribute and support IT hardware and electronic equipment.
+                  </p>
                 </div>
               </div>
 
             </div>
 
             <div className="chat-footer">
-              <h4>Recommended response</h4>
+              <h4>Event Technology Platform</h4>
               <div className="recommended">
-                No problem! I updated your order—you'll receive it on Saturday. Here’s the shipping confirmation.
+                We develop and manage digital platforms for event discovery, registration and secure ticket booking.
               </div>
-              <button className="copilot-btn">✨ Agent co-pilot</button>
+              <button className="copilot-btn">✨ Integrated Solutions</button>
             </div>
 
           </div>
@@ -268,41 +272,39 @@ const Home = () => {
             <div className="profile-card">
               <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="" />
               <div>
-                <h4>Fran Anderson <span className="vip">VIP</span></h4>
-                <p>Order #1005</p>
+                <h4>BodhiStreams <span className="vip">Company</span></h4>
+                <p>Technology & Event Solutions</p>
               </div>
             </div>
 
             <div className="order-status">
-              <span className="dot"></span> Preparing to ship
+              <span className="dot"></span> Active Operations
             </div>
 
             <div className="info-block">
-              <p><strong>Items</strong></p>
+              <p><strong>Software Development</strong></p>
               <div className="line"></div>
               <div className="line short"></div>
             </div>
 
             <div className="info-block">
-              <p><strong>Address</strong></p>
+              <p><strong>Hardware Distribution</strong></p>
               <div className="line"></div>
               <div className="line short"></div>
             </div>
 
             <div className="ai-guidance">
-              <h4>AI guidance</h4>
+              <h4>Key Focus Areas</h4>
               <ul>
-                <li>✨ Customer has a shipping request</li>
-                <li>✔ Verified loyal customer</li>
-                <li>✔ Apply priority shipping on order</li>
+                <li>✔ IT & Software Solutions</li>
+                <li>✔ Hardware & Electronics Trading</li>
+                <li>✔ Online Event Ticketing Platform</li>
               </ul>
             </div>
 
           </div>
 
         </div>
-
-
 
 
         {/* RIGHT IMAGE */}
@@ -860,7 +862,7 @@ const Home = () => {
         </div>
       </section>
 
-     
+
 
     </motion.div>
   );
