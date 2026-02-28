@@ -24,13 +24,13 @@ body {
   width: 100%;
 
   background: #fdfdfc;
-  padding: 8px 90px 40px 80px;
+  padding: 8px 90px 60px 90px;
 
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
 
   z-index: 1000;
-  height: 90px;
+  height: 110px;
   
   
 }
@@ -111,9 +111,9 @@ body {
 }
 
 .logo img {
-  height: 55px;
+  height: 65px;
   margin-bottom: 0;     /* remove this */
-  margin-top: -30px;     /* adjust value as needed */
+  margin-top: -10px;     /* adjust value as needed */
 }
 
 .logo img:hover {
@@ -142,9 +142,8 @@ body {
   cursor: pointer;
   position: relative;
   transition: 0.3s ease;
-  
+  margin-left: 20px;
  
-  
 }
 
 .nav-link:hover {
@@ -173,7 +172,7 @@ body {
 
 .dropdown {
   position: fixed;        /* viewport reference */
-  top: 100px;             /* navbar height adjust */
+  top: 130px;             /* navbar height adjust */
   left: 0;
   width: 100%;
 
@@ -225,17 +224,33 @@ body {
   font-weight: 600;
 }
 
-.image-wrapper {
+.image-wrapper1 {
   width: 420px;
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.image-wrapper img {
+.image-wrapper1 img {
   width: 100%;
-  height: 220px;
+ 
+ 
   object-fit: cover;
   border-radius: 20px;
+}
+
+
+
+.dropdown-right li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.dropdown-right li a:hover {
+  color: #84cc16;
+  transform: translateX(6px);
 }
 
 /* ============================= */
@@ -243,7 +258,8 @@ body {
 /* ============================= */
 
 .dropdown-right {
-  width: 280px;
+  width: 420px;
+  background: rgb(250, 252, 252);
   
 }
 
@@ -262,7 +278,7 @@ body {
 }
 
 .dropdown-right li {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 40px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -423,7 +439,7 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
   }
 
   /* White card */
@@ -431,10 +447,10 @@ body {
     width: 100%;              /* full width */
     max-width: 100%;
     min-height: auto;
-
+  
     padding: 30px 20px;
     border-radius: 20px;
-
+    
     flex-direction: column;   /* stack vertically */
     gap: 30px;
 
@@ -451,9 +467,9 @@ body {
     margin-bottom: 20px;
   }
 
-  .image-wrapper {
-    width: 100%;
-    height: 180px;
+  .image-wrapper1 {
+    width: 50%;
+    height: 160px;
   }
 
   /* Right side */

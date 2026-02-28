@@ -1,0 +1,376 @@
+/* ===================================== */
+/* HERO SECTION */
+/* ===================================== */
+
+.dt-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 8%;
+  gap: 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5faf4 100%);
+}
+
+.dt-hero-left {
+  flex: 1;
+}
+
+.dt-mini-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #4caf2f;
+  margin-bottom: 20px;
+}
+
+.dt-hero-heading {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.dt-hero-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+
+.dt-hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.dt-btn-primary {
+  background: #b5e550;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dt-btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(181,229,80,0.5);
+}
+
+.dt-btn-outline {
+  background: transparent;
+  border: 2px solid #111;
+  padding: 14px 32px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dt-btn-outline:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Hero Image */
+
+.dt-hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dt-hero-img-wrapper {
+  position: relative;
+}
+
+.dt-hero-img {
+  width: 600px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 40px 90px rgba(0,0,0,0.15);
+}
+
+/* Floating Bubbles */
+
+.dt-bubble {
+  position: absolute;
+  padding: 14px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  animation: dtFloat 4s ease-in-out infinite;
+}
+
+.dt-bubble-green {
+  bottom: 20px;
+  right: -20px;
+  background: #cbe98a;
+}
+
+.dt-bubble-white {
+  bottom: 180px;
+  left: -20px;
+  background: #ffffff;
+  animation-delay: 2s;
+}
+
+@keyframes dtFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===================================== */
+/* FRAMEWORK SECTION */
+/* ===================================== */
+
+.dt-framework {
+  padding: 100px 8%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.dt-framework-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #4caf2f;
+  margin-bottom: 15px;
+}
+
+.dt-framework-heading {
+  font-size: 44px;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.dt-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.dt-framework-card {
+  padding: 50px 30px;
+  border-radius: 30px;
+  background: #f8fdf6;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.dt-framework-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 70px rgba(76,175,47,0.25);
+}
+
+.dt-card-icon {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  color: #4caf2f;
+}
+
+.dt-framework-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.dt-framework-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ===================================== */
+/* ENTERPRISE SECTION */
+/* ===================================== */
+
+.dt-enterprise {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 8%;
+  gap: 80px;
+  background: #f9fdf8;
+}
+
+.dt-enterprise-left {
+  flex: 1;
+}
+
+.dt-enterprise-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4caf2f;
+  margin-bottom: 20px;
+}
+
+.dt-enterprise-heading {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.dt-enterprise-desc {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.dt-enterprise-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dt-enterprise-img {
+  width: 480px;
+  border-radius: 30px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+}
+
+/* ===================================== */
+/* SUPPORT SECTION */
+/* ===================================== */
+
+.dt-support {
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  gap: 100px;
+  background: #fefefe;
+}
+
+.dt-support-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dt-chat-box {
+  width: 520px;
+  height: 300px;
+  background: #f6fbf3;
+  border-radius: 30px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+.dt-chat-sidebar {
+  width: 70px;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  gap: 30px;
+}
+
+.dt-chat-content {
+  flex: 1;
+  padding: 45px;
+  font-size: 20px;
+}
+
+.dt-support-right{
+    width: 650px;
+}
+
+.dt-support-right h1{
+    font-size: 46px;
+    margin-bottom: 60PX;
+}
+.dt-support-right p{
+    font-size: 20px;
+    letter-spacing: 1px;
+   
+}
+
+.dt-chat-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.dt-chat-message {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.dt-chat-message.agent p {
+  background: #e8f6da;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+.dt-chat-message.user img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.dt-chat-message.user p {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+}
+
+/* ===================================== */
+/* CTA SECTION */
+/* ===================================== */
+
+.dt-cta {
+  padding: 120px 8%;
+  text-align: center;
+  background: radial-gradient(circle at center,#1f3d1f 0%,#0f1f0f 70%);
+}
+
+.dt-cta-content h2 {
+  font-size: 56px;
+  color: #eaeaea;
+  margin-bottom: 40px;
+}
+
+.dt-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media (max-width: 992px) {
+
+  .dt-hero,
+  .dt-enterprise,
+  .dt-support {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dt-hero-heading,
+  .dt-enterprise-heading {
+    font-size: 36px;
+  }
+
+  .dt-framework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dt-hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+}

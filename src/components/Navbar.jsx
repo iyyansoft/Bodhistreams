@@ -35,11 +35,23 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1551434678-e076c223a692",
       features: [
-        "AI Automation Tools",
-        "Cloud Infrastructure",
-        "Event Platform",
-        "Enterprise Software",
-        "Smart Analytics"
+        {
+          name: "Software Development Solutions",
+          path: "/software-development"
+        },
+       
+        {
+          name: "IT Consulting & System Integration",
+          path: "/it-consulting"
+        },
+        {
+          name: "Digital Transformation & Automation",
+          path: "/digital-transformation"
+        },
+        {
+          name: "Managed IT & Technical Support",
+          path: "/managed-support"
+        }
       ]
     },
     {
@@ -49,10 +61,11 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       features: [
-        "Web Development",
-        "Mobile Apps",
-        "ERP Systems",
-        "Cyber Security"
+        { name: "IT Hardware Trading & Distribution", path: "/hardware-trading" },
+        { name: "Networking & Communication Equipment", path: "/networking" },
+        { name: "Electronic & Digital Products Supply", path: "/electronic-products" },
+        { name: "Authorized Dealership & Reseller Services", path: "/dealership" },
+        { name: "Installation & Technical Support Services", path: "/hardware-support" }
       ]
     },
     {
@@ -62,10 +75,11 @@ const Navbar = () => {
       image:
         "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
       features: [
-        "Case Studies",
-        "Tech Blogs",
-        "Whitepapers",
-        "Documentation"
+        { name: "Event Discovery & Registration Platform", path: "/event-discovery" },
+        { name: "Online Ticketing & Payment Solutions", path: "/ticketing" },
+        { name: "Event Technology & Access Control", path: "/event-tech" },
+        { name: "Corporate & Educational Events", path: "/corporate-events" },
+        { name: "Entertainment & Live Event Solutions", path: "/live-events" }
       ]
     }
   ];
@@ -136,7 +150,7 @@ const Navbar = () => {
                         <div className="dropdown-left">
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
-                          <div className="image-wrapper">
+                          <div className="image-wrapper1">
                             <img src={item.image} alt="preview" />
                           </div>
                         </div>
@@ -145,7 +159,17 @@ const Navbar = () => {
                           <h4>FEATURES</h4>
                           <ul>
                             {item.features.map((feature, i) => (
-                              <li key={i}>{feature}</li>
+                              <li key={i}>
+                                <Link
+                                  to={feature.path}
+                                  onClick={() => {
+                                    setActiveMenu(null);
+                                    setMobileOpen(false);
+                                  }}
+                                >
+                                  {feature.name}
+                                </Link>
+                              </li>
                             ))}
                           </ul>
                         </div>
@@ -157,8 +181,8 @@ const Navbar = () => {
             ))}
 
             <div className="nav-actions">
-              <button className="btn-primary">Try it for free</button>
-              <button className="btn-outline">View demo</button>
+              <button className="btn-primary">Get quot</button>
+
             </div>
 
           </div>
