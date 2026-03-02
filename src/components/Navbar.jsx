@@ -64,7 +64,6 @@ const Navbar = () => {
         { name: "IT Hardware Trading & Distribution", path: "/hardware-trading" },
         { name: "Networking & Communication Equipment", path: "/networking" },
         { name: "Electronic & Digital Products Supply", path: "/electronic-products" },
-        { name: "Authorized Dealership & Reseller Services", path: "/dealership" },
         { name: "Installation & Technical Support Services", path: "/hardware-support" }
       ]
     },

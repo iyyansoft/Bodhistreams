@@ -29,26 +29,26 @@ const SoftwareDevelopment = () => {
 
         {/* RIGHT IMAGE */}
         <div className="zendesk-right">
-  <div className="image-wrapper">
+          <div className="image-wrapper">
 
-   <img
-  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-  alt="Developer Coding"
-  className="hero-image"
-/>
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              alt="Developer Coding"
+              className="hero-image"
+            />
 
-    {/* GREEN CHAT */}
-    <div className="floating-text bubble-green">
-      Welcome back! How can I help you today?
-    </div>
+            {/* GREEN CHAT */}
+            <div className="floating-text bubble-green">
+              Welcome back! How can I help you today?
+            </div>
 
-    {/* WHITE CHAT */}
-    <div className="floating-text bubble-white">
-      I want to upgrade my subscription plan.
-    </div>
+            {/* WHITE CHAT */}
+            <div className="floating-text bubble-white">
+              I want to upgrade my subscription plan.
+            </div>
 
-  </div>
-</div>
+          </div>
+        </div>
 
       </section>
 
@@ -373,26 +373,26 @@ const SoftwareDevelopment = () => {
 
       <section className="cta-section">
 
-  <div className="cta-content">
+        <div className="cta-content">
 
-    <h2>
-      Elevate your software <br />
-      development & IT services
-    </h2>
+          <h2>
+            Elevate your software <br />
+            development & IT services
+          </h2>
 
-    <div className="cta-buttons">
-      <button className="cta-primary">
-        Contact Sales
-      </button>
+          <div className="cta-buttons">
+            <button className="cta-primary">
+              Contact Sales
+            </button>
 
-      <button className="cta-outline">
-        View IT Services
-      </button>
-    </div>
+            <button className="cta-outline">
+              View IT Services
+            </button>
+          </div>
 
-  </div>
+        </div>
 
-</section>
+      </section>
 
 
 

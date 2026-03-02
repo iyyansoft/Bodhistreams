@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-column footer-main">
             <div className="footer-brand">
-              <img src="/logo.png" alt="BodhiStreams" className="footer-logo" />
+              <img src="/bodhiwhite.png" alt="BodhiStreams" className="footer-logo" />
               <p className="footer-description">
                 Empowering businesses through innovative software solutions, 
                 IT services, and cutting-edge digital platforms.

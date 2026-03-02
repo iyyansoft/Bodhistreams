@@ -15,7 +15,7 @@ import ManagedSupport from "./pages/it-services/ManagedSupport";
 import ITHardware from "./pages/hardware/ITHardware";
 import Networking from "./pages/hardware/Networking";
 import ElectronicProducts from "./pages/hardware/ElectronicProducts";
-import Dealership from "./pages/hardware/Dealership";
+
 import HardwareSupport from "./pages/hardware/HardwareSupport";
 
 
@@ -38,7 +38,7 @@ function App() {
           <Route path="/hardware-trading" element={<ITHardware />} />
           <Route path="/networking" element={<Networking />} />
           <Route path="/electronic-products" element={<ElectronicProducts />} />
-          <Route path="/dealership" element={<Dealership />} />
+     
           <Route path="/hardware-support" element={<HardwareSupport />} />
 
           

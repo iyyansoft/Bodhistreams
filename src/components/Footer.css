@@ -6,7 +6,7 @@
   position: relative;
   background: linear-gradient(135deg, #141414, #1f1f1f);
   color: #FFFFFF;
-  padding: 100px 0 0;
+  padding: 80px 0 0;
   overflow: hidden;
 }
 
@@ -73,7 +73,7 @@
 ================================ */
 
 .footer-logo {
-  height: 45px;
+  height: 70px;
   filter: brightness(0) invert(1);
   transition: transform 0.4s ease;
 }
@@ -86,6 +86,7 @@
   color: rgba(255,255,255,0.7);
   line-height: 1.7;
   font-size: 15px;
+  margin-top: 50px;
 }
 
 /* ================================
@@ -145,7 +146,7 @@
 }
 
 .footer-cta-title {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -189,49 +190,99 @@
    BOTTOM
 ================================ */
 
+/* ================= FOOTER ================= */
+
 .footer-bottom {
-  padding: 70px 0 40px;
+ 
+  padding: 80px 20px 70px;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
 }
+
+/* ================= COMPANY NAME ================= */
 
 .company-name-large {
   font-size: 140px;
   font-weight: 900;
-  background: linear-gradient(90deg, #8CC63F, #ffffff);
+  letter-spacing: -4px;
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #fefefe  0%,
+    #fefefe 40%,
+    #8CC63F 48%,
+    #b5f36b 50%,
+    #8CC63F 52%,
+    #8CC63F 60%,
+    #fefefe 100%
+  );
+
+  background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -3px;
-  line-height: 1;
-  animation: shimmer 6s linear infinite;
+
+  animation: smoothInfinite 8s linear infinite;
 }
 
-@keyframes shimmer {
-  0% { background-position: -500px; }
-  100% { background-position: 500px; }
+/* ================= SMOOTH SWEEP ================= */
+
+@keyframes smoothSweep {
+  0% {
+    background-position: -150% 0;
+  }
+  50% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
 }
+
+@keyframes smoothInfinite {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ================= LINKS ================= */
 
 .footer-bottom-links {
   display: flex;
-  gap: 32px;
   justify-content: center;
-  margin-top: 30px;
-  font-size: 13px;
+  gap: 30px;
+  margin-top: 45px;
+  font-size: 14px;
 }
 
 .footer-bottom-links span {
   color: rgba(255,255,255,0.6);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .footer-bottom-links span:hover {
-  color: #FFFFFF;
+  color: #8CC63F;
 }
 
+/* ================= COPYRIGHT ================= */
+
 .footer-copyright {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 13px;
   color: rgba(255,255,255,0.5);
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .company-name-large {
+    font-size: 70px;
+  }
 }
 
 /* ================================
