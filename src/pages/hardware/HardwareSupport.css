@@ -305,8 +305,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 35px;
-  font-size: 24px;
+  gap: 55px;
+  font-size: 3c4px;
+  
 }
 
 .split-icons span {
@@ -327,14 +328,14 @@
 
 .split-content h3 {
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .bubble {
-  padding: 16px 22px;
+  padding: 12px 22px;
   border-radius: 22px;
   margin-bottom: 18px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   max-width: 90%;
   animation: fadeUp 0.8s ease forwards;
@@ -343,7 +344,7 @@
 }
 
 .green {
-  background: #cdd8bd;
+  background: #a7d75e;
   animation-delay: 0.2s;
 }
 
@@ -363,13 +364,13 @@
   line-height: 1.1;
   margin-bottom: 30px;
   font-weight: 700;
-  color: #222;
+  color: #467215;
 }
 
 .split-right p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: #363535;
   max-width: 600px;
 }
 
@@ -392,4 +393,212 @@
   .split-right h2 {
     font-size: 40px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* ==================================================
+   CARD TEXT
+================================================== */
+
+
+
+
+
+
+
+/* ============================= */
+/* MAIN SECTION LAYOUT */
+/* ============================= */
+
+/* MAIN SECTION */
+
+.hardware-section{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:120px 8%;
+  gap:100px;
+}
+
+
+/* LEFT IMAGE */
+
+.hardware-image{
+  flex:1;
+}
+
+.hardware-image img{
+  width:100%;
+  max-width:550px;
+  height:450px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
+
+/* RIGHT CARD */
+
+.card{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hardware-section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  padding:120px 8%;
+}
+
+/* LEFT IMAGE */
+
+.hardware-image img{
+  width:520px;
+  border-radius:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* RIGHT CARD ALIGN */
+
+.card{
+  display:flex;
+  justify-content:center;
+}
+
+/* HEADING STYLE */
+
+.heading{
+  font-size:26px;
+  font-weight:600;
+  margin-bottom:20px;
+  color:#222;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #7fb633;
+
+}
+
+.card p.small {
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  
+}
+
+
+/* ==================================================
+   CARD CONTAINER
+================================================== */
+
+.card{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+
+/* ==================================================
+   CORNER ARROW
+================================================== */
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 6px 0 40px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+  font-size:18px;
+}
+
+
+/* ==================================================
+   CARD 1 (MAIN CARD)
+================================================== */
+
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 420px;   /* increased */
+  width: 420px;       /* increased */
+  min-height: 420px;  /* height increased */
+  background-color: #f2f8f9;
+  border-radius: 8px;
+  padding: 80px 50px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+}
+
+
+/* ==================================================
+   BACKGROUND HOVER EFFECT
+================================================== */
+
+.card1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  right: -20px;
+  background: #74a431;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+
+/* ==================================================
+   HOVER EFFECT
+================================================== */
+
+.card1:hover:before {
+  transform: scale(25);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255,255,255,0.9);
+}
+
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #fff;
 }

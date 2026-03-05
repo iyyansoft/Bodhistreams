@@ -77,7 +77,6 @@ const Navbar = () => {
         { name: "Event Discovery & Registration Platform", path: "/event-discovery" },
         { name: "Online Ticketing & Payment Solutions", path: "/ticketing" },
         { name: "Event Technology & Access Control", path: "/event-tech" },
-        { name: "Corporate & Educational Events", path: "/corporate-events" },
         { name: "Entertainment & Live Event Solutions", path: "/live-events" }
       ]
     }
@@ -180,7 +179,7 @@ const Navbar = () => {
             ))}
 
             <div className="nav-actions">
-              <button className="btn-primary">Get quot</button>
+              <button className="btn-primary">Get Quote</button>
 
             </div>
 
