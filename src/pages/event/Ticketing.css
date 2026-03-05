@@ -19,6 +19,7 @@
   width:100%;
   height:100%;
   object-fit:cover;
+  margin-left: 100px;
 }
 
 
@@ -38,12 +39,13 @@
   line-height:1;
   margin-bottom:30px;
 
- background-image:url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1400&auto=format&fit=crop");
+ background-image:url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop&s=0cbd1e9bfbf8a7e5c8b1d2a9c3e4f5");
   background-size:cover;
   background-position:center;
 
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
+  margin-left: 100px;
 }
 
 
@@ -55,6 +57,7 @@
   color:#1b6e59;
   max-width:450px;
   margin-bottom:30px;
+  margin-left: 100px;
 }
 
 
@@ -136,8 +139,560 @@
   border-radius:30px;
   cursor:pointer;
   transition:0.3s;
+  margin-left: 100px;
 }
 
 .ticket-btn:hover{
   background:#cc772f;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+/* ===============================
+   MAIN WRAPPER
+================================ */
+
+.ticketing-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:90px;
+  padding:120px 8%;
+}
+
+
+/* ===============================
+   LEFT IMAGE
+================================ */
+
+.ticketing-image-box{
+  flex:1;
+}
+
+.ticketing-image-box img{
+  width:100%;
+  max-width:520px;
+  height:420px;
+  object-fit:cover;
+  border-radius:20px;
+  box-shadow:0 25px 50px rgba(0,0,0,0.15);
+}
+
+
+/* ===============================
+   RIGHT CARD AREA
+================================ */
+
+.ticketing-card-area{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+
+/* ===============================
+   MAIN CARD
+================================ */
+
+.ticketing-card{
+  position:relative;
+  width:420px;
+  min-height:320px;
+
+  background:#f2f8f9;
+  border-radius:12px;
+
+  padding:70px 50px;
+  text-decoration:none;
+
+  overflow:hidden;
+  transition:all 0.4s ease;
+}
+
+
+/* ===============================
+   CARD TEXT
+================================ */
+
+.ticketing-title{
+  font-size:28px;
+  font-weight:600;
+  margin-bottom:20px;
+  color:#222;
+  transition:0.3s;
+}
+
+.ticketing-text{
+  font-size:16px;
+  line-height:1.7;
+  color:#444;
+  transition:0.3s;
+}
+
+
+/* ===============================
+   CORNER ARROW
+================================ */
+
+.ticketing-corner{
+  position:absolute;
+  top:0;
+  right:0;
+
+  width:45px;
+  height:45px;
+
+  background:#00838d;
+  border-radius:0 12px 0 45px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ticketing-arrow{
+  color:white;
+  font-size:18px;
+}
+
+
+/* ===============================
+   BACKGROUND EXPAND EFFECT
+================================ */
+
+.ticketing-card::before{
+  content:"";
+  position:absolute;
+  top:-20px;
+  right:-20px;
+
+  width:40px;
+  height:40px;
+
+  background:#74a431;
+  border-radius:50%;
+
+  transform:scale(1);
+  transition:transform 0.35s ease-out;
+
+  z-index:0;
+}
+
+
+/* ===============================
+   HOVER EFFECT
+================================ */
+
+.ticketing-card:hover::before{
+  transform:scale(25);
+}
+
+.ticketing-card:hover .ticketing-title{
+  color:white;
+}
+
+.ticketing-card:hover .ticketing-text{
+  color:white;
+}
+
+
+/* TEXT ABOVE BACKGROUND */
+
+.ticketing-title,
+.ticketing-text{
+  position:relative;
+  z-index:1;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+/* WRAPPER */
+
+.event-strip-wrapper{
+  padding:60px 6%;
+  background:#f3f3f3;
+}
+
+
+/* MAIN STRIP */
+
+.event-strip{
+  display:flex;
+  gap:18px;
+  height:620px;
+}
+
+
+/* CARD */
+
+.event-card{
+  flex:1;
+  position:relative;
+  overflow:hidden;
+  border-radius:22px;
+  cursor:pointer;
+  transition:0.5s ease;
+}
+
+
+/* IMAGE */
+
+.event-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.5s;
+}
+
+
+/* DEFAULT SMALL WIDTH */
+
+.event-card{
+  flex:0.8;
+}
+
+
+/* HOVER EXPAND */
+
+.event-card:hover{
+  flex:3;
+}
+
+
+/* DARK OVERLAY */
+
+.event-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+}
+
+
+.event-section-heading{
+  text-align:center;
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:60px;
+  color:#222;
+}
+
+
+/* TEXT */
+
+.event-text{
+  position:absolute;
+  bottom:40px;
+  left:80px;
+  color:white;
+  font-size:22px;
+  font-weight:600;
+  letter-spacing:1px;
+
+  transform:rotate(-90deg);
+  transform-origin:left bottom;
+
+  transition:0.4s;
+  z-index:2;
+ 
+}
+
+
+/* HOVER TEXT */
+
+.event-card:hover .event-text{
+  transform:rotate(0deg);
+  left:40px;
+  bottom:40px;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ===============================
+SECTION
+=============================== */
+
+.feedback-section{
+
+  height:140vh;
+
+  background-image:url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1600&auto=format&fit=crop");
+  background-size:cover;
+  background-position:center;
+
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  overflow:hidden;
+}
+
+
+/* ===============================
+CENTER TEXT
+=============================== */
+
+.feedback-center{
+  position:relative;
+  z-index:5;
+  text-align:center;
+  color:white;
+}
+
+.feedback-center h2{
+  font-size:64px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+.learn-btn{
+  background:#ff7a00;
+  border:none;
+  padding:16px 36px;
+  font-size:16px;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.learn-btn:hover{
+  background:#ff5500;
+}
+
+
+/* ===============================
+CARD BASE
+=============================== */
+
+.feedback-card{
+
+  position:absolute;
+
+  width:340px; 
+  height: 250px;         /* BIG CARD */
+  min-height:220px;
+
+  background:rgb(208, 243, 120);
+ 
+  padding:35px;
+
+  border-radius:12px;
+
+  box-shadow:0 30px 60px rgba(0,0,0,0.25);
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  transition:1.2s cubic-bezier(.2,.8,.2,1);
+}
+
+
+/* ===============================
+STARS
+=============================== */
+
+.feedback-card span{
+  color:#ff6a00;
+  font-size:40px;
+}
+
+
+/* ===============================
+TEXT
+=============================== */
+
+.feedback-card p{
+  margin-top:15px;
+  font-size:16px;
+  line-height:1.6;
+}
+
+
+/* ===============================
+FINAL CORNER POSITIONS
+=============================== */
+
+.card1.active{
+
+  top:6%;
+  left:8%;
+
+  transform:rotate(-8deg);
+}
+
+.card2.active{
+
+  top:6%;
+  left:72%;
+
+  transform:rotate(6deg);
+}
+
+.card3.active{
+
+  top:62%;
+  left:10%;
+
+  transform:rotate(5deg);
+}
+
+.card4.active{
+
+  top:62%;
+  left:72%;
+
+  transform:rotate(-6deg);
+}
+
+/* HEADING */
+
+.feedback-heading{
+
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%,-50%);
+
+  font-size:60px;
+  font-weight:700;
+  color:rgb(204, 26, 26);
+
+  text-align:center;
+
+  opacity:0;             /* initially hidden */
+
+  transition:0.6s ease;
+
+  z-index:3;
+}
+
+/* SHOW HEADING */
+
+.feedback-heading.show{
+
+  opacity:1;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+
+/* HERO SECTION */
+
+.event-hero{
+
+padding: 80px 8%;
+  background: radial-gradient(circle at center, #1f3d1f 0%, #0f1f0f 60%, #081408 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* CONTENT */
+
+.event-hero-content{
+
+  max-width:900px;
+}
+
+
+/* TITLE */
+
+.event-hero h1{
+
+  font-size:64px;
+  font-weight:800;
+
+  color:white;
+
+  line-height:1.2;
+
+  margin-bottom:25px;
+}
+
+
+/* SUBTEXT */
+
+.event-hero p{
+
+  font-size:20px;
+
+  color:#d9f5d6;
+
+  margin-bottom:40px;
+
+  font-style:italic;
+}
+
+
+/* BUTTON GROUP */
+
+.hero-buttons{
+
+  display:flex;
+  gap:25px;
+  justify-content:center;
+}
+
+
+/* PRIMARY BUTTON */
+
+.btn-primary{
+
+  background:#9be24f;
+
+  padding:16px 36px;
+
+  border-radius:40px;
+
+  border:none;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.btn-primary:hover{
+
+  background:#7fd53a;
+}
+
+
+/* OUTLINE BUTTON */
+
+.btn-outline{
+
+  background:transparent;
+
+  border:1px solid #6c8f75;
+
+  color:white;
+
+  padding:16px 36px;
+
+  border-radius:40px;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.btn-outline:hover{
+
+  border-color:white;
+  color: black;
 }
