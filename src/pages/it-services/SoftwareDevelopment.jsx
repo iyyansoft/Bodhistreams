@@ -32,7 +32,7 @@ const SoftwareDevelopment = () => {
           <div className="image-wrapper">
 
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              src="https://www.libertycenterone.com/wp-content/uploads/2024/11/img-blog-scalable-IT-strategies-and-solutions-for-tech-startups.webp"
               alt="Developer Coding"
               className="hero-image"
             />
@@ -67,37 +67,37 @@ const SoftwareDevelopment = () => {
           Smart & Scalable Digital Solutions
         </h2>
 
-        <div className="sd-grid">
+<div className="sd-grid">
 
-          <div className="sd-card">
-            <div className="sd-icon">✓</div>
-            <h3>Custom Application Development</h3>
-            <p>
-              Design and develop web, mobile and enterprise
-              applications tailored to business needs with secure,
-              scalable architecture.
-            </p>
-          </div>
+  <div className="sd-card">
+    <div className="sd-icon">💻</div>
+    <h3>Custom Application Development</h3>
+    <p>
+      Design and develop web, mobile and enterprise
+      applications tailored to business needs with secure,
+      scalable architecture.
+    </p>
+  </div>
 
-          <div className="sd-card">
-            <div className="sd-icon">👍</div>
-            <h3>Cloud & SaaS Platforms</h3>
-            <p>
-              Build SaaS, PaaS and IaaS systems with API integrations,
-              cloud deployment and optimized database performance.
-            </p>
-          </div>
+  <div className="sd-card">
+    <div className="sd-icon">☁️</div>
+    <h3>Cloud & SaaS Platforms</h3>
+    <p>
+      Build SaaS, PaaS and IaaS systems with API integrations,
+      cloud deployment and optimized database performance.
+    </p>
+  </div>
 
-          <div className="sd-card">
-            <div className="sd-icon">✨</div>
-            <h3>IT Consulting & Managed Services</h3>
-            <p>
-              Provide system integration, digital transformation,
-              automation and ongoing technical support globally.
-            </p>
-          </div>
+  <div className="sd-card">
+    <div className="sd-icon">🛠️</div>
+    <h3>IT Consulting & Managed Services</h3>
+    <p>
+      Provide system integration, digital transformation,
+      automation and ongoing technical support globally.
+    </p>
+  </div>
 
-        </div>
+</div>
 
       </section >
 

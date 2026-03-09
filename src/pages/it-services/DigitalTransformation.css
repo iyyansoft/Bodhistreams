@@ -16,11 +16,12 @@
 }
 
 .dt-mini-title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #4caf2f;
+  color: #090909;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .dt-hero-heading {
@@ -28,7 +29,7 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
-  color: #111;
+  color: #5b862a;
 }
 
 .dt-hero-desc {
@@ -58,12 +59,13 @@
 
 .dt-btn-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 40px rgba(181,229,80,0.5);
+  box-shadow: 0 15px 40px rgba(181, 229, 80, 0.5);
 }
 
 .dt-btn-outline {
   background: transparent;
-  border: 2px solid #111;
+  border: 2px solid #fcfbfb;
+  color: white;
   padding: 14px 32px;
   border-radius: 40px;
   cursor: pointer;
@@ -92,7 +94,7 @@
   height: 420px;
   object-fit: cover;
   border-radius: 30px;
-  box-shadow: 0 40px 90px rgba(0,0,0,0.15);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.15);
 }
 
 /* Floating Bubbles */
@@ -102,7 +104,7 @@
   padding: 14px 18px;
   border-radius: 25px;
   font-size: 14px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   animation: dtFloat 4s ease-in-out infinite;
 }
 
@@ -120,9 +122,17 @@
 }
 
 @keyframes dtFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ===================================== */
@@ -136,7 +146,7 @@
 }
 
 .dt-framework-label {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #4caf2f;
@@ -160,12 +170,12 @@
   border-radius: 30px;
   background: #f8fdf6;
   transition: 0.4s ease;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .dt-framework-card:hover {
   transform: translateY(-15px);
-  box-shadow: 0 25px 70px rgba(76,175,47,0.25);
+  box-shadow: 0 25px 70px rgba(76, 175, 47, 0.25);
 }
 
 .dt-card-icon {
@@ -231,7 +241,7 @@
 .dt-enterprise-img {
   width: 480px;
   border-radius: 30px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
 }
 
 /* ===================================== */
@@ -257,7 +267,7 @@
   height: 300px;
   background: #f6fbf3;
   border-radius: 30px;
-  box-shadow: 0 30px 70px rgba(0,0,0,0.1);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.1);
   display: flex;
   overflow: hidden;
 }
@@ -279,18 +289,20 @@
   font-size: 20px;
 }
 
-.dt-support-right{
-    width: 650px;
+.dt-support-right {
+  width: 650px;
 }
 
-.dt-support-right h1{
-    font-size: 46px;
-    margin-bottom: 60PX;
+.dt-support-right h1 {
+  font-size: 46px;
+  margin-bottom: 60PX;
+  color: #5b862a;
 }
-.dt-support-right p{
-    font-size: 20px;
-    letter-spacing: 1px;
-   
+
+.dt-support-right p {
+  font-size: 20px;
+  letter-spacing: 1px;
+
 }
 
 .dt-chat-title {
@@ -331,7 +343,7 @@
 .dt-cta {
   padding: 120px 8%;
   text-align: center;
-  background: radial-gradient(circle at center,#1f3d1f 0%,#0f1f0f 70%);
+  background: radial-gradient(circle at center, #1f3d1f 0%, #0f1f0f 70%);
 }
 
 .dt-cta-content h2 {

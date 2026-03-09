@@ -1,5 +1,8 @@
 import "./EventTech.css";
 import { useEffect } from "react";
+import { CalendarSearch, Ticket, Users } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const EventTech = () => {
 
@@ -42,6 +45,71 @@ const EventTech = () => {
 
   }, []);
 
+
+
+
+  useEffect(() => {
+
+    const section = document.querySelector(".et-section");
+    const cards = document.querySelectorAll(".et-card");
+
+    const observer = new IntersectionObserver((entries) => {
+
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+          window.addEventListener("scroll", handleScroll);
+
+        } else {
+
+          window.removeEventListener("scroll", handleScroll);
+
+        }
+
+      });
+
+    }, { threshold: 0.3 });
+
+
+    observer.observe(section);
+
+
+    function handleScroll() {
+
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+
+      cards.forEach((card, index) => {
+
+        if (progress > 0.5) {
+
+          card.classList.add("et-straight");
+
+        } else {
+
+          card.classList.remove("et-straight");
+
+        }
+
+      });
+
+    }
+
+  }, []);
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
+
+
   return (
     <>
       <section className="eventtech-hero">
@@ -70,79 +138,190 @@ const EventTech = () => {
       </section>
 
 
-      {/* PEOPLE SECTION */}
+      {/* ---------------------------------------------------------------------------------------------------- */}
 
 
 
-      <section className="eventPeople-section">
+      <section className="eventtech-section">
 
-        <h1 className="eventPeople-bgText">
-          Technology Behind Every Event
-        </h1>
+        {/* LEFT IMAGE */}
 
-        {/* Event Speaker */}
+        <div className="eventtech-left">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+            alt="Event Technology"
+          />
+        </div>
 
-        <img
-          className="event-img img1"
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
-          alt="Conference Speaker"
-        />
+        {/* RIGHT CONTENT */}
 
-        <img
-          className="event-img img2"
-          src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
-          alt="Event Networking"
-        />
+        <div className="eventtech-right">
 
-        <img
-          className="event-img img3"
-          src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1200&auto=format&fit=crop"
-          alt="Conference Audience"
-        />
+          <h2 className="eventtech-heading">
+            Event Technology & Digital Platforms
+          </h2>
+
+          <p className="eventtech-text">
+            We develop and operate digital platforms for event discovery,
+            registration, ticket booking and secure access control. Our
+            technology enables organizers to manage seminars, workshops,
+            conferences, exhibitions and live events efficiently while
+            providing seamless ticketing and payment solutions.
+          </p>
+
+          <button className="eventtech-btn">
+            Explore Platform →
+          </button>
+
+        </div>
 
       </section>
 
+      {/* ---------------------------------------------------------------------------------------------------------------- */}
 
 
 
-{/* ---------------------------------------------------------------------------------------------------- */}
 
+      <section className="et-section">
 
-
-    <section className="eventtech-section">
-
-      {/* LEFT IMAGE */}
-
-      <div className="eventtech-left">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
-          alt="Event Technology"
-        />
-      </div>
-
-      {/* RIGHT CONTENT */}
-
-      <div className="eventtech-right">
-
-        <h2 className="eventtech-heading">
+        <h2 className="et-title">
           Event Technology & Digital Platforms
         </h2>
 
-        <p className="eventtech-text">
-          We develop and operate digital platforms for event discovery,
-          registration, ticket booking and secure access control. Our
-          technology enables organizers to manage seminars, workshops,
-          conferences, exhibitions and live events efficiently while
-          providing seamless ticketing and payment solutions.
-        </p>
+        <div className="et-wrapper">
 
-        <button className="eventtech-btn">
-          Explore Platform →
-        </button>
+          <div className="et-card et-card1">
+            <h3>Event Discovery</h3>
+            <p>
+              Discover seminars, workshops, conferences,
+              exhibitions and community events through
+              our digital event platform.
+            </p>
+          </div>
+
+          <div className="et-card et-card2">
+            <h3>Online Registration</h3>
+            <p>
+              Participants can register easily for
+              professional training programs, symposiums
+              and educational workshops.
+            </p>
+          </div>
+
+          <div className="et-card et-card3">
+            <h3>Online Ticket Booking</h3>
+            <p>
+              Secure ticket booking system for concerts,
+              exhibitions, trade fairs, conferences and
+              sports events.
+            </p>
+          </div>
+
+          <div className="et-card et-card4">
+            <h3>Payment Processing</h3>
+            <p>
+              Integrated payment gateway for ticket
+              purchases with automated confirmations
+              and digital passes.
+            </p>
+          </div>
+
+          <div className="et-card et-card5">
+            <h3>Access Control & Analytics</h3>
+            <p>
+              QR based access control, event analytics,
+              marketing tools and organizer dashboard.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ------------------------------------------------------------------------------------------------------------------- */}
+
+    <section className="services-section">
+
+      <p className="services-small" data-aos="fade-up">
+        HOW OUR PLATFORM WORKS
+      </p>
+
+      <h1 className="services-title" data-aos="fade-up">
+        Smart & Scalable Event Platform Services
+      </h1>
+
+      <div className="services-container">
+
+        <div className="service-card" data-aos="fade-up" data-aos-delay="100">
+          <CalendarSearch className="service-icon" size={45} />
+          <h3>Event Discovery & Promotion</h3>
+          <p>
+            Digital platforms for discovering, promoting and listing events
+            including seminars, workshops, conferences and cultural programs.
+          </p>
+        </div>
+
+        <div className="service-card" data-aos="fade-up" data-aos-delay="200">
+          <Ticket className="service-icon" size={45} />
+          <h3>Registration & Ticketing</h3>
+          <p>
+            Online registration, ticket booking, ticket sales and digital
+            distribution systems for various educational and entertainment
+            events.
+          </p>
+        </div>
+
+        <div className="service-card" data-aos="fade-up" data-aos-delay="300">
+          <Users className="service-icon" size={45} />
+          <h3>Organizer & Participant Services</h3>
+          <p>
+            Connecting organizers, participants and sponsors with payment
+            processing, analytics tools and event management support.
+          </p>
+        </div>
 
       </div>
 
     </section>
+
+
+
+      {/* -------------------------------------------------------------------------------------------------------------- */}
+
+
+      <section className="astro-section">
+
+        {/* LEFT IMAGE */}
+        <div className="astro-image">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+            alt="Profile"
+          />
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="astro-content">
+
+          <p className="astro-tag">{`{ About Platform }`}</p>
+
+          <h1>
+            DISCOVER AND <br />
+            EXPERIENCE EVENTS <br />
+            IN A SMARTER WAY
+          </h1>
+
+          <p className="astro-text">
+            To develop and operate digital platforms including websites and
+            mobile applications for event discovery, promotion, registration,
+            ticket booking, payment processing, and event management services
+            for educational, professional, cultural, and entertainment events.
+          </p>
+
+        </div>
+
+      </section>
+
+
 
     </>
   );

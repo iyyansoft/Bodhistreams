@@ -68,12 +68,13 @@
 
 .itc-btn-outline {
   background: transparent;
-  border: 2px solid #111;
+  border: 2px solid #f9f7f7;
   padding: 14px 36px;
   border-radius: 40px;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  color: white;
 }
 
 .itc-btn-outline:hover {
@@ -175,7 +176,7 @@
 .itc-strategy-label{
     font-size: 44px;
     font-weight: 600;
-    color: #4caf2f;
+    color: #5b862a;
     margin-bottom: 40px;
 }
 
@@ -331,7 +332,7 @@
   margin-bottom: 30px;
   line-height: 1.2;
   font-weight: 700;
-  color: #111;
+  color: #5b862a;
 }
 
 .itc-enterprise-desc {
