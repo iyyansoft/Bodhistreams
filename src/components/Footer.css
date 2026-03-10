@@ -279,42 +279,115 @@
 
 /* Responsive */
 
-@media (max-width: 992px) {
-  .company-name-large {
-    font-size: 70px;
-  }
-}
-
-/* ================================
-   RESPONSIVE
-================================ */
-
-@media (max-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer-main {
-    grid-column: 1 / -1;
-  }
-
-  .company-name-large {
-    font-size: 70px;
-  }
-}
+/* =================================
+   MOBILE RESPONSIVE FOOTER
+================================= */
 
 @media (max-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
+
+  /* GRID STRUCTURE */
+
+@media (max-width:768px){
+
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+
+    width:90%;
+    margin-left:auto;   /* move to right side */
   }
 
-  .footer-cta {
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
+}
+
+  /* BRAND SECTION */
+
+  .footer-column:nth-child(1){
+    grid-column:1 / -1;
   }
 
-  .company-name-large {
-    font-size: 50px;
+  .footer-logo{
+    height:60px;
   }
+
+  .footer-description{
+    font-size:14px;
+    margin-top:20px;
+  }
+
+  /* ROW 1 */
+
+  .footer-column:nth-child(2){
+    grid-column:1;
+  }
+
+  .footer-column:nth-child(3){
+    grid-column:2;
+  }
+
+  /* ROW 2 */
+
+  .footer-column:nth-child(4){
+    grid-column:1;
+  }
+
+  .footer-column:nth-child(5){
+    grid-column:2;
+  }
+
+  /* TITLES */
+
+  .footer-title{
+    font-size:15px;
+    margin-bottom:10px;
+    color: #8CC63F;
+  }
+
+  /* LINKS */
+
+  .footer-links{
+    gap:10px;
+  }
+
+  .footer-link{
+    font-size:13px;
+  }
+
+  /* CTA */
+
+  .footer-cta{
+    flex-direction:column;
+    text-align:center;
+    gap:20px;
+  }
+
+  .footer-cta-title{
+    font-size:20px;
+  }
+
+  /* SOCIAL */
+
+  .footer-social{
+    justify-content:center;
+  }
+
+  /* BIG BRAND TEXT */
+
+  .company-name-large{
+    font-size:42px;
+    letter-spacing:-2px;
+  }
+
+  /* BOTTOM LINKS */
+
+  .footer-bottom-links{
+    flex-wrap:wrap;
+    gap:15px;
+    font-size:12px;
+  }
+
+  .footer-copyright{
+    font-size:12px;
+  }
+
 }

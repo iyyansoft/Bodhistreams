@@ -179,7 +179,7 @@ const Navbar = () => {
             ))}
 
             <div className="nav-actions">
-              <button className="btn-primary">Get Quote</button>
+              <button className="btn-primary1">Get Quote</button>
 
             </div>
 

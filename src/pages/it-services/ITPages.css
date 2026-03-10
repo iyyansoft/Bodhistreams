@@ -1,9 +1,7 @@
 /* ===================================== */
 /* HERO SECTION */
 /* ===================================== */
-/* ===================================== */
-/* MAIN HERO SECTION */
-/* ===================================== */
+
 
 .zendesk-hero {
   display: flex;
@@ -83,7 +81,7 @@
 
 .image-wrapper {
   position: relative;
-  width: 650px;
+  width: 550px;
   max-width: 100%;
   overflow: visible;
 }
@@ -93,7 +91,7 @@
 /* ===================================== */
 
 .hero-image {
-  width: 650px;        /* 👈 reduce width */
+  width: 550px;        /* 👈 reduce width */
   height: 350px;       /* 👈 increase height */
   object-fit: cover;   /* no distortion */
   border-radius: 30px;
@@ -132,7 +130,7 @@
 .bubble-white {
   bottom: 180px;
   left: -10px;
-  background: #ffffff;
+  background: #cbe98a;
   animation-delay: 2s;
 }
 
@@ -149,82 +147,155 @@
 /* ===================================== */
 /* RESPONSIVE */
 /* ===================================== */
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
 
-@media (max-width: 1200px) {
-
-  .zendesk-left h1 {
-    font-size: 44px;
-  }
-
-  .image-wrapper {
-    width: 500px;
-  }
-
-  .hero-image {
-    height: 450px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .zendesk-hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 5%;
-  }
-
-  .zendesk-left h1 {
-    font-size: 34px;
-  }
-
-  .hero-image {
-    height: 320px;
-  }
-
-  .bubble-green,
-  .bubble-white {
-    position: static;
-    margin-top: 15px;
-    animation: none;
-  }
-}
+/* ---------- TABLET ---------- */
 
 @media (max-width: 992px) {
 
-  .zendesk-hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 100px 6%;
+  .zendesk-hero{
+    flex-direction:column;
+    text-align:center;
+    padding:80px 6%;
   }
 
-  .zendesk-left h1 {
-    font-size: 36px;
+  .zendesk-left h1{
+    font-size:36px;
+    margin-top:30px;
   }
 
-  .description {
-    margin: auto;
+  .description{
+    margin:auto;
   }
 
-  .image-wrapper {
-    width: 100%;
-    max-width: 420px;
-    height: 550px;
-    margin-top: 50px;
+  .image-wrapper{
+    width:100%;
+    max-width:420px;
+    margin-top:40px;
   }
 
-  .bubble-green,
-  .bubble-white {
-    position: static;
-    margin-top: 15px;
-    animation: none;
+  .hero-image{
+    width:100%;
+    height:320px;
   }
+
 }
 
 
+/* ---------- MOBILE ---------- */
 
+@media (max-width:768px){
+
+  .zendesk-hero{
+    flex-direction:column;
+    text-align:center;
+    padding:60px 5%;
+    gap:30px;
+  }
+
+  .mini-title{
+    font-size:12px;
+  }
+
+  .zendesk-left h1{
+    font-size:28px;
+    line-height:1.3;
+    margin-top:20px;
+  }
+
+  .description{
+    font-size:15px;
+    margin:auto;
+    max-width:100%;
+  }
+
+  .primary-btn{
+    padding:14px 30px;
+    font-size:16px;
+  }
+
+  .zendesk-right{
+    width:100%;
+  }
+
+  .image-wrapper{
+    width:100%;
+    max-width:300px;
+    margin:auto;
+  }
+
+  .hero-image{
+    width:100%;
+    height:220px;
+    border-radius:20px;
+  }
+
+
+  /* MOBILE FLOATING BUBBLES */
+
+  .floating-text{
+    position:relative;
+    margin-top:12px;
+    animation:mobileFloat 4s ease-in-out infinite;
+  }
+
+  .bubble-green{
+    right:0;
+  }
+
+  .bubble-white{
+    left:0;
+    animation-delay:1.5s;
+  }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width:480px){
+
+  .zendesk-left h1{
+    font-size:24px;
+  }
+
+  .description{
+    font-size:14px;
+  }
+
+  .hero-image{
+    height:200px;
+  }
+
+}
+
+
+/* ===================================== */
+/* MOBILE FLOAT ANIMATION */
+/* ===================================== */
+
+@keyframes mobileFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* ================= FEATURE SECTION ================= */
 
-/* ================= FEATURE SECTION ================= */
 
 .sd-section {
   padding: 70px 6%;

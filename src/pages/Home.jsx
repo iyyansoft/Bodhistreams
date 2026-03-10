@@ -194,11 +194,10 @@ const Home = () => {
 
 
 
+      {/* ---------------------------------------------------------------------------------------------------------------------- */}
 
 
 
-
-      {/* Animated Stats Section */}
       {/* Animated Stats Section */}
       <section className="zendesk-style-section">
 
@@ -296,9 +295,9 @@ const Home = () => {
             <div className="ai-guidance">
               <h4>Key Focus Areas</h4>
               <ul>
-                <li>✔ IT & Software Solutions</li>
-                <li>✔ Hardware & Electronics Trading</li>
-                <li>✔ Online Event Ticketing Platform</li>
+                <li> IT & Software Solutions</li>
+                <li> Hardware & Electronics Trading</li>
+                <li> Online Event Ticketing Platform</li>
               </ul>
             </div>
 
@@ -327,7 +326,7 @@ const Home = () => {
 
 
 
-
+      {/* ------------------------------------------------------------------------------------------------------------------------------- */}
 
 
 
@@ -374,7 +373,7 @@ const Home = () => {
 
 
 
-
+      {/* --------------------------------------------------------------------------------------------------------------------------------- */}
 
 
 
@@ -388,7 +387,7 @@ const Home = () => {
             <p className="bs-tag">OUR AWARD-WINNING SERVICE SOLUTION</p>
 
             <h2>
-              Recognised by <br />
+              Recognised by
               industry leaders
             </h2>
           </div>
@@ -417,6 +416,10 @@ const Home = () => {
 
 
 
+
+
+      {/* ------------------------------------------------------------------------------------------------------------- */}
+
       <section className="bs-loop-section-v2">
         <div className="bs-loop-container">
 
@@ -433,7 +436,7 @@ const Home = () => {
             </p>
 
             <h2>
-              Accelerate Growth with the <br />
+              Accelerate Growth with the
               BodhiStreams AI Feedback Loop™
             </h2>
 
@@ -471,15 +474,7 @@ const Home = () => {
       </section>
 
 
-
-
-
-
-
-
-
-
-
+      {/* ----------------------------------------------------------------------------------------------------------------------------- */}
 
 
       <section className="bs-transform-section">
@@ -488,7 +483,7 @@ const Home = () => {
           {/* LEFT IMAGE */}
           <div className="bs-transform-image">
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+              src="https://bernardmarr.com/wp-content/uploads/2025/11/tech-in-action.jpeg"
               alt="Software Development Team"
             />
 
@@ -503,21 +498,14 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <h4>BodhiStreams AI Engine</h4>
-              <span className="status">ACTIVE • Real-time</span>
-              <p>✔ Traffic Optimized</p>
+
+
               <p>✔ Cloud Scaled</p>
               <p>✔ Security Monitored</p>
             </motion.div>
 
             {/* Chat Bubbles */}
-            <motion.div
-              className="bs-chat user"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-            >
-              Client: Improve infrastructure speed & reliability.
-            </motion.div>
+
 
             <motion.div
               className="bs-chat ai"
@@ -550,7 +538,7 @@ const Home = () => {
             </p>
 
             <div className="bs-buttons">
-              <button className="primary-btn">
+              <button className="primary-btn2">
                 Explore Our Solutions
               </button>
 
@@ -561,6 +549,10 @@ const Home = () => {
 
         </div>
       </section>
+
+
+
+      {/* ------------------------------------------------------------------------------------------------------------------------------- */}
 
       <section className="bs-employee-section">
         <div className="bs-employee-container">
@@ -617,7 +609,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
               AI Insight: Performance boost enabled ✔
-              <div className="doc-btn">Optimization_Report.pdf</div>
+              
             </motion.div>
 
           </div>
@@ -633,7 +625,7 @@ const Home = () => {
 
 
 
-
+{/* --------------------------------------------------------------------------------------------------------------------------------- */}
 
 
 
@@ -769,32 +761,7 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{/* ------------------------------------------------------------------------------------------------------------------------------ */}
       {/* Testimonials Slider */}
       <section className="testimonials-modern">
         <div className="container">
