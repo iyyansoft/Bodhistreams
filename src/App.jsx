@@ -19,9 +19,11 @@ import HardwareSupport from "./pages/hardware/HardwareSupport";
 
 
 import EventDiscovery from "./pages/event/EventDiscovery";
-import EventTech from "./pages/event/EventTech";
-import LiveEvents from "./pages/event/LiveEvents";
-import Ticketing from "./pages/event/Ticketing";
+import Digital from "./pages/event/Digital";
+import BrandPromotion from "./pages/event/BrandPromotion";
+import VendorsConnect from "./pages/event/VendorsConnect";
+import ExpertNetwork from "./pages/event/ExpertNetwork";
+import MegaEvents from "./pages/event/MegaEvents";
 
 
 
@@ -51,9 +53,11 @@ function App() {
 
 
           <Route path="/event-discovery" element={<EventDiscovery />} />
-          <Route path="/event-tech" element={<EventTech />} />
-          <Route path="/live-events" element={<LiveEvents />} />
-          <Route path="/ticketing" element={<Ticketing />} />
+          <Route path="/digital-infra" element={<Digital />} />
+          <Route path="/brand-promotion" element={<BrandPromotion />} />
+          <Route path="/vendors-connect" element={<VendorsConnect />} />
+          <Route path="/expert-network" element={<ExpertNetwork />} />
+          <Route path="/megaEvents-Conclaves" element={<MegaEvents />} />
 
 
 

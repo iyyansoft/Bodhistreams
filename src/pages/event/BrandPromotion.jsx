@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./LiveEvents.css";
+import "./BrandPromotion.css";
 
 const slides = [
   {
@@ -29,7 +29,7 @@ const slides = [
   
 ];
 
-function LiveEvents() {
+function BrandPromotion() {
 
   const [index,setIndex] = useState(0);
 
@@ -214,4 +214,4 @@ function LiveEvents() {
   )
 }
 
-export default LiveEvents;
+export default BrandPromotion;

@@ -1,10 +1,10 @@
-import "./EventTech.css";
+import "./Digital.css";
 import { useEffect } from "react";
 import { CalendarSearch, Ticket, Users } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const EventTech = () => {
+const Digital = () => {
 
 
   useEffect(() => {
@@ -327,4 +327,4 @@ const EventTech = () => {
   );
 };
 
-export default EventTech;
+export default Digital;

@@ -1,8 +1,8 @@
-import "./Ticketing.css";
+import "./VendorsConnect.css";
 import { useEffect } from "react";
 
 
-const Ticketing = () => {
+const VendorsConnect = () => {
 
 
   useEffect(() => {
@@ -259,4 +259,4 @@ const Ticketing = () => {
   );
 };
 
-export default Ticketing;
+export default VendorsConnect;

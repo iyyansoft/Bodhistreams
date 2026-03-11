@@ -68,16 +68,18 @@ const Navbar = () => {
       ]
     },
     {
-      label: "Event Management",
+      label: "Event infra",
       title: "Knowledge Hub",
       desc: "Explore insights & case studies.",
       image:
         "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
       features: [
         { name: "Event Discovery & Registration Platform", path: "/event-discovery" },
-        { name: "Online Ticketing & Payment Solutions", path: "/ticketing" },
-        { name: "Event Technology & Access Control", path: "/event-tech" },
-        { name: "Entertainment & Live Event Solutions", path: "/live-events" }
+        { name: "Digital infrastructure for event management", path: "/digital-infra" },
+        { name: "Brand Promotion", path: "/brand-promotion" },
+        { name: "Vendors Connect", path: "/vendors-connect" },
+        { name: "Expert Network", path: "/expert-network" },
+        { name: "Mega Events & Conclaves", path: "/megaEvents-Conclaves" },
       ]
     }
   ];
