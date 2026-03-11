@@ -180,7 +180,7 @@
 /* ================= GREEN SECTION ================= */
 
 .nw-green-section {
-    background: #ffd400;
+    background: #9cec51;
     margin: -70px 8% 0;
     /* 👈 This makes yellow go slightly up */
     padding: 120px 8%;
@@ -207,6 +207,7 @@
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 15px;
+    color: #1d311c;
 }
 
 .nw-left h2 {
@@ -222,7 +223,7 @@
 
 .nw-btn {
     margin-top: 15px;
-    background: #517f1d;
+    background:black;
     color: #fff;
     border: none;
     padding: 14px 28px;
@@ -250,7 +251,7 @@
     line-height: 1.6;
     margin-top: 70px;
     font-weight: 600;
-    color: #0B3D1F;
+    color: #bc2034;
 }
 
 .nw-author {

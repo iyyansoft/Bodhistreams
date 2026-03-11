@@ -114,25 +114,28 @@ const Digital = () => {
     <>
       <section className="eventtech-hero">
 
-        <div className="eventtech-container">
+        <div className="eventtech-content">
 
-          <p className="eventtech-tag">
-            <span className="eventtech-star">✦</span>
-            EVENTTECH
-          </p>
+
 
           <h1 className="eventtech-title">
-            EVENT TECHNOLOGY & <br /> <span>ACCESS CONTROL</span>
+            Digital Infrastructure <br />
+            <span>for Event Management</span>
           </h1>
 
           <p className="eventtech-desc">
-            Our digital platform enables event discovery,
-            registration, online ticket booking, payment
-            processing and secure access control for
-            seminars, conferences, exhibitions and
-            professional events.
+            Discover events, enable seamless registration,
+            digital ticketing and secure access control
+            for conferences, seminars and exhibitions.
           </p>
 
+        </div>
+
+        <div className="eventtech-image">
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+            alt="Event technology"
+          />
         </div>
 
       </section>
@@ -240,49 +243,49 @@ const Digital = () => {
 
       {/* ------------------------------------------------------------------------------------------------------------------- */}
 
-    <section className="services-section">
+      <section className="services-section">
 
-      <p className="services-small" data-aos="fade-up">
-        HOW OUR PLATFORM WORKS
-      </p>
+        <p className="services-small" data-aos="fade-up">
+          HOW OUR PLATFORM WORKS
+        </p>
 
-      <h1 className="services-title" data-aos="fade-up">
-        Smart & Scalable Event Platform Services
-      </h1>
+        <h1 className="services-title" data-aos="fade-up">
+          Smart & Scalable Event Platform Services
+        </h1>
 
-      <div className="services-container">
+        <div className="services-container">
 
-        <div className="service-card" data-aos="fade-up" data-aos-delay="100">
-          <CalendarSearch className="service-icon" size={45} />
-          <h3>Event Discovery & Promotion</h3>
-          <p>
-            Digital platforms for discovering, promoting and listing events
-            including seminars, workshops, conferences and cultural programs.
-          </p>
+          <div className="service-card" data-aos="fade-up" data-aos-delay="100">
+            <CalendarSearch className="service-icon" size={45} />
+            <h3>Event Discovery & Promotion</h3>
+            <p>
+              Digital platforms for discovering, promoting and listing events
+              including seminars, workshops, conferences and cultural programs.
+            </p>
+          </div>
+
+          <div className="service-card" data-aos="fade-up" data-aos-delay="200">
+            <Ticket className="service-icon" size={45} />
+            <h3>Registration & Ticketing</h3>
+            <p>
+              Online registration, ticket booking, ticket sales and digital
+              distribution systems for various educational and entertainment
+              events.
+            </p>
+          </div>
+
+          <div className="service-card" data-aos="fade-up" data-aos-delay="300">
+            <Users className="service-icon" size={45} />
+            <h3>Organizer & Participant Services</h3>
+            <p>
+              Connecting organizers, participants and sponsors with payment
+              processing, analytics tools and event management support.
+            </p>
+          </div>
+
         </div>
 
-        <div className="service-card" data-aos="fade-up" data-aos-delay="200">
-          <Ticket className="service-icon" size={45} />
-          <h3>Registration & Ticketing</h3>
-          <p>
-            Online registration, ticket booking, ticket sales and digital
-            distribution systems for various educational and entertainment
-            events.
-          </p>
-        </div>
-
-        <div className="service-card" data-aos="fade-up" data-aos-delay="300">
-          <Users className="service-icon" size={45} />
-          <h3>Organizer & Participant Services</h3>
-          <p>
-            Connecting organizers, participants and sponsors with payment
-            processing, analytics tools and event management support.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
+      </section>
 
 
 

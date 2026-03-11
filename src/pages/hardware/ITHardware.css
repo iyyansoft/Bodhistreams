@@ -8,7 +8,7 @@
 /* ================= TOP WRAPPER ================= */
 
 .hw-top-wrapper {
-  padding: 40px 8% 0;
+  padding: 100px 8% 0;
 }
 
 /* ================= TOP BANNER ================= */
@@ -68,7 +68,7 @@
 .hw-red-line {
   width: 40px;
   height: 3px;
-  background: #e10600;
+  background: #f9f632;
   margin-bottom: 18px;
 }
 
@@ -81,7 +81,7 @@
 /* ================= YELLOW SECTION ================= */
 
 .hw-yellow-section {
-  background: #ffd400;
+  background: #9cec51;
   margin: -70px 8% 0;   /* 👈 This makes yellow go slightly up */
   padding: 120px 8%;
   border-radius: 0 0 20px 20px;
@@ -124,13 +124,14 @@
 
 .hw-btn {
   margin-top: 15px;
-  background: #e10600;
-  color: #fff;
+  background: #0d0d0d;
+  color:white;
   border: none;
   padding: 14px 28px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 40px;
 }
 
 .hw-btn:hover {
@@ -155,8 +156,8 @@
   font-size: 26px;
   line-height: 1.6;
   margin-top: 70px;
-  font-weight: 500;
-  color: black;
+  font-weight: 600;
+  color:#bc2034;
 }
 
 .hw-author {
