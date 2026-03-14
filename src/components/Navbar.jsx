@@ -1,15 +1,18 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Navbar.css";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const navRef = useRef(null);
   const [activeMenu, setActiveMenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -18,13 +21,25 @@ const Navbar = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
+    const handleClickOutside = (event) => {
+      if (
+        navRef.current &&
+        !navRef.current.contains(event.target)
+      ) {
+        setActiveMenu(null);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
+
   }, []);
 
   const navItems = [
@@ -39,7 +54,7 @@ const Navbar = () => {
           name: "Software Development Solutions",
           path: "/software-development"
         },
-       
+
         {
           name: "IT Consulting & System Integration",
           path: "/it-consulting"
@@ -86,6 +101,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
+      ref={navRef}
       className={`navbar ${scrolled ? "scrolled" : ""}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -93,10 +109,12 @@ const Navbar = () => {
     >
       <div className="navbar-wrapper">
 
+
+
         <div className="utility-row">
           <div className="utility-links">
-            <Link to="#">Sign in</Link>
-            <Link to="#">Help Centre</Link>
+           
+            <Link to="/help-centre">Help Centre</Link>
             <Link to="#">Company</Link>
             <Link to="#">Contact us</Link>
             <Link to="#">Language</Link>
@@ -125,6 +143,8 @@ const Navbar = () => {
           {/* NAV MENU */}
           <div className={`nav-menu ${mobileOpen ? "active" : ""}`}>
 
+
+
             <Link to="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
 
             {navItems.map((item, index) => (
@@ -133,6 +153,7 @@ const Navbar = () => {
                 className="nav-item"
                 onMouseEnter={() => !isMobile && setActiveMenu(index)}
                 onMouseLeave={() => !isMobile && setActiveMenu(null)}
+
                 onClick={() => isMobile && setActiveMenu(activeMenu === index ? null : index)}
               >
                 <span className="nav-link">{item.label}</span>
@@ -141,6 +162,7 @@ const Navbar = () => {
                   {activeMenu === index && (
                     <motion.div
                       className="dropdown"
+
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 20 }}

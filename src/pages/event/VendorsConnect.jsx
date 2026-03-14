@@ -134,6 +134,48 @@ const VendorsConnect = () => {
 
       </section>
 
+      {/* ----------------------------------------------------------------------------------------------------------------- */}
+
+
+      
+      <section className="feedback-section">
+
+        <h2 className="feedback-heading">
+          What Our Community Says
+        </h2>
+
+        <div className="feedback-card card1">
+          <span>★★★★★</span>
+          <p>
+            The best climbing gym I've been to. The routes are creative,
+            well-maintained and constantly changing.
+          </p>
+        </div>
+
+        <div className="feedback-card card2">
+          <span>★★★★★</span>
+          <p>
+            I tried climbing for the first time here and instantly
+            felt comfortable.
+          </p>
+        </div>
+
+        <div className="feedback-card card3">
+          <span>★★★★★</span>
+          <p>
+            Amazing community and events. Highly recommended.
+          </p>
+        </div>
+
+        <div className="feedback-card card4">
+          <span>★★★★★</span>
+          <p>
+            Event discovery and ticket booking works perfectly.
+          </p>
+        </div>
+
+      </section>
+
 
       {/* ----------------------------------------------------------------------------------------------------- */}
 
@@ -181,43 +223,6 @@ const VendorsConnect = () => {
 
 
 
-      <section className="feedback-section">
-
-        <h2 className="feedback-heading">
-          What Our Community Says
-        </h2>
-
-        <div className="feedback-card card1">
-          <span>★★★★★</span>
-          <p>
-            The best climbing gym I've been to. The routes are creative,
-            well-maintained and constantly changing.
-          </p>
-        </div>
-
-        <div className="feedback-card card2">
-          <span>★★★★★</span>
-          <p>
-            I tried climbing for the first time here and instantly
-            felt comfortable.
-          </p>
-        </div>
-
-        <div className="feedback-card card3">
-          <span>★★★★★</span>
-          <p>
-            Amazing community and events. Highly recommended.
-          </p>
-        </div>
-
-        <div className="feedback-card card4">
-          <span>★★★★★</span>
-          <p>
-            Event discovery and ticket booking works perfectly.
-          </p>
-        </div>
-
-      </section>
 
 
       {/* ----------------------------------------------------------------------------------------------- */}

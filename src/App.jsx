@@ -5,6 +5,9 @@ import Footer from './components/Footer';
 import Home from "./pages/Home";
 import './styles/global.css';
 
+
+import HelpCenter from "./pages/HelpCenter";
+
 import SoftwareDevelopment from "./pages/it-services/SoftwareDevelopment";
 import ITConsulting from "./pages/it-services/ITConsulting";
 import DigitalTransformation from "./pages/it-services/DigitalTransformation";
@@ -37,6 +40,12 @@ function App() {
 
       <AnimatePresence mode="wait">
         <Routes>
+
+
+          <Route path="/help-centre" element={<HelpCenter />} />
+
+
+          
           <Route path="/" element={<Home />} />
           <Route path="/software-development" element={<SoftwareDevelopment />} />
           <Route path="/it-consulting" element={<ITConsulting />} />
