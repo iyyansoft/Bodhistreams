@@ -21,18 +21,21 @@ const Networking = () => {
       </p>
 
       <h2>
-        Reliable Networking <br />
-        & Connectivity Solutions
+        Enterprise Networking& <br />
+        Communication Infrastructure
       </h2>
 
       <p>
-        Wholesale, distribution and supply of routers, switches,
-        firewalls and enterprise networking equipment.
+        At BodhiStreams Convergence, we provide end-to-end networking 
+        and communication solutions including routers, switches, firewalls, 
+        structured cabling, and enterprise connectivity infrastructure.
       </p>
 
       <p>
-        Installation, configuration, maintenance and
-        complete technical support services.
+        We ensure seamless installation, configuration, and integration 
+        of networks across campuses, labs, offices, and enterprise environments, 
+        along with ongoing monitoring, maintenance, and technical support 
+        for reliable and high-performance connectivity.
       </p>
     </div>
 
@@ -40,82 +43,89 @@ const Networking = () => {
     <div className="nw-customer-right">
       <img
         src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200&auto=format&fit=crop"
-        alt="Networking Infrastructure"
+        alt="Enterprise Networking Infrastructure"
       />
     </div>
 
   </div>
 </section>
 
+
+
+
+
       {/* ================= TOP IMAGE BANNER ================= */}
-      <section className="nw-top-wrapper">
-        <div className="nw-top-banner">
-          <div className="nw-overlay">
-            <div className="nw-banner-text">
-              <p className="nw-small-text">
-                Wholesale • Distribution • Authorized Service Provider
-              </p>
+  <section className="nw-top-wrapper">
+  <div className="nw-top-banner">
+    <div className="nw-overlay">
+      <div className="nw-banner-text">
+        <p className="nw-small-text">
+          Enterprise Networking • Infrastructure • Connectivity Solutions
+        </p>
 
-              <h1>Networking & Communication Equipment</h1>
+        <h1>Networking & Communication Equipment</h1>
 
-              <div className="nw-red-line"></div>
-            </div>
-          </div>
+        <div className="nw-red-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{/* ================= GREEN SECTION ================= */}
+<section className="nw-green-section">
+  <div className="nw-container">
+
+    {/* LEFT */}
+    <div className="nw-left">
+      <p className="nw-tag">Enterprise Connectivity Solutions</p>
+
+      <h2>
+        Advanced Networking & Communication Infrastructure
+      </h2>
+
+      <p>
+        At BodhiStreams Convergence, we provide comprehensive networking 
+        and communication solutions including routers, switches, firewalls, 
+        structured cabling, wireless systems, and enterprise connectivity 
+        infrastructure for institutions and organizations.
+      </p>
+
+      <p>
+        From design and deployment to integration and ongoing support, 
+        we ensure secure, scalable, and high-performance networks across 
+        campuses, labs, offices, and enterprise environments.
+      </p>
+
+      <button className="nw-btn">
+        Explore Networking Solutions →
+      </button>
+    </div>
+
+    {/* DIVIDER */}
+    <div className="nw-divider"></div>
+
+    {/* RIGHT */}
+    <div className="nw-right">
+
+      <p className="nw-quote">
+        "Delivering secure, high-speed, and scalable networking solutions 
+        that power seamless communication and digital infrastructure."
+      </p>
+
+      <div className="nw-author">
+        <div>
+          <h4>BodhiStreams Convergence</h4>
+          <p>Networking & Communication Solutions Team</p>
         </div>
-      </section>
+      </div>
 
-      {/* ================= GREEN SECTION ================= */}
-      <section className="nw-green-section">
-        <div className="nw-container">
+    </div>
 
-          {/* LEFT */}
-          <div className="nw-left">
-            <p className="nw-tag">Enterprise Connectivity Solutions</p>
+  </div>
 
-            <h2>Trading & Distribution of Networking Equipment</h2>
-
-            <p>
-              Wholesale and retail trading, import and export of networking
-              equipment, communication devices, servers, data storage systems,
-              IT hardware, accessories and digital infrastructure products.
-            </p>
-
-            <p>
-              Acting as dealers, distributors, stockists, agents, resellers
-              and authorized service providers for leading technology brands
-              across networking and communication solutions.
-            </p>
-
-            <button className="nw-btn">
-              EXPLORE NETWORKING SOLUTIONS →
-            </button>
-          </div>
-
-          {/* DIVIDER */}
-          <div className="nw-divider"></div>
-
-          {/* RIGHT */}
-          <div className="nw-right">
-
-            <p className="nw-quote">
-              "Advanced networking and communication solutions
-              engineered for speed, security and seamless connectivity."
-            </p>
-
-            <div className="nw-author">
-              <div>
-                <h4>BodhiStreams Technology Division</h4>
-                <p>Networking & Communication Team</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div className="nw-cube"></div>
-      </section>
-
+  <div className="nw-cube"></div>
+</section>
       {/* ================= FIT SECTION ================= */}
 
       <section className="nw-fit-section">

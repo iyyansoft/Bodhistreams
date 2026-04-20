@@ -77,8 +77,8 @@ const Navbar = () => {
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       features: [
         { name: "IT Hardware Trading & Distribution", path: "/hardware-trading" },
-        { name: "Networking & Communication Equipment", path: "/networking" },
         { name: "Electronic & Digital Products Supply", path: "/electronic-products" },
+        { name: "Networking & Communication Equipment", path: "/networking" },
         { name: "Installation & Technical Support Services", path: "/hardware-support" }
       ]
     },

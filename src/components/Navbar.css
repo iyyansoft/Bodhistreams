@@ -256,6 +256,7 @@ body {
   color: inherit;
   display: block;
   transition: 0.3s ease;
+ 
 }
 
 .dropdown-right li a:hover {
@@ -542,6 +543,18 @@ body {
   .dropdown-right li {
     margin-top: 8px;
     
+  }
+
+  
+
+}
+
+/* DESKTOP FEATURES GAP */
+
+@media (min-width:769px){
+
+  .dropdown-right li{
+    margin-bottom:18px;
   }
 
 }

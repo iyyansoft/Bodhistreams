@@ -1382,6 +1382,36 @@
   font-weight: 600;
 }
 
+.bs-employee-image {
+  position: relative;
+}
+
+.bs-employee-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* COMMON FLOAT STYLE */
+.bs-float {
+  position: absolute;
+  background: rgb(156, 213, 103);
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* POSITIONING */
+.tag1 {
+  top: 20px;
+  left: 20px;
+}
+
+.tag2 {
+  bottom: 20px;
+  right: 20px;
+}
 /* RESPONSIVE */
 /* ===============================
    MOBILE VIEW
@@ -1534,8 +1564,8 @@
 /* RING WRAPPER */
 .bs-ring-wrapper {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 550px;
+  height: 450px;
 }
 
 /* MAIN RING */
@@ -1589,6 +1619,14 @@
   font-weight: 600;
   color: #ffffff;
   z-index: 2;
+}
+
+.bs-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  border-radius: 20px;   /* 🔥 increase/decrease here */
 }
 
 /* PULSE EFFECT */

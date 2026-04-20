@@ -331,147 +331,97 @@ const Home = () => {
 
 
 
-      <section className="report-hero">
+<section className="report-hero">
+  <div className="report-container">
 
-        <div className="report-container">
+    {/* LEFT IMAGE */}
+    <div className="report-image">
+    <img
+  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1974&auto=format&fit=crop"
+  alt="Students working in Innovation Lab"
+/>
+    </div>
 
-          {/* LEFT IMAGE */}
-          <div className="report-image">
-            <img
-              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1974&auto=format&fit=crop"
-              alt="AI Digital Infrastructure"
-            />
+    {/* RIGHT CONTENT */}
+    <div className="report-content">
 
-          </div>
+      <span className="report-tag">INSIGHTS</span>
 
-          {/* RIGHT CONTENT */}
-          <div className="report-content">
+      <h1>
+        Building Innovation Infrastructure for
+        Institutions and Enterprises
+      </h1>
 
-            <span className="report-tag">INSIGHTS</span>
+    <p>
+  We design and establish Innovation Labs, STEM Labs, and Makerspaces 
+  with complete end-to-end solutions.
+  <br /><br />
+  From planning and equipment setup to training and execution, 
+  we ensure labs are not just installed—but actively used 
+  for real innovation and outcomes.
+</p>
 
-            <h1>
-              BodhiStreams recognised as a
-              next-generation leader in
-              AI-powered IT & Digital Solutions
-            </h1>
 
-            <p>
-              Driving innovation across software development,
-              IT infrastructure, and intelligent event platforms
-              with scalable enterprise technology.
-            </p>
 
-            <button className="report-btn">
-              Explore Our Solutions
-            </button>
+    </div>
 
-          </div>
-
-        </div>
-
-      </section>
+  </div>
+</section>
 
 
 
       {/* --------------------------------------------------------------------------------------------------------------------------------- */}
+<section className="bs-loop-section-v2">
+  <div className="bs-loop-container">
 
+    {/* LEFT CONTENT */}
+    <motion.div
+      className="bs-loop-content"
+      initial={{ opacity: 0, x: -80 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <p className="bs-small-tag">
+        FUTURE-READY INNOVATION ECOSYSTEM
+      </p>
 
+      <h2>
+        Transform Institutions into
+        Active Innovation & Product
+        Development Centers
+      </h2>
 
+      <p className="bs-desc">
+        We help institutions move beyond traditional learning by enabling 
+        real-world innovation, prototyping, and problem-solving environments. 
+        Our solutions ensure students and teams actively build, test, and 
+        create impactful outcomes.
+      </p>
 
-      <section className="bs-awards-section">
+      <button className="bs-loop-btn">
+        Start Your Innovation Journey
+      </button>
+    </motion.div>
 
-        <div className="bs-awards-container">
+    {/* RIGHT IMAGE */}
+    <motion.div
+      className="bs-loop-visual"
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+    >
+      <div className="bs-image-wrapper">
+        <img 
+          src="/product.webp" 
+          alt="Innovation Lab"
+        />
+      </div>
+    </motion.div>
 
-          {/* LEFT CONTENT */}
-          <div className="bs-awards-left">
-            <p className="bs-tag">OUR AWARD-WINNING SERVICE SOLUTION</p>
-
-            <h2>
-              Recognised by
-              industry leaders
-            </h2>
-          </div>
-
-          {/* RIGHT BADGES */}
-          <div className="bs-awards-wrapper">
-            {[
-              { title: "Leader", sub: "AI Enterprise" },
-              { title: "Leader", sub: "Cloud Infrastructure" },
-              { title: "Leader", sub: "Mid-Market IT" },
-              { title: "Leader", sub: "Enterprise Digital" }
-            ].map((item, index) => (
-              <div className="bs-award-card" key={index}>
-                <span className="season">WINTER 2026</span>
-                <h3>{item.title}</h3>
-                <p>{item.sub}</p>
-              </div>
-            ))}
-          </div>
-
-
-        </div>
-
-      </section>
-
-
-
-
-
-
-      {/* ------------------------------------------------------------------------------------------------------------- */}
-
-      <section className="bs-loop-section-v2">
-        <div className="bs-loop-container">
-
-          {/* LEFT CONTENT */}
-          <motion.div
-            className="bs-loop-content"
-            initial={{ opacity: 0, x: -80 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <p className="bs-small-tag">
-              INTELLIGENT AUTOMATION FRAMEWORK
-            </p>
-
-            <h2>
-              Accelerate Growth with the
-              BodhiStreams AI Feedback Loop™
-            </h2>
-
-            <p className="bs-desc">
-              Automate workflows by connecting AI systems, cloud infrastructure,
-              and real-time analytics into one unified platform.
-            </p>
-
-            <button className="bs-loop-btn">
-              Explore AI Framework
-            </button>
-          </motion.div>
-
-          {/* RIGHT VISUAL */}
-          <motion.div
-            className="bs-loop-visual"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            <div className="bs-ring-wrapper">
-              <div className="bs-ring">
-                <span className="moving-dot"></span>
-              </div>
-
-              <div className="bs-center">
-                <div className="pulse"></div>
-                <span>AI Core</span>
-              </div>
-            </div>
-          </motion.div>
-
-        </div>
-      </section>
+  </div>
+</section>
 
 
       {/* ----------------------------------------------------------------------------------------------------------------------------- */}
@@ -553,69 +503,67 @@ const Home = () => {
 
 
       {/* ------------------------------------------------------------------------------------------------------------------------------- */}
+<section className="bs-employee-section">
+  <div className="bs-employee-container">
 
-      <section className="bs-employee-section">
-        <div className="bs-employee-container">
+    {/* LEFT CONTENT */}
+    <motion.div
+      className="bs-employee-content"
+      initial={{ opacity: 0, x: -60 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2>
+        Enable Institutions to Build, <br />
+        Experiment & Innovate at Scale
+      </h2>
 
-          {/* LEFT CONTENT */}
-          <motion.div
-            className="bs-employee-content"
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2>
-              Make enterprise operations <br />
-              effortless with BodhiStreams AI
-            </h2>
+      <p>
+        We create environments where students, faculty, and innovators can 
+        actively explore ideas, develop prototypes, and transform concepts 
+        into real-world solutions through structured lab ecosystems.
+      </p>
 
-            <p>
-              Our AI-powered digital operations platform simplifies IT workflows,
-              automates support requests, and empowers teams to scale efficiently
-              with real-time intelligence.
-            </p>
+      <button className="secondary-btn">
+        Discover Innovation Solutions
+      </button>
+    </motion.div>
 
-            <button className="secondary-btn">
-              Explore Digital Operations
-            </button>
-          </motion.div>
+    {/* RIGHT IMAGE */}
+    <div className="bs-employee-image">
 
-          {/* RIGHT IMAGE */}
-          <div className="bs-employee-image">
+      <img
+        src="https://www.hbs.edu/ctfassets/public/images/6S5XyaoeTV0TpCltWA96xl/business-professional-leading-product-innovation.jpg"
+        alt="Innovation Lab Students"
+      />
 
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1600&auto=format&fit=crop"
-              alt="Enterprise Team Collaboration"
-            />
+      {/* Floating Text 1 */}
+      <motion.div
+        className="bs-float tag1"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        Prototype Development 🔧
+      </motion.div>
 
-            {/* Floating Question Bubble */}
-            <motion.div
-              className="bs-float question"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              How can we optimize system performance?
-            </motion.div>
+      {/* Floating Text 2 */}
+      <motion.div
+        className="bs-float tag2"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        Hands-on Learning 🚀
+      </motion.div>
 
-            {/* Floating AI Response */}
-            <motion.div
-              className="bs-float answer"
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              AI Insight: Performance boost enabled ✔
-              
-            </motion.div>
+    </div>
 
-          </div>
-
-        </div>
-      </section>
+  </div>
+</section>
 
 
 

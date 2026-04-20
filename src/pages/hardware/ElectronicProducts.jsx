@@ -30,52 +30,60 @@ const ElectronicProducts = () => {
 
 
       <section className="esc-hero">
-        <div className="esc-left">
+  <div className="esc-left">
 
-          <p className="esc-mini">ENTERPRISE SYSTEM CONSULTING</p>
+    <p className="esc-mini">ELECTRONIC & DIGITAL PRODUCTS SUPPLY</p>
 
-          <h1 className="esc-heading">
-            Modernize your <br />
-            enterprise systems <br />
-            with intelligent <br />
-            digital transformation
-          </h1>
+    <h1 className="esc-heading">
+      Power your institutions 
+      with advanced electronic 
+      and digital infrastructure
+      solutions
+    </h1>
 
-          <p className="esc-desc">
-            We deliver enterprise consulting, digital transformation strategy,
-            IT governance advisory, and seamless system modernization solutions.
-            Our scalable frameworks empower organizations to streamline
-            operations, enhance performance, and drive long-term innovation.
-          </p>
+    <p className="esc-desc">
+      At BodhiStreams Convergence, we supply a wide range of electronic 
+      and digital products including computers, smart classroom systems, 
+      networking devices, IoT kits, robotics modules, and lab equipment 
+      for institutions and enterprises.
+      
+      We ensure seamless procurement, integration, and deployment of 
+      digital infrastructure that supports innovation labs, STEM learning 
+      environments, and modern enterprise operations.
+    </p>
 
-          <div className="esc-buttons">
-            <button className="esc-btn-primary">Request Strategy Call</button>
-            <button className="esc-btn-outline">View Capabilities</button>
-          </div>
+    <div className="esc-buttons">
+      <button className="esc-btn-primary">
+        Explore Digital Solutions
+      </button>
+      <button className="esc-btn-outline">
+        Request Product Details
+      </button>
+    </div>
 
-        </div>
+  </div>
 
-        <div className="esc-right">
-          <div className="esc-img-wrap">
+  <div className="esc-right">
+    <div className="esc-img-wrap">
 
-            <img
-              src="/Digital-transformation.png"
-              alt="Digital-transformation"
-              className="esc-main-img"
-            />
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80"
+        alt="Digital Infrastructure"
+        className="esc-main-img"
+      />
 
+      {/* FLOATING TEXT */}
+      <div className="esc-chat esc-chat-green">
+        Need complete digital lab & smart classroom setup?
+      </div>
 
-            <div className="esc-chat esc-chat-green">
-              Looking to upgrade your legacy systems?
-            </div>
+      <div className="esc-chat esc-chat-white">
+        We provide equipment, installation & integration support.
+      </div>
 
-            <div className="esc-chat esc-chat-white">
-              We need cloud integration & secure architecture support.
-            </div>
-
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
 
       {/* ----------------------------------------------------------------------------------------- */}
 

@@ -13,48 +13,62 @@ const DigitalTransformation = () => {
     <>
       {/* ================= HERO ================= */}
       <section className="dt-hero">
-        <div className="dt-hero-left">
-          <p className="dt-mini-title">DIGITAL TRANSFORMATION SERVICES</p>
+  <div className="dt-hero-left">
+    <p className="dt-mini-title">
+      DIGITAL TRANSFORMATION & AUTOMATION
+    </p>
 
-          <h1 className="dt-hero-heading">
-            Accelerate your <br />
-            digital evolution <br />
-            with intelligent <br />
-            transformation strategies
-          </h1>
+    <h1 className="dt-hero-heading">
+      Transform operations <br />
+      with automation, cloud <br />
+      and intelligent <br />
+      digital systems
+    </h1>
 
-          <p className="dt-hero-desc">
-            We empower enterprises to embrace digital transformation
-            through cloud modernization, process automation,
-            AI integration, and scalable technology ecosystems.
-            Our data-driven strategies help organizations innovate
-            faster and stay competitive in the digital era.
-          </p>
+    <p className="dt-hero-desc">
+      At BodhiStreams Convergence, we help organizations modernize 
+      their systems through automation, cloud adoption, and intelligent 
+      digital solutions. 
+    </p>
 
-          <div className="dt-hero-buttons">
-            <button className="dt-btn-primary">Start Transformation</button>
-            <button className="dt-btn-outline">Explore Solutions</button>
-          </div>
-        </div>
+    <p className="dt-hero-desc">
+      From workflow automation and system integration to AI-enabled 
+      processes and scalable digital platforms, we build connected 
+      ecosystems that improve efficiency, reduce manual effort, 
+      and accelerate business performance.
+    </p>
 
-        <div className="dt-hero-right">
-          <div className="dt-hero-img-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=100"
-              alt="Digital Transformation"
-              className="dt-hero-img"
-            />
+    <p className="dt-hero-desc">
+      We don’t just plan transformation — we implement, automate, 
+      and deliver measurable results.
+    </p>
 
-            <div className="dt-bubble dt-bubble-green">
-              Ready to move your business to the cloud?
-            </div>
+    <div className="dt-hero-buttons">
+      <button className="dt-btn-primary">Start Transformation</button>
+      <button className="dt-btn-outline">Explore Automation Solutions</button>
+    </div>
+  </div>
 
-            <div className="dt-bubble dt-bubble-white">
-              Yes, we need automation & AI-driven solutions.
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="dt-hero-right">
+    <div className="dt-hero-img-wrapper">
+      <img
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=100"
+        alt="Digital Transformation"
+        className="dt-hero-img"
+      />
+
+      <div className="dt-bubble dt-bubble-green">
+        Can you automate our workflows and integrate systems?
+      </div>
+
+      <div className="dt-bubble dt-bubble-white">
+        Yes, we build automated, AI-enabled digital systems.
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* ================= TRANSFORMATION FRAMEWORK ================= */}
       <section className="dt-framework">
@@ -103,94 +117,123 @@ const DigitalTransformation = () => {
         </div>
       </section>
 
-      {/* ================= ENTERPRISE TRANSFORMATION ================= */}
-      <section className="dt-enterprise">
-        <div className="dt-enterprise-left">
-          <p className="dt-enterprise-label">
-            END-TO-END DIGITAL MODERNIZATION
-          </p>
 
-          <h1 className="dt-enterprise-heading">
-            Reinvent your business with next-generation technology
-          </h1>
+<section className="dt-enterprise">
+  <div className="dt-enterprise-left">
+    <p className="dt-enterprise-label">
+      DIGITAL TRANSFORMATION & AUTOMATION
+    </p>
 
-          <p className="dt-enterprise-desc">
-            We help organizations transform traditional operations
-            into digital-first ecosystems through cloud migration,
-            AI adoption, cybersecurity reinforcement, and
-            scalable enterprise platforms.
-          </p>
+    <h1 className="dt-enterprise-heading">
+      Build automated, scalable and connected digital systems
+    </h1>
 
-          <p className="dt-enterprise-desc">
-            Our transformation experts ensure seamless integration,
-            optimized performance, data-driven insights, and
-            sustainable innovation strategies for long-term growth.
-          </p>
-        </div>
+    <p className="dt-enterprise-desc">
+      At BodhiStreams Convergence, we enable organizations to transform 
+      traditional processes into automated, digital-first workflows 
+      through cloud adoption, system integration, and intelligent 
+      technology solutions.
+    </p>
 
-        <div className="dt-enterprise-right">
-          <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=100"
-            alt="Digital Innovation"
-            className="dt-enterprise-img"
-          />
-        </div>
-      </section>
+    <p className="dt-enterprise-desc">
+      From workflow automation and application integration to AI-enabled 
+      systems and cloud platforms, we design and implement solutions 
+      that improve efficiency, reduce manual effort, and enhance 
+      operational performance.
+    </p>
+
+    <p className="dt-enterprise-desc">
+      We don’t just define transformation strategies — we execute, 
+      automate, and deliver real, measurable outcomes.
+    </p>
+  </div>
+
+  <div className="dt-enterprise-right">
+    <img
+      src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=100"
+      alt="Digital Transformation & Automation"
+      className="dt-enterprise-img"
+    />
+  </div>
+</section>
+
 
       {/* ================= DIGITAL SUPPORT ================= */}
       <section className="dt-support">
-        <div className="dt-support-left">
-          <div className="dt-chat-box">
-            <div className="dt-chat-sidebar">
-              <BarChart2 size={40} />
-              <Shield size={40} />
-              <Cloud size={40} />
-              <Settings size={40} />
-            </div>
+  <div className="dt-support-left">
+    <div className="dt-chat-box">
 
-            <div className="dt-chat-content">
-              <div className="dt-chat-title">
-                Digital Transformation Support
-              </div>
+      <div className="dt-chat-sidebar">
+        <BarChart2 size={40} />
+        <Shield size={40} />
+        <Cloud size={40} />
+        <Settings size={40} />
+      </div>
 
-              <div className="dt-chat-message agent">
-                <Sparkles size={32} />
-                <p>
-                  How can we modernize your digital ecosystem?
-                </p>
-              </div>
-
-              <div className="dt-chat-message user">
-                <img
-                  src="https://randomuser.me/api/portraits/women/44.jpg"
-                  alt="Client"
-                />
-                <p>
-                  We want AI automation and cloud scalability.
-                </p>
-              </div>
-
-              <div className="dt-chat-message agent">
-                <p>
-                  Our team will assess your systems,
-                  implement AI automation, and build
-                  scalable cloud-native architecture.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div className="dt-chat-content">
+        <div className="dt-chat-title">
+          Automation & Digital Transformation
         </div>
 
-        <div className="dt-support-right">
-          <h1>Empower your digital future with innovation</h1>
-
+        {/* AGENT */}
+        <div className="dt-chat-message agent">
+          <Sparkles size={32} />
           <p>
-            From automation and AI to secure cloud migration
-            and enterprise modernization, we enable digital-first
-            business models designed for growth and resilience.
+            How can we optimize and automate your current systems?
           </p>
         </div>
-      </section>
+
+        {/* USER */}
+        <div className="dt-chat-message user">
+          <img
+            src="https://randomuser.me/api/portraits/women/44.jpg"
+            alt="Client"
+          />
+          <p>
+            We want to automate workflows and integrate cloud-based systems.
+          </p>
+        </div>
+
+        {/* AGENT */}
+        <div className="dt-chat-message agent">
+          <p>
+            We will analyze your processes, integrate applications and cloud platforms,
+            and implement automation to reduce manual effort and improve efficiency.
+          </p>
+        </div>
+
+        {/* FINAL AGENT */}
+        <div className="dt-chat-message agent">
+          <p>
+            Our solutions include workflow automation, AI-enabled systems,
+            and scalable digital infrastructure for long-term performance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div className="dt-support-right">
+    <h1>
+      Automate operations and build intelligent digital systems
+    </h1>
+
+    <p>
+      At BodhiStreams Convergence, we help organizations transform 
+      manual processes into automated, integrated digital ecosystems. 
+      From workflow automation and AI-enabled solutions to cloud integration 
+      and system optimization, we design and implement scalable technologies 
+      that improve efficiency and drive business growth.
+    </p><br></br>
+
+    <p>
+      We don’t just recommend solutions — we implement, automate, 
+      and deliver measurable outcomes.
+    </p>
+  </div>
+</section>
+
 
       {/* ================= CTA ================= */}
       <section className="dt-cta">

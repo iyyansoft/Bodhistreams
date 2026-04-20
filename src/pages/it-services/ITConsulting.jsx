@@ -13,128 +13,146 @@ const ITConsulting = () => {
     <>
       {/* ================= HERO ================= */}
       <section className="itc-hero">
-        <div className="itc-hero-left">
-          <p className="itc-mini-title">ENTERPRISE IT CONSULTING</p>
+  <div className="itc-hero-left">
+    <p className="itc-mini-title">IT CONSULTING & SYSTEM INTEGRATION</p>
 
-          <h1 className="itc-hero-heading">
-            Transform your <br />
-            IT infrastructure <br />
-            with strategic <br />
-            system integration
-          </h1>
+    <h1 className="itc-hero-heading">
+      Design, Integrate & <br />
+      Optimize Enterprise <br />
+      IT Systems for <br />
+      Scalable Growth
+    </h1>
 
-          <p className="itc-hero-desc">
-            We provide IT consulting, advisory services, enterprise
-            architecture design, system analysis, and seamless
-            integration solutions. Our scalable digital strategies help
-            organizations modernize infrastructure, optimize
-            technology investments, and accelerate innovation.
-          </p>
+    <p className="itc-hero-desc">
+      At BodhiStreams Convergence, we provide end-to-end IT consulting 
+      and system integration services to help organizations build 
+      connected, scalable, and high-performance digital ecosystems. 
+      
+      From enterprise architecture design and system analysis to 
+      seamless integration of software, cloud, and infrastructure, 
+      we ensure efficient operations, better decision-making, and 
+      long-term technology value.
+      
+      We don’t just advise — we execute and deliver fully functional systems.
+    </p>
 
-          <div className="itc-hero-buttons">
-            <button className="itc-btn-primary">Schedule Consultation</button>
-            <button className="itc-btn-outline">Explore Services</button>
-          </div>
-        </div>
+    <div className="itc-hero-buttons">
+      <button className="itc-btn-primary">Schedule Consultation</button>
+      <button className="itc-btn-outline">Explore Integration Services</button>
+    </div>
+  </div>
 
-        <div className="itc-hero-right">
-          <div className="itc-hero-img-wrapper">
-            <img
-              src="https://atayacontentops.com/wp-content/uploads/2025/05/blog16.webp"
-              alt="IT Consulting"
-              className="itc-hero-img"
-            />
+  <div className="itc-hero-right">
+    <div className="itc-hero-img-wrapper">
+      <img
+        src="https://atayacontentops.com/wp-content/uploads/2025/05/blog16.webp"
+        alt="IT Consulting"
+        className="itc-hero-img"
+      />
 
-            <div className="itc-bubble itc-bubble-green">
-              Need help modernizing your IT systems?
-            </div>
+      <div className="itc-bubble itc-bubble-green">
+        Can you integrate our software, cloud, and enterprise systems?
+      </div>
 
-            <div className="itc-bubble itc-bubble-white">
-              Yes, we want to integrate cloud & enterprise systems.
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="itc-bubble itc-bubble-white">
+        Yes. We design, connect, and optimize complete IT ecosystems.
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* ================= CONSULTING FRAMEWORK ================= */}
-      <section className="itc-strategy">
-        <p className="itc-strategy-label">OUR CONSULTING FRAMEWORK</p>
 
-        <h2 className="itc-strategy-heading">
-          Enterprise IT Strategy & Integration
-        </h2>
 
-        <div className="itc-strategy-grid">
-          <div className="itc-strategy-card">
-            <div className="itc-card-icon">✓</div>
-            <h3>IT Strategy & Advisory</h3>
-            <p>
-              Develop enterprise technology roadmaps, governance models,
-              risk management strategies, and IT transformation plans
-              aligned with long-term business objectives.
-            </p>
-          </div>
+<section className="itc-strategy">
+  <p className="itc-strategy-label">OUR CONSULTING FRAMEWORK</p>
 
-          <div className="itc-strategy-card">
-            <div className="itc-card-icon">⚙</div>
-            <h3>System Integration</h3>
-            <p>
-              Integrate ERP systems, APIs, enterprise applications,
-              cloud platforms (SaaS, PaaS, IaaS), and databases into
-              secure, scalable ecosystems.
-            </p>
-          </div>
+  <h2 className="itc-strategy-heading">
+    IT Consulting & System Integration Approach
+  </h2>
 
-          <div className="itc-strategy-card">
-            <div className="itc-card-icon">🚀</div>
-            <h3>Digital Transformation</h3>
-            <p>
-              Modernize legacy systems with automation, cloud migration,
-              DevOps practices, cybersecurity frameworks, and digital
-              workflow optimization.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div className="itc-strategy-grid">
+
+    {/* 1 */}
+    <div className="itc-strategy-card">
+       <div className="itc-card-icon">📊</div>
+      <h3>IT Consulting & System Analysis</h3>
+      <p>
+        Analyze existing IT infrastructure, applications, and workflows 
+        to identify gaps, inefficiencies, and opportunities for 
+        modernization and integration.
+      </p>
+    </div>
+
+    {/* 2 */}
+    <div className="itc-strategy-card">
+      <div className="itc-card-icon">🔗</div>
+      <h3>System Integration & Architecture</h3>
+      <p>
+        Design and integrate enterprise systems, software applications, 
+        cloud platforms, APIs, and databases into a unified, secure, 
+        and scalable digital ecosystem.
+      </p>
+    </div>
+
+    {/* 3 */}
+    <div className="itc-strategy-card">
+      <div className="itc-card-icon">⚡</div>
+      <h3>Implementation & Optimization</h3>
+      <p>
+        Deploy integrated systems, optimize performance, automate workflows, 
+        and ensure reliable, scalable operations for long-term business growth.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
 
       {/* ================= DETAILED SERVICES ================= */}
       <section className="itc-enterprise">
-        <div className="itc-enterprise-left">
-          <p className="itc-enterprise-label">
-            IT CONSULTING & SYSTEM INTEGRATION
-          </p>
+  <div className="itc-enterprise-left">
+    <p className="itc-enterprise-label">
+      IT CONSULTING & SYSTEM INTEGRATION
+    </p>
 
-          <h1 className="itc-enterprise-heading">
-            Comprehensive enterprise technology consulting
-          </h1>
+    <h1 className="itc-enterprise-heading">
+      End-to-End Enterprise IT Consulting & Integration Solutions
+    </h1>
 
-          <p className="itc-enterprise-desc">
-            To carry on the business of information technology and to
-            design, develop, customize, test, implement, deploy,
-            operate, maintain, support, license, market, and otherwise
-            deal in computer software, software products, applications,
-            platforms, systems, and solutions of all kinds.
-          </p>
+    <p className="itc-enterprise-desc">
+      At BodhiStreams Convergence, we help organizations design, 
+      implement, and manage modern IT systems that are scalable, 
+      connected, and performance-driven.
+    </p>
 
-          <p className="itc-enterprise-desc">
-            We provide information technology consulting, advisory
-            services, system analysis and design, system integration,
-            software testing and quality assurance, digital
-            transformation services, automation services, managed IT
-            services, data processing services, technical support,
-            maintenance services, and IT-enabled solutions to
-            organizations in India and abroad.
-          </p>
-        </div>
+    <p className="itc-enterprise-desc">
+      From system analysis and architecture design to seamless integration 
+      of software, cloud platforms, APIs, and enterprise applications, 
+      we build unified digital ecosystems that improve efficiency, 
+      automation, and decision-making.
+    </p>
 
-        <div className="itc-enterprise-right">
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-            alt="Enterprise Consulting"
-            className="itc-enterprise-img"
-          />
-        </div>
-      </section>
+    <p className="itc-enterprise-desc">
+      We don’t just provide consulting — we execute, integrate, and deliver 
+      fully functional IT solutions that drive long-term business growth.
+    </p>
+  </div>
+
+  <div className="itc-enterprise-right">
+    <img
+      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+      alt="Enterprise Consulting"
+      className="itc-enterprise-img"
+    />
+  </div>
+</section>
+
+
 
       {/* ================= IT SUPPORT UI ================= */}
       <section className="itc-support">
@@ -192,38 +210,54 @@ const ITConsulting = () => {
         </div>
       </section>
 
-      {/* ================= RESOURCES ================= */}
-      <section className="itc-resources">
-        <h2 className="itc-resources-title">
-          IT Consulting Insights & Resources
-        </h2>
 
-        <div className="itc-resources-grid">
-          <div className="itc-resource-card">
-            <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-              alt="Enterprise Strategy"
-            />
-            <h3>Enterprise Architecture Planning</h3>
-          </div>
 
-          <div className="itc-resource-card">
-            <img
-              src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8"
-              alt="Cloud Migration"
-            />
-            <h3>Cloud Migration & Hybrid Integration</h3>
-          </div>
 
-          <div className="itc-resource-card">
-            <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-              alt="IT Governance"
-            />
-            <h3>IT Governance & Compliance Frameworks</h3>
-          </div>
-        </div>
-      </section>
+      
+<section className="itc-resources">
+  <h2 className="itc-resources-title">
+    IT Consulting & Integration Insights
+  </h2>
+
+  <div className="itc-resources-grid">
+
+    {/* CARD 1 */}
+    <div className="itc-resource-card">
+      <img
+        src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+        alt="System Analysis"
+      />
+      <h3>
+        IT System Analysis & Architecture Design
+      </h3>
+    </div>
+
+    {/* CARD 2 */}
+    <div className="itc-resource-card">
+      <img
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+        alt="System Integration"
+      />
+      <h3>
+        Enterprise System & Cloud Integration Solutions
+      </h3>
+    </div>
+
+    {/* CARD 3 */}
+    <div className="itc-resource-card">
+      <img
+        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+        alt="Automation"
+      />
+      <h3>
+        Automation, Optimization & Managed IT Services
+      </h3>
+    </div>
+
+  </div>
+</section>
+
+
 
       {/* ================= CTA ================= */}
       <section className="itc-cta">

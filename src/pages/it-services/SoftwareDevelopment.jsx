@@ -29,7 +29,7 @@ const SoftwareDevelopment = () => {
 
         {/* RIGHT IMAGE */}
         <div className="zendesk-right">
-          <div className="image-wrapper">
+          <div className="image-wrapper-sofrtware">
 
             <img
               src="https://www.libertycenterone.com/wp-content/uploads/2024/11/img-blog-scalable-IT-strategies-and-solutions-for-tech-startups.webp"
@@ -37,15 +37,7 @@ const SoftwareDevelopment = () => {
               className="hero-image"
             />
 
-            {/* GREEN CHAT */}
-            <div className="floating-text bubble-green">
-              Welcome back! How can I help you today?
-            </div>
-
-            {/* WHITE CHAT */}
-            <div className="floating-text bubble-white">
-              I want to upgrade my subscription plan.
-            </div>
+          
 
           </div>
         </div>
@@ -105,89 +97,71 @@ const SoftwareDevelopment = () => {
 
 
       {/* ======================================================================================== */}
+<section className="ai-section">
 
-      <section className="ai-section">
+  {/* LEFT SIDE */}
+  <div className="ai-left">
 
-        {/* LEFT SIDE */}
-        <div className="ai-left">
+    <p className="ai-label">INFORMATION TECHNOLOGY SERVICES</p>
 
-          <p className="ai-label">INFORMATION TECHNOLOGY SERVICES</p>
+    <h1>
+      End-to-End Software <br />
+      Development & Digital <br />
+      Transformation Solutions
+    </h1>
 
-          <h1>
-            Comprehensive software <br />
-            development & digital <br />
-            technology solutions
-          </h1>
+    <p className="ai-description">
+      At BodhiStreams Convergence, we design, develop, and deliver 
+      scalable software solutions tailored for institutions and enterprises. 
+      From web and mobile applications to enterprise systems and cloud platforms, 
+      we ensure seamless integration, performance, and long-term reliability.
+      
+      We don’t just build software — we create digital ecosystems that 
+      drive innovation, automation, and business growth.
+    </p>
 
-          <p className="ai-description">
-            We design, develop, customize, test, implement, deploy, operate,
-            maintain and support computer software, web applications, mobile
-            applications, enterprise systems, cloud platforms (SaaS, PaaS, IaaS),
-            APIs, databases and digital solutions. We also provide IT consulting,
-            system integration, software testing, digital transformation,
-            automation and managed IT services across India and abroad.
-          </p>
+    <a href="#" className="ai-link">
+      Explore our IT capabilities →
+    </a>
 
-          <a href="#" className="ai-link">
-            Explore our IT capabilities →
-          </a>
+  </div>
 
-        </div>
+  {/* RIGHT SIDE CARD */}
+  <div className="ai-card-wrapper">
 
-        {/* RIGHT SIDE CARD */}
-        <div className="ai-card-wrapper">
+  <div className="ai-new-card">
 
-          {/* Floating AI Icon */}
-          <div className="ai-floating-icon">
-            ✦
-          </div>
+    {/* TOP IMAGE */}
+    <div className="ai-image">
+      <img
+        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+        alt="Software Development"
+      />
+    </div>
 
-          {/* Avatar */}
-          <div className="ai-avatar">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Client"
-            />
-          </div>
+    {/* CONTENT */}
+    <div className="ai-content">
 
-          <div className="ai-card">
+      <h4>Digital Solutions Suite</h4>
 
-            <div className="ai-top-bar"></div>
+      <ul>
+        <li>✔ Custom Software Development</li>
+        <li>✔ Cloud & SaaS Platforms</li>
+        <li>✔ System Integration</li>
+        <li>✔ Automation & AI Solutions</li>
+      </ul>
 
-            <div className="ai-card-content">
+      <button className="ai-btn">
+        Explore Solutions
+      </button>
 
-              <div className="ai-user-name">Enterprise Client</div>
+    </div>
 
-              <div className="ai-message user">
-                Do you provide complete software & cloud solutions?
-              </div>
+  </div>
 
-              <div className="ai-agent-label">IT Services Team</div>
+</div>
 
-              <div className="ai-message agent">
-                Yes. We deliver web, mobile, enterprise applications and
-                SaaS, PaaS, IaaS cloud platforms with full IT support.
-              </div>
-
-              <div className="ai-template-box">
-                <h4>Managed IT & Consulting</h4>
-                <p>
-                  System integration, QA testing, automation and
-                  technical support services.
-                </p>
-
-                <button className="ai-template-btn">
-                  Contact IT Team
-                </button>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
 
 
@@ -198,173 +172,142 @@ const SoftwareDevelopment = () => {
 
       <section className="copilot-section">
 
-        {/* LEFT SIDE CHAT UI */}
-        <div className="copilot-left">
+  {/* LEFT SIDE - FEATURE CARD */}
+<div className="copilot-left">
 
-          <div className="chat-container">
+  <div className="timeline">
 
-            {/* Sidebar */}
-            <div className="chat-sidebar">
-              <Home size={20} />
-              <MessageSquare size={20} className="active-icon" />
-              <Users size={20} />
-              <BarChart2 size={20} />
-              <Settings size={20} />
-            </div>
+    {/* STEP 1 */}
+    <div className="timeline-item">
+      <div className="dot"></div>
+      <div className="content">
+        <h4>Software Development</h4>
+        <p>Build scalable web & mobile applications.</p>
+      </div>
+    </div>
 
-            {/* Chat Content */}
-            <div className="chat-content">
+    {/* STEP 2 */}
+    <div className="timeline-item">
+      <div className="dot"></div>
+      <div className="content">
+        <h4>Cloud Platforms</h4>
+        <p>SaaS, PaaS & infrastructure deployment.</p>
+      </div>
+    </div>
 
-              <div className="chat-title">
-                IT Support Conversation
-              </div>
+    {/* STEP 3 */}
+    <div className="timeline-item">
+      <div className="dot"></div>
+      <div className="content">
+        <h4>System Integration</h4>
+        <p>Seamless connection between systems.</p>
+      </div>
+    </div>
 
-              <div className="chat-message agent-msg">
-                <Sparkles size={18} />
-                <p>
-                  Welcome. How can we assist with your software or cloud requirements?
-                </p>
-              </div>
+    {/* STEP 4 */}
+    <div className="timeline-item">
+      <div className="dot"></div>
+      <div className="content">
+        <h4>Automation & Support</h4>
+        <p>Smart workflows & managed IT services.</p>
+      </div>
+    </div>
 
-              <div className="chat-message user-msg">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Client"
-                />
-                <p>
-                  Do you provide end-to-end IT and cloud services?
-                </p>
-              </div>
+  </div>
 
-            </div>
+</div>
 
-          </div>
+  {/* RIGHT SIDE */}
+  <div className="copilot-right">
 
-          {/* COPILOT SUGGEST CARD */}
-          <div className="copilot-card">
+    <p className="copilot-label">INFORMATION TECHNOLOGY SERVICES</p>
 
-            <div className="copilot-header">
-              Copilot suggests
-            </div>
+    <h1>
+      End-to-End Software <br />
+      Development & Digital <br />
+      Transformation Solutions
+    </h1>
 
-            <div className="copilot-body">
+    <p>
+      At BodhiStreams Convergence, we design, develop, and deliver 
+      scalable software solutions tailored for institutions and enterprises. 
+      From web and mobile applications to enterprise systems and cloud platforms, 
+      we enable seamless integration, automation, and long-term digital growth.
+    </p>
 
-              <div className="copilot-auto-tag">
-                ⚡ IT Solutions
-              </div>
+    <a href="#" className="copilot-link">
+      Explore IT Capabilities →
+    </a>
 
-              <div className="copilot-message">
-                We design, develop and deploy web, mobile and enterprise
-                applications including SaaS, PaaS and IaaS platforms.
-                We also provide consulting, system integration,
-                automation and managed IT support.
-              </div>
+  </div>
 
-
-
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* RIGHT SIDE TEXT */}
-        <div className="copilot-right">
-
-          <p className="copilot-label">INFORMATION TECHNOLOGY</p>
-
-          <h1>
-            Elevate your software <br />
-            development & IT <br />
-            capabilities
-          </h1>
-
-          <p>
-            We design, customize, test, deploy and manage secure software,
-            applications, APIs and cloud platforms. From consulting and
-            integration to automation and managed IT services, we deliver
-            scalable technology solutions in India and abroad.
-          </p>
-
-          <a href="#" className="copilot-link">
-            Discover IT Services
-          </a>
-
-        </div>
-
-      </section>
-
-
-
-
-
-
-
-
+</section>
 
 
 
       {/* ======================================================================================== */}
+<section className="resources-section">
 
-      <section className="resources-section">
+  <h2 className="resources-title fade-up">
+    IT Service Resources
+  </h2>
 
-        <h2 className="resources-title fade-up">
-          IT Service Resources
-        </h2>
+  <div className="resources-grid">
 
-        <div className="resources-grid">
+    {/* SOFTWARE DEVELOPMENT CARD */}
+    <div className="resource-card fade-up delay-1">
+      <div className="image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+          alt="Software Development"
+        />
+      </div>
 
-          <div className="resource-card fade-up delay-1">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                alt="Software Development"
-              />
-            </div>
+      <div className="resource-content">
+        <span className="resource-tag">SOFTWARE DEVELOPMENT</span>
+        <h3>
+          Design, Development & Deployment of Scalable Web, Mobile and Enterprise Applications
+        </h3>
+      </div>
+    </div>
 
-            <div className="resource-content">
-              <span className="resource-tag">SOFTWARE DEVELOPMENT</span>
-              <h3>
-                Custom web, mobile and enterprise application development
-              </h3>
-            </div>
-          </div>
+    {/* SOFTWARE + CLOUD PLATFORM */}
+    <div className="resource-card fade-up delay-2">
+      <div className="image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8"
+          alt="Cloud Platforms"
+        />
+      </div>
 
-          <div className="resource-card fade-up delay-2">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8"
-                alt="Cloud Solutions"
-              />
-            </div>
+      <div className="resource-content">
+        <span className="resource-tag">CLOUD & DIGITAL PLATFORMS</span>
+        <h3>
+          SaaS, PaaS & IaaS Based Application Development with Scalable Cloud Integration
+        </h3>
+      </div>
+    </div>
 
-            <div className="resource-content">
-              <span className="resource-tag">CLOUD SOLUTIONS</span>
-              <h3>
-                SaaS, PaaS, IaaS platforms and scalable cloud infrastructure
-              </h3>
-            </div>
-          </div>
+    {/* SOFTWARE + IT SERVICES */}
+    <div className="resource-card fade-up delay-3">
+      <div className="image-wrapper">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+          alt="IT Services"
+        />
+      </div>
 
-          <div className="resource-card fade-up delay-3">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                alt="IT Consulting"
-              />
-            </div>
+      <div className="resource-content">
+        <span className="resource-tag">IT & SOFTWARE SERVICES</span>
+        <h3>
+          System Integration, Automation, Testing and Managed IT Support for Applications
+        </h3>
+      </div>
+    </div>
 
-            <div className="resource-content">
-              <span className="resource-tag">IT CONSULTING</span>
-              <h3>
-                System integration, automation and managed IT services
-              </h3>
-            </div>
-          </div>
+  </div>
 
-        </div>
-      </section>
-
+</section>
 
 
 

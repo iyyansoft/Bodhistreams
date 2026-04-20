@@ -10,6 +10,7 @@
   background: #fcfcfb;
   min-height: 75vh;
   padding: 80px 6%;
+  flex: 1.4;
 }
 
 /* LEFT SIDE */
@@ -32,14 +33,19 @@
   line-height: 1.1;
   margin-bottom: 30px;
   color: #111;
+  max-width: 700px;
 }
 
 .itc-hero-desc {
   font-size: 18px;
   line-height: 1.7;
   color: #555;
-  max-width: 520px;
+  /* max-width: 520px; */
   margin-bottom: 40px;
+  max-width: 650px;
+}
+.itc-hero-right {
+  flex: 0.8;
 }
 
 /* BUTTONS */
@@ -83,70 +89,72 @@
 }
 
 /* RIGHT SIDE IMAGE */
-
 .itc-hero-right {
-  flex: 1;
+  flex: 0.8; /* 🔥 reduce space */
   display: flex;
   justify-content: center;
 }
 
 .itc-hero-img-wrapper {
   position: relative;
-  width: 650px;
+  width: 550px;   /* 🔥 reduced */
   max-width: 100%;
 }
 
 .itc-hero-img {
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 280px;   /* 🔥 reduced height */
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 24px;
 
-
-  /* Sharp rendering */
   image-rendering: auto;
   filter: contrast(105%) brightness(102%);
   
-  /* Clean shadow */
-  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
-
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
   transition: 0.4s ease;
 }
 
 .itc-hero-img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
-
-/* FLOATING BUBBLES */
 
 .itc-bubble {
   position: absolute;
-  padding: 26px 20px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  max-width: 260px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
-  animation: itcFloat 4s ease-in-out infinite;
+  padding: 16px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  max-width: 200px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+  animation: itcFloat 4s ease-in-out infinite; /* 🔥 main */
 }
 
+/* GREEN */
 .itc-bubble-green {
-  bottom: 280px;
-  right: -10px;
+  bottom: 180px;
+  right: -20px;
   background: #cbe98a;
 }
 
+/* WHITE */
 .itc-bubble-white {
-  bottom: 20px;
-  left: -10px;
+  bottom: 10px;
+  left: -20px;
   background: #ffffff;
-  animation-delay: 2s;
+
+  animation-delay: 2s; /* 🔥 delay for different movement */
 }
 
 @keyframes itcFloat {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-14px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px); /* மேல */
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* ===================================== */
