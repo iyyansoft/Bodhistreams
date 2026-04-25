@@ -28,7 +28,7 @@
 }
 
 .ms-hero-heading {
-  font-size: 56px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -36,7 +36,7 @@
 }
 
 .ms-hero-desc {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.7;
   color: #555;
   max-width: 520px;
@@ -166,10 +166,10 @@
 
 /* GRID */
 .ms-dark-grid {
-  display: flex;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 3 cards same line */
+  gap: 40px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* CARD */
@@ -212,14 +212,14 @@
 
 /* TITLE */
 .ms-dark-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 12px;
   color: #fff;
 }
 
 /* DESC */
 .ms-dark-card p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #9aa4af;
 }
@@ -268,13 +268,13 @@
 }
 
 .ms-enterprise-heading {
-  font-size: 52px;
+  font-size: 40px;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
 .ms-enterprise-desc {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -478,7 +478,7 @@
 
 /* HEADING */
 .ms-support-right h1 {
-  font-size: 44px;
+  font-size: 34px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -486,7 +486,7 @@
 
 /* PARAGRAPH */
 .ms-support-right p {
-  font-size: 20px;
+  font-size: 16px;
   color: #cbd5d1;
   line-height: 1.7;
   max-width: 520px;
@@ -519,7 +519,7 @@
 
 /* TITLE */
 .ms-premium-title {
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 700;
   color: #111;
   margin-bottom: 90px;
@@ -626,7 +626,7 @@
 }
 
 .ms-cta-content h2 {
-  font-size: 60px;
+  font-size: 40px;
   color: #eaeaea;
   margin-bottom: 50px;
 }

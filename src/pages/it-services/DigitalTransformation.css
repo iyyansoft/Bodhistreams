@@ -26,7 +26,7 @@
 }
 
 .dt-hero-heading {
-  font-size: 56px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -34,7 +34,7 @@
 }
 
 .dt-hero-desc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #555;
   max-width: 520px;
@@ -155,7 +155,7 @@
 }
 
 .dt-framework-heading {
-  font-size: 44px;
+  font-size: 30px;
   margin-bottom: 70px;
   font-weight: 700;
 }
@@ -222,12 +222,12 @@
 }
 
 .dt-enterprise-heading {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
 .dt-enterprise-desc {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #555;
@@ -295,13 +295,13 @@
 }
 
 .dt-support-right h1 {
-  font-size: 46px;
+  font-size: 40px;
   margin-bottom: 60PX;
   color: #5b862a;
 }
 
 .dt-support-right p {
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
 
 }
@@ -348,7 +348,7 @@
 }
 
 .dt-cta-content h2 {
-  font-size: 56px;
+  font-size: 48px;
   color: #eaeaea;
   margin-bottom: 40px;
 }

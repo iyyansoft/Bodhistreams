@@ -4,21 +4,22 @@ const HardwareSupport = () => {
   return (
 
     <div>
-<section className="hardware-hero-bg">
-  <div className="overlay"></div>
+<section className="support-hero">
 
-  <div className="hero-content">
+  <div className="support-overlay"></div>
+
+  <div className="support-content">
+
     <h4>End-to-End IT Installation & Support</h4>
 
     <h1>
       Installation & <br />
-      Technical Support 
-      Services
+      Technical Support Services
     </h1>
 
     <p>
       We provide installation, configuration, and support for servers,
-      networking systems,<br></br> smart classrooms, and digital infrastructure.
+      networking systems, smart classrooms, and digital infrastructure.
     </p>
 
     <p>
@@ -26,10 +27,12 @@ const HardwareSupport = () => {
       secure, and high-performance IT environments.
     </p>
 
-    <button className="hero-btn">
+    <button className="support-btn">
       Request Technical Support
     </button>
+
   </div>
+
 </section>
 
 

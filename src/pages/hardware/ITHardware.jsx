@@ -269,7 +269,7 @@ const ITHardware = () => {
       </p>
 
       <h2>
-        Enterprise IT Hardware & <br />
+        Enterprise IT Hardware & 
         Infrastructure Solutions
       </h2>
 

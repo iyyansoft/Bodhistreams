@@ -3,6 +3,7 @@
 .hardware-page {
   background: white;
   padding-bottom: 0px;
+  margin-top: 60px;
 }
 
 /* ================= TOP WRAPPER ================= */
@@ -81,7 +82,7 @@
 /* ================= YELLOW SECTION ================= */
 
 .hw-yellow-section {
-  background: #73ecd0;
+  background: #cff2eb;
   margin: -70px 8% 0;   /* 👈 This makes yellow go slightly up */
   padding: 120px 8%;
   border-radius: 20px;
@@ -112,7 +113,7 @@
 }
 
 .hw-left h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
@@ -153,7 +154,7 @@
 }
 
 .hw-quote {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.6;
   margin-top: 70px;
   font-weight: 600;
@@ -220,13 +221,13 @@
 }
 
 .hw-fit-left h2 {
-  font-size: 44px;
+  font-size: 38px;
   margin-bottom: 25px;
   color: #638221;
 }
 
 .hw-fit-left p {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #444;
@@ -263,7 +264,7 @@
   overflow: hidden;
 
   /* 🔥 DOUBLE COLOR GRADIENT */
-  background: linear-gradient(135deg, #8CC63F, #124925);
+  /* background: linear-gradient(135deg, #8CC63F, #124925); */
 
   
 
@@ -281,10 +282,12 @@
   
 }
 .hw-fit-card h3 {
-  color: #0f3805 !important;   /* 🔥 force dark green */
+  color: #0f3805 !important; 
+  font-size: 18px;  /* 🔥 force dark green */
 }
 .hw-fit-card p {
-  color: #000 !important;   /* 🔥 force black */
+  color: #000 !important; 
+  font-size: 12px;  /* 🔥 force black */
 }
 
 /* 🔥 INNER LIGHT EFFECT */
@@ -423,7 +426,7 @@
 }
 
 .hw-v7-title {
-  font-size: 44px;
+  font-size: 40px;
   margin-bottom: 100px;
 }
 
@@ -541,7 +544,7 @@
 }
 
 .hw-customer-left h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -549,7 +552,7 @@
 }
 
 .hw-customer-left p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
@@ -608,7 +611,7 @@
 /* Content */
 
 .cta-content1 h2 {
-  font-size: 62px;
+  font-size: 42px;
   font-weight: 600;
   color: #eaeaea;
   margin-bottom: 50px;

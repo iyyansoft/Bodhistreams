@@ -1,62 +1,73 @@
 
-
-/* Full width hero */
-.hardware-hero-bg {
+/* HERO SECTION */
+.support-hero {
   position: relative;
-  width: 100vw;              /* full viewport width */
+  width: 100vw;
   height: 100vh;
+
   background-image: url("https://t3.ftcdn.net/jpg/18/40/83/42/360_F_1840834273_htBdYoHRcxAdcUYc7qfZwz8crRbztPZ8.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   padding-left: 8%;
-  color: white;
+  color: #fff;
   margin-top: 60px;
 }
 
-/* Dark overlay */
-.overlay {
+/* OVERLAY */
+.support-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
 }
 
-/* Content */
-.hero-content {
+/* CONTENT */
+.support-content {
   position: relative;
   max-width: 650px;
   z-index: 2;
 }
 
-.hero-content h4 {
+/* SUB TITLE */
+.support-content h4 {
   color: #ffc107;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.hero-content h1 {
+/* MAIN TITLE */
+.support-content h1 {
   font-size: 40px;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.hero-content p {
-  font-size: 14px;
+/* DESCRIPTION */
+.support-content p {
+  font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 30px;
-  color: #fffefe;
+  margin-bottom: 20px;
+  color: #f5f5f5;
 }
 
-.hero-btn {
+/* BUTTON */
+.support-btn {
   background: #cf2735;
   border: none;
   padding: 14px 35px;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 16px;
   border-radius: 40px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.support-btn:hover {
+  background: #a81f2a;
 }
 
 

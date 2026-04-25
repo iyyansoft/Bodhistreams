@@ -40,7 +40,7 @@ const ElectronicProducts = () => {
     </p>
 
     <h1 className="esc-heading">
-      Advanced Digital Infrastructure <br />
+      Advanced Digital Infrastructure 
       for Institutions & Enterprises
     </h1>
 
@@ -227,7 +227,7 @@ const ElectronicProducts = () => {
     {/* CARD 3 */}
     <div className="edp-card">
       <img
-        src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=900&q=80"
+        src="https://www.advancedtech.com/wp-content/uploads/2022/04/iStock-1206840249_ATS-1-scaled-2.jpg"
         alt="Support and Maintenance"
       />
 

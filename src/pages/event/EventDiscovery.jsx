@@ -77,7 +77,7 @@ const EventDiscovery = () => {
   {/* RIGHT IMAGE */}
   <div className="event-image">
     <img
-      src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+      src="/registaration.png"
       alt="Event conference audience"
     />
   </div>
@@ -205,7 +205,7 @@ const EventDiscovery = () => {
     {/* IMAGE */}
     <div className="about-image">
             <img
-              src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1200&auto=format&fit=crop"
+              src="/eventhome1.png"
               alt="Live event"
             />
     </div>
@@ -243,22 +243,22 @@ const EventDiscovery = () => {
 
 <section className="event-services">
 
-  <h2>Event Discovery & Registration Platform</h2>
+  <h2>All-in-One Event Discovery & Booking Platform</h2>
 
   <div className="services-grid">
 
     {/* CARD 1 */}
     <div className="service-card">
       <img
-        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
+        src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=1200&auto=format&fit=crop"
         alt="Event discovery"
       />
 
       <div className="card-overlay">
         <span>EVENT DISCOVERY</span>
         <h3>
-          Explore and find events across multiple categories through a 
-          centralized platform designed for easy access and better visibility
+          Explore and discover events across multiple categories through a 
+          centralized platform with smart search, filters, and real-time visibility
         </h3>
       </div>
     </div>
@@ -267,15 +267,15 @@ const EventDiscovery = () => {
     {/* CARD 2 */}
     <div className="service-card">
       <img
-        src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop"
-        alt="Ticketing"
+        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+        alt="Registration"
       />
 
       <div className="card-overlay">
-        <span>REGISTRATION MANAGEMENT</span>
+        <span>REGISTRATION & TICKETING</span>
         <h3>
-          Enable quick event registrations with a smooth process while 
-          managing participant data and attendance efficiently in one system
+          Enable seamless event registration with secure ticket booking, 
+          instant confirmations, and a smooth user-friendly experience
         </h3>
       </div>
     </div>
@@ -284,15 +284,15 @@ const EventDiscovery = () => {
     {/* CARD 3 */}
     <div className="service-card">
       <img
-        src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop"
-        alt="Event technology"
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+        alt="Dashboard"
       />
 
       <div className="card-overlay">
-        <span>SMART EVENT OPERATIONS</span>
+        <span>EVENT MANAGEMENT DASHBOARD</span>
         <h3>
-          Simplify event workflows with integrated tools for ticketing, 
-          reporting, feedback collection and performance tracking
+          Manage events efficiently with powerful dashboards, attendance tracking, 
+          analytics, and automated reports — all in one platform
         </h3>
       </div>
     </div>

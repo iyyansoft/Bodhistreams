@@ -323,10 +323,12 @@ grid-template-columns:1fr;
 
 .about-image img{
   width:100%;
-  max-width:520px;
+  max-width:620px;
+  height:450px;
   border-radius:30px;
-  object-fit:cover;
-  height: 650px;
+
+  object-fit: contain;   /* 🔥 full image show */
+  /* background: #a855f7; */
 }
 
 
@@ -341,7 +343,7 @@ grid-template-columns:1fr;
 /* TITLE */
 
 .about-content h1{
-  font-size:64px;
+  font-size:44px;
   margin-bottom:25px;
   font-weight:600;
 }
@@ -350,7 +352,7 @@ grid-template-columns:1fr;
 /* TEXT */
 
 .about-content p{
-  font-size:18px;
+  font-size:16px;
   line-height:1.8;
   margin-bottom:20px;
   color:#2f3633;

@@ -170,80 +170,44 @@ const SoftwareDevelopment = () => {
 
       {/* ======================================================================================== */}
 
-      <section className="copilot-section">
+<section className="impact-with-image">
 
-  {/* LEFT SIDE - FEATURE CARD */}
-<div className="copilot-left">
+  {/* LEFT IMAGE */}
+  <div className="impact-image">
+    <img
+      src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+      alt="Technology"
+    />
+  </div>
 
-  <div className="timeline">
+  {/* RIGHT CONTENT */}
+  <div className="impact-content">
 
-    {/* STEP 1 */}
-    <div className="timeline-item">
-      <div className="dot"></div>
-      <div className="content">
-        <h4>Software Development</h4>
-        <p>Build scalable web & mobile applications.</p>
-      </div>
-    </div>
+    <p className="impact-label">
+      ENTERPRISE TECHNOLOGY SOLUTIONS
+    </p>
 
-    {/* STEP 2 */}
-    <div className="timeline-item">
-      <div className="dot"></div>
-      <div className="content">
-        <h4>Cloud Platforms</h4>
-        <p>SaaS, PaaS & infrastructure deployment.</p>
-      </div>
-    </div>
+    <h1>
+      Delivering scalable systems 
+      for modern digital operations
+    </h1>
 
-    {/* STEP 3 */}
-    <div className="timeline-item">
-      <div className="dot"></div>
-      <div className="content">
-        <h4>System Integration</h4>
-        <p>Seamless connection between systems.</p>
-      </div>
-    </div>
+    <p>
+      We help organizations build strong digital foundations by developing
+      high-performance applications and integrating them with reliable IT infrastructure.
+    </p>
 
-    {/* STEP 4 */}
-    <div className="timeline-item">
-      <div className="dot"></div>
-      <div className="content">
-        <h4>Automation & Support</h4>
-        <p>Smart workflows & managed IT services.</p>
-      </div>
-    </div>
+    <p>
+      Our solutions focus on efficiency, system connectivity, and operational stability—
+      ensuring businesses can adapt, scale, and perform in a rapidly evolving digital environment.
+    </p>
+
+    <a href="#" className="impact-link">
+      Discover Technology Services →
+    </a>
 
   </div>
 
-</div>
-
-  {/* RIGHT SIDE */}
-  <div className="copilot-right">
-
-  <p className="copilot-label">ENTERPRISE TECHNOLOGY SOLUTIONS</p>
-
-  <h1>
-    Delivering scalable systems 
-    for modern digital operations
-  </h1>
-
-  <p>
-    We help organizations build strong digital foundations by 
-    developing high-performance applications and integrating 
-    them with reliable IT infrastructure.
-  </p>
-
-  <p>
-    Our solutions focus on efficiency, system connectivity, 
-    and operational stability—ensuring businesses can adapt, 
-    scale, and perform in a rapidly evolving digital environment.
-  </p>
-
-  <a href="#" className="copilot-link">
-    Discover Technology Services →
-  </a>
-
-</div>
 </section>
 
 

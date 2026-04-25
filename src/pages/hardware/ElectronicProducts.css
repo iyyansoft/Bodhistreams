@@ -3,103 +3,152 @@
 ========================================================= */
 /* HERO SECTION */
 
+/* ================= HERO SECTION ================= */
+
 .esc-hero {
   position: relative;
   height: 100vh;
   padding: 0 8%;
 
   display: flex;
-  align-items: center;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  text-align: center;
 
-
-
-      background: url("https://t4.ftcdn.net/jpg/15/95/49/65/360_F_1595496536_YEUn0ABPB059jcsmvcVQvrq1gn19Eolb.jpg")
+  background: url("https://images.ctfassets.net/mtvq3xgdsu8v/4tv8QgvvUYUVUkbBfWAGey/96ff8d180674379a7d7e783a7c8ab6fc/Kemptron_hero.jpg?w=3840&q=85")
     center center / cover no-repeat;
 
-  /* 🔥 IMAGE SHARP FIX */
   image-rendering: auto;
 }
 
-/* DARK OVERLAY */
+/* ================= OVERLAY ================= */
 
-/* .esc-overlay {
+.esc-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-} */
+  background: rgba(0, 0, 0, 0.6);
+}
 
-/* CONTENT */
+/* ================= CONTENT ================= */
 
 .esc-content {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 750px;
+  margin: auto;
   color: #fff;
+
+  animation: fadeUp 1s ease;
+  margin-bottom: 50px;
 }
 
-/* MINI TEXT */
+/* ================= MINI TEXT ================= */
 
 .esc-mini {
   color: #8CC63F;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
-/* HEADING */
+/* ================= HEADING ================= */
 
 .esc-heading {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 46px;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 20px;
+
+  max-width: 600px;   /* 🔥 line control */
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* DESCRIPTION */
+/* ================= DESCRIPTION ================= */
 
 .esc-desc {
   font-size: 18px;
   line-height: 1.7;
-  color: #33e8f5;
+  color: #5fe9f3;
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 
 .esc-buttons {
   display: flex;
+  justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
+
+/* PRIMARY BUTTON */
 
 .esc-btn-primary {
   background: #8CC63F;
   color: #000;
-  padding: 14px 28px;
+  padding: 14px 32px;
   border-radius: 30px;
   border: none;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+/* OUTLINE BUTTON */
 
 .esc-btn-outline {
   background: transparent;
   color: #fff;
-  padding: 14px 28px;
+  padding: 14px 32px;
   border-radius: 30px;
   border: 2px solid #fff;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* HOVER */
+/* ================= HOVER ================= */
 
 .esc-btn-primary:hover {
   background: #76b82f;
+  transform: translateY(-3px);
 }
 
 .esc-btn-outline:hover {
   background: #fff;
   color: #000;
+  transform: translateY(-3px);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .esc-heading {
+    font-size: 32px;
+  }
+
+  .esc-desc {
+    font-size: 16px;
+  }
+
+  .esc-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 

@@ -74,10 +74,7 @@ const ITConsulting = () => {
       We don’t just advise — we execute and deliver fully functional systems.
     </p>
 
-    <div className="itc-hero-buttons">
-      <button className="itc-btn-primary">Schedule Consultation</button>
-      <button className="itc-btn-outline">Explore Integration Services</button>
-    </div>
+
   </div>
 
   <div className="itc-hero-right">

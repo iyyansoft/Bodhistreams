@@ -29,7 +29,7 @@
 }
 
 .itc-hero-heading {
-  font-size: 56px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -38,7 +38,7 @@
 }
 
 .itc-hero-desc {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7;
   color: #555;
   /* max-width: 520px; */
@@ -183,7 +183,7 @@
 
 
 .itc-strategy-label{
-    font-size: 44px;
+    font-size: 38px;
     font-weight: 600;
     color: #5b862a;
     margin-bottom: 40px;
@@ -216,7 +216,7 @@
 /* ===================================== */
 
 .itc-card-icon {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 25px;
   display: inline-flex;
   align-items: center;
@@ -261,11 +261,11 @@
 /* TEXT */
 
 .itc-strategy-card p {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
   line-height: 1.7;
   transition: 0.3s ease;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .itc-strategy-card:hover p {
@@ -349,7 +349,7 @@
 }
 
 .itc-enterprise-heading {
-  font-size: 52px;
+  font-size: 40px;
   margin-bottom: 30px;
   line-height: 1.2;
   font-weight: 700;
@@ -357,7 +357,7 @@
 }
 
 .itc-enterprise-desc {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -597,7 +597,7 @@
 }
 
 .itc-support-right h1 {
-  font-size: 56px;
+  font-size: 50px;
   margin-bottom: 30px;
   line-height: 1.1;
   color: #ffffff;
@@ -658,7 +658,7 @@
 }
 
 .itc-resources-title {
-  font-size: 52px;
+  font-size: 40px;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -689,7 +689,7 @@
 }
 
 .itc-resource-card h3 {
-  padding: 20px;
+  padding: 18px;
 }
 
 /* ===================================== */

@@ -54,7 +54,7 @@
 }
 
 .nw-customer-left h2 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 80px;
@@ -62,7 +62,7 @@
 }
 
 .nw-customer-left p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
@@ -177,7 +177,7 @@
 /* ================= GREEN SECTION ================= */
 
 .nw-green-section {
-    background: #77ded0;
+    background: #c8e5e1;
     margin: -70px 8% 0;
     /* 👈 This makes yellow go slightly up */
     padding: 120px 8%;
@@ -208,12 +208,12 @@
 }
 
 .nw-left h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .nw-left p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.7;
     margin-bottom: 18px;
 }
@@ -244,7 +244,7 @@
 }
 
 .nw-quote {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.6;
     margin-top: 70px;
     font-weight: 600;
@@ -300,13 +300,13 @@
 }
 
 .nw-fit-left h2 {
-    font-size: 44px;
+    font-size: 40px;
     margin-bottom: 25px;
     color: #327117;
 }
 
 .nw-fit-left p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
     color: #444;
@@ -339,7 +339,7 @@
   border-radius: 20px;
 
   /* 🔥 SAME GREEN GRADIENT */
-  background: linear-gradient(135deg, #8CC63F, #124925);
+  /* background: linear-gradient(135deg, #8CC63F, #124925); */
 
   color: #000; /* 🔥 text black */
 
@@ -463,7 +463,7 @@
 }
 
 .nw-v7-title {
-    font-size: 44px;
+    font-size: 40px;
     margin-bottom: 100px;
 }
 
@@ -541,7 +541,7 @@
 }
 
 .nw-cta-content h2 {
-    font-size: 50px;
+    font-size: 34px;
     font-weight: 600;
     color: #eaeaea;
     margin-bottom: 50px;
