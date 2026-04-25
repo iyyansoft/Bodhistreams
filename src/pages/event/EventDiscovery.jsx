@@ -41,48 +41,48 @@ const EventDiscovery = () => {
       {/* ---------------------------------------------------------------------------------------------------------- */}
 
 
-      <section className="event-discovery-section">
+<section className="event-discovery-section">
 
-        {/* LEFT CONTENT */}
-        <div className="event-content">
+  {/* LEFT CONTENT */}
+  <div className="event-content">
 
-          <h2>Event Discovery & Registration Platform</h2>
+    <h2>Event Management & Registration Platform</h2>
 
-          <p>
-            We develop and operate digital platforms including websites,
-            web portals and mobile applications for event discovery,
-            promotion, listing, registration and online ticket booking.
-            Our solutions support seminars, workshops, conferences,
-            symposiums, training programs and knowledge-sharing events
-            across engineering, medicine, agriculture, information
-            technology, science, management and skill development sectors.
-          </p>
+    <p>
+      We provide a powerful all-in-one platform to manage and streamline your events 
+      efficiently. From event creation and promotion to registration, attendance tracking, 
+      and ticket booking — everything is handled seamlessly in one place.
 
-          {/* FEATURE CARDS */}
-          <div className="event-features">
+      Our solution is designed for workshops, conferences, seminars, corporate programs, 
+      and large-scale events, helping organizers save time, reduce manual work, and 
+      deliver a professional experience.
+    </p>
 
-            <div className="feature-card">🎵 Entertainment & Concerts</div>
-            <div className="feature-card">🏢 Exhibitions & Trade Fairs</div>
-            <div className="feature-card">⚽ Sports & Community Events</div>
-            <div className="feature-card">💳 Ticketing & Payments</div>
-            <div className="feature-card">📊 Event Analytics</div>
-            <div className="feature-card">🤝 Organizer Interaction</div>
+    {/* FEATURE CARDS */}
+    <div className="event-features">
 
-          </div>
+      <div className="feature-card">🎟️ Event Creation & Listing</div>
+      <div className="feature-card">📝 Easy Registration System</div>
+      <div className="feature-card">📊 Attendance & Reports</div>
+      <div className="feature-card">💳 Ticketing & Payments</div>
+      <div className="feature-card">🤖 AI Feedback Summary</div>
+      <div className="feature-card">⚡ Fast Settlements</div>
 
-          <button className="event-btn">Explore Platform</button>
+    </div>
 
-        </div>
+    <button className="event-btn">Explore Platform</button>
 
-        {/* RIGHT IMAGE */}
-        <div className="event-image">
-          <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
-            alt="Conference audience"
-          />
-        </div>
+  </div>
 
-      </section>
+  {/* RIGHT IMAGE */}
+  <div className="event-image">
+    <img
+      src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+      alt="Event conference audience"
+    />
+  </div>
+
+</section>
 
 
 
@@ -91,196 +91,215 @@ const EventDiscovery = () => {
 
       <section className="service-wrapper">
 
-        {/* HERO IMAGE */}
-        <div className="service-banner">
-          <div className="overlay">
-            <h1>How Our Services Work</h1>
-          </div>
-        </div>
+  {/* HERO IMAGE */}
+  <div className="service-banner">
+    <div className="overlay">
+      <h1>How Eventzgo Works</h1>
+    </div>
+  </div>
 
-        {/* CONTENT */}
+  {/* CONTENT */}
+  <div className="service-text">
 
-        <div className="service-text">
+    {/* EVENT CREATION */}
+    <div className="service-row">
+      <div className="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+          alt="Event creation and listing"
+        />
+      </div>
 
-          {/* EVENT DISCOVERY */}
-          <div className="service-row">
+      <div className="service-info">
+        <h2>Create & Publish Events</h2>
+        <p>
+          Easily create and list your events on our platform at no cost. 
+          Add event details, schedules, and categories to reach the right audience.
+        </p>
+      </div>
+    </div>
 
-            <div className="service-img">
-              <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
-                alt="Event discovery"
-              />
-            </div>
+    {/* PROMOTION */}
+    <div className="service-row reverse">
+      <div className="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0"
+          alt="Event promotion marketing"
+        />
+      </div>
 
-            <div className="service-info">
-              <h2>Event Discovery</h2>
-              <p>
-                Discover seminars, workshops and conferences across
-                multiple industries through our centralized event
-                discovery platform.
-              </p>
-            </div>
+      <div className="service-info">
+        <h2>Promotion & Audience Reach</h2>
+        <p>
+          Promote your events effectively through digital channels and increase 
+          visibility to attract the right participants and maximize engagement.
+        </p>
+      </div>
+    </div>
 
-          </div>
+    {/* REGISTRATION */}
+    <div className="service-row">
+      <div className="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+          alt="Event registration"
+        />
+      </div>
 
+      <div className="service-info">
+        <h2>Registration & Attendance Tracking</h2>
+        <p>
+          Manage registrations seamlessly and track attendance with ease. 
+          Collect feedback and generate automated event reports.
+        </p>
+      </div>
+    </div>
 
-          {/* TICKETING */}
-          <div className="service-row reverse">
+    {/* TICKETING */}
+    <div className="service-row reverse">
+      <div className="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70"
+          alt="Ticketing payments"
+        />
+      </div>
 
-            <div className="service-img">
-              <img
-                src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop"
-                alt="Ticket booking"
-              />
-            </div>
+      <div className="service-info">
+        <h2>Ticketing & Secure Payments</h2>
+        <p>
+          Enable smooth ticket booking with secure online payments and 
+          ensure faster settlements with a transparent process.
+        </p>
+      </div>
+    </div>
 
-            <div className="service-info">
-              <h2>Online Ticketing</h2>
-              <p>
-                Book tickets instantly for concerts, exhibitions
-                and live events with secure digital payments.
-              </p>
-            </div>
+    {/* ANALYTICS */}
+    <div className="service-row">
+      <div className="service-img">
+        <img
+          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+          alt="Event analytics dashboard"
+        />
+      </div>
 
-          </div>
+      <div className="service-info">
+        <h2>Analytics & Performance Insights</h2>
+        <p>
+          Access real-time dashboards, track event performance, and 
+          analyze participation trends with detailed reports.
+        </p>
+      </div>
+    </div>
 
+  </div>
 
-          {/* EVENT TECHNOLOGY */}
-          <div className="service-row">
-
-            <div className="service-img">
-              <img
-                src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop"
-                alt="Event technology"
-              />
-            </div>
-
-            <div className="service-info">
-              <h2>Event Technology</h2>
-              <p>
-                Powerful tools for event registration, analytics,
-                payment integration and audience engagement.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
+</section>
 
 
       {/* -------------------------------------------------------------------------------------------------------------------------------------------------- */}
 
+<section className="about-section">
 
-      <section className="about-section">
+  <div className="about-container">
 
-        <div className="about-container">
-
-          {/* IMAGE */}
-          <div className="about-image">
+    {/* IMAGE */}
+    <div className="about-image">
             <img
               src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1200&auto=format&fit=crop"
               alt="Live event"
             />
-          </div>
+    </div>
 
-          {/* TEXT */}
-          <div className="about-content">
+    {/* TEXT */}
+    <div className="about-content">
 
-            <h1>EVENT DISCOVERY</h1>
+      <h1>EVENT DISCOVERY & REGISTRATION PLATFORM</h1>
 
-            <p>
-              Our digital platform enables users to discover seminars,
-              workshops, conferences and professional training programs
-              across industries including technology, science,
-              management and education.
-            </p>
+      <p>
+        Explore upcoming events through a unified platform designed to help users 
+        quickly find relevant programs across multiple domains. From professional 
+        meetups to large-scale conferences, everything is organized for easy access 
+        and seamless browsing.
+      </p>
 
-            <p>
-              Event organizers can publish events, manage registrations
-              and reach wider audiences through a centralized
-              event discovery platform.
-            </p>
+      <p>
+        Participants can register instantly without complex steps, while organizers 
+        gain full control to handle registrations, monitor participant flow, and 
+        manage event data efficiently from a single dashboard.
+      </p>
 
-            <button className="about-btn">Explore Events</button>
+      <button className="about-btn">Get Started</button>
 
-          </div>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
 
       {/* ----------------------------------------------------------------------------------------------------- */}
 
 
 
+<section className="event-services">
 
-      <section className="event-services">
+  <h2>Event Discovery & Registration Platform</h2>
 
-        <h2>Event Platform Services</h2>
+  <div className="services-grid">
 
-        <div className="services-grid">
+    {/* CARD 1 */}
+    <div className="service-card">
+      <img
+        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
+        alt="Event discovery"
+      />
 
-          {/* CARD 1 */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
-              alt="Event discovery"
-            />
-
-            <div className="card-overlay">
-              <span>EVENT DISCOVERY</span>
-              <h3>
-                Discover seminars, workshops and conferences across
-                multiple industries in one place
-              </h3>
-            </div>
-          </div>
-
-
-          {/* CARD 2 */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop"
-              alt="Ticketing"
-            />
-
-            <div className="card-overlay">
-              <span>ONLINE TICKETING</span>
-              <h3>
-                Secure digital ticket booking for concerts,
-                exhibitions and live events
-              </h3>
-            </div>
-          </div>
+      <div className="card-overlay">
+        <span>EVENT DISCOVERY</span>
+        <h3>
+          Explore and find events across multiple categories through a 
+          centralized platform designed for easy access and better visibility
+        </h3>
+      </div>
+    </div>
 
 
-          {/* CARD 3 */}
-          <div className="service-card">
-            <img
-              src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop"
-              alt="Event technology"
-            />
+    {/* CARD 2 */}
+    <div className="service-card">
+      <img
+        src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop"
+        alt="Ticketing"
+      />
 
-            <div className="card-overlay">
-              <span>EVENT TECHNOLOGY</span>
-              <h3>
-                Registration systems, analytics dashboards and
-                payment integrations for organizers
-              </h3>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
+      <div className="card-overlay">
+        <span>REGISTRATION MANAGEMENT</span>
+        <h3>
+          Enable quick event registrations with a smooth process while 
+          managing participant data and attendance efficiently in one system
+        </h3>
+      </div>
+    </div>
 
 
+    {/* CARD 3 */}
+    <div className="service-card">
+      <img
+        src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop"
+        alt="Event technology"
+      />
 
+      <div className="card-overlay">
+        <span>SMART EVENT OPERATIONS</span>
+        <h3>
+          Simplify event workflows with integrated tools for ticketing, 
+          reporting, feedback collection and performance tracking
+        </h3>
+      </div>
+    </div>
 
+  </div>
+
+</section>
 
 
     </>

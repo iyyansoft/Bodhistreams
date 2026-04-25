@@ -46,177 +46,178 @@ const VendorsConnect = () => {
 
   return (
     <>
-      <section className="ticket-hero">
+<section className="ticket-hero">
 
-        {/* LEFT IMAGE */}
-        <div className="ticket-image">
-          <img
-            src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1400&auto=format&fit=crop"
-            alt="Event Ticketing"
-          />
-        </div>
+  {/* LEFT IMAGE */}
+  <div className="ticket-image">
+    <img
+      src="https://miro.medium.com/0*u7Zc_-K7UWdj3Kg2.png"
+      alt="Vendors Connect"
+    />
+  </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="ticket-content">
+  {/* RIGHT CONTENT */}
+  <div className="ticket-content">
 
-          <h1 className="ticket-title">
-            CAPTURE THE <br /> MOMENT!
-          </h1>
+    <h1 className="ticket-title">
+      VENDORS <br /> CONNECT
+    </h1>
 
-          <p>
-            Our platform provides secure online ticket booking for
-            concerts, exhibitions, trade fairs, sports events and
-            conferences. Users can purchase tickets instantly and
-            receive digital confirmations through automated systems.
-          </p>
+    <p>
+      Access a network of verified vendors to simplify event execution
+      with reliable logistics, venue arrangements, and technical support.
+    </p>
 
-          <button className="ticket-btn">
-            Book Tickets
-          </button>
+    {/* LIST CONTENT */}
+    <ul style={{ margin: "20px 0", lineHeight: "1.8" }}>
+      <li>✔ Access to verified vendors</li>
+      <li>✔ Logistics, venue, and technical support</li>
+      <li>✔ Streamlined coordination</li>
+    </ul>
 
-        </div>
+    <button className="ticket-btn">
+      Explore Vendors →
+    </button>
 
-      </section>
+  </div>
+
+</section>
 
 
       {/* ----------------------------------------------------------------------------------------------------- */}
 
 
-      <section className="event-strip-wrapper">
+<section className="event-strip-wrapper">
 
-        <h2 className="event-section-heading">
-          Explore Our Event Experiences
-        </h2>
+  <h2 className="event-section-heading">
+    Explore Our Brand Promotion Services
+  </h2>
 
-        <div className="event-strip">
+  <div className="event-strip">
 
-          <div className="event-card">
-            <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
-              alt="Expertise"
-            />
-            <div className="event-text">Leading with Expertise</div>
-          </div>
+    <div className="event-card">
+      <img
+        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
+        alt="Targeted Campaigns"
+      />
+      <div className="event-text">Targeted Campaigns</div>
+    </div>
 
-          <div className="event-card">
-            <img
-              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop"
-              alt="Innovation"
-            />
-            <div className="event-text">Igniting Innovation</div>
-          </div>
+    <div className="event-card">
+      <img
+        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+        alt="Audience Segmentation"
+      />
+      <div className="event-text">Audience Segmentation</div>
+    </div>
 
-          <div className="event-card">
-            <img
-              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop"
-              alt="Events"
-            />
-            <div className="event-text">Explore Events</div>
-          </div>
+    <div className="event-card">
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+        alt="Digital Event Marketing"
+      />
+      <div className="event-text">Digital Event Marketing</div>
+    </div>
 
-          <div className="event-card">
-            <img
-              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop"
-              alt="Growth"
-            />
-            <div className="event-text">Sharpening Your Edge</div>
-          </div>
+    <div className="event-card">
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+        alt="Cross Platform Visibility"
+      />
+      <div className="event-text">Cross-Platform Visibility</div>
+    </div>
 
-          <div className="event-card">
-            <img
-              src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1200&auto=format&fit=crop"
-              alt="Sports"
-            />
-            <div className="event-text">Excellence in Sports</div>
-          </div>
+    <div className="event-card">
+      <img
+        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+        alt="Brand Growth"
+      />
+      <div className="event-text">Brand Growth & Reach</div>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
       {/* ----------------------------------------------------------------------------------------------------------------- */}
 
 
       
-      <section className="feedback-section">
+<section className="feedback-section">
 
-        <h2 className="feedback-heading">
-          What Our Community Says
-        </h2>
+  <h2 className="feedback-heading">
+    What Our Clients Say
+  </h2>
 
-        <div className="feedback-card card1">
-          <span>★★★★★</span>
-          <p>
-            The best climbing gym I've been to. The routes are creative,
-            well-maintained and constantly changing.
-          </p>
-        </div>
+  <div className="feedback-card card1">
+    <span>★★★★★</span>
+    <p>
+      Our event visibility increased significantly through targeted digital marketing campaigns.
+    </p>
+  </div>
 
-        <div className="feedback-card card2">
-          <span>★★★★★</span>
-          <p>
-            I tried climbing for the first time here and instantly
-            felt comfortable.
-          </p>
-        </div>
+  <div className="feedback-card card2">
+    <span>★★★★★</span>
+    <p>
+      Audience segmentation helped us reach the right people and improve engagement.
+    </p>
+  </div>
 
-        <div className="feedback-card card3">
-          <span>★★★★★</span>
-          <p>
-            Amazing community and events. Highly recommended.
-          </p>
-        </div>
+  <div className="feedback-card card3">
+    <span>★★★★★</span>
+    <p>
+      Cross-platform promotion gave our event maximum exposure across multiple channels.
+    </p>
+  </div>
 
-        <div className="feedback-card card4">
-          <span>★★★★★</span>
-          <p>
-            Event discovery and ticket booking works perfectly.
-          </p>
-        </div>
+  <div className="feedback-card card4">
+    <span>★★★★★</span>
+    <p>
+      Vendors Connect made logistics and coordination smooth and hassle-free.
+    </p>
+  </div>
 
-      </section>
+</section>
 
 
       {/* ----------------------------------------------------------------------------------------------------- */}
 
 
+<section className="ticketing-wrapper">
 
-      <section className="ticketing-wrapper">
+  {/* LEFT IMAGE */}
+  <div className="ticketing-image-box">
+    <img
+      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200&auto=format&fit=crop"
+      alt="Brand Promotion"
+    />
+  </div>
 
-        {/* LEFT IMAGE */}
-        <div className="ticketing-image-box">
-          <img
-            src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop"
-            alt="Event Ticketing"
-          />
-        </div>
+  {/* RIGHT CARD */}
+  <div className="ticketing-card-area">
 
-        {/* RIGHT CARD */}
-        <div className="ticketing-card-area">
+    <a className="ticketing-card" href="#">
 
-          <a className="ticketing-card" href="#">
+      <h3 className="ticketing-title">
+        Brand Promotion & Audience Engagement
+      </h3>
 
-            <h3 className="ticketing-title">
-              Online Ticketing Platform
-            </h3>
+      <p className="ticketing-text">
+        Enhance your event visibility through targeted digital marketing campaigns,
+        audience segmentation, and cross-platform promotion strategies.
+        Without visibility, your event doesn’t exist — we ensure your brand
+        reaches the right audience at the right time.
+      </p>
 
-            <p className="ticketing-text">
-              Our platform provides secure online ticket booking for
-              concerts, exhibitions, trade fairs, sports events and
-              conferences. Users can purchase tickets instantly and
-              receive digital confirmations through automated ticketing
-              systems and QR-based entry passes.
-            </p>
+      <div className="ticketing-corner">
+        <span className="ticketing-arrow">→</span>
+      </div>
 
-            <div className="ticketing-corner">
-              <span className="ticketing-arrow">→</span>
-            </div>
+    </a>
 
-          </a>
+  </div>
 
-        </div>
-
-      </section>
+</section>
 
 
       {/* ----------------------------------------------------------------------------------------------------------------- */}

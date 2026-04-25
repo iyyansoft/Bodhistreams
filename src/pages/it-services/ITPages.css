@@ -8,9 +8,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  background: #fcfcfb;
-  min-height: 75vh;
-  padding: 80px 6%;
+  background: #fffefe;
+  /* min-height: 60vh; */
+  padding: 140px 6%;
   overflow: visible;
 }
 
@@ -23,11 +23,12 @@
 }
 
 .mini-title {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 20px;
-  color: #3f7b2d;
+  /* margin-bottom: 20px; */
+  color: black;
+  margin-top: 20PX;
 }
 
 .zendesk-left h1 {
@@ -40,7 +41,7 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #555;
   max-width: 520px;
@@ -325,7 +326,7 @@
 /* ================= TEXT ================= */
 
 .sd-card p {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
   line-height: 1.7;
   max-width: 380px;
@@ -453,7 +454,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 60px 8%;
-  gap: 80px;
+  gap: 60px;
   background: #fcfdfc;
   
 }
@@ -485,7 +486,7 @@
 }
 
 .ai-description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #555;
   max-width: 550px;
@@ -496,9 +497,9 @@
 
 
 .ai-link {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
-  color: #111;
+  color: #4f7d26;
   text-decoration: none;
   border-bottom: 1px solid #111;
   padding-bottom: 4px;
@@ -506,6 +507,7 @@
 
 .ai-link:hover {
   opacity: 0.7;
+  color: #2273f6;
 }
 
 /* ========================= */
@@ -823,10 +825,10 @@
 
 .copilot-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px;
-  gap: 60px;
+
+  padding: 80px 6%;
+  gap: 300px;
+
 }
 
 /* LEFT */
@@ -895,17 +897,19 @@
 .copilot-label {
   color: #8CC63F;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .copilot-right h1 {
   font-size: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .copilot-right p {
   line-height: 1.6;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .copilot-link {
@@ -981,6 +985,7 @@
   padding: 80px;
   text-align: center;
   background: #f9f9f9;
+  
 }
 
 /* TITLE */
@@ -995,13 +1000,13 @@
 .resources-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 130px;
   flex-wrap: wrap;
 }
 
 /* CARD */
 .resource-card {
-  width: 320px;
+  width: 400px;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
@@ -1032,7 +1037,7 @@
 
 /* TAG */
 .resource-tag {
-  font-size: 16px;
+  font-size: 19px;
   color: #5d7824;
   font-weight: 600;
   letter-spacing: 1px;
@@ -1040,8 +1045,8 @@
 
 /* HEADING */
 .resource-content h3 {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 30px;
   line-height: 1.4;
 }
 

@@ -7,10 +7,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  background: #fcfcfb;
+  background: #fffffe;
   min-height: 75vh;
   padding: 80px 6%;
   flex: 1.4;
+  /* margin-top: 100px; */
 }
 
 /* LEFT SIDE */
@@ -20,7 +21,7 @@
 }
 
 .itc-mini-title {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -37,7 +38,7 @@
 }
 
 .itc-hero-desc {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   color: #555;
   /* max-width: 520px; */
@@ -73,7 +74,7 @@
 }
 
 .itc-btn-outline {
-  background: transparent;
+  background: black;
   border: 2px solid #f9f7f7;
   padding: 14px 36px;
   border-radius: 40px;
@@ -97,13 +98,13 @@
 
 .itc-hero-img-wrapper {
   position: relative;
-  width: 550px;   /* 🔥 reduced */
+  width: 600px;   /* 🔥 reduced */
   max-width: 100%;
 }
 
 .itc-hero-img {
   width: 100%;
-  height: 280px;   /* 🔥 reduced height */
+  height: 350px;   /* 🔥 reduced height */
   object-fit: cover;
   border-radius: 24px;
 
@@ -193,7 +194,7 @@
 .itc-strategy-card {
   padding: 60px 30px;
   border-radius: 30px;
-  background: #fefefe;
+  background: #dce3e4;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -207,6 +208,7 @@
 .itc-strategy-card:hover {
   transform: translateY(-18px);
   box-shadow: 0 30px 80px rgba(76,175,47,0.25);
+  background-color: white;
 }
 
 /* ===================================== */
@@ -224,8 +226,9 @@
   height: 80px;
   border-radius: 50%;
 
-  background: linear-gradient(135deg, #cbe98a, #9cd22b);
+  /* background: linear-gradient(135deg, #cbe98a, #9cd22b); */
   color: #111;
+  background: 2px solid black;
 
   box-shadow: 0 15px 40px rgba(76,175,47,0.35);
 
@@ -239,6 +242,7 @@
 .itc-strategy-card:hover .itc-card-icon {
   transform: scale(1.15) rotate(10deg);
   box-shadow: 0 25px 60px rgba(76,175,47,0.5);
+   background: linear-gradient(135deg, #cbe98a, #9cd22b);
 }
 
 /* TITLE */
@@ -257,10 +261,11 @@
 /* TEXT */
 
 .itc-strategy-card p {
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
   line-height: 1.7;
   transition: 0.3s ease;
+  margin-top: 10px;
 }
 
 .itc-strategy-card:hover p {
@@ -335,6 +340,14 @@
   animation: fadeLeft 1s ease forwards;
 }
 
+.itc-enterprise-left .itc-enterprise-label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #060606;
+}
+
 .itc-enterprise-heading {
   font-size: 52px;
   margin-bottom: 30px;
@@ -344,7 +357,7 @@
 }
 
 .itc-enterprise-desc {
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -682,26 +695,69 @@
 /* ===================================== */
 /* CTA */
 /* ===================================== */
-
 .itc-cta {
-  padding: 100px 8%;
-  background: radial-gradient(circle at center,#1f3d1f 0%,#0f1f0f 60%);
-  text-align: center;
+  position: relative;
+  padding: 80px 8%;
+  min-height: 780px;
+
+  background: url('https://media.bajajamc.com/wp-content/uploads/2025/09/Digital-Infrastructure-and-the-Democratization-of-Wealth_0.png') center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
+.itc-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.itc-cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  text-align: left;
+  color: #fff;
+
+  padding-left: 20px;   /* 🔥 ADD THIS */
+}
+
+/* HEADING */
 .itc-cta-content h2 {
-  font-size: 60px;
-  color: #eaeaea;
-  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;   /* 🔥 increase */
+  margin-bottom: 30px;
+  margin-top: 100px;
 }
 
+/* TYPEWRITER FIX */
+.typewriter {
+  min-height: 140px;
+}
+
+.line1,
+.line2 {
+  display: block;
+}
+
+/* CURSOR */
+
+
+@keyframes blink {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+/* BUTTONS */
 .itc-cta-buttons {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
 }
-
 /* ===================================== */
 /* RESPONSIVE */
 /* ===================================== */

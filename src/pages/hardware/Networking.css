@@ -27,17 +27,15 @@
     #ffffff 70%,
     #e9f3d3 100%
   );
+  margin-top: 60px;
+  gap:60px;
 }
 
 .nw-customer-container {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-
-  
+  gap: 100px;   /* 🔥 MAIN FIX (increase/decrease as needed) */
 }
 
 /* LEFT SIDE */
@@ -47,7 +45,7 @@
 }
 
 .nw-small-title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 60px;
@@ -56,15 +54,15 @@
 }
 
 .nw-customer-left h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 80px;
-  color: #0B3D1F;
+  color: #376f18;
 }
 
 .nw-customer-left p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
@@ -81,10 +79,9 @@
 
 .nw-customer-right img {
   width: 100%;
-  max-width: 520px;
-  border-radius: 30px;
-  object-fit: cover;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+  height: auto;              /* 🔥 IMPORTANT – pixel distortion avoid */
+  object-fit: contain;       /* 🔥 image full ah visible */
+  border-radius: 20px;
 }
 
 /* Responsive */
@@ -128,7 +125,7 @@
     margin-left: 10px;
     margin-top: 30px;
 
-    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop");
+    background-image: url("https://tecnotrasmissioni.com/app/uploads/2024/05/1000-18-1.jpg");
     background-size: cover;
     background-position: center;
 
@@ -159,7 +156,7 @@
 }
 
 .nw-small-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffd400;
     margin-bottom: 12px;
 }
@@ -180,15 +177,15 @@
 /* ================= GREEN SECTION ================= */
 
 .nw-green-section {
-    background: #9cec51;
+    background: #77ded0;
     margin: -70px 8% 0;
     /* 👈 This makes yellow go slightly up */
     padding: 120px 8%;
-    border-radius: 0 0 20px 20px;
+    border-radius: 30px;
     position: relative;
     width: 100%;
     margin-left: 1px;
-    height: 550px;
+    height: 680px;
 }
 
 .nw-container {
@@ -204,7 +201,7 @@
 }
 
 .nw-tag {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #1d311c;
@@ -216,7 +213,7 @@
 }
 
 .nw-left p {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.7;
     margin-bottom: 18px;
 }
@@ -251,15 +248,21 @@
     line-height: 1.6;
     margin-top: 70px;
     font-weight: 600;
-    color: #bc2034;
+    color: #204abc;
 }
 
 .nw-author {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 20px;
+    color: #103f09;
+}
+
+.nw-author p {
+    margin-top: 10px;
+
 }
 
 /* Decorative Cube */
@@ -299,10 +302,11 @@
 .nw-fit-left h2 {
     font-size: 44px;
     margin-bottom: 25px;
+    color: #327117;
 }
 
 .nw-fit-left p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8;
     margin-bottom: 20px;
     color: #444;
@@ -330,14 +334,31 @@
 /* CARD STYLE */
 
 .nw-fit-card {
-    background: #fff;
-    padding: 35px;
-    margin-bottom: 70px;
-    border-radius: 20px;
-    position: relative;
-    transition: all 0.5s ease;
-    opacity: 0;
-    filter: blur(8px);
+  padding: 35px;
+  margin-bottom: 60px;
+  border-radius: 20px;
+
+  /* 🔥 SAME GREEN GRADIENT */
+  background: linear-gradient(135deg, #8CC63F, #124925);
+
+  color: #000; /* 🔥 text black */
+
+  /* 🔥 DEPTH + CLEAN LOOK */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  transition: all 0.4s ease;
+}
+
+/* TEXT COLOR FIX */
+.nw-fit-card h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+.nw-fit-card p {
+  color: #111 !important;
+  line-height: 1.6;
+  font-size: 18px !important;
 }
 
 .nw-fit-card:nth-child(odd) {
@@ -520,7 +541,7 @@
 }
 
 .nw-cta-content h2 {
-    font-size: 62px;
+    font-size: 50px;
     font-weight: 600;
     color: #eaeaea;
     margin-bottom: 50px;

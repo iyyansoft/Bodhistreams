@@ -12,13 +12,13 @@ const HardwareSupport = () => {
 
     <h1>
       Installation & <br />
-      Technical Support <br />
+      Technical Support 
       Services
     </h1>
 
     <p>
       We provide installation, configuration, and support for servers,
-      networking systems, smart classrooms, and digital infrastructure.
+      networking systems,<br></br> smart classrooms, and digital infrastructure.
     </p>
 
     <p>
@@ -164,7 +164,7 @@ const HardwareSupport = () => {
     <div className="split-right">
       <h2>
         Build reliable IT systems <br />
-        with expert installation <br />
+        with expert installation 
         and continuous support
       </h2>
 

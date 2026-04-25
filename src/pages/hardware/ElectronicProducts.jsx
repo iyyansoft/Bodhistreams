@@ -29,60 +29,39 @@ const ElectronicProducts = () => {
 
 
 
-      <section className="esc-hero">
-  <div className="esc-left">
+<section className="esc-hero">
 
-    <p className="esc-mini">ELECTRONIC & DIGITAL PRODUCTS SUPPLY</p>
+  <div className="esc-overlay"></div>
+
+  <div className="esc-content">
+
+    <p className="esc-mini">
+      ELECTRONIC & DIGITAL PRODUCTS SUPPLY
+    </p>
 
     <h1 className="esc-heading">
-      Power your institutions 
-      with advanced electronic 
-      and digital infrastructure
-      solutions
+      Advanced Digital Infrastructure <br />
+      for Institutions & Enterprises
     </h1>
 
     <p className="esc-desc">
-      At BodhiStreams Convergence, we supply a wide range of electronic 
-      and digital products including computers, smart classroom systems, 
-      networking devices, IoT kits, robotics modules, and lab equipment 
-      for institutions and enterprises.
-      
-      We ensure seamless procurement, integration, and deployment of 
-      digital infrastructure that supports innovation labs, STEM learning 
-      environments, and modern enterprise operations.
+      We supply computers, smart classroom systems, networking devices,
+      IoT kits, and lab equipment with seamless setup and integration
+      for modern learning and business environments.
     </p>
 
     <div className="esc-buttons">
       <button className="esc-btn-primary">
-        Explore Digital Solutions
+        Explore Solutions
       </button>
+
       <button className="esc-btn-outline">
-        Request Product Details
+        Get Details
       </button>
     </div>
 
   </div>
 
-  <div className="esc-right">
-    <div className="esc-img-wrap">
-
-      <img
-        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80"
-        alt="Digital Infrastructure"
-        className="esc-main-img"
-      />
-
-      {/* FLOATING TEXT */}
-      <div className="esc-chat esc-chat-green">
-        Need complete digital lab & smart classroom setup?
-      </div>
-
-      <div className="esc-chat esc-chat-white">
-        We provide equipment, installation & integration support.
-      </div>
-
-    </div>
-  </div>
 </section>
 
       {/* ----------------------------------------------------------------------------------------- */}
@@ -92,37 +71,37 @@ const ElectronicProducts = () => {
 
 
 
-      <section className="edp-hero-section">
+<section className="edp-hero-section">
 
-        <div className="edp-hero-container">
+  <div className="edp-hero-container">
 
-          {/* LEFT IMAGE */}
-          <div className="edp-hero-left">
-            <img src="/Electric-transport.png" alt="Electronic Products" />
-          </div>
+    {/* LEFT IMAGE */}
+    <div className="edp-hero-left">
+      <img src="/Electric-transport.png" alt="Electronic Products" />
+    </div>
 
-          {/* RIGHT CONTENT */}
-          <div className="edp-hero-content">
-            <h1>
-              Electronic & Digital <br />
-              Products Supply
-            </h1>
+    {/* RIGHT CONTENT */}
+    <div className="edp-hero-content">
+      <h1>
+        Smart IT Equipment <br />
+        for Modern Institutions
+      </h1>
 
-            <p>
-              We specialize in wholesale and retail supply of computers, servers,
-              networking equipment and IT hardware. As authorized dealers,
-              we provide installation, maintenance and complete technical
-              support services for all digital solutions.
-            </p>
+      <p>
+        We provide a wide range of reliable IT hardware including computers, 
+        laptops, servers, and networking devices tailored for institutions 
+        and enterprises. Our solutions are designed to support seamless 
+        operations, digital learning, and scalable infrastructure growth.
+      </p>
 
-            <button className="edp-hero-btn">
-              EXPLORE SERVICES →
-            </button>
-          </div>
+      <button className="edp-hero-btn">
+        Explore Products →
+      </button>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
 
 
@@ -201,76 +180,71 @@ const ElectronicProducts = () => {
 
       {/* ----------------------------------------------------------------------------------------------------- */}
 
+<section className="edp-resources-section">
 
-      <section className="edp-resources-section">
+  <h2 className="edp-resources-title">
+    Digital Infrastructure Solutions
+  </h2>
 
-        <h2 className="edp-resources-title">
-          Electronic & Digital Solutions
-        </h2>
+  <div className="edp-resources-grid">
 
-        <div className="edp-resources-grid">
+    {/* CARD 1 */}
+    <div className="edp-card">
+      <img
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+        alt="Computers and Devices"
+      />
 
-          {/* CARD 1 */}
-          <div className="edp-card">
-            <img
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80"
-              alt="IT Hardware Supply"
-            />
+      <div className="edp-card-content">
+        <span className="edp-card-label">
+          IT EQUIPMENT
+        </span>
 
-            <div className="edp-card-content">
-              <span className="edp-card-label">
-                HARDWARE SUPPLY
-              </span>
+        <h3>
+          High-quality computers, laptops, and devices for modern digital environments
+        </h3>
+      </div>
+    </div>
 
-              <h3>
-                Wholesale and retail supply of computers, servers
-                and networking equipment
-              </h3>
-            </div>
-          </div>
+    {/* CARD 2 */}
+    <div className="edp-card">
+      <img
+        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
+        alt="Networking and Servers"
+      />
 
-          {/* CARD 2 */}
-          <div className="edp-card">
-            <img
-              src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80"
-              alt="IT Infrastructure Setup"
-            />
+      <div className="edp-card-content">
+        <span className="edp-card-label">
+          NETWORK & SERVERS
+        </span>
 
-            <div className="edp-card-content">
-              <span className="edp-card-label">
-                INSTALLATION SERVICES
-              </span>
+        <h3>
+          Reliable networking solutions and server infrastructure for seamless connectivity
+        </h3>
+      </div>
+    </div>
 
-              <h3>
-                Professional installation, configuration and
-                infrastructure setup solutions
-              </h3>
-            </div>
-          </div>
+    {/* CARD 3 */}
+    <div className="edp-card">
+      <img
+        src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=900&q=80"
+        alt="Support and Maintenance"
+      />
 
-          {/* CARD 3 */}
-          <div className="edp-card">
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-              alt="Technical Support"
-            />
+      <div className="edp-card-content">
+        <span className="edp-card-label">
+          SUPPORT & MAINTENANCE
+        </span>
 
-            <div className="edp-card-content">
-              <span className="edp-card-label">
-                TECHNICAL SUPPORT
-              </span>
+        <h3>
+          Continuous support, upgrades, and maintenance for long-term performance
+        </h3>
+      </div>
+    </div>
 
-              <h3>
-                Maintenance, upgrades and complete
-                after-sales technical support services
-              </h3>
-            </div>
-          </div>
+  </div>
 
-        </div>
-
-      </section>
-
+</section>
 
       {/* ---------------------------------------------------------------------------------------- */}
 

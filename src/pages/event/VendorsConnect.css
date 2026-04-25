@@ -1,81 +1,116 @@
 /* HERO SECTION */
 
-.ticket-hero{
-  display:flex;
-  align-items:center;
-  min-height:90vh;
-  /* background:#f6f7f8; */
+/* ================= SECTION ================= */
+
+.ticket-hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 8%;
+  gap: 60px;
+  margin-top: 80px;
 }
 
+/* ================= LEFT IMAGE ================= */
 
-/* LEFT IMAGE */
-
-.ticket-image{
-  flex:1;
-  height:90vh;
+.ticket-image {
+  flex: 1;
+  height: 500px;
 }
 
-.ticket-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  margin-left: 100px;
+.ticket-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
+/* ================= RIGHT CONTENT ================= */
 
-/* RIGHT CONTENT */
-
-.ticket-content{
-  flex:1;
-  padding:80px;
+.ticket-content {
+  flex: 1;
+  max-width: 550px;
 }
 
+/* ================= TITLE ================= */
 
-/* BIG TITLE */
+.ticket-title {
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
 
-.ticket-title{
-  font-size:90px;
-  font-weight:800;
-  line-height:1;
-  margin-bottom:20px;
-  margin-top: 20px;
+  background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
 
- background-image:url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop&s=0cbd1e9bfbf8a7e5c8b1d2a9c3e4f5");
-  background-size:cover;
-  background-position:center;
-
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  margin-left: 100px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+/* ================= TEXT ================= */
 
-/* TEXT */
-
-.ticket-content p{
-  font-size:18px;
-  line-height:1.7;
-  color:#1b6e59;
-  max-width:450px;
-  margin-bottom:30px;
-  margin-left: 100px;
+.ticket-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1b6e59;
+  margin-bottom: 20px;
 }
 
+/* ================= LIST ================= */
 
-/* BUTTON */
-
-.ticket-btn{
-  background:#0f6d53;
-  color:white;
-  padding:14px 30px;
-  border:none;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
+.ticket-content ul {
+  margin-bottom: 25px;
+  padding-left: 20px;
 }
 
-.ticket-btn:hover{
-  background:#0b5a44;
+.ticket-content li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ================= BUTTON ================= */
+
+.ticket-btn {
+  background: #0f6d53;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ticket-btn:hover {
+  background: #0b5a44;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .ticket-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ticket-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .ticket-content {
+    max-width: 100%;
+  }
+
+  .ticket-title {
+    font-size: 48px;
+  }
+
+  .ticket-content ul {
+    text-align: left;
+  }
 }
 
 

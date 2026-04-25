@@ -428,78 +428,70 @@ const Home = () => {
 
 
       <section className="bs-transform-section">
-        <div className="bs-transform-container">
+  <div className="bs-transform-container">
 
-          {/* LEFT IMAGE */}
-          <div className="bs-transform-image">
-            <img
-              src="https://bernardmarr.com/wp-content/uploads/2025/11/tech-in-action.jpeg"
-              alt="Software Development Team"
-            />
+    {/* LEFT IMAGE */}
+    <div className="bs-transform-image">
+      <img
+        src="https://bernardmarr.com/wp-content/uploads/2025/11/tech-in-action.jpeg"
+        alt="IT Infrastructure Solutions"
+      />
 
+      {/* Floating Card */}
+      <motion.div
+        className="bs-floating-card"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h4>BodhiStreams IT Solutions</h4>
 
+        <p>✔ Scalable Infrastructure</p>
+        <p>✔ Secure & Reliable Systems</p>
+      </motion.div>
 
+      {/* Chat Bubble */}
+      <motion.div
+        className="bs-chat ai"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.8, duration: 0.8 }}
+      >
+        System deployment completed successfully 🚀
+      </motion.div>
 
-            {/* Floating AI Card */}
-            <motion.div
-              className="bs-floating-card"
-              initial={{ opacity: 0, y: -40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h4>BodhiStreams AI Engine</h4>
+    </div>
 
+    {/* RIGHT CONTENT */}
+    <motion.div
+      className="bs-transform-content"
+      initial={{ opacity: 0, x: 60 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
 
-              <p>✔ Cloud Scaled</p>
-              <p>✔ Security Monitored</p>
-            </motion.div>
+      <h2>
+        BodhiStreams: Transform <br />
+        IT & Digital Infrastructure <br />
+        with Scalable Enterprise Solutions
+      </h2>
 
-            {/* Chat Bubbles */}
+      <p>
+        Build reliable IT infrastructure with seamless system integration,
+        cloud-ready environments, and enterprise-grade scalability
+        designed for long-term performance and growth.
+      </p>
 
+      <div className="bs-buttons">
+        <button className="primary-btn2">
+          Explore IT Solutions
+        </button>
+      </div>
 
-            <motion.div
-              className="bs-chat ai"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-            >
-              Bodhi AI: Optimization deployed successfully 🚀
-            </motion.div>
+    </motion.div>
 
-          </div>
-
-          {/* RIGHT CONTENT */}
-          <motion.div
-            className="bs-transform-content"
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-          >
-
-            <h2>
-              BodhiStreams: Transform <br />
-              IT & Digital Infrastructure <br />
-              with Intelligent AI Systems
-            </h2>
-
-            <p>
-              Unify cloud infrastructure, AI-driven automation, and enterprise-grade
-              scalability into one powerful platform.
-            </p>
-
-            <div className="bs-buttons">
-              <button className="primary-btn2">
-                Explore Our Solutions
-              </button>
-
-
-            </div>
-
-          </motion.div>
-
-        </div>
-      </section>
-
+  </div>
+</section>
 
 
       {/* ------------------------------------------------------------------------------------------------------------------------------- */}
@@ -577,90 +569,6 @@ const Home = () => {
 
 
 
-      <section className="bs-resources-section">
-        <div className="bs-resources-container">
-
-          <motion.h2
-            className="bs-resources-title"
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            Additional Resources
-          </motion.h2>
-
-          <div className="bs-resources-grid">
-            {[
-              {
-                tag: "PRODUCT",
-                badge: "FEATURED",
-                title: "AI-Powered Enterprise Platform",
-                img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1600&auto=format&fit=crop"
-              },
-              {
-                tag: "REPORT",
-                title: "BodhiStreams AI Trends 2026",
-                img: "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1600&auto=format&fit=crop"
-              },
-              {
-                tag: "GUIDE",
-                title: "How AI Optimizes Cloud Infrastructure",
-                img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop"
-              },
-              {
-                tag: "ARTICLE",
-                title: "Scaling Digital Systems with Automation",
-                img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
-              }
-            ].map((item, index) => (
-              <motion.div
-                className="bs-resource-card"
-                key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <div className="bs-card-image">
-                  <img src={item.img} alt={item.title} />
-                </div>
-
-                <div className="bs-card-content">
-                  <div className="bs-card-top">
-                    <span className="tag">{item.tag}</span>
-                    {item.badge && (
-                      <span className="badge">{item.badge}</span>
-                    )}
-                  </div>
-
-                  <h4>{item.title}</h4>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       {/* ================= BODHISTREAMS STORY SLIDER ================= */}
 
       <section className="bs-story-section">
@@ -708,74 +616,6 @@ const Home = () => {
       </section>
 
 
-
-{/* ------------------------------------------------------------------------------------------------------------------------------ */}
-      {/* Testimonials Slider */}
-      <section className="testimonials-modern">
-        <div className="container">
-          <motion.div
-            className="section-header-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-          >
-            <h2 className="section-title-xl">Client Success Stories</h2>
-            <p className="section-subtitle-xl">
-              Hear from businesses we've helped transform
-            </p>
-          </motion.div>
-
-          <div className="testimonials-grid-modern">
-            {[
-              {
-                quote: "BodhiStreams delivered exceptional results that exceeded our expectations. Their technical expertise and commitment to quality is unmatched.",
-                author: "Sarah Johnson",
-                role: "CTO, TechCorp",
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
-                rating: 5
-              },
-              {
-                quote: "Working with BodhiStreams was a game-changer for our business. They understood our vision and brought it to life perfectly.",
-                author: "Michael Chen",
-                role: "CEO, InnovateLabs",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
-                rating: 5
-              },
-              {
-                quote: "The event platform they built revolutionized our operations. Highly professional team with incredible attention to detail.",
-                author: "Priya Sharma",
-                role: "Event Director",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                className="testimonial-card-modern"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeIn}
-                transition={{ delay: index * 0.15 }}
-                whileHover={{ y: -8, boxShadow: "0 20px 60px rgba(0, 0, 0, 0.15)" }}
-              >
-                <div className="testimonial-rating">
-                  {'⭐'.repeat(testimonial.rating)}
-                </div>
-                <p className="testimonial-quote">"{testimonial.quote}"</p>
-                <div className="testimonial-author-modern">
-                  <img src={testimonial.image} alt={testimonial.author} loading="lazy" />
-                  <div>
-                    <strong>{testimonial.author}</strong>
-                    <span>{testimonial.role}</span>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
 

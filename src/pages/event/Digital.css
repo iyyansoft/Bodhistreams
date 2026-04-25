@@ -12,6 +12,7 @@
   position:relative;
 
   overflow:hidden;
+  margin-top: 60px;
 }
 
 .eventtech-hero::before{
@@ -505,15 +506,15 @@ padding:0;
 .services-section{
 padding:100px 8% 60px 8%;
 text-align:center;
-background:#fbfbfb;
+background:#fefefe;
 }
 
 /* SMALL TITLE */
 
 .services-small{
-color:#2e9e45;
+color:#597d1b;
 letter-spacing:3px;
-font-size:34px;
+font-size:40px;
 margin-bottom:10px;
 font-weight:600;
 }
@@ -544,13 +545,14 @@ text-align:center;
 padding:30px;
 border-radius:10px;
 transition:all 0.4s ease;
+height: 350px;
 }
 
 /* HOVER EFFECT */
 
 .service-card:hover{
-transform:translateY(-10px);
-background:white;
+/* transform:translateY(-10px); */
+background:rgb(157, 215, 234);
 box-shadow:0 20px 40px rgba(0,0,0,0.1);
 }
 
@@ -565,9 +567,9 @@ font-size:40px;
 /* CARD TITLE */
 
 .service-card h3{
-font-size:24px;
+font-size:30px;
 margin-bottom:15px;
-color:#333;
+color:#597d1b;
 }
 
 /* TEXT */
@@ -587,7 +589,9 @@ margin:auto;
 .astro-section{
 display:flex;
 width:100%;
-padding:80px 0;   /* top and bottom padding */
+
+
+
 }
 
 /* LEFT IMAGE */

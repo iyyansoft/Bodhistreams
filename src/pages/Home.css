@@ -655,17 +655,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  gap: 140px;
 }
 
 /* LEFT IMAGE */
 
 
 .report-image img {
-  width: 1450px;
+  width: 900px;
   border-radius: 30px;
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
   transition: transform 0.6s ease;
+  
 }
 
 .report-image img:hover {
@@ -688,6 +689,7 @@
   line-height: 1.1;
   margin: 20px 0;
   font-weight: 700;
+  
 }
 
 .report-content p {
@@ -2584,7 +2586,7 @@
   position: relative;
   overflow: hidden;
 
-  margin-top: -140px;
+  margin-top: 100px;
   /* 👈 section mela move aagum */
   margin-bottom: 140px;
   /* 👈 bottom space increase */

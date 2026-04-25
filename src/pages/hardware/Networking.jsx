@@ -42,7 +42,7 @@ const Networking = () => {
     {/* RIGHT IMAGE */}
     <div className="nw-customer-right">
       <img
-        src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1200&auto=format&fit=crop"
+        src="https://images.stockcake.com/public/a/c/f/acf83e69-3e39-41b9-a833-e204720c0f31_large/global-network-connectivity-stockcake.jpg"
         alt="Enterprise Networking Infrastructure"
       />
     </div>
@@ -223,7 +223,7 @@ const Networking = () => {
             <div className="nw-v7-inner">
               <div className="nw-v7-front">
                <img
-  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200&auto=format&fit=crop"
+  src="https://www.ilscompany.com/wp-content/uploads/9-1.jpg"
   alt="Enterprise Data Center Rows"
 />
               </div>
@@ -241,7 +241,7 @@ const Networking = () => {
             <div className="nw-v7-inner">
               <div className="nw-v7-front">
                 <img
-  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1200&auto=format&fit=crop"
+  src="https://www.dice.com/binaries/medium/content/gallery/dice/insights/2024/03/adobestock_298063823.jpeg"
   alt="Network Engineer Configuring Equipment"
 />
               </div>
@@ -259,7 +259,7 @@ const Networking = () => {
             <div className="nw-v7-inner">
               <div className="nw-v7-front">
                 <img
-  src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=1200&auto=format&fit=crop"
+  src="https://t4.ftcdn.net/jpg/07/66/45/19/360_F_766451941_2EiexUIC3ZVnzhIxSgAUIV9S6FaRnC6X.jpg"
   alt="Network Operations Center"
 />
               </div>

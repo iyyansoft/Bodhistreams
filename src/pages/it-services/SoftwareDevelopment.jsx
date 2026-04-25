@@ -11,8 +11,8 @@ const SoftwareDevelopment = () => {
           <p className="mini-title">IT SERVICES FOR ENTERPRISES</p>
 
           <h1>
-            Deliver powerful <br />
-            software solutions <br />
+            Deliver powerful 
+            software solutions 
             with scalable <br />
             IT infrastructure
           </h1>
@@ -220,27 +220,30 @@ const SoftwareDevelopment = () => {
   {/* RIGHT SIDE */}
   <div className="copilot-right">
 
-    <p className="copilot-label">INFORMATION TECHNOLOGY SERVICES</p>
+  <p className="copilot-label">ENTERPRISE TECHNOLOGY SOLUTIONS</p>
 
-    <h1>
-      End-to-End Software <br />
-      Development & Digital <br />
-      Transformation Solutions
-    </h1>
+  <h1>
+    Delivering scalable systems 
+    for modern digital operations
+  </h1>
 
-    <p>
-      At BodhiStreams Convergence, we design, develop, and deliver 
-      scalable software solutions tailored for institutions and enterprises. 
-      From web and mobile applications to enterprise systems and cloud platforms, 
-      we enable seamless integration, automation, and long-term digital growth.
-    </p>
+  <p>
+    We help organizations build strong digital foundations by 
+    developing high-performance applications and integrating 
+    them with reliable IT infrastructure.
+  </p>
 
-    <a href="#" className="copilot-link">
-      Explore IT Capabilities →
-    </a>
+  <p>
+    Our solutions focus on efficiency, system connectivity, 
+    and operational stability—ensuring businesses can adapt, 
+    scale, and perform in a rapidly evolving digital environment.
+  </p>
 
-  </div>
+  <a href="#" className="copilot-link">
+    Discover Technology Services →
+  </a>
 
+</div>
 </section>
 
 

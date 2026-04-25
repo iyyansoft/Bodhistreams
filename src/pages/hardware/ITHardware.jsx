@@ -61,9 +61,9 @@ const ITHardware = () => {
     <div className="hw-right">
 
       <p className="hw-quote">
-        "Delivering high-performance IT hardware and infrastructure 
-        solutions built for scalability, reliability, and long-term 
-        business growth."
+      "Delivering high-performance IT hardware and infrastructure 
+         solutions built for scalability, reliability, and long-term 
+         business growth."
       </p>
 
       <div className="hw-author">
@@ -197,7 +197,7 @@ const ITHardware = () => {
       <div className="hw-v7-inner">
         <div className="hw-v7-front">
           <img
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&q=80"
+            src="https://foreexcel.com/wp-content/uploads/2026/04/fccb9ef2355b5ddcb6975fb194530154.jpg"
             alt="IT Hardware Supply"
           />
         </div>
@@ -217,7 +217,7 @@ const ITHardware = () => {
       <div className="hw-v7-inner">
         <div className="hw-v7-front">
           <img
-            src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop"
+            src="https://sysracks.com/wp-content/uploads/2024/09/setting-up-a-server-rack.png"
             alt="Installation Setup"
           />
         </div>
@@ -237,7 +237,7 @@ const ITHardware = () => {
       <div className="hw-v7-inner">
         <div className="hw-v7-front">
           <img
-            src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?w=1600&q=80"
+            src="https://cdn11.bigcommerce.com/s-bfxxgrup/images/stencil/1000x1000/uploaded_images/server.jpeg?t=1711732358"
             alt="Maintenance Support"
           />
         </div>

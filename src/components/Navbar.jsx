@@ -48,7 +48,7 @@ const Navbar = () => {
       title: "Digital Solutions Suite",
       desc: "Powerful AI & IT products built for modern businesses.",
       image:
-        "https://images.unsplash.com/photo-1551434678-e076c223a692",
+        "https://kemsys.com/wp-content/uploads/2021/07/Digital-Engineering-Services-IoT-by-Kemsys-500x500.jpg",
       features: [
         {
           name: "Software Development Solutions",
@@ -87,7 +87,7 @@ const Navbar = () => {
       title: "Knowledge Hub",
       desc: "Explore insights & case studies.",
       image:
-        "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+        "https://www.eventsindustryforum.co.uk/images/articles/about_the_eif.jpg",
       features: [
         { name: "Event Discovery & Registration Platform", path: "/event-discovery" },
         { name: "Digital infrastructure for event management", path: "/digital-infra" },
@@ -126,7 +126,7 @@ const Navbar = () => {
           {/* LOGO */}
           <div className="logo">
             <Link to="/">
-              <img src="/bodhi_logo.png" alt="BodhiStreams" />
+              <img src="/bodhi1.png" alt="BodhiStreams" />
             </Link>
           </div>
 

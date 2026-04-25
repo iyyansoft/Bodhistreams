@@ -35,10 +35,7 @@ const ManagedSupport = () => {
       and reliable IT environments.
     </p>
 
-    <p className="ms-hero-desc">
-      We don’t just support systems — we proactively manage, 
-      optimize, and ensure long-term operational stability.
-    </p>
+   
 
     <div className="ms-hero-buttons">
       <button className="ms-btn-primary">Get Support</button>
@@ -141,15 +138,11 @@ const ManagedSupport = () => {
 
 
 
-
-
-
-
-
 {/* ================= DETAILED SUPPORT ================= */}
       <section className="ms-enterprise">
         <div className="ms-enterprise-left">
-          <p className="ms-enterprise-label">
+          <p className="
+        ms-enterprise-label">
             END-TO-END MANAGED IT SERVICES
           </p>
 

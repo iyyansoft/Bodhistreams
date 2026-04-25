@@ -114,32 +114,33 @@ const Digital = () => {
     <>
       <section className="eventtech-hero">
 
-        <div className="eventtech-content">
+  <div className="eventtech-content">
 
+    <h1 className="eventtech-title">
+      Digital Infrastructure <br />
+      <span>for Event Management</span>
+    </h1>
 
+    <p className="eventtech-desc">
+      Build and manage events with a complete digital ecosystem that supports 
+      event listing, participant registration, attendance tracking, and 
+      structured feedback collection — all from a single platform.
 
-          <h1 className="eventtech-title">
-            Digital Infrastructure <br />
-            <span>for Event Management</span>
-          </h1>
+      Enable integrated ticket booking, access real-time dashboards, and 
+      generate automated reports while ensuring smooth payments, faster 
+      settlements, and transparent event operations.
+    </p>
 
-          <p className="eventtech-desc">
-            Discover events, enable seamless registration,
-            digital ticketing and secure access control
-            for conferences, seminars and exhibitions.
-          </p>
+  </div>
 
-        </div>
+  <div className="eventtech-image">
+    <img
+      src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
+      alt="Event technology"
+    />
+  </div>
 
-        <div className="eventtech-image">
-          <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
-            alt="Event technology"
-          />
-        </div>
-
-      </section>
-
+</section>
 
       {/* ---------------------------------------------------------------------------------------------------- */}
 
@@ -147,146 +148,139 @@ const Digital = () => {
 
       <section className="eventtech-section">
 
-        {/* LEFT IMAGE */}
+  {/* LEFT IMAGE */}
+  <div className="eventtech-left">
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+      alt="Event Technology"
+    />
+  </div>
 
-        <div className="eventtech-left">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
-            alt="Event Technology"
-          />
-        </div>
+  {/* RIGHT CONTENT */}
+  <div className="eventtech-right">
 
-        {/* RIGHT CONTENT */}
+    <h2 className="eventtech-heading">
+      Digital Infrastructure for Event Management
+    </h2>
 
-        <div className="eventtech-right">
+    <p className="eventtech-text">
+      Power your events with a fully integrated digital system that simplifies 
+      event operations from start to finish. Manage event listings, handle 
+      participant registrations, and maintain accurate attendance records 
+      through a single streamlined platform.
 
-          <h2 className="eventtech-heading">
-            Event Technology & Digital Platforms
-          </h2>
+      Leverage built-in tools for feedback collection, automated report 
+      generation, and real-time performance monitoring, while ensuring 
+      secure payment processing and efficient event execution.
+    </p>
 
-          <p className="eventtech-text">
-            We develop and operate digital platforms for event discovery,
-            registration, ticket booking and secure access control. Our
-            technology enables organizers to manage seminars, workshops,
-            conferences, exhibitions and live events efficiently while
-            providing seamless ticketing and payment solutions.
-          </p>
+    <button className="eventtech-btn">
+      Explore Platform →
+    </button>
 
-          <button className="eventtech-btn">
-            Explore Platform →
-          </button>
+  </div>
 
-        </div>
-
-      </section>
-
+</section>
       {/* ---------------------------------------------------------------------------------------------------------------- */}
 
 
 
 
-      <section className="et-section">
+    <section className="et-section">
 
-        <h2 className="et-title">
-          Event Technology & Digital Platforms
-        </h2>
+  <h2 className="et-title">
+    Digital Infrastructure for Event Management
+  </h2>
 
-        <div className="et-wrapper">
+  <div className="et-wrapper">
 
-          <div className="et-card et-card1">
-            <h3>Event Discovery</h3>
-            <p>
-              Discover seminars, workshops, conferences,
-              exhibitions and community events through
-              our digital event platform.
-            </p>
-          </div>
+    <div className="et-card et-card1">
+      <h3>Event Listing Platform</h3>
+      <p>
+        Publish and showcase events through a centralized system that helps 
+        organizers reach the right audience and improves event visibility.
+      </p>
+    </div>
 
-          <div className="et-card et-card2">
-            <h3>Online Registration</h3>
-            <p>
-              Participants can register easily for
-              professional training programs, symposiums
-              and educational workshops.
-            </p>
-          </div>
+    <div className="et-card et-card2">
+      <h3>Participant Management</h3>
+      <p>
+        Handle user registrations with a simplified process and maintain 
+        accurate participant data with efficient tracking capabilities.
+      </p>
+    </div>
 
-          <div className="et-card et-card3">
-            <h3>Online Ticket Booking</h3>
-            <p>
-              Secure ticket booking system for concerts,
-              exhibitions, trade fairs, conferences and
-              sports events.
-            </p>
-          </div>
+    <div className="et-card et-card3">
+      <h3>Ticketing System</h3>
+      <p>
+        Enable seamless ticket booking with a secure digital system designed 
+        for smooth transactions and hassle-free user experience.
+      </p>
+    </div>
 
-          <div className="et-card et-card4">
-            <h3>Payment Processing</h3>
-            <p>
-              Integrated payment gateway for ticket
-              purchases with automated confirmations
-              and digital passes.
-            </p>
-          </div>
+    <div className="et-card et-card4">
+      <h3>Secure Payment Flow</h3>
+      <p>
+        Integrated payment processing ensures safe transactions, instant 
+        confirmations, and streamlined financial operations for events.
+      </p>
+    </div>
 
-          <div className="et-card et-card5">
-            <h3>Access Control & Analytics</h3>
-            <p>
-              QR based access control, event analytics,
-              marketing tools and organizer dashboard.
-            </p>
-          </div>
+    <div className="et-card et-card5">
+      <h3>Insights & Reporting</h3>
+      <p>
+        Access performance data through dashboards and generate structured 
+        reports to evaluate event outcomes and participant engagement.
+      </p>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
-
+</section>
       {/* ------------------------------------------------------------------------------------------------------------------- */}
 
-      <section className="services-section">
+     <section className="services-section">
 
-        <p className="services-small" data-aos="fade-up">
-          HOW OUR PLATFORM WORKS
-        </p>
+  <p className="services-small" data-aos="fade-up">
+    HOW OUR PLATFORM OPERATES
+  </p>
 
-        <h1 className="services-title" data-aos="fade-up">
-          Smart & Scalable Event Platform Services
-        </h1>
+  <h1 className="services-title" data-aos="fade-up">
+    Digital Infrastructure for Event Management
+  </h1>
 
-        <div className="services-container">
+  <div className="services-container">
 
-          <div className="service-card" data-aos="fade-up" data-aos-delay="100">
-            <CalendarSearch className="service-icon" size={45} />
-            <h3>Event Discovery & Promotion</h3>
-            <p>
-              Digital platforms for discovering, promoting and listing events
-              including seminars, workshops, conferences and cultural programs.
-            </p>
-          </div>
+    <div className="service-card" data-aos="fade-up" data-aos-delay="100">
+      <CalendarSearch className="service-icon" size={45} />
+      <h3>Centralized Event Listing</h3>
+      <p>
+        Manage and showcase events through a unified system that improves 
+        visibility and simplifies how users access and explore available programs.
+      </p>
+    </div>
 
-          <div className="service-card" data-aos="fade-up" data-aos-delay="200">
-            <Ticket className="service-icon" size={45} />
-            <h3>Registration & Ticketing</h3>
-            <p>
-              Online registration, ticket booking, ticket sales and digital
-              distribution systems for various educational and entertainment
-              events.
-            </p>
-          </div>
+    <div className="service-card" data-aos="fade-up" data-aos-delay="200">
+      <Ticket className="service-icon" size={45} />
+      <h3>Registration & Transaction Flow</h3>
+      <p>
+        Enable smooth participant onboarding with streamlined registration, 
+        integrated ticketing, and secure payment handling within a single workflow.
+      </p>
+    </div>
 
-          <div className="service-card" data-aos="fade-up" data-aos-delay="300">
-            <Users className="service-icon" size={45} />
-            <h3>Organizer & Participant Services</h3>
-            <p>
-              Connecting organizers, participants and sponsors with payment
-              processing, analytics tools and event management support.
-            </p>
-          </div>
+    <div className="service-card" data-aos="fade-up" data-aos-delay="300">
+      <Users className="service-icon" size={45} />
+      <h3>Data, Insights & Control</h3>
+      <p>
+        Monitor event performance using dashboards, generate structured reports, 
+        and manage participants efficiently with data-driven decision support.
+      </p>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
-
+</section>
 
 
       {/* -------------------------------------------------------------------------------------------------------------- */}
@@ -294,36 +288,38 @@ const Digital = () => {
 
       <section className="astro-section">
 
-        {/* LEFT IMAGE */}
-        <div className="astro-image">
-          <img
-            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
-            alt="Profile"
-          />
-        </div>
+  {/* LEFT IMAGE */}
+  <div className="astro-image">
+    <img
+      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+      alt="Event platform user"
+    />
+  </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="astro-content">
+  {/* RIGHT CONTENT */}
+  <div className="astro-content">
 
-          <p className="astro-tag">{`{ About Platform }`}</p>
+    <p className="astro-tag">{`{ Platform Overview }`}</p>
 
-          <h1>
-            DISCOVER AND <br />
-            EXPERIENCE EVENTS <br />
-            IN A SMARTER WAY
-          </h1>
+    <h1>
+      BUILD AND MANAGE <br />
+      EVENTS WITH A <br />
+      DIGITAL ECOSYSTEM
+    </h1>
 
-          <p className="astro-text">
-            To develop and operate digital platforms including websites and
-            mobile applications for event discovery, promotion, registration,
-            ticket booking, payment processing, and event management services
-            for educational, professional, cultural, and entertainment events.
-          </p>
+    <p className="astro-text">
+      A comprehensive digital framework designed to support end-to-end event 
+      operations — from publishing events and handling registrations to 
+      managing ticketing workflows and processing transactions.
 
-        </div>
+      The platform also enables structured feedback collection, automated 
+      reporting, and real-time monitoring, ensuring efficient execution 
+      and better control over event performance.
+    </p>
 
-      </section>
+  </div>
 
+</section>
 
 
     </>

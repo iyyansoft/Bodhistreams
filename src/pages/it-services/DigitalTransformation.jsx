@@ -52,7 +52,7 @@ const DigitalTransformation = () => {
   <div className="dt-hero-right">
     <div className="dt-hero-img-wrapper">
       <img
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=100"
+        src="https://escp.eu/thechoice/wp-content/uploads/blogpost-aidigitaltransformation-shutterstock-nicoelnino-1024x640.jpg"
         alt="Digital Transformation"
         className="dt-hero-img"
       />

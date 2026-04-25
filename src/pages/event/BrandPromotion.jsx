@@ -1,167 +1,195 @@
 import { useState, useEffect } from "react";
 import "./BrandPromotion.css";
 
-const slides = [
-  {
-    title: "Music Concerts",
-    img: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop"
-  },
-  {
-    title: "Comedy Shows",
-    img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1600&auto=format&fit=crop"
-  },
-  {
-    title: "DJ Nights",
-    img: "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1600&auto=format&fit=crop"
-  },
-  {
-    title: "Live Festivals",
-    img: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1600&auto=format&fit=crop"
-  },
-  {
-    title: "Stage Shows",
-    img: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1600&auto=format&fit=crop"
-  },
-    {
-    title: "DJ Nights",
-    img: "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?q=80&w=1600&auto=format&fit=crop"
-  }
-  
+const initialEvents = [
+  { title: "Seminars", desc: "Knowledge sharing", icon: "📘", color: "#7C3AED" },
+  { title: "Workshops", desc: "Hands-on learning", icon: "💡", color: "#2563EB" },
+  { title: "Hackathons", desc: "Build & innovate", icon: "💻", color: "#059669" },
+  { title: "Conclaves", desc: "Expert gatherings", icon: "👥", color: "#EA580C" },
+  { title: "Conference", desc: "Professional events", icon: "🎤", color: "#DB2777" },
+  { title: "Culturals", desc: "Art & performance", icon: "🎵", color: "#7C3AED" },
+  { title: "Business", desc: "Networking & trade", icon: "💼", color: "#374151" },
+  { title: "Community", desc: "Social causes", icon: "❤️", color: "#DC2626" }
 ];
 
 function BrandPromotion() {
 
-  const [index,setIndex] = useState(0);
 
-  useEffect(()=>{
-    const timer = setInterval(()=>{
-      setIndex((prev)=>(prev+1)%slides.length);
-    },4000);
 
-    return ()=>clearInterval(timer);
-  },[]);
+  const [events, setEvents] = useState(initialEvents);
+
+  // 🔀 shuffle function (best method)
+  const shuffleArray = (arr) => {
+    let newArr = [...arr];
+    for (let i = newArr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+    }
+    return newArr;
+  };
+
+  // 🔄 auto shuffle every 3 sec
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setEvents(prev => shuffleArray(prev));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
 
     <>
-    <section className="live-section">
+   <section className="events-section">
 
-      <h2>Entertainment & Live Event Solutions</h2>
+      <h2 className="title">Brand Promotion & Audience Engagement</h2>
 
-      <div className="carousel">
+      <div className="events-grid">
 
-        {slides.map((slide,i)=>{
+        {events.map((item, i) => (
+          <div key={i} className="card">
 
-          const position = (i-index+slides.length)%slides.length;
-
-          return(
             <div
-              key={i}
-              className={`card pos-${position}`}
-              style={{backgroundImage:`url(${slide.img})`}}
+              className="icon"
+              style={{ background: item.color }}
             >
-              <div className="overlay">
-                <h3>{slide.title}</h3>
-              </div>
+              {item.icon}
             </div>
-          )
 
-        })}
+            <h3 style={{ color: item.color }}>{item.title}</h3>
+            <p>{item.desc}</p>
+
+          </div>
+        ))}
 
       </div>
 
     </section>
-
     {/* ------------------------------------------------------------------------------------------------------------------------------ */}
 
 
 
     <section className="event-supply">
 
-      <div className="event-container">
+  <div className="event-container">
 
-        {/* LEFT IMAGE */}
+    {/* LEFT IMAGE */}
+    <div className="event-image">
+      <img
+        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200&auto=format&fit=crop"
+        alt="Live Events"
+      />
+    </div>
 
-        <div className="event-image">
-          <img
-            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200&auto=format&fit=crop"
-            alt="Live Events"
-          />
-        </div>
+    {/* RIGHT CONTENT */}
+    <div className="event-content">
 
-        {/* RIGHT CONTENT */}
+      <h2>
+        Brand Promotion Through <br />
+        Live Event Experiences
+      </h2>
 
-        <div className="event-content">
+      <p>
+        Amplify your brand presence by leveraging a digital platform designed 
+        to promote and showcase events to the right audience. From event 
+        publishing to audience engagement, our system helps increase visibility 
+        and create impactful connections through curated event experiences.
 
-          <h2>
-            Entertainment & Live <br />
-            Event Solutions
-          </h2>
+        With integrated ticketing, participation tracking, and performance 
+        insights, businesses can effectively measure reach and enhance their 
+        promotional strategies through live and interactive events.
+      </p>
 
-          <p>
-            We provide a complete digital platform for discovering,
-            promoting and managing entertainment and live events.
-            Our solutions support concerts, comedy shows, DJ nights,
-            cultural festivals and large-scale entertainment
-            experiences with seamless ticket booking and event
-            management tools.
-          </p>
+      <button className="event-btn">
+        Promote Your Brand →
+      </button>
 
-          <button className="event-btn">
-            Explore Events →
-          </button>
+    </div>
 
-        </div>
+  </div>
 
-      </div>
-
-    </section>
-
+</section>
     {/* ---------------------------------------------------------------------------------------------------- */}
 
+    <div className="bp3-wrapper">
 
-        <section className="hardware-section">
+      {/* 🔹 SECTION 1 */}
+      <section className="bp3-section">
 
-      <div className="hardware-container">
+        <div className="bp3-container">
 
-        {/* LEFT CONTENT */}
+          {/* LEFT IMAGE */}
+          <div className="bp3-image">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200" alt="marketing" />
+          </div>
 
-        <div className="hardware-content">
+          {/* RIGHT CONTENT */}
+          <div className="bp3-content">
 
-          <p className="hardware-tag">
-            IT HARDWARE TRADING & DISTRIBUTION
-          </p>
+            <h2>Brand Promotion</h2>
 
-          <h1>
-            Comprehensive IT Hardware
-            Supply & Service Solutions
-          </h1>
+            <p className="bp3-desc">
+              Boost your event visibility using targeted strategies, smart audience segmentation,
+              and powerful cross-platform reach.
+            </p>
 
-          <p className="hardware-text">
-            To carry on the business of wholesale and retail trading and to
-            import, export, buy, sell, distribute, supply, stock and market
-            computers, desktops, laptops, servers, storage devices,
-            networking equipment, communication devices, electronic
-            hardware, IT accessories, computer peripherals and all types
-            of digital and electronic products.
-          </p>
+            <div className="bp3-features">
+
+              <div className="bp3-item">
+                <span>01</span>
+                <div>
+                  <h4>Targeted Campaigns</h4>
+                  <p>Reach the right audience with precision marketing.</p>
+                </div>
+              </div>
+
+              <div className="bp3-item">
+                <span>02</span>
+                <div>
+                  <h4>Audience Optimization</h4>
+                  <p>Maximize engagement with smart segmentation.</p>
+                </div>
+              </div>
+
+              <div className="bp3-item">
+                <span>03</span>
+                <div>
+                  <h4>Cross-Platform Visibility</h4>
+                  <p>Expand your reach across multiple channels.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <p className="bp3-seo">
+              SEO Keywords: event marketing services, brand promotion, digital event marketing
+            </p>
+
+          </div>
 
         </div>
 
-        {/* RIGHT IMAGE */}
+      </section>
 
-        <div className="hardware-image">
 
-          <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
-            alt="IT Hardware Infrastructure"
-          />
+      {/* 🔹 SECTION 2 */}
+      <section className="bp3-cta">
+
+        <div className="bp3-cta-inner">
+
+          <h2>Without visibility, your event doesn’t exist.</h2>
+
+          <p>
+            Create strong brand awareness and ensure your event reaches the right audience effectively.
+          </p>
+
+          <button>Promote Your Event →</button>
 
         </div>
 
-      </div>
+      </section>
 
-    </section>
+    </div>
 
     {/* ------------------------------------------------------------------------------------------------------------------------------- */}
 

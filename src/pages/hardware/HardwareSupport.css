@@ -33,28 +33,29 @@
 .hero-content h4 {
   color: #ffc107;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: #e0e0e0;
+  color: #fffefe;
 }
 
 .hero-btn {
-  background: #e63946;
+  background: #cf2735;
   border: none;
   padding: 14px 35px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
-  border-radius: 6px;
+  border-radius: 40px;
   cursor: pointer;
 }
 
@@ -77,7 +78,7 @@
 .section-header h5 {
   color: #6a8f84;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -91,7 +92,7 @@
 .support-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
@@ -121,14 +122,14 @@
 
 /* TITLE */
 .support-card h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: #2f6f5e;
   margin-bottom: 15px;
 }
 
 /* TEXT */
 .support-card p {
-  font-size: 14px;
+  font-size: 18px;
   color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -141,7 +142,7 @@
   border: none;
   padding: 10px 25px;
   border-radius: 30px;
-  font-size: 13px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -187,23 +188,24 @@
 }
 
 .modern-left h5 {
-  color: #2e9c47;
-  font-size: 14px;
+  color: #387e26;
+  font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .modern-left h2 {
-  font-size: 56px;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 700;
   color: #222;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .modern-left p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #555;
   margin-bottom: 25px;
@@ -287,7 +289,7 @@
   justify-content: center;
   align-items: center;
   gap: 55px;
-  font-size: 3c4px;
+  font-size: 34px;
   
 }
 
@@ -341,18 +343,20 @@
 }
 
 .split-right h2 {
-  font-size: 56px;
+  font-size: 30px;
   line-height: 1.1;
   margin-bottom: 30px;
   font-weight: 700;
   color: #467215;
+  
 }
 
 .split-right p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #363535;
   max-width: 600px;
+  margin-top: 40px;
 }
 
 /* Animation */
@@ -407,14 +411,14 @@
 }
 
 .it-premium-left h5 {
-  color: #8CC63F;
+  color: #74a238;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .it-premium-left h2 {
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -422,7 +426,7 @@
 }
 
 .it-premium-left p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: #555;
   max-width: 520px;
@@ -436,7 +440,7 @@
   border: none;
   padding: 14px 32px;
   border-radius: 40px;
-  color: #fff;
+  color: #0e0e0e;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
@@ -468,6 +472,23 @@
 
 /* ================= FLOAT CARDS ================= */
 
+
+
+.float-card {
+  position: absolute;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* 🔥 UP-DOWN FLOAT */
+@keyframes floatY {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
 .float-card {
   position: absolute;
   width: 200px;

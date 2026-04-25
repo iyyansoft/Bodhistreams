@@ -1,4 +1,5 @@
 import "./ITConsulting.css";
+import { useEffect, useState } from "react";
 import {
   Home,
   MessageSquare,
@@ -9,17 +10,54 @@ import {
 } from "lucide-react";
 
 const ITConsulting = () => {
+
+
   return (
     <>
+
+
+
+      {/* ================= CTA ================= */}
+
+<section className="itc-cta">
+  <div className="itc-cta-content">
+
+    <h2>
+      Build secure, scalable and high-performance <br />
+      IT systems for your business
+    </h2>
+
+    <div className="itc-cta-buttons">
+      <button className="itc-btn-primary">
+        Request IT Consultation
+      </button>
+
+      <button className="itc-btn-outline">
+        Explore Our Services
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
       {/* ================= HERO ================= */}
       <section className="itc-hero">
   <div className="itc-hero-left">
     <p className="itc-mini-title">IT CONSULTING & SYSTEM INTEGRATION</p>
 
     <h1 className="itc-hero-heading">
-      Design, Integrate & <br />
-      Optimize Enterprise <br />
-      IT Systems for <br />
+      Design, Integrate & 
+      Optimize Enterprise 
+      IT Systems for
       Scalable Growth
     </h1>
 
@@ -145,7 +183,7 @@ const ITConsulting = () => {
 
   <div className="itc-enterprise-right">
     <img
-      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+      src="https://www.milesit.com/wp-content/uploads/it-consulting-hero-image.webp"
       alt="Enterprise Consulting"
       className="itc-enterprise-img"
     />
@@ -224,7 +262,7 @@ const ITConsulting = () => {
     {/* CARD 1 */}
     <div className="itc-resource-card">
       <img
-        src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+        src="https://t4.ftcdn.net/jpg/06/34/85/05/360_F_634850584_3IKt4GFrYDwi881pobjhoU5dROpXFcOA.jpg"
         alt="System Analysis"
       />
       <h3>
@@ -235,7 +273,7 @@ const ITConsulting = () => {
     {/* CARD 2 */}
     <div className="itc-resource-card">
       <img
-        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+        src="https://teamcomputers.com/wp-content/uploads/2026/03/Blog-Feature-image-30.png"
         alt="System Integration"
       />
       <h3>
@@ -246,7 +284,7 @@ const ITConsulting = () => {
     {/* CARD 3 */}
     <div className="itc-resource-card">
       <img
-        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+        src="https://www.issquaredinc.com/static/automation-service-management.jpg"
         alt="Automation"
       />
       <h3>
@@ -259,24 +297,7 @@ const ITConsulting = () => {
 
 
 
-      {/* ================= CTA ================= */}
-      <section className="itc-cta">
-        <div className="itc-cta-content">
-          <h2>
-            Modernize your enterprise IT infrastructure today
-          </h2>
 
-          <div className="itc-cta-buttons">
-            <button className="itc-btn-primary">
-              Contact IT Experts
-            </button>
-
-            <button className="itc-btn-outline">
-              View Consulting Services
-            </button>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

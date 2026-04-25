@@ -1,171 +1,105 @@
 /* =========================================================
    ESC HERO SECTION
 ========================================================= */
+/* HERO SECTION */
 
 .esc-hero {
+  position: relative;
+  height: 100vh;
+  padding: 0 8%;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 120px;                 /* balanced middle gap */
-  background: #fcfcfb;
-  padding:90px 8% 40px;;           /* reduced height */
-  max-width: 1400px;
-  margin: auto;
+
+
+
+      background: url("https://t4.ftcdn.net/jpg/15/95/49/65/360_F_1595496536_YEUn0ABPB059jcsmvcVQvrq1gn19Eolb.jpg")
+    center center / cover no-repeat;
+
+  /* 🔥 IMAGE SHARP FIX */
+  image-rendering: auto;
 }
 
-/* ================= LEFT SIDE ================= */
+/* DARK OVERLAY */
 
-.esc-left {
-  flex: 1.8;                  /* increased left width */
+/* .esc-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+} */
+
+/* CONTENT */
+
+.esc-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: #fff;
 }
+
+/* MINI TEXT */
 
 .esc-mini {
-  font-size: 14px;
+  color: #8CC63F;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  color: #38b000;
+  font-size: 14px;
 }
 
+/* HEADING */
+
 .esc-heading {
-  font-size: 52px;            /* slightly reduced */
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 20px;
-  color: #111;
 }
+
+/* DESCRIPTION */
 
 .esc-desc {
   font-size: 18px;
   line-height: 1.7;
-  color: #555;
-  max-width: 650px;           /* increased content width */
+  color: #33e8f5;
   margin-bottom: 30px;
 }
 
-/* ================= BUTTONS ================= */
+/* BUTTONS */
 
 .esc-buttons {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .esc-btn-primary {
-  background: #b5e550;
+  background: #8CC63F;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 30px;
   border: none;
-  padding: 14px 36px;         /* slightly compact */
-  border-radius: 40px;
-  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.esc-btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(181,229,80,0.5);
 }
 
 .esc-btn-outline {
   background: transparent;
-  border: 2px solid #111;
-  padding: 12px 32px;
-  border-radius: 40px;
-  font-size: 15px;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: 2px solid #fff;
   cursor: pointer;
-  transition: 0.3s ease;
+}
+
+/* HOVER */
+
+.esc-btn-primary:hover {
+  background: #76b82f;
 }
 
 .esc-btn-outline:hover {
-  background: #111;
-  color: #fff;
-}
-
-/* ================= RIGHT SIDE ================= */
-
-.esc-right {
-  flex: 0.8;                  /* slightly smaller than left */
-  display: flex;
-  justify-content: flex-end;  /* push image right */
-}
-
-.esc-img-wrap {
-  position: relative;
-  width: 520px;               /* reduced container width */
-  max-width: 100%;
-}
-
-/* MAIN IMAGE */
-
-.esc-main-img {
-  width: 600px;               /* slightly smaller */
-  max-width: 100%;
-  height: auto;
-  transition: 0.4s ease;
-}
-
-.esc-main-img:hover {
-  transform: scale(1.03);
-}
-
-/* ================= FLOATING CHAT ================= */
-
-.esc-chat {
-  position: absolute;
-  padding: 20px 18px;         /* compact bubble */
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: 500;
-  max-width: 240px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-  animation: escFloat 4s ease-in-out infinite;
-}
-
-.esc-chat-green {
-  bottom: 30px;
-  right: -20px;
-  background: #cbe98a;
-}
-
-.esc-chat-white {
-  bottom: 280px;
-  left: -50px;
-  background: #ffffff;
-  animation-delay: 2s;
-}
-
-@keyframes escFloat {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 992px) {
-  .esc-hero {
-    flex-direction: column;
-    gap: 50px;
-    text-align: center;
-    padding: 40px 6%;
-  }
-
-  .esc-left,
-  .esc-right {
-    flex: 1;
-  }
-
-  .esc-right {
-    justify-content: center;
-  }
-
-  .esc-heading {
-    font-size: 38px;
-  }
-
-  .esc-desc {
-    max-width: 100%;
-  }
+  background: #fff;
+  color: #000;
 }
 
 
@@ -211,11 +145,11 @@
 }
 
 .edp-hero-content h1 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 25px;
-  color: #111;
+  color: #4c7619;
 }
 
 .edp-hero-content p {
@@ -234,6 +168,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
+  border-radius: 30px;
 }
 
 .edp-hero-btn:hover {
@@ -313,13 +248,15 @@
 }
 
 .edp-center h1 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 50px;
+  color: #588d20;
 }
 
 .edp-center p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #555;
   margin-bottom: 35px;
@@ -448,15 +385,16 @@
 
 
 .edp-resources-section {
-  padding: 120px 6%;
+  padding: 80px 6%;
   background: #f5f5f5;
+  margin-bottom: 50PX;
 }
 
 .edp-resources-title {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 60px;
-  color: #111;
+  color: #4a7f1e;
 }
 
 /* GRID */
@@ -512,7 +450,7 @@
 }
 
 .edp-card h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
   color: #111;
@@ -553,8 +491,8 @@ padding: 80px 8%;
 }
 
 .edp-gradient-content h1 {
-  font-size: 64px;
-  font-weight: 800;
+  font-size: 44px;
+  font-weight: 600;
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 30px;
