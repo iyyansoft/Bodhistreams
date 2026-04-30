@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from "./pages/Home";
 import './styles/global.css';
+import FloatingButtons from "./components/FloatingButtons";
+
+import ContactUs from "./pages/ContactUs";
 
 
 import HelpCenter from "./pages/HelpCenter";
@@ -36,6 +39,7 @@ import MegaEvents from "./pages/event/MegaEvents";
 function App() {
   return (
     <Router>
+      <FloatingButtons/> 
       <Navbar />
 
       <AnimatePresence mode="wait">
@@ -43,7 +47,7 @@ function App() {
 
 
           <Route path="/help-centre" element={<HelpCenter />} />
-
+          <Route path="/contactus" element={<ContactUs />} />
 
           
           <Route path="/" element={<Home />} />

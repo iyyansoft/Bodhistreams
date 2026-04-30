@@ -115,9 +115,10 @@ const Navbar = () => {
           <div className="utility-links">
            
             <Link to="/help-centre">Help Centre</Link>
-            <Link to="#">Company</Link>
-            <Link to="#">Contact us</Link>
-            <Link to="#">Language</Link>
+            <Link to="/about">About Us</Link>
+            {/* <Link to="/contactus">ContactUs</Link> */}
+            <Link to="/contactus">ContactUs</Link>
+            {/* <Link to="#">Language</Link> */}
           </div>
         </div>
 

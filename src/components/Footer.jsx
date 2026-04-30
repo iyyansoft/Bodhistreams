@@ -21,10 +21,10 @@ const Footer = () => {
             <div className="footer-links">
               <Link to="/services" className="footer-link">Software Development</Link>
               <Link to="/services" className="footer-link">IT Consulting</Link>
-              <Link to="/services" className="footer-link">Equipment Trading</Link>
+              {/* <Link to="/services" className="footer-link">Equipment Trading</Link> */}
               <Link to="/services" className="footer-link">Event Platform</Link>
-              <Link to="/services" className="footer-link">Cloud Services</Link>
-              <Link to="/services" className="footer-link">Mobile Apps</Link>
+              {/* <Link to="/services" className="footer-link">Cloud Services</Link> */}
+              {/* <Link to="/services" className="footer-link">Mobile Apps</Link> */}
             </div>
           </div>
 
@@ -34,13 +34,13 @@ const Footer = () => {
               <Link to="/about" className="footer-link">About Us</Link>
               <Link to="/about" className="footer-link">Careers</Link>
               <Link to="/contact" className="footer-link">Contact</Link>
-              <span className="footer-link">Blog</span>
-              <span className="footer-link">Partners</span>
-              <span className="footer-link">Press</span>
+              {/* <span className="footer-link">Blog</span> */}
+              {/* <span className="footer-link">Partners</span> */}
+              {/* <span className="footer-link">Press</span> */}
             </div>
           </div>
 
-          <div className="footer-column">
+          {/* <div className="footer-column">
             <h3 className="footer-title">Resources</h3>
             <div className="footer-links">
               <span className="footer-link">Documentation</span>
@@ -50,7 +50,7 @@ const Footer = () => {
               <span className="footer-link">Community</span>
               <span className="footer-link">Events</span>
             </div>
-          </div>
+          </div> */}
 
           <div className="footer-column">
             <h3 className="footer-title">Support</h3>
@@ -62,9 +62,9 @@ const Footer = () => {
                 Call Us
               </a>
               <span className="footer-link">Live Chat</span>
-              <span className="footer-link">Status</span>
-              <span className="footer-link">Terms of Service</span>
-              <span className="footer-link">Privacy Policy</span>
+              {/* <span className="footer-link">Status</span> */}
+              {/* <span className="footer-link">Terms of Service</span> */}
+              {/* <span className="footer-link">Privacy Policy</span> */}
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Footer = () => {
             <a href="#" className="social-icon" aria-label="Facebook">f</a>
             <a href="#" className="social-icon" aria-label="LinkedIn">in</a>
             <a href="#" className="social-icon" aria-label="YouTube">▶</a>
-            <a href="#" className="social-icon" aria-label="Instagram">📷</a>
+            {/* <a href="#" className="social-icon" aria-label="Instagram">📷</a> */}
           </div>
         </div>
 
