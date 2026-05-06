@@ -7,6 +7,7 @@ import './styles/global.css';
 import FloatingButtons from "./components/FloatingButtons";
 
 import ContactUs from "./pages/ContactUs";
+import About from "./pages/About";
 
 
 import HelpCenter from "./pages/HelpCenter";
@@ -48,6 +49,7 @@ function App() {
 
           <Route path="/help-centre" element={<HelpCenter />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/about" element={<About />} />
 
           
           <Route path="/" element={<Home />} />

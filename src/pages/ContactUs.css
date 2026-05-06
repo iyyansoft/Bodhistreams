@@ -8,7 +8,8 @@
 .contact-hero {
   position: relative;
   height: 450px;
-  background: url("https://www.thoughtleaders.co.in/assets/img/contactus.jpg")
+  /* background: url("https://squarecity.co.in/gallery/contactus.jpg") */
+  background: url("https://www.shutterstock.com/image-photo/business-professional-using-laptop-digital-600nw-2729153227.jpg")
     center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -19,14 +20,14 @@
 }
 .contact-hero p {
   font-size: 26px;
-  color: #0a0a0a;
-  margin-top: 8px;
+  color: #ffffff;
+  margin-top: 380px;
 
 }
 .contact-hero h1 {
   font-size: 60px;
-  color: #0a0a0a;
-  /* margin-top: px; */
+  color: #f8f4f4;
+  margin-top: 370px;
 
 }
 
@@ -34,18 +35,21 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(36, 32, 32, 0.6);
+  color: black;
 }
 
 .hero-content {
   position: relative;
   text-align: center;
+  /* color: black; */
   color: white;
 }
 
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 10px;
+ 
 }
 
 .hero-content p {
@@ -55,10 +59,11 @@
 /* MAIN */
 .contact-container {
   display: flex;
-  gap: 40px;
+  gap: 100px;
   padding: 60px 8%;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 /* LEFT */

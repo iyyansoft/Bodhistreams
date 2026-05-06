@@ -1,0 +1,1046 @@
+/* =========================
+   GLOBAL
+========================= */
+
+.about-page {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #386fbb;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.about-hero {
+  position: relative;
+  padding: 140px 20px 120px;
+  text-align: center;
+  background: linear-gradient(135deg, #3d800d, #0b2f4a);
+  color: white;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: rgba(216, 239, 186, 0.12);
+  border-radius: 50%;
+  top: -300px;
+  left: -200px;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  bottom: -250px;
+  right: -150px;
+}
+
+.about-hero h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #dbeafe;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+
+.split-section {
+  width: 100%;
+  /* background: #1ec7a8;   white full width */
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding: 110px 8%;
+  margin-bottom: 50px;
+}
+
+/* .about-section.dark {
+  background: #f5f7fb;
+} */
+
+/* .split-section {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+} */
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.split-text {
+  flex: 1;
+  color: black;
+}
+
+.split-image {
+  flex: 1;
+  position: relative;
+}
+
+.split-image img {
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.split-image:hover img {
+  transform: scale(1.04);
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: #071c2f;
+  line-height: 1.3;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #4b5563;
+}
+
+
+
+
+/* =========================
+   CLIENT SECTION
+========================= */
+
+.client-section {
+  padding: 120px 8%;
+  /* background: #f7f7f7; */
+  position: relative;
+  overflow: hidden;
+  color: #0a0a0a;
+}
+
+/* BACKGROUND GLOW */
+
+.client-section::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+  color: black;
+  background: rgba(140, 198, 63, 0.08);
+
+  border-radius: 50%;
+
+  top: -250px;
+  left: -180px;
+}
+
+.client-section::after {
+  content: "";
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border-radius: 50%;
+
+  bottom: -200px;
+  right: -150px;
+}
+
+/* HEADER */
+
+.client-header {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.client-header p {
+  color: #8cc63f;
+  font-size: 0.95rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: black;
+}
+
+.client-header h2 {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: black;
+}
+
+/* GRID */
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+  .client-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .client-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+
+.client-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 28px;
+
+  padding: 40px 25px;
+
+  backdrop-filter: blur(14px);
+
+  transition: 0.45s ease;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ICON */
+
+.client-card span {
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  transition: 0.4s ease;
+}
+
+/* TEXT */
+
+.client-card h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+
+/* HOVER */
+
+.client-card:hover {
+  transform: translateY(-14px);
+
+  background: linear-gradient(135deg, #8cc63f, #4ade80);
+
+  box-shadow:
+    0 25px 50px rgba(140, 198, 63, 0.35);
+}
+
+.client-card:hover h3 {
+  color: #071c2f;
+}
+
+.client-card:hover span {
+  transform: scale(1.15) rotate(-5deg);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .client-section {
+    padding: 90px 6%;
+  }
+
+  .client-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .client-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .client-header h2 {
+    font-size: 2rem;
+  }
+
+  .client-card {
+    padding: 35px 20px;
+  }
+}
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight {
+  margin-top: 35px;
+  padding: 30px 38px;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #071c2f, #0f2740);
+  color: #de3f3f !important;
+
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.9;
+  
+
+  display: inline-block;
+
+  box-shadow:
+    0 15px 40px rgba(7, 28, 47, 0.35),
+    0 5px 15px rgba(0, 0, 0, 0.12);
+
+  transition: 0.4s ease;
+}
+
+/* LEFT GLOW LINE */
+.highlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* top: 10%; */
+  width: 6px;
+  height: 100%;
+  border-radius: 40px;
+  /* background: linear-gradient(to bottom, #8cc63f, #4ade80); */
+}
+
+/* TOP LIGHT EFFECT */
+.highlight::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(140, 198, 63, 0.12);
+  border-radius: 60%;
+  top: -90px;
+  right: -60px;
+}
+
+/* HOVER EFFECT */
+.highlight:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 25px 50px rgba(7, 28, 47, 0.45),
+    0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background: white;
+  padding: 32px 28px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #8cc63f, #4ade80);
+  top: 0;
+  left: 0;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #071c2f;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.tags span {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #071c2f;
+  border: 2px solid #8cc63f;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.tags span:hover {
+  background: #8cc63f;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+  padding: 110px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #071c2f, #0b2f4a);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-cta::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(140, 198, 63, 0.08);
+  border-radius: 50%;
+  top: -250px;
+  right: -200px;
+}
+
+.about-cta h2 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #d1d5db;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-buttons button {
+  padding: 16px 38px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-buttons button:first-child {
+  background: #8cc63f;
+  color: white;
+}
+
+.cta-buttons button:first-child:hover {
+  background: #76ae2e;
+  transform: translateY(-4px);
+}
+
+.cta-buttons .outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.cta-buttons .outline:hover {
+  background: white;
+  color: #071c2f;
+  transform: translateY(-4px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .split-section,
+  .reverse {
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding: 80px 6%;
+  }
+
+  .about-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .about-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    padding: 120px 20px 90px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+  }
+
+  .about-cta h2 {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
+/* =========================
+   EVENTZGO SECTION
+========================= */
+
+.eventzgo-section {
+  padding: 130px 8%;
+  background: linear-gradient(135deg, #7b2ff7, #f947be);
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND EFFECT
+========================= */
+
+.eventzgo-section::before {
+  content: "";
+  position: absolute;
+
+  width: 900px;
+  height: 900px;
+
+  background: rgba(255,255,255,0.05);
+
+  border-radius: 50%;
+
+  top: -450px;
+  right: -300px;
+}
+
+.eventzgo-section::after {
+  content: "";
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  background: rgba(255,255,255,0.04);
+
+  border-radius: 50%;
+
+  bottom: -350px;
+  left: -250px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.eventzgo-header {
+  text-align: center;
+
+  margin-bottom: 100px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.eventzgo-header p {
+  color: rgba(255,255,255,0.92);
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 18px;
+}
+
+.eventzgo-header h2 {
+  color: white;
+
+  font-size: 4.5rem;
+  font-weight: 900;
+
+  margin-bottom: 24px;
+}
+
+.eventzgo-header span {
+  max-width: 900px;
+  display: inline-block;
+
+  color: rgba(255,255,255,0.88);
+
+  line-height: 2;
+  font-size: 1.08rem;
+}
+
+/* =========================
+   CONTENT LAYOUT
+========================= */
+
+.eventzgo-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 45px;
+
+  align-items: start;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.eventzgo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  position: sticky;
+  top: 100px;
+
+  height: fit-content;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.eventzgo-right {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.eventzgo-card,
+.eventzgo-highlight,
+.eventzgo-note {
+  position: relative;
+
+  background: rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 32px;
+
+  overflow: hidden;
+
+  transition: 0.45s ease;
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   LEFT CARD SMALL
+========================= */
+
+.eventzgo-card {
+  padding: 28px 24px;
+}
+
+/* =========================
+   RIGHT CARD BIG
+========================= */
+
+.eventzgo-highlight,
+.eventzgo-note {
+  padding: 40px 36px;
+}
+
+/* =========================
+   TOP LIGHT EFFECT
+========================= */
+
+.eventzgo-card::before,
+.eventzgo-highlight::before,
+.eventzgo-note::before {
+  content: "";
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 50%;
+
+  top: -90px;
+  right: -90px;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.event-icon {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 22px;
+
+  color: white;
+
+  font-size: 1.9rem;
+
+  margin-bottom: 22px;
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.eventzgo-card h3,
+.eventzgo-highlight h3,
+.eventzgo-note h3 {
+  color: white;
+
+  font-size: 1.4rem;
+  font-weight: 800;
+
+  margin-bottom: 18px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.eventzgo-card p,
+.eventzgo-note p {
+  color: rgba(255,255,255,0.88);
+
+  line-height: 1.9;
+  font-size: 0.97rem;
+}
+
+/* =========================
+   LIST
+========================= */
+
+.eventzgo-highlight ul {
+  padding-left: 20px;
+}
+
+.eventzgo-highlight li {
+  color: rgba(255,255,255,0.88);
+
+  line-height: 1.9;
+
+  margin-bottom: 14px;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.eventzgo-card:hover,
+.eventzgo-highlight:hover,
+.eventzgo-note:hover {
+  transform: translateY(-12px);
+
+  background: rgba(255,255,255,0.18);
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   BOTTOM CTA
+========================= */
+
+.eventzgo-bottom {
+  margin-top: 100px;
+
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+}
+
+/* CTA BOX */
+
+.eventzgo-bottom {
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  backdrop-filter: blur(16px);
+
+  border-radius: 40px;
+
+  padding: 35px 25px;
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.18);
+}
+
+.eventzgo-bottom h3 {
+  color: white;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.eventzgo-bottom p {
+  /* max-width: 850px; */
+  margin: auto;
+
+  color: rgba(255,255,255,0.88);
+
+  line-height: 2;
+
+  margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.eventzgo-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 20px 40px;
+
+  background: white;
+
+  color: #d1008f;
+
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  font-weight: 800;
+
+  transition: 0.45s ease;
+
+  box-shadow:
+    0 18px 35px rgba(255,255,255,0.2);
+}
+
+.eventzgo-bottom a:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .eventzgo-content {
+    grid-template-columns: 1fr;
+  }
+
+  .eventzgo-left {
+    position: relative;
+    top: 0;
+  }
+
+  .eventzgo-header h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .eventzgo-section {
+    padding: 90px 6%;
+  }
+
+  .eventzgo-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .eventzgo-bottom {
+    padding: 45px 24px;
+  }
+
+  .eventzgo-bottom h3 {
+    font-size: 2rem;
+  }
+
+  .eventzgo-highlight,
+  .eventzgo-note {
+    padding: 34px 26px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .eventzgo-header h2 {
+    font-size: 2rem;
+  }
+
+  .eventzgo-header span {
+    font-size: 0.96rem;
+  }
+
+  .eventzgo-card {
+    padding: 24px 20px;
+  }
+
+  .event-icon {
+    width: 64px;
+    height: 64px;
+
+    font-size: 1.7rem;
+  }
+
+  .eventzgo-card h3,
+  .eventzgo-highlight h3,
+  .eventzgo-note h3 {
+    font-size: 1.2rem;
+  }
+}

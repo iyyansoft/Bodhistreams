@@ -116,7 +116,7 @@ const Navbar = () => {
            
             <Link to="/help-centre">Help Centre</Link>
             <Link to="/about">About Us</Link>
-            {/* <Link to="/contactus">ContactUs</Link> */}
+
             <Link to="/contactus">ContactUs</Link>
             {/* <Link to="#">Language</Link> */}
           </div>

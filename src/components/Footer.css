@@ -41,12 +41,19 @@
 ================================ */
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  gap: 60px;
+  display: flex;
+
+  justify-content: space-between; /* equal spacing */
+
+  align-items: flex-start;
+
+  gap: 100px;
+
   padding-bottom: 60px;
+
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
+
 
 /* Columns */
 .footer-column {
@@ -85,7 +92,7 @@
 .footer-description {
   color: rgba(255,255,255,0.7);
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 18px;
   margin-top: 50px;
 }
 
@@ -94,7 +101,7 @@
 ================================ */
 
 .footer-title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -103,7 +110,7 @@
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
 }
 
 .footer-link {
@@ -194,7 +201,7 @@
 
 .footer-bottom {
  
-  padding: 80px 20px 70px;
+  padding: 20px 20px 70px;
   text-align: center;
   overflow: hidden;
   width: 100%;

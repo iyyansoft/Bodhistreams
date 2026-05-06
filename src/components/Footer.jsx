@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-brand">
               <img src="/bodhiwhite.png" alt="BodhiStreams" className="footer-logo" />
               <p className="footer-description">
-                Empowering businesses through innovative software solutions, 
+                Empowering businesses through innovative software solutions, <br></br>
                 IT services, and cutting-edge digital platforms.
               </p>
             </div>
@@ -19,10 +19,10 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-title">Solutions</h3>
             <div className="footer-links">
-              <Link to="/services" className="footer-link">Software Development</Link>
-              <Link to="/services" className="footer-link">IT Consulting</Link>
+              <Link to="/software-development" className="footer-link">Software Development</Link>
+              <Link to="/it-consulting" className="footer-link">IT Consulting</Link>
               {/* <Link to="/services" className="footer-link">Equipment Trading</Link> */}
-              <Link to="/services" className="footer-link">Event Platform</Link>
+              <Link to="/event-discovery" className="footer-link">Event Platform</Link>
               {/* <Link to="/services" className="footer-link">Cloud Services</Link> */}
               {/* <Link to="/services" className="footer-link">Mobile Apps</Link> */}
             </div>
@@ -32,41 +32,14 @@ const Footer = () => {
             <h3 className="footer-title">Company</h3>
             <div className="footer-links">
               <Link to="/about" className="footer-link">About Us</Link>
-              <Link to="/about" className="footer-link">Careers</Link>
-              <Link to="/contact" className="footer-link">Contact</Link>
-              {/* <span className="footer-link">Blog</span> */}
-              {/* <span className="footer-link">Partners</span> */}
-              {/* <span className="footer-link">Press</span> */}
+              <Link to="/#" className="footer-link">Careers</Link>
+              <Link to="/contactus" className="footer-link">Contact</Link>
+
             </div>
           </div>
 
-          {/* <div className="footer-column">
-            <h3 className="footer-title">Resources</h3>
-            <div className="footer-links">
-              <span className="footer-link">Documentation</span>
-              <span className="footer-link">Help Center</span>
-              <span className="footer-link">Case Studies</span>
-              <span className="footer-link">Webinars</span>
-              <span className="footer-link">Community</span>
-              <span className="footer-link">Events</span>
-            </div>
-          </div> */}
 
-          <div className="footer-column">
-            <h3 className="footer-title">Support</h3>
-            <div className="footer-links">
-              <a href="mailto:info@bodhistreams.com" className="footer-link">
-                Email Support
-              </a>
-              <a href="tel:+911234567890" className="footer-link">
-                Call Us
-              </a>
-              <span className="footer-link">Live Chat</span>
-              {/* <span className="footer-link">Status</span> */}
-              {/* <span className="footer-link">Terms of Service</span> */}
-              {/* <span className="footer-link">Privacy Policy</span> */}
-            </div>
-          </div>
+
         </div>
 
         <div className="footer-cta">
@@ -87,13 +60,7 @@ const Footer = () => {
             <div className="footer--large">
               <span className="company-name-large">Bodhistreams</span>
             </div>
-            <div className="footer-bottom-links">
-              <span>Terms of use</span>
-              <span>Privacy notice</span>
-              <span>Cookie notice</span>
-              <span>Cookie settings</span>
-              <span>Trust Center</span>
-            </div>
+
             <p className="footer-copyright">
               © {new Date().getFullYear()} <span className="company-name">BodhiStreams</span> Convergence Pvt Ltd
             </p>
