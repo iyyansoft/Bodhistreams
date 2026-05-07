@@ -11,7 +11,7 @@ const FloatingButtons = () => {
       }}
     >
       <a
-        href="https://wa.me/919944085762?text=Welcome%20to%20Bodhi%20Streams!%20How%20can%20we%20assist%20you%20today?"
+        href="https://wa.me/919884595762?text=Welcome%20to%20Bodhi%20Streams!%20How%20can%20we%20assist%20you%20today?"
         target="_blank"
         rel="noopener noreferrer"
         style={{

@@ -115,27 +115,27 @@ export default function About() {
   <div className="client-grid">
 
     <div className="client-card">
-      <span>🏫</span>
+      {/* <span>🏫</span> */}
       <h3>Schools</h3>
     </div>
 
     <div className="client-card">
-      <span>🎓</span>
+      {/* <span>🎓</span> */}
       <h3>Colleges</h3>
     </div>
 
     <div className="client-card">
-      <span>🏛️</span>
+      {/* <span>🏛️</span> */}
       <h3>Universities</h3>
     </div>
 
     <div className="client-card">
-      <span>🌐</span>
+      {/* <span>🌐</span> */}
       <h3>Government</h3>
     </div>
 
     <div className="client-card">
-      <span>🏢</span>
+      {/* <span>🏢</span> */}
       <h3>Corporates</h3>
     </div>
 

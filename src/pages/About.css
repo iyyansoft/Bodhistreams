@@ -194,10 +194,11 @@
 }
 
 .client-header h2 {
-  color: white;
+  color: rgb(109, 133, 36);
   font-size: 3.2rem;
   font-weight: 800;
-  color: black;
+  /* color: black; */
+
 }
 
 /* GRID */
@@ -237,23 +238,32 @@
 
 .client-card {
   background: rgba(255, 255, 255, 0.08);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   border-radius: 28px;
-
-  padding: 40px 25px;
-
+  padding: 20px 25px;
   backdrop-filter: blur(14px);
-
   transition: 0.45s ease;
-
   text-align: center;
-
   cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.2);
+  /* MOVING ANIMATION */
+  animation: floatingCard 4s ease-in-out infinite;
+}
+
+/* FLOATING EFFECT */
+@keyframes floatingCard {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* ICON */

@@ -48,9 +48,9 @@ const Footer = () => {
           </h2>
           <div className="footer-social">
             <a href="#" className="social-icon" aria-label="Twitter">𝕏</a>
-            <a href="#" className="social-icon" aria-label="Facebook">f</a>
-            <a href="#" className="social-icon" aria-label="LinkedIn">in</a>
-            <a href="#" className="social-icon" aria-label="YouTube">▶</a>
+            <a href="https://www.facebook.com/profile.php?id=61589257161901" className="social-icon" aria-label="Facebook">f</a>
+            <a href="https://www.linkedin.com/company/eventzgo/" className="social-icon" aria-label="LinkedIn">in</a>
+            {/* <a href="#" className="social-icon" aria-label="YouTube">▶</a> */}
             {/* <a href="#" className="social-icon" aria-label="Instagram">📷</a> */}
           </div>
         </div>
