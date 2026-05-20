@@ -316,6 +316,66 @@ label span {
 
 }
 
+@media (max-width: 900px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    padding: 80px 5%;
+  }
+
+  .formats-css {
+    padding: 80px 20px;
+  }
+
+  .overlay-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .execution-stack {
+    padding: 80px 5%;
+  }
+
+  .stack-image img,
+  .overlay-wrapper img,
+  .hero-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stack-content {
+    padding: 24px;
+  }
+
+  .process-stepper {
+    padding: 80px 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left h1 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  .formats-css {
+    padding: 60px 16px;
+  }
+
+  .overlay-card {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .stack-content {
+    padding: 20px;
+  }
+
+  .stepper {
+    gap: 20px;
+  }
+}
+
 
 
 
@@ -468,4 +528,66 @@ label span {
   .chips {
     flex-direction: column;
   }
+}
+
+/* ADDITIONAL MOBILE ADJUSTMENTS */
+@media (max-width: 480px) {
+
+  .hero-left h1 {
+    font-size: clamp(26px, 9vw, 36px);
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .hero-right img,
+  .overlay-wrapper img,
+  .stack-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay-card {
+    position: static;
+    transform: none;
+    margin-top: 18px;
+    padding: 18px;
+  }
+
+  .stack-content {
+    padding: 18px;
+  }
+
+  .stepper {
+    gap: 18px;
+    flex-direction: column;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .banner-content h2,
+  .hero-left h1 {
+    font-size: clamp(24px, 9vw, 34px);
+  }
+
+  .overlay-card,
+  .stack-card,
+  .overlay-wrapper img {
+    max-width: 100%;
+  }
+
+  .hero-split {
+    padding: 60px 4%;
+  }
+
+  button,
+  .hero-left button,
+  .stack-content button {
+    width: 100%;
+    max-width: 100%;
+  }
+
 }

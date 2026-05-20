@@ -732,3 +732,125 @@ padding: 80px 8%;
   border-color:white;
   color: black;
 }
+
+@media (max-width: 900px) {
+
+  .ticket-hero,
+  .ticket-info-section,
+  .ticketing-wrapper,
+  .event-strip,
+  .feedback-section,
+  .event-hero {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .ticket-hero {
+    gap: 30px;
+  }
+
+  .ticket-image,
+  .ticketing-image-box,
+  .event-card,
+  .feedback-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ticket-info-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .ticket-left img,
+  .ticket-right img {
+    width: 140px;
+  }
+
+  .ticket-center {
+    max-width: 100%;
+  }
+
+  .ticket-btn {
+    margin-left: 0;
+  }
+
+  .ticketing-card {
+    width: 100%;
+    min-height: auto;
+    padding: 35px 25px;
+  }
+
+  .event-strip {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .event-card {
+    flex: 1 1 100%;
+    min-height: 260px;
+  }
+
+  .feedback-section {
+    height: auto;
+    padding: 80px 5%;
+  }
+
+  .feedback-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-width: 520px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .ticket-title {
+    font-size: 42px;
+  }
+
+  .ticket-hero {
+    padding: 30px 4%;
+  }
+
+  .ticket-image {
+    height: 240px;
+  }
+
+  .ticket-content,
+  .ticketing-card,
+  .feedback-card {
+    padding: 20px;
+  }
+
+  .ticket-center h2,
+  .event-section-heading,
+  .feedback-center h2,
+  .event-hero h1 {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline,
+  .learn-btn,
+  .ticket-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .event-text {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+
+}

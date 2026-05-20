@@ -2,8 +2,9 @@
 /* HERO SECTION */
 .support-hero {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
 
   background-image: url("https://t3.ftcdn.net/jpg/18/40/83/42/360_F_1840834273_htBdYoHRcxAdcUYc7qfZwz8crRbztPZ8.jpg");
   background-position: center;
@@ -12,7 +13,9 @@
 
   display: flex;
   align-items: center;
-  padding-left: 8%;
+  justify-content: flex-start;
+  padding: 90px 8% 70px;
+  min-height: 80vh;
   color: #fff;
   margin-top: 60px;
 }
@@ -83,6 +86,15 @@
   background: #e6f0ec;   /* 🔥 light green bg */
   padding: 80px 6%;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modern-section,
+.split-section,
+.it-premium {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -103,8 +115,9 @@
 .support-grid {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 40px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 /* CARD */
@@ -112,7 +125,8 @@
   background: #fff;
   padding: 40px 30px;
   border-radius: 20px;
-  width: 300px;
+  width: 100%;
+  max-width: 360px;
   text-align: center;
 
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -190,6 +204,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* LEFT SIDE */
@@ -242,6 +258,33 @@
 /* Responsive */
 
 @media (max-width: 992px) {
+  .support-hero {
+    padding: 80px 6% 50px;
+    min-height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .support-content h1 {
+    font-size: 42px;
+  }
+
+  .support-section,
+  .modern-section,
+  .split-section,
+  .it-premium {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .support-grid {
+    gap: 30px;
+  }
+
+  .support-card {
+    max-width: 100%;
+  }
+
   .modern-container {
     flex-direction: column;
   }
@@ -252,6 +295,28 @@
 
   .modern-right img {
     margin-top: 40px;
+  }
+
+  .split-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .split-card {
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .split-icons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px 0;
+  }
+
+  .split-content {
+    padding: 30px;
   }
 }
 
@@ -270,6 +335,8 @@
   display: flex;
   align-items: center;
   gap: 80px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* ================= LEFT CARD ================= */
@@ -577,6 +644,149 @@
 
   .float-card {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-hero {
+    padding: 70px 6% 50px;
+    min-height: 90vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+
+  .support-content {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .support-content h1 {
+    font-size: clamp(32px, 7vw, 40px);
+    line-height: 1.1;
+  }
+
+  .support-content p {
+    font-size: 16px;
+  }
+
+  .support-btn {
+    width: auto;
+    padding: 14px 28px;
+  }
+
+  .support-section,
+  .modern-section,
+  .split-section,
+  .it-premium {
+    padding: 60px 6%;
+  }
+
+  .support-grid {
+    gap: 30px;
+  }
+
+  .support-card {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .modern-container,
+  .split-container {
+    flex-direction: column;
+  }
+
+  .modern-right img {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .split-card {
+    min-height: auto;
+  }
+
+  .split-icons {
+    gap: 30px;
+  }
+
+  .split-content {
+    padding: 30px;
+  }
+
+  .split-right {
+    margin-top: 40px;
+  }
+
+  .it-premium-right {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .support-hero {
+    padding: 50px 5% 40px;
+    min-height: 75vh;
+  }
+
+  .support-content h4 {
+    font-size: 16px;
+  }
+
+  .support-content h1 {
+    font-size: clamp(26px, 10vw, 32px);
+  }
+
+  .support-content p {
+    font-size: 15px;
+  }
+
+  .support-btn,
+  .card-btn,
+  .premium-btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 20px;
+  }
+
+  .support-section,
+  .modern-section,
+  .split-section,
+  .it-premium {
+    padding: 40px 5%;
+  }
+
+  .section-header h2,
+  .modern-left h2,
+  .split-right h2,
+  .it-premium-left h2 {
+    font-size: clamp(24px, 9vw, 28px);
+  }
+
+  .support-card,
+  .modern-right,
+  .it-premium-right {
+    width: 100%;
+  }
+
+  .split-card {
+    flex-direction: column;
+  }
+
+  .split-icons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 18px;
+    padding: 10px 0;
+  }
+
+  .split-content {
+    padding: 20px;
+  }
+
+  .it-premium-container {
+    padding-bottom: 20px;
   }
 }
 

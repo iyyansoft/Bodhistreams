@@ -27,14 +27,15 @@
 
 .ed-container{
   position:relative;
-  width:85%;
+  width:100%;
   max-width:1300px;
+  padding:0 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
   z-index:2;
   color:white;
-  margin-bottom: 150px;
+  margin:0 auto 150px;
   
 }
 
@@ -239,11 +240,7 @@ grid-template-columns:1fr;
   max-width:1100px;
   margin:-120px auto 100px;
   padding:80px;
-
-  /* background:rgba(255,255,255,0.75); */
   backdrop-filter:blur(8px);
-
-
 
   border-radius:20px;
   box-shadow:0 20px 40px rgba(0,0,0,0.15);
@@ -324,7 +321,7 @@ grid-template-columns:1fr;
 .about-image img{
   width:100%;
   max-width:620px;
-  height:450px;
+  height:auto;
   border-radius:30px;
 
   object-fit: contain;   /* 🔥 full image show */
@@ -546,4 +543,79 @@ grid-template-columns:1fr;
   height:350px;
 }
 
+}
+
+@media(max-width:768px){
+
+  .ed-hero{
+    height:auto;
+    padding:80px 20px;
+  }
+
+  .ed-container{
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:left;
+    margin-bottom:60px;
+  }
+
+  .ed-left{
+    max-width:100%;
+  }
+
+  .ed-left h1{
+    font-size:36px;
+  }
+
+  .ed-big-text{
+    font-size:120px;
+    bottom:-20px;
+  }
+
+  .event-discovery-section,
+  .about-section{
+    padding:60px 4%;
+  }
+
+  .about-container{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .about-image img{
+    max-width:100%;
+    height:auto;
+  }
+
+  .about-content{
+    max-width:100%;
+    padding:0;
+  }
+
+}
+
+/* Mobile fixes for service banner + content panel */
+@media (max-width: 768px) {
+  .service-banner{ position:relative; height:260px; }
+
+  .service-text{
+    margin: 20px auto 30px;
+    padding:24px;
+    background: #ffffff;
+    color: #1f2937; /* dark text for readability */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius:14px;
+    backdrop-filter: none;
+  }
+
+  .service-row{ flex-direction:column; gap:18px; }
+  .service-img{ width:100%; }
+  .service-img img{ height:220px; object-fit:cover; border-radius:10px; }
+  .service-info h2{ color:#111; font-size:20px; }
+  .service-info p{ color:#334155; font-size:15px; }
+}
+
+@media (max-width: 420px) {
+  .service-text{ padding:18px; margin:18px 12px; }
+  .service-img img{ height:180px; }
 }

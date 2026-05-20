@@ -58,3 +58,27 @@ section {
     padding: 80px 0;
   }
 }
+
+/* Global responsive overrides to avoid large gaps/overflow on mobile */
+@media (max-width: 1200px) {
+  .container { max-width: 100%; padding: 0 20px; }
+  section { padding: 80px 4%; }
+}
+
+@media (max-width: 992px) {
+  section { padding: 60px 4%; }
+  .container { padding: 0 18px; }
+  img { max-width: 100%; height: auto; }
+  /* Ensure rotated/offset cards don't create horizontal overflow */
+  .et-wrapper { gap: 20px; }
+  .et-card { margin-left: 0 !important; transform: none !important; }
+}
+
+@media (max-width: 600px) {
+  section { padding: 40px 3% !important; }
+  .container { padding: 0 12px; }
+  body { font-size: 15px; }
+}
+
+/* Prevent unexpected horizontal scroll from transforms */
+html, body { width: 100%; overflow-x: hidden; }

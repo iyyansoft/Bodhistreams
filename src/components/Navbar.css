@@ -25,7 +25,7 @@ body {
   width: 100%;
 
   background: #fdfdfc;
-  padding: 8px 90px 60px 90px;
+  padding: 8px clamp(16px, 6vw, 90px) 60px;
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
@@ -550,6 +550,90 @@ body {
 }
 
 /* DESKTOP FEATURES GAP */
+
+/* ===== Tablet (769px - 1024px) ===== */
+@media (min-width:769px) and (max-width:1024px) {
+
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 8px 40px 40px;
+    height: 100px;
+  }
+
+  .logo img {
+    height: 56px;
+  }
+
+  .nav-menu {
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .dropdown-content {
+    width: 900px;
+    height: 420px;
+    padding: 40px 50px;
+    gap: 40px;
+  }
+
+  .dropdown-right {
+    width: 360px;
+  }
+
+  .image-wrapper1 {
+    width: 380px;
+    height: 260px;
+  }
+
+  .btn-primary1, .btn-outline {
+    padding: 9px 18px;
+  }
+
+}
+
+/* ===== Laptop (1025px - 1366px) ===== */
+@media (min-width:1025px) and (max-width:1366px) {
+
+  body {
+    padding-top: 110px;
+  }
+
+  .navbar {
+    padding: 8px 60px 50px;
+    height: 105px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .nav-menu {
+    gap: clamp(24px, 3.5vw, 40px);
+  }
+
+  .nav-link {
+    font-size: 16.5px;
+    margin-left: 14px;
+  }
+
+  .dropdown-content {
+    width: 950px;
+    height: 440px;
+    padding: 50px 60px;
+  }
+
+  .dropdown-right {
+    width: 380px;
+  }
+
+}
 
 @media (min-width:769px){
 

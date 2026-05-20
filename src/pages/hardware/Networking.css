@@ -86,20 +86,6 @@
 
 /* Responsive */
 
-@media (max-width: 992px) {
-  .nw-customer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nw-customer-left h2 {
-    font-size: 42px;
-  }
-
-  .nw-customer-left p {
-    margin: auto;
-  }
-}
 
 
 
@@ -584,4 +570,207 @@
 
 .nw-cta-outline:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 992px) {
+  .nw-customer-section,
+  .nw-green-section,
+  .nw-fit-section,
+  .nw-v7-section,
+  .nw-cta-section {
+    padding: 60px 5%;
+  }
+
+  .nw-top-wrapper {
+    padding: 30px 5% 0;
+  }
+
+  .nw-top-banner {
+    height: auto;
+    min-height: 260px;
+    margin: 20px 0 0;
+    margin-left: 0;
+    border-radius: 18px;
+  }
+
+  .nw-overlay {
+    padding: 28px 24px;
+    align-items: flex-start;
+  }
+
+  .nw-banner-text h1 {
+    font-size: clamp(32px, 5vw, 38px);
+  }
+
+  .nw-green-section {
+    margin: -35px 0 0;
+    padding: 70px 5% 50px;
+    border-radius: 22px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .nw-container,
+  .nw-fit-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: stretch;
+  }
+
+  .nw-customer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nw-customer-left h2 {
+    font-size: 36px;
+  }
+
+  .nw-customer-left p,
+  .nw-left p,
+  .nw-fit-left p,
+  .nw-fit-card p,
+  .nw-v7-back p,
+  .nw-cta-content h2 {
+    font-size: 15px;
+  }
+
+  .nw-customer-left p {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .nw-fit-left {
+    position: static;
+    width: 100%;
+  }
+
+  .nw-fit-right {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .nw-fit-card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 26px;
+  }
+
+  .nw-fit-card:nth-child(odd),
+  .nw-fit-card:nth-child(even) {
+    transform: none;
+    animation: none;
+  }
+
+  .nw-v7-section {
+    padding: 60px 5%;
+  }
+
+  .nw-v7-grid {
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .nw-v7-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .nw-v7-back {
+    padding: 24px;
+  }
+
+  .nw-cta-buttons {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nw-cta-primary,
+  .nw-cta-outline,
+  .nw-btn {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 18px;
+    justify-content: center;
+  }
+
+  .nw-cube {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .nw-top-wrapper {
+    padding: 24px 4% 0;
+  }
+
+  .nw-top-banner {
+    min-height: 220px;
+    border-radius: 16px;
+  }
+
+  .nw-overlay {
+    padding: 22px 16px;
+  }
+
+  .nw-banner-text h1 {
+    font-size: clamp(26px, 7vw, 32px);
+  }
+
+  .nw-small-text {
+    font-size: 14px;
+  }
+
+  .nw-green-section,
+  .nw-fit-section,
+  .nw-v7-section,
+  .nw-cta-section {
+    padding: 48px 4%;
+  }
+
+  .nw-green-section {
+    margin: -25px 0 0;
+    padding: 52px 4% 40px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .nw-customer-left h2,
+  .nw-left h2,
+  .nw-fit-left h2,
+  .nw-v7-title,
+  .nw-cta-content h2 {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+
+  .nw-customer-left p,
+  .nw-left p,
+  .nw-fit-left p,
+  .nw-fit-card p,
+  .nw-v7-back p {
+    font-size: 14px;
+  }
+
+  .nw-fit-card {
+    padding: 22px;
+  }
+
+  .nw-v7-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nw-cta-buttons {
+    width: 100%;
+  }
+
+  .nw-cta-primary,
+  .nw-cta-outline {
+    font-size: 16px;
+    padding: 14px 16px;
+  }
 }

@@ -22,11 +22,11 @@
   letter-spacing: 2px;
   color: #090909;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .dt-hero-heading {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -34,7 +34,7 @@
 }
 
 .dt-hero-desc {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
   color: #555;
   max-width: 520px;
@@ -53,6 +53,7 @@
   border: none;
   padding: 16px 36px;
   border-radius: 40px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
@@ -68,6 +69,7 @@
   border: 2px solid #fcfbfb;
   color: white;
   padding: 14px 32px;
+  font-size: 16px;
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -155,7 +157,7 @@
 }
 
 .dt-framework-heading {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 70px;
   font-weight: 700;
 }
@@ -187,12 +189,12 @@
 }
 
 .dt-framework-card h3 {
-  font-size: 22px;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 
 .dt-framework-card p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.7;
   color: #555;
 }
@@ -215,7 +217,7 @@
 }
 
 .dt-enterprise-label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #4caf2f;
   margin-bottom: 20px;
@@ -227,7 +229,7 @@
 }
 
 .dt-enterprise-desc {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #555;
@@ -296,12 +298,12 @@
 
 .dt-support-right h1 {
   font-size: 40px;
-  margin-bottom: 60PX;
+  margin-bottom: 60px;
   color: #5b862a;
 }
 
 .dt-support-right p {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
 
 }
@@ -309,6 +311,7 @@
 .dt-chat-title {
   font-weight: 600;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .dt-chat-message {
@@ -321,7 +324,7 @@
   background: #e8f6da;
   padding: 10px 14px;
   border-radius: 14px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .dt-chat-message.user img {
@@ -334,7 +337,7 @@
   background: #ffffff;
   padding: 10px 14px;
   border-radius: 14px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* ===================================== */
@@ -348,7 +351,7 @@
 }
 
 .dt-cta-content h2 {
-  font-size: 48px;
+  font-size: 40px;
   color: #eaeaea;
   margin-bottom: 40px;
 }
@@ -366,24 +369,106 @@
 @media (max-width: 992px) {
 
   .dt-hero,
+  .dt-framework,
   .dt-enterprise,
-  .dt-support {
+  .dt-support,
+  .dt-cta {
     flex-direction: column;
     text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .dt-hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+
+  .dt-framework,
+  .dt-enterprise,
+  .dt-support {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 18px;
+  }
+
+  .dt-cta {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: 18px;
   }
 
   .dt-hero-heading,
+  .dt-enterprise-heading,
+  .dt-framework-heading,
+  .dt-framework-card h3,
+  .dt-support-right h1,
+  .dt-cta-content h2 {
+    font-size: 34px;
+  }
+
+  .dt-hero-desc,
+  .dt-framework-card p,
+  .dt-enterprise-desc,
+  .dt-support-right p,
+  .dt-chat-message.agent p,
+  .dt-chat-message.user p {
+    font-size: 15px;
+  }
+
+  .dt-framework-heading {
+    margin-bottom: 50px;
+  }
+
   .dt-enterprise-heading {
-    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .dt-support-right h1 {
+    margin-bottom: 40px;
   }
 
   .dt-framework-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .dt-hero-buttons,
+  .dt-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .dt-btn-primary,
+  .dt-btn-outline {
+    width: min(100%, 320px);
   }
 
   .dt-hero-img {
     width: 100%;
     height: auto;
+  }
+
+  .dt-enterprise-img,
+  .dt-chat-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .dt-support-right,
+  .dt-hero-right,
+  .dt-enterprise-right {
+    width: 100%;
+  }
+
+  .dt-chat-box {
+    min-height: 320px;
+  }
+
+  .dt-chat-content {
+    padding: 25px;
   }
 
 }

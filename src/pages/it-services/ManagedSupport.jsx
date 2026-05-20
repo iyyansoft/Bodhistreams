@@ -17,8 +17,8 @@ const ManagedSupport = () => {
     <p className="ms-mini-title">MANAGED IT & TECHNICAL SUPPORT</p>
 
     <h1 className="ms-hero-heading">
-      Ensure reliable, secure <br />
-      and scalable IT systems <br />
+      Ensure reliable, secure 
+      and scalable IT systems 
       with continuous support
     </h1>
 

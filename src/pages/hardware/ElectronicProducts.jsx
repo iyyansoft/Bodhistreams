@@ -1,285 +1,214 @@
 import "./ElectronicProducts.css";
-import {
-  Monitor,
-  Wifi,
-  Settings,
-  ShieldCheck,
-  Laptop,
-  Server
-} from "lucide-react";
 
 const ElectronicProducts = () => {
-  const features = [
-    { icon: <Settings size={26} />, text: "Installation & Setup" },
-    { icon: <ShieldCheck size={26} />, text: "Maintenance & Support" },
-    { icon: <Monitor size={26} />, text: "Computers & Desktops" },
-    { icon: <Wifi size={26} />, text: "Networking Equipment" },
-    { icon: <Laptop size={26} />, text: "Laptops & Peripherals" },
-    { icon: <Server size={26} />, text: "Servers & Storage" },
+  const stats = [
+    { value: "500+", label: "Products Supplied" },
+    { value: "200+", label: "Institutions Served" },
+    { value: "15+",  label: "Years of Experience" },
+    { value: "98%",  label: "Client Satisfaction" },
   ];
 
-  const radius = 360;   // distance from center
-  const size = 900;     // wrapper size
-  const center = size / 2;
+  const capabilities = [
+    {
+      icon: "🖥️",
+      title: "Computers & Desktops",
+      desc: "High-performance workstations and desktop systems for classrooms, labs, and enterprise offices.",
+    },
+    {
+      icon: "💾",
+      title: "Servers & Storage",
+      desc: "Scalable rack servers, NAS, and SAN solutions designed for reliability and data security.",
+    },
+    {
+      icon: "🌐",
+      title: "Networking Equipment",
+      desc: "Switches, routers, firewalls, and structured cabling for robust wired and wireless networks.",
+    },
+    {
+      icon: "💻",
+      title: "Laptops & Peripherals",
+      desc: "Business and education-grade laptops, monitors, keyboards, and input devices from top brands.",
+    },
+    {
+      icon: "🧩",
+      title: "IT Accessories & Components",
+      desc: "RAM, SSDs, UPS systems, cables, and every component needed to complete your IT setup.",
+    },
+    {
+      icon: "🛠️",
+      title: "Installation & Support",
+      desc: "End-to-end setup, configuration, AMC, and on-call technical support to keep your systems running.",
+    },
+  ];
+
+  const solutions = [
+    {
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+      tag: "IT Equipment",
+      title: "Computers, laptops & devices for modern digital environments",
+      desc: "Authorized supply of desktops, notebooks, and workstations sourced directly from leading OEM partners.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80",
+      tag: "Network & Servers",
+      title: "Reliable server infrastructure for seamless connectivity",
+      desc: "From SMB switches to enterprise-grade core routers and blade servers, we cover the full stack.",
+    },
+    {
+      img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80",
+      tag: "Support & Maintenance",
+      title: "Continuous care for long-term performance",
+      desc: "AMC contracts, remote diagnostics, spare parts supply, and on-site technician visits as you need them.",
+    },
+  ];
+
+  const steps = [
+    { num: "01", title: "Consultation",   desc: "We assess your requirements and recommend the right products and infrastructure." },
+    { num: "02", title: "Procurement",    desc: "Direct sourcing from authorized distributors ensures genuine products at competitive pricing." },
+    { num: "03", title: "Installation",   desc: "Our certified engineers handle delivery, rack mounting, cabling, and full system setup." },
+    { num: "04", title: "Ongoing Support",desc: "AMC packages and priority helpdesk keep your infrastructure running at peak performance." },
+  ];
 
   return (
     <>
 
-
-
-
-
-<section className="esc-hero">
-
-  <div className="esc-overlay"></div>
-
-  <div className="esc-content">
-
-    <p className="esc-mini">
-      ELECTRONIC & DIGITAL PRODUCTS SUPPLY
-    </p>
-
-    <h1 className="esc-heading">
-      Advanced Digital Infrastructure 
-      for Institutions & Enterprises
-    </h1>
-
-    <p className="esc-desc">
-      We supply computers, smart classroom systems, networking devices,
-      IoT kits, and lab equipment with seamless setup and integration
-      for modern learning and business environments.
-    </p>
-
-    <div className="esc-buttons">
-      <button className="esc-btn-primary">
-        Explore Solutions
-      </button>
-
-      <button className="esc-btn-outline">
-        Get Details
-      </button>
-    </div>
-
-  </div>
-
-</section>
-
-      {/* ----------------------------------------------------------------------------------------- */}
-
-
-      {/* -------------------------------------------------------------------------------------------------- */}
-
-
-
-<section className="edp-hero-section">
-
-  <div className="edp-hero-container">
-
-    {/* LEFT IMAGE */}
-    <div className="edp-hero-left">
-      <img src="/Electric-transport.png" alt="Electronic Products" />
-    </div>
-
-    {/* RIGHT CONTENT */}
-    <div className="edp-hero-content">
-      <h1>
-        Smart IT Equipment <br />
-        for Modern Institutions
-      </h1>
-
-      <p>
-        We provide a wide range of reliable IT hardware including computers, 
-        laptops, servers, and networking devices tailored for institutions 
-        and enterprises. Our solutions are designed to support seamless 
-        operations, digital learning, and scalable infrastructure growth.
-      </p>
-
-      <button className="edp-hero-btn">
-        Explore Products →
-      </button>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-      {/* ---------------------------------------------------------------------------------- */}
-
-      <section className="edp-section">
-        <div className="edp-layout">
-
-          {/* LEFT SIDE */}
-          <div className="edp-column edp-left">
-
-            <div className="edp-item">
-              <div className="edp-icon edp-purple">🔐</div>
-              <p>Computers & Desktops</p>
-            </div>
-
-            <div className="edp-item">
-              <div className="edp-icon edp-green">💾</div>
-              <p>Servers & Storage</p>
-            </div>
-
-            <div className="edp-item">
-              <div className="edp-icon edp-pink">🧩</div>
-              <p>IT Accessories & Components</p>
-            </div>
-
-          </div>
-
-          {/* CENTER CONTENT */}
-          <div className="edp-center">
-            <h1>Electronic & Digital <br /> Products Supply</h1>
-
-            <p>
-              We specialize in wholesale and retail supply of computers, servers,
-              networking equipment, IT hardware and digital products.
-              As authorized dealers, we provide installation, maintenance
-              and complete technical support services.
-            </p>
-
-
-          </div>
-
-          {/* RIGHT SIDE */}
-          <div className="edp-column edp-right">
-
-            <div className="edp-item">
-              <div className="edp-icon edp-orange">🌐</div>
-              <p>Networking Equipment</p>
-            </div>
-
-            <div className="edp-item">
-              <div className="edp-icon edp-yellow">⚙️</div>
-              <p>Installation & Configuration</p>
-            </div>
-
-            <div className="edp-item">
-              <div className="edp-icon edp-blue">🛠️</div>
-              <p>Maintenance & Support</p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-      {/* ----------------------------------------------------------------------------------------------------- */}
-
-<section className="edp-resources-section">
-
-  <h2 className="edp-resources-title">
-    Digital Infrastructure Solutions
-  </h2>
-
-  <div className="edp-resources-grid">
-
-    {/* CARD 1 */}
-    <div className="edp-card">
-      <img
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
-        alt="Computers and Devices"
-      />
-
-      <div className="edp-card-content">
-        <span className="edp-card-label">
-          IT EQUIPMENT
-        </span>
-
-        <h3>
-          High-quality computers, laptops, and devices for modern digital environments
-        </h3>
-      </div>
-    </div>
-
-    {/* CARD 2 */}
-    <div className="edp-card">
-      <img
-        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
-        alt="Networking and Servers"
-      />
-
-      <div className="edp-card-content">
-        <span className="edp-card-label">
-          NETWORK & SERVERS
-        </span>
-
-        <h3>
-          Reliable networking solutions and server infrastructure for seamless connectivity
-        </h3>
-      </div>
-    </div>
-
-    {/* CARD 3 */}
-    <div className="edp-card">
-      <img
-        src="https://www.advancedtech.com/wp-content/uploads/2022/04/iStock-1206840249_ATS-1-scaled-2.jpg"
-        alt="Support and Maintenance"
-      />
-
-      <div className="edp-card-content">
-        <span className="edp-card-label">
-          SUPPORT & MAINTENANCE
-        </span>
-
-        <h3>
-          Continuous support, upgrades, and maintenance for long-term performance
-        </h3>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-      {/* ---------------------------------------------------------------------------------------- */}
-
-
-
-
-      <section className="edp-gradient-hero">
-
-        <div className="edp-gradient-content">
-
-          <h1>
-            Electronic & Digital <br />
-            Products & IT Solutions
+      {/* ── 1. HERO ── */}
+      <section className="ep-hero">
+        <div className="ep-hero__overlay" />
+        <div className="ep-hero__body">
+         
+          <h1 className="ep-hero__heading">
+            Advanced Digital Infrastructure
+            for Institutions &amp; Enterprises
           </h1>
-
-          <p className="hero-quote">
-            "Your trusted partner for IT hardware,
-            installation and digital support solutions."
+          <p className="ep-hero__sub">
+            Authorized supply of computers, servers, networking gear, IoT kits, and lab
+            equipment — complete with installation, integration, and lifetime support.
           </p>
-
-          <div className="edp-gradient-buttons">
-            <button className="edp-btn-primary">
-              Contact Sales
-            </button>
-
-            <button className="edp-btn-outline">
-              View Services
-            </button>
+          <div className="ep-hero__cta">
+            <button className="ep-btn ep-btn--solid">Explore Solutions</button>
+            <button className="ep-btn ep-btn--ghost">Get a Quote</button>
           </div>
-
         </div>
 
+        {/* Stat bar pinned to hero bottom */}
+        <div className="ep-hero__stats">
+          {stats.map(({ value, label }) => (
+            <div className="ep-stat" key={label}>
+              <span className="ep-stat__val">{value}</span>
+              <span className="ep-stat__lbl">{label}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
+      {/* ── 2. SPLIT — image + text ── */}
+      <section className="ep-split">
+        <div className="ep-split__img-wrap">
+          <img
+            src="/Electric-transport.png"
+            alt="Electronic Products"
+            onError={e => { e.target.src = "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"; }}
+          />
+          <div className="ep-split__badge">Authorized Dealer</div>
+        </div>
+        <div className="ep-split__text">
+          <span className="ep-eyebrow ep-eyebrow--dark">Who We Are</span>
+          <h2>Smart IT Equipment<br />for Modern Institutions</h2>
+          <p>
+            We are an authorized IT hardware distributor serving educational institutions,
+            government bodies, and enterprises across the region. Every product we supply
+            comes backed by OEM warranty, certified installation, and post-sale support —
+            so your infrastructure investment is protected from day one.
+          </p>
+          <ul className="ep-split__checklist">
+            <li>OEM-authorized supply chain</li>
+            <li>Certified installation engineers</li>
+            <li>Annual Maintenance Contracts (AMC)</li>
+            <li>Bulk & institutional pricing available</li>
+          </ul>
+          <button className="ep-btn ep-btn--solid">Explore Products</button>
+        </div>
+      </section>
 
+      {/* ── 3. CAPABILITIES GRID ── */}
+      <section className="ep-caps">
+        <div className="ep-caps__head">
+          <span className="ep-eyebrow">What We Offer</span>
+          <h2>Complete IT Supply &amp; Support Services</h2>
+          <p>
+            From individual workstations to full campus-wide network deployments —
+            we handle procurement, setup, and maintenance under one roof.
+          </p>
+        </div>
+        <div className="ep-caps__grid">
+          {capabilities.map(({ icon, title, desc }) => (
+            <div className="ep-cap-card" key={title}>
+              <div className="ep-cap-card__icon">{icon}</div>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 4. SOLUTION CARDS ── */}
+      <section className="ep-solutions">
+        <div className="ep-solutions__head">
+          <span className="ep-eyebrow">Our Solutions</span>
+          <h2>Digital Infrastructure, End to End</h2>
+        </div>
+        <div className="ep-solutions__grid">
+          {solutions.map(({ img, tag, title, desc }) => (
+            <div className="ep-sol-card" key={tag}>
+              <div className="ep-sol-card__img-wrap">
+                <img src={img} alt={tag} />
+                <span className="ep-sol-card__tag">{tag}</span>
+              </div>
+              <div className="ep-sol-card__body">
+                <h3>{title}</h3>
+                <p>{desc}</p>
+                <a className="ep-sol-card__link" href="#">Learn more →</a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 5. HOW WE WORK ── */}
+      <section className="ep-process">
+        <div className="ep-process__head">
+          <span className="ep-eyebrow">How We Work</span>
+          <h2>From Requirement to Running System</h2>
+          <p>A simple, transparent process designed to get your infrastructure live — on time and on budget.</p>
+        </div>
+        <div className="ep-process__steps">
+          {steps.map(({ num, title, desc }, i) => (
+            <div className="ep-step" key={num}>
+              <div className="ep-step__num">{num}</div>
+              {i < steps.length - 1 && <div className="ep-step__line" />}
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 6. CTA BANNER ── */}
+      <section className="ep-cta">
+        <div className="ep-cta__inner">
+          <span className="ep-eyebrow ep-eyebrow--light">Get Started Today</span>
+          <h2>Your Trusted Partner for IT Hardware &amp; Digital Solutions</h2>
+          <p>
+            Whether you need a single workstation or a full campus network, our team
+            is ready to help you plan, procure, and deploy.
+          </p>
+          <div className="ep-cta__btns">
+            <button className="ep-btn ep-btn--white">Contact Sales</button>
+            <button className="ep-btn ep-btn--ghost-light">View All Services</button>
+          </div>
+        </div>
+      </section>
 
     </>
   );

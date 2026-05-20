@@ -21,7 +21,7 @@
 }
 
 .itc-mini-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -29,7 +29,7 @@
 }
 
 .itc-hero-heading {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 30px;
@@ -38,10 +38,9 @@
 }
 
 .itc-hero-desc {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
   color: #555;
-  /* max-width: 520px; */
   margin-bottom: 40px;
   max-width: 650px;
 }
@@ -62,7 +61,7 @@
   border: none;
   padding: 16px 40px;
   border-radius: 40px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
@@ -183,7 +182,7 @@
 
 
 .itc-strategy-label{
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 600;
     color: #5b862a;
     margin-bottom: 40px;
@@ -248,10 +247,9 @@
 /* TITLE */
 
 .itc-strategy-card h3 {
-  font-size: 26px;
+  font-size: 40px;
   margin-bottom: 15px;
   transition: 0.3s ease;
- 
 }
 
 .itc-strategy-card:hover h3 {
@@ -261,9 +259,9 @@
 /* TEXT */
 
 .itc-strategy-card p {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
-  line-height: 1.7;
+  line-height: 1.8;
   transition: 0.3s ease;
   margin-top: 20px;
 }
@@ -341,7 +339,7 @@
 }
 
 .itc-enterprise-left .itc-enterprise-label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -357,7 +355,7 @@
 }
 
 .itc-enterprise-desc {
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
   line-height: 1.8;
   margin-bottom: 25px;
@@ -540,7 +538,7 @@
 .itc-chat-title {
   font-weight: 600;
   margin-bottom: 25px;
-  font-size: 16px;
+  font-size: 18px;
   color: #cbe98a;
 }
 
@@ -568,7 +566,7 @@
   border: 1px solid rgba(76,175,47,0.4);
   padding: 14px 18px;
   border-radius: 18px;
-  font-size: 14px;
+  font-size: 16px;
   color: #cbe98a;
 }
 
@@ -584,7 +582,7 @@
   background: rgba(255,255,255,0.08);
   padding: 14px 18px;
   border-radius: 18px;
-  font-size: 14px;
+  font-size: 16px;
   color: #eee;
 }
 
@@ -597,14 +595,14 @@
 }
 
 .itc-support-right h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 30px;
   line-height: 1.1;
   color: #ffffff;
 }
 
 .itc-support-right p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #cccccc;
   max-width: 600px;
@@ -726,9 +724,9 @@
 
 /* HEADING */
 .itc-cta-content h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 1.4;   /* 🔥 increase */
+  line-height: 1.4;
   margin-bottom: 30px;
   margin-top: 100px;
 }
@@ -766,28 +764,120 @@
 
   .itc-hero,
   .itc-enterprise,
-  .itc-support {
+  .itc-support,
+  .itc-cta {
     flex-direction: column;
     text-align: center;
   }
 
+  .itc-hero {
+    padding: 40px 4%;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .itc-hero-left,
+  .itc-hero-right,
+  .itc-enterprise-left,
+  .itc-enterprise-right,
+  .itc-support-left,
+  .itc-support-right,
+  .itc-cta-content {
+    width: 100%;
+  }
+
   .itc-hero-heading,
   .itc-enterprise-heading,
-  .itc-support-right h1 {
-    font-size: 36px;
+  .itc-support-right h1,
+  .itc-resources-title,
+  .itc-cta-content h2,
+  .itc-strategy-card h3,
+  .itc-strategy-label {
+    font-size: 34px;
+  }
+
+  .itc-hero-desc,
+  .itc-enterprise-desc,
+  .itc-support-right p,
+  .itc-chat-title,
+  .itc-strategy-card p {
+    font-size: 16px;
+  }
+
+  .itc-hero-buttons,
+  .itc-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .itc-btn-primary,
+  .itc-btn-outline {
+    width: min(100%, 320px);
+    padding: 14px 28px;
   }
 
   .itc-strategy-grid {
     grid-template-columns: 1fr;
   }
 
-  .itc-hero-img {
+  .itc-hero-img-wrapper,
+  .itc-enterprise-img,
+  .itc-chat-box,
+  .itc-resource-card img {
     width: 100%;
+    max-width: 100%;
+  }
+
+  .itc-hero-img {
     height: auto;
   }
 
+  .itc-enterprise {
+    padding: 60px 4%;
+    gap: 40px;
+  }
+
   .itc-enterprise-img {
+    max-width: 420px;
+    margin-top: 30px;
+  }
+
+  .itc-support {
+    padding: 80px 4%;
+    gap: 40px;
+  }
+
+  .itc-support-right h1 {
+    font-size: 34px;
+  }
+
+  .itc-chat-box {
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .itc-cta {
+    padding: 60px 4%;
+    min-height: auto;
+  }
+
+  .itc-cta-content {
+    padding-left: 0;
+  }
+
+  .itc-cta-buttons {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .itc-resources {
+    padding: 60px 4%;
+  }
+
+  .itc-resource-card {
+    padding-bottom: 20px;
   }
 
 }
