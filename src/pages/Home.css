@@ -71,33 +71,13 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 650px;
-  max-width: 90%;
-
-  margin: 40px auto 0 auto;
-
-  margin-bottom: 20px;
-  border-radius: 60px;
-  padding: 6px 10px;
-  /* balanced padding */
-
-
-
-}
-
-/* INPUT */
-.hero-input-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  width: 450px;
-  max-width: 92%;
-  margin: 50px auto;
+  width: 100%;
+  max-width: 640px;
+  margin: 30px auto 20px;
 
   background: #f2f2f2;
   border-radius: 60px;
-  padding: 5px 5px;
+  padding: 8px 10px;
 
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.18),
@@ -180,7 +160,37 @@
   .hero-input-group button {
     width: auto;
     white-space: nowrap;
+    margin-right: 0;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: min(100%, 520px);
+    max-width: 520px;
+    margin: 22px auto 0;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .hero-input-group input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 16px;
+    border-radius: 999px;
+  }
+
+  .hero-input-group button {
+    width: auto;
+    padding: 14px 20px;
+    border-radius: 999px;
+    margin: 0;
+    min-width: 120px;
+    white-space: nowrap;
   }
 }
 

@@ -203,10 +203,7 @@ const Navbar = () => {
               </div>
             ))}
 
-            <div className="nav-actions">
-              <button className="btn-primary1">Get Quote</button>
-
-            </div>
+         
 
           </div>
         </div>
