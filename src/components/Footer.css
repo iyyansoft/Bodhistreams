@@ -140,6 +140,66 @@
   width: 100%;
 }
 
+/* Remove mobile touch highlight and text selection on footer interactive items */
+.footer-link,
+.footer-cta-link,
+.footer-bottom-links span,
+.social-icon {
+  -webkit-tap-highlight-color: transparent; /* iOS/Android touch highlight */
+  -webkit-touch-callout: none; /* iOS callout */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /* prevent selection highlight */
+  outline: none; /* remove focus outline on touch */
+  touch-action: manipulation; /* prefer immediate navigation on touch */
+}
+
+/* Also remove active background/color change on tap */
+.footer-link:active,
+.footer-cta-link:active,
+.footer-bottom-links span:active {
+  background: transparent;
+  color: inherit;
+}
+
+/* Ensure keyboard focus still visible for accessibility if needed */
+.footer-link:focus,
+.footer-cta-link:focus,
+.footer-bottom-links span:focus {
+  outline: 2px solid transparent; /* keep focus but avoid default blue */
+}
+
+/* Remove box/highlight on touch devices (keeps keyboard focus via :focus-visible) */
+@media (hover: none) and (pointer: coarse) {
+  .footer-link,
+  .footer-cta-link,
+  .footer-bottom-links span,
+  .social-icon {
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  .footer-link:active,
+  .footer-cta-link:active,
+  .footer-bottom-links span:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    color: inherit !important;
+  }
+}
+
+/* Keep visible focus for keyboard users */
+.footer-link:focus-visible,
+.footer-cta-link:focus-visible,
+.footer-bottom-links span:focus-visible {
+  outline: 2px solid rgba(140,198,63,0.25);
+  outline-offset: 2px;
+}
+
 /* ================================
    CTA
 ================================ */
