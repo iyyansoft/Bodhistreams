@@ -15,67 +15,139 @@
 
 .about-hero {
   position: relative;
-  padding: 140px 20px 120px;
-  text-align: center;
-  background: linear-gradient(135deg, #3d800d, #0b2f4a);
-  color: white;
-  overflow: hidden;
-  margin-top: 50px;
+  background: #FCFAF6; /* Corporate warm cream background matching overall site styling */
+  padding: 80px 8% 40px;
+  margin-top: 110px; /* Offset fixed header */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.about-hero::before {
-  content: "";
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  background: rgba(216, 239, 186, 0.12);
-  border-radius: 50%;
-  top: -300px;
-  left: -200px;
+.about-hero-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 60px;
 }
 
-.about-hero::after {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  bottom: -250px;
-  right: -150px;
+.about-hero-left {
+  flex: 1;
+  text-align: left;
 }
 
-.about-hero h1 {
-  font-size: 4.5rem;
+.about-hero-tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: #5a8f2f; /* Brand green */
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.about-hero-left h1 {
+  font-size: 48px;
   font-weight: 800;
-  margin-bottom: 25px;
-  position: relative;
-  z-index: 2;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 15px;
 }
 
-.about-hero p {
-  max-width: 850px;
-  margin: auto;
-  font-size: 1.2rem;
-  line-height: 2;
-  color: #dbeafe;
-  position: relative;
-  z-index: 2;
+.accent-line {
+  width: 50px;
+  height: 4px;
+  background: #5a8f2f;
+  border-radius: 2px;
+}
+
+.about-hero-right {
+  flex: 1.2;
+  text-align: left;
+}
+
+.about-hero-right p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4b5563; /* Corporate charcoal */
+  margin: 0;
+}
+
+/* =========================
+   PILLARS SECTION
+========================= */
+
+.about-pillars {
+  padding: 40px 8% 50px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pillar-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(90, 143, 47, 0.3);
+  box-shadow: 0 20px 40px rgba(90, 143, 47, 0.06);
+}
+
+.pillar-icon {
+  font-size: 30px;
+  background: rgba(90, 143, 47, 0.08);
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pillar-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.pillar-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
 }
 
 /* =========================
    SECTION
 ========================= */
 
+.about-section {
+  padding: 0 !important;
+}
 
 .split-section {
   width: 100%;
-  /* background: #1ec7a8;   white full width */
   display: flex;
   align-items: center;
   gap: 90px;
-  padding: 110px 8%;
-  margin-bottom: 50px;
+  padding: 60px 8%;
+  margin-bottom: 0px;
 }
 
 /* .about-section.dark {
@@ -136,7 +208,7 @@
 ========================= */
 
 .client-section {
-  padding: 120px 8%;
+  padding: 70px 8%;
   /* background: #f7f7f7; */
   position: relative;
   overflow: hidden;
@@ -481,7 +553,7 @@
 ========================= */
 
 .about-cta {
-  padding: 110px 20px;
+  padding: 70px 20px;
   text-align: center;
   background: linear-gradient(135deg, #071c2f, #0b2f4a);
   color: white;
@@ -580,8 +652,33 @@
     padding: 80px 6%;
   }
 
-  .about-hero h1 {
-    font-size: 3.2rem;
+  .about-hero {
+    padding: 60px 6% 30px;
+    margin-top: 80px;
+  }
+
+  .about-hero-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .about-hero-left,
+  .about-hero-right {
+    text-align: center;
+  }
+
+  .about-hero-left h1 {
+    font-size: 36px;
+  }
+
+  .about-hero-right p {
+    font-size: 16px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .about-section h2 {
@@ -592,15 +689,22 @@
 @media (max-width: 600px) {
 
   .about-hero {
-    padding: 120px 20px 90px;
+    padding: 50px 4% 25px;
   }
 
-  .about-hero h1 {
-    font-size: 2.4rem;
+  .about-hero-left h1 {
+    font-size: 28px;
   }
 
-  .about-hero p {
-    font-size: 1rem;
+  .pillar-card {
+    padding: 25px 20px;
+  }
+
+  .pillar-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .about-section h2 {
@@ -629,7 +733,7 @@
 ========================= */
 
 .eventzgo-section {
-  padding: 130px 8%;
+  padding: 80px 8%;
   background: linear-gradient(135deg, #7b2ff7, #f947be);
   position: relative;
   overflow: hidden;
@@ -676,7 +780,7 @@
 .eventzgo-header {
   text-align: center;
 
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   position: relative;
   z-index: 2;

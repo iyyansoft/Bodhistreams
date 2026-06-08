@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from "./pages/Home";
 import './styles/global.css';
 import FloatingButtons from "./components/FloatingButtons";
+import ChatBot from "./components/ChatBot";
 
 import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
@@ -38,13 +39,15 @@ import MegaEvents from "./pages/event/MegaEvents";
 
 
 function App() {
+  const location = useLocation();
+
   return (
-    <Router>
+    <>
       <FloatingButtons/> 
       <Navbar />
 
       <AnimatePresence mode="wait">
-        <Routes>
+        <Routes location={location} key={location.pathname}>
 
 
           <Route path="/help-centre" element={<HelpCenter />} />
@@ -78,9 +81,9 @@ function App() {
 
         </Routes>
       </AnimatePresence>
-
+      {/* <ChatBot /> */}
       <Footer />
-    </Router>
+    </>
   );
 }
 

@@ -211,12 +211,13 @@ grid-template-columns:1fr;
 /* HERO */
 
 .service-banner{
-  height:100vh;
+  height: calc(100vh - 110px);
   background-image:url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop");
   background-size:cover;
   background-position:center;
   position:sticky;
-  top:0;
+  top: 110px;
+  z-index: 1;
 }
 
 .overlay{
@@ -238,14 +239,18 @@ grid-template-columns:1fr;
 
 .service-text{
   max-width:1100px;
-  margin:-120px auto 100px;
+  margin: 0 auto 100px;
   padding:80px;
-  backdrop-filter:blur(8px);
+  background: rgba(252, 250, 246, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(90, 143, 47, 0.15);
+  position: relative;
+  z-index: 2;
 
   border-radius:20px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.15);
-  margin-top: 20px;
-  color: #f6f6f6;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  color: #1f2937;
 }
 
 
@@ -280,12 +285,13 @@ grid-template-columns:1fr;
 .service-info h2{
   font-size:30px;
   margin-bottom:15px;
+  color: #1e3f20; /* Deep premium green matching Bodhi Streams */
 }
 
 .service-info p{
   font-size:18px;
   line-height:1.7;
-  color:#fcfbfb;
+  color: #4b5563; /* Charcoal for readability and contrast */
 }
 
 

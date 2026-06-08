@@ -25,22 +25,32 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+a, button, .card, .client-card, .eventzgo-card, .info-block {
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-family: inherit;
+a:hover {
+  opacity: 0.85;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 section {

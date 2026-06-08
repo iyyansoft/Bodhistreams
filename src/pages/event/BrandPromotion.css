@@ -355,6 +355,11 @@ font-size:38px;
 
 }
 
+.ent-image > div {
+  width: 100%;
+  height: 100%;
+}
+
 .ent-image img{
 
   width:100%;

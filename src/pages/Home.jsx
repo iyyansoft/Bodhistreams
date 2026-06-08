@@ -2,6 +2,8 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import './Home.css';
 import { useState, useEffect } from "react";
+import PageWrapper from '../components/PageWrapper';
+import AnimatedSection from '../components/AnimatedSection';
 
 
 const Home = () => {
@@ -158,12 +160,8 @@ const Home = () => {
 
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="home-page"
-    >
+    <PageWrapper>
+      <div className="home-page">
       {/* Hero Section with Sliding Images */}
       <section className="hero-zendesk">
         <div className="hero-container">
@@ -332,40 +330,40 @@ const Home = () => {
 
 
 <section className="report-hero">
-  <div className="report-container">
+  <AnimatedSection type="slideUp">
+    <div className="report-container">
 
-    {/* LEFT IMAGE */}
-    <div className="report-image">
-    <img
-  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1974&auto=format&fit=crop"
-  alt="Students working in Innovation Lab"
-/>
+      {/* LEFT IMAGE */}
+      <div className="report-image">
+      <img
+    src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1974&auto=format&fit=crop"
+    alt="Students working in Innovation Lab"
+  />
+      </div>
+
+      {/* RIGHT CONTENT */}
+      <div className="report-content">
+
+        <span className="report-tag">INSIGHTS</span>
+
+        <h1>
+          Building Innovation Infrastructure for
+          Institutions and Enterprises
+        </h1>
+
+      <p>
+    We design and establish Innovation Labs, STEM Labs, and Makerspaces 
+    with complete end-to-end solutions.
+    <br /><br />
+    From planning and equipment setup to training and execution, 
+    we ensure labs are not just installed—but actively used 
+    for real innovation and outcomes.
+  </p>
+
+      </div>
+
     </div>
-
-    {/* RIGHT CONTENT */}
-    <div className="report-content">
-
-      <span className="report-tag">INSIGHTS</span>
-
-      <h1>
-        Building Innovation Infrastructure for
-        Institutions and Enterprises
-      </h1>
-
-    <p>
-  We design and establish Innovation Labs, STEM Labs, and Makerspaces 
-  with complete end-to-end solutions.
-  <br /><br />
-  From planning and equipment setup to training and execution, 
-  we ensure labs are not just installed—but actively used 
-  for real innovation and outcomes.
-</p>
-
-
-
-    </div>
-
-  </div>
+  </AnimatedSection>
 </section>
 
 
@@ -619,7 +617,8 @@ const Home = () => {
 
 
 
-    </motion.div>
+      </div>
+    </PageWrapper>
   );
 };
 
