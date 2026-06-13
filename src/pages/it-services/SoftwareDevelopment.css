@@ -1,0 +1,654 @@
+/* ==========================================================================
+   MINIMALIST ZERO-IMAGE TECH SAAS REDESIGN WITH RICH ANIMATIONS
+   Hides all image tags, utilizing Outfit typography, keyframe entrances,
+   pulsing glows, elastic hover states, and smooth bezier curves.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Vibrant Brand Green Palette */
+  --color-green-primary: #8dbf43; 
+  --color-green-medium: #5b8e21;
+  --color-green-light: #f7faf5;
+  --color-green-dark: #1b2413;
+  
+  --color-bg-base: #fbfdfa;
+  --color-bg-white: #ffffff;
+  --color-border-fine: #e4ebdd;
+  --color-text-main: #2b3324;
+  --color-text-muted: #5d6a52;
+  
+  /* Soft Premium Shadows */
+  --shadow-premium-soft: 0 12px 35px -10px rgba(59, 83, 26, 0.08);
+  --shadow-premium-glow: 0 20px 45px -12px rgba(141, 191, 67, 0.25);
+  
+  /* Elastic & Smooth Animation Curves */
+  --transition-elegant: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-elastic: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Base Frame Structure */
+.zendesk-hero, 
+.sd-section, 
+.ai-section, 
+.impact-with-image, 
+.resources-section, 
+.cta-section {
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-text-main);
+  background-color: var(--color-bg-base);
+  padding: 120px 8%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Global Headings Formatting */
+.zendesk-left h1,
+.sd-main-title,
+.ai-left h1,
+.impact-content h1,
+.resources-title,
+.cta-content h2 {
+  color: var(--color-green-dark);
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  line-height: 1.15;
+}
+
+/* Page Entry Reveal Animation */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zendesk-left, 
+.sd-grid, 
+.ai-left, 
+.ai-new-card, 
+.impact-content, 
+.resources-grid, 
+.cta-content {
+  animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ===================================== */
+/* 1. HERO SECTION (100% Text-Based Hero) */
+/* ===================================== */
+
+.zendesk-hero {
+  display: block; /* Centered, text-only hero */
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.zendesk-left {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-green-medium);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  padding: 6px 16px;
+  background-color: var(--color-green-light);
+  border: 1px solid var(--color-border-fine);
+  border-radius: 99px;
+  margin-bottom: 24px;
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(141, 191, 67, 0.15);
+    border-color: var(--color-border-fine);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(141, 191, 67, 0.08);
+    border-color: var(--color-green-primary);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(141, 191, 67, 0.15);
+    border-color: var(--color-border-fine);
+  }
+}
+
+.zendesk-left h1 {
+  font-size: 54px;
+  margin-bottom: 24px;
+  transition: var(--transition-elegant);
+}
+
+.zendesk-left h1 br {
+  display: none;
+}
+
+.description {
+  font-size: 18.5px;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  max-width: 650px;
+}
+
+/* Hide Hero Image container */
+.zendesk-right {
+  display: none !important;
+}
+
+/* ===================================== */
+/* 2. FEATURES SECTION (Elegant Glass Cards) */
+/* ===================================== */
+
+.sd-section {
+  background-color: var(--color-bg-white);
+  border-top: 1px solid var(--color-border-fine);
+  border-bottom: 1px solid var(--color-border-fine);
+  max-width: 100%;
+}
+
+.sd-mini-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-green-medium);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.sd-main-title {
+  font-size: 42px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.sd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.sd-card {
+  background-color: var(--color-green-light);
+  border: 1px solid var(--color-border-fine);
+  border-radius: 20px;
+  padding: 45px 36px;
+  transition: var(--transition-elastic);
+  cursor: pointer;
+}
+
+.sd-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--color-green-primary);
+  background-color: #ffffff;
+  box-shadow: var(--shadow-premium-glow);
+}
+
+.sd-icon {
+  font-size: 26px;
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-fine);
+  box-shadow: 0 4px 12px rgba(59, 83, 26, 0.04);
+  transition: var(--transition-elastic);
+}
+
+.sd-card:hover .sd-icon {
+  background-color: var(--color-green-primary);
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 6px 15px rgba(141, 191, 67, 0.3);
+}
+
+.sd-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 14px;
+}
+
+.sd-card p {
+  font-size: 15.5px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===================================== */
+/* 3. AI / SOLUTIONS SECTION (Minimal Outline Deck) */
+/* ===================================== */
+
+.ai-section {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.ai-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-green-medium);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 16px;
+}
+
+.ai-left h1 {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+.ai-left h1 br {
+  display: block;
+}
+
+.ai-description {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: 36px;
+  white-space: pre-line;
+}
+
+.ai-link {
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--color-green-dark);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-elegant);
+  width: max-content;
+  border-bottom: 2px solid var(--color-green-primary);
+  padding-bottom: 2px;
+}
+
+.ai-link:hover {
+  color: var(--color-green-primary);
+  transform: translateX(8px);
+}
+
+.ai-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ai-new-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--color-green-light);
+  border: 1px solid var(--color-border-fine);
+  border-radius: 24px;
+  box-shadow: var(--shadow-premium-soft);
+  transition: var(--transition-elastic);
+}
+
+.ai-new-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-green-primary);
+  box-shadow: var(--shadow-premium-glow);
+}
+
+/* Hide AI image completely */
+.ai-image {
+  display: none !important;
+}
+
+.ai-content {
+  padding: 45px 36px;
+}
+
+.ai-content h4 {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  margin-bottom: 20px;
+}
+
+.ai-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.ai-content li {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition-elegant);
+}
+
+.ai-new-card:hover li {
+  transform: translateX(4px);
+}
+
+.ai-content li::before {
+  content: '✔';
+  color: var(--color-green-primary);
+  font-weight: bold;
+}
+
+.ai-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: var(--color-green-primary);
+  color: var(--color-green-dark);
+  border: none;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: var(--transition-elegant);
+}
+
+.ai-btn:hover {
+  background-color: var(--color-green-dark);
+  color: #ffffff;
+  transform: scale(1.02);
+}
+
+/* ===================================== */
+/* 4. IMPACT SECTION (Clean Callout Text Panel) */
+/* ===================================== */
+
+.impact-with-image {
+  display: block; /* Overwrite Grid layout */
+  background-color: var(--color-green-light);
+  border-top: 1px solid var(--color-border-fine);
+  border-bottom: 1px solid var(--color-border-fine);
+  max-width: 100%;
+  padding: 100px 15%;
+  text-align: center;
+}
+
+/* Hide Impact image completely */
+.impact-image {
+  display: none !important;
+}
+
+.impact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-green-medium);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 16px;
+}
+
+.impact-content h1 {
+  font-size: 38px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.impact-content p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+
+.impact-link {
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--color-green-dark);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-elegant);
+  width: max-content;
+  margin-top: 10px;
+  border-bottom: 2.5px solid var(--color-green-primary);
+  padding-bottom: 2px;
+}
+
+.impact-link:hover {
+  color: var(--color-green-primary);
+  transform: translateX(8px);
+}
+
+/* ===================================== */
+/* 5. RESOURCES SECTION (Fine Cards without Images) */
+/* ===================================== */
+
+.resources-section {
+  background-color: #ffffff;
+}
+
+.resources-title {
+  font-size: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.resource-card {
+  background-color: var(--color-green-light);
+  border: 1px solid var(--color-border-fine);
+  border-left: 4px solid var(--color-green-primary); /* Bold green left indicator */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition-elastic);
+}
+
+/* Hide resource card images completely */
+.resource-card .image-wrapper {
+  display: none !important;
+}
+
+.resource-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--color-green-primary);
+  background-color: #ffffff;
+  box-shadow: var(--shadow-premium-glow);
+}
+
+.resource-content {
+  padding: 40px 30px;
+}
+
+.resource-tag {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--color-green-medium);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.resource-content h3 {
+  font-size: 16.5px;
+  font-weight: 800;
+  color: var(--color-green-dark);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* ===================================== */
+/* 6. CTA SECTION (Matches Uploaded Design Style) */
+/* ===================================== */
+
+.cta-section {
+  background-color: #ffffff;
+  padding-bottom: 140px;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.cta-content {
+  background-color: #04230e !important; /* Deep Forest Green from uploaded swatch */
+  color: #ffffff !important;
+  border-radius: 28px;
+  padding: 85px 60px !important; /* Increased padding to increase height and width footprint */
+  min-height: 340px !important; /* Increased block height */
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(4, 35, 14, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centering content vertically */
+  position: relative;
+  overflow: hidden;
+  max-width: 1350px !important; /* Increased container width */
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+/* Pseudo element for top label subtitle "LET'S BUILD THE FUTURE" */
+.cta-content::before {
+  content: "LET'S BUILD THE FUTURE";
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  color: #8dbf43 !important; /* Brand light green accent */
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+}
+
+.cta-content h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 36px;
+  line-height: 1.25;
+  color: #ffffff !important;
+  max-width: 800px;
+  letter-spacing: -1px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* White filled primary button (Scoped to cta-section to override bleeding styles) */
+.cta-section .cta-primary {
+  padding: 14px 32px !important;
+  background-color: #ffffff !important;
+  color: #04230e !important; /* Matching new deep forest green background */
+  font-weight: 800 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: var(--transition-elegant) !important;
+}
+
+.cta-section .cta-primary:hover {
+  background-color: #f7faf5 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Transparent outline secondary button (Scoped to cta-section to override bleeding styles) */
+.cta-section .cta-outline {
+  padding: 14px 32px !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  cursor: pointer !important;
+  transition: var(--transition-elegant) !important;
+}
+
+.cta-section .cta-outline:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .zendesk-hero, .ai-section, .resources-section, .cta-section {
+    padding: 80px 6%;
+  }
+
+  .zendesk-hero {
+    padding-top: 140px;
+  }
+
+  .ai-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .mini-title, .ai-label, .ai-link, .impact-label, .impact-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description, .ai-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .zendesk-left h1, .ai-left h1, .impact-content h1, .resources-title, .cta-content h2 {
+    font-size: 32px;
+  }
+
+  .ai-card-wrapper {
+    justify-content: center;
+  }
+
+  .impact-with-image {
+    padding: 80px 6%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+  }
+}

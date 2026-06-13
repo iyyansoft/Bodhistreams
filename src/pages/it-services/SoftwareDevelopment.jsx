@@ -1,4 +1,4 @@
-import "./ITPages.css";
+import "./SoftwareDevelopment.css";
 import { Home, MessageSquare, Users, BarChart2, Settings, Sparkles } from "lucide-react";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
