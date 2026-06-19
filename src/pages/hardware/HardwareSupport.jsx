@@ -77,9 +77,7 @@ const HardwareSupport = () => {
             <AnimatedSection type="slideRight" className="modern-left" duration={0.7}>
               <h5>INSTALLATION & TECHNICAL SUPPORT SERVICES</h5>
               <h2>
-                Reliable installation & <br />
-                continuous IT support <br />
-                for enterprise systems
+                Reliable installation & continuous IT support for enterprise systems
               </h2>
               <p>
                 At BodhiStreams Convergence, we provide end-to-end installation,

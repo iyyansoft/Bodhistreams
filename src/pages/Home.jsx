@@ -1,9 +1,58 @@
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import PageWrapper from '../components/PageWrapper';
 import AnimatedSection from '../components/AnimatedSection';
+
+const ScrollRevealImage = ({ src, alt, className = "", style = {}, children }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+
+  // Scale down from 1.25 to 1.0, opacity from 0.6 to 1.0 for a cinematic sweep
+  const scale = useTransform(scrollYProgress, [0, 0.45], [1.25, 1.0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.3], [0.6, 1.0]);
+
+  // Butter-smooth spring physical model
+  const smoothScale = useSpring(scale, { stiffness: 45, damping: 15, mass: 0.5 });
+  const smoothOpacity = useSpring(opacity, { stiffness: 55, damping: 18 });
+
+  return (
+    <div 
+      ref={ref} 
+      className={className} 
+      style={{ 
+        position: 'relative',
+        ...style 
+      }}
+    >
+      <div style={{ 
+        width: '100%', 
+        height: '100%', 
+        overflow: 'hidden', 
+        borderRadius: '30px' 
+      }}>
+        <motion.img
+          src={src}
+          alt={alt}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            scale: smoothScale,
+            opacity: smoothOpacity,
+            transition: 'none'
+          }}
+        />
+      </div>
+      {children}
+    </div>
+  );
+};
+
 
 
 const Home = () => {
@@ -28,6 +77,41 @@ const Home = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.12
+      }
+    }
+  };
+
+  const wordRevealContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.08
+      }
+    }
+  };
+
+  const wordRevealChild = {
+    hidden: { opacity: 0, filter: "blur(8px)", y: 10 },
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  const cinematicReveal = {
+    hidden: { scale: 1.15, opacity: 0.8 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        ease: [0.16, 1, 0.3, 1]
       }
     }
   };
@@ -169,8 +253,26 @@ const Home = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }} >
-            <h1 className="hero-main-heading"> Powering Digital Transformation <br /> <span>Through Technology & Innovation</span>
-            </h1> <p className="hero-subtext"> BodhiStreams Convergence Pvt Ltd provides complete software, IT, and electronic solutions along with a secure online ticketing platform to support modern business growth.</p>
+            <motion.h1 
+              className="hero-main-heading"
+              variants={wordRevealContainer}
+              initial="hidden"
+              animate="visible"
+            >
+              {"Powering Digital Transformation".split(" ").map((word, idx) => (
+                <motion.span key={idx} variants={wordRevealChild} style={{ display: 'inline-block', marginRight: '0.25em' }}>
+                  {word}
+                </motion.span>
+              ))}
+              <br />
+              <motion.span 
+                className="hero-gradient-span"
+                variants={wordRevealChild} 
+                style={{ display: 'block', marginTop: '10px' }}
+              >
+                Through Technology & Innovation
+              </motion.span>
+            </motion.h1> <p className="hero-subtext"> BodhiStreams Convergence Pvt Ltd provides complete software, IT, and electronic solutions along with a secure online ticketing platform to support modern business growth.</p>
             <div className="hero-input-wrapper">
               <div className="hero-input-group">
 
@@ -334,12 +436,11 @@ const Home = () => {
     <div className="report-container">
 
       {/* LEFT IMAGE */}
-      <div className="report-image">
-      <img
-    src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1974&auto=format&fit=crop"
-    alt="Students working in Innovation Lab"
-  />
-      </div>
+      <ScrollRevealImage
+        src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=1974&auto=format&fit=crop"
+        alt="Students working in Innovation Lab"
+        className="report-image"
+      />
 
       {/* RIGHT CONTENT */}
       <div className="report-content">
@@ -405,17 +506,16 @@ const Home = () => {
     {/* RIGHT IMAGE */}
     <motion.div
       className="bs-loop-visual"
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true, amount: 0.15 }}
     >
-      <div className="bs-image-wrapper">
-        <img 
-          src="/product.webp" 
-          alt="Innovation Lab"
-        />
-      </div>
+      <ScrollRevealImage 
+        src="/product.webp" 
+        alt="Innovation Lab"
+        className="bs-image-wrapper"
+      />
     </motion.div>
 
   </div>
@@ -429,12 +529,11 @@ const Home = () => {
   <div className="bs-transform-container">
 
     {/* LEFT IMAGE */}
-    <div className="bs-transform-image">
-      <img
-        src="https://bernardmarr.com/wp-content/uploads/2025/11/tech-in-action.jpeg"
-        alt="IT Infrastructure Solutions"
-      />
-
+    <ScrollRevealImage
+      src="https://bernardmarr.com/wp-content/uploads/2025/11/tech-in-action.jpeg"
+      alt="IT Infrastructure Solutions"
+      className="bs-transform-image"
+    >
       {/* Floating Card */}
       <motion.div
         className="bs-floating-card"
@@ -457,8 +556,7 @@ const Home = () => {
       >
         System deployment completed successfully 🚀
       </motion.div>
-
-    </div>
+    </ScrollRevealImage>
 
     {/* RIGHT CONTENT */}
     <motion.div
@@ -521,13 +619,11 @@ const Home = () => {
     </motion.div>
 
     {/* RIGHT IMAGE */}
-    <div className="bs-employee-image">
-
-      <img
-        src="https://www.hbs.edu/ctfassets/public/images/6S5XyaoeTV0TpCltWA96xl/business-professional-leading-product-innovation.jpg"
-        alt="Innovation Lab Students"
-      />
-
+    <ScrollRevealImage
+      src="https://www.hbs.edu/ctfassets/public/images/6S5XyaoeTV0TpCltWA96xl/business-professional-leading-product-innovation.jpg"
+      alt="Innovation Lab Students"
+      className="bs-employee-image"
+    >
       {/* Floating Text 1 */}
       <motion.div
         className="bs-float tag1"
@@ -549,8 +645,7 @@ const Home = () => {
       >
         Hands-on Learning 🚀
       </motion.div>
-
-    </div>
+    </ScrollRevealImage>
 
   </div>
 </section>

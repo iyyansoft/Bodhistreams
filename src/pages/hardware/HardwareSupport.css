@@ -35,7 +35,7 @@
 }
 
 .support-content h1 {
-  font-size: clamp(3rem, 5vw, 4.6rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
   line-height: 1.05;
   margin-bottom: 22px;
   max-width: 720px;
@@ -80,7 +80,7 @@
 }
 
 .section-header h2 {
-  font-size: clamp(2.3rem, 3vw, 3.4rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
   color: #2f6f5e;
   margin-bottom: 50px;
 }
@@ -170,11 +170,12 @@
 }
 
 .modern-left h2 {
-  font-size: clamp(2.7rem, 4vw, 3.5rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
   line-height: 1.08;
   font-weight: 700;
   color: #222;
   margin-bottom: 30px;
+  text-wrap: balance;
 }
 
 .modern-left p {
@@ -315,7 +316,7 @@
 }
 
 .hw-support-main-heading {
-  font-size: 42px;
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
   font-weight: 700;
   line-height: 1.25;
   color: #1B5E20;
@@ -391,7 +392,7 @@
 }
 
 .it-premium-left h2 {
-  font-size: clamp(2.8rem, 4vw, 3.2rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 20px;
@@ -538,10 +539,12 @@
   .premium-bg-img {
     margin-top: 40px;
   }
+  .support-content h1,
+  .section-header h2,
   .modern-left h2,
-  .split-right h2,
+  .hw-support-main-heading,
   .it-premium-left h2 {
-    font-size: clamp(2.4rem, 7vw, 3rem);
+    font-size: clamp(1.8rem, 6vw, 2.3rem);
   }
   .split-card {
     min-height: auto;
@@ -671,11 +674,12 @@
   .it-premium {
     padding: 40px 4.5%;
   }
+  .support-content h1,
   .section-header h2,
   .modern-left h2,
-  .split-right h2,
+  .hw-support-main-heading,
   .it-premium-left h2 {
-    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    font-size: clamp(1.6rem, 7vw, 2.0rem);
   }
   .split-card {
     flex-direction: column;
@@ -709,9 +713,7 @@
     align-items: stretch;
   }
 
-  .hw-support-main-heading {
-    font-size: clamp(2rem, 5vw, 2.5rem);
-  }
+
 
   .hw-support-features-grid {
     gap: 24px;
@@ -750,9 +752,7 @@
     font-size: 14px;
   }
 
-  .hw-support-main-heading {
-    font-size: clamp(1.8rem, 8vw, 2.2rem);
-  }
+
 
   .hw-support-subtext {
     margin-bottom: 24px;

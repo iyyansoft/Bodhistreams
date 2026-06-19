@@ -71,7 +71,7 @@ const EventDiscovery = () => {
               <div className="service-img">
                 <AnimatedSection type="slideRight">
                   <img
-                    src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+                    src="/eventhome1.png"
                     alt="Event creation and listing"
                   />
                 </AnimatedSection>
@@ -109,7 +109,7 @@ const EventDiscovery = () => {
               <div className="service-img">
                 <AnimatedSection type="slideRight">
                   <img
-                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+                    src="/registaration.png"
                     alt="Event registration"
                   />
                 </AnimatedSection>
@@ -128,7 +128,7 @@ const EventDiscovery = () => {
               <div className="service-img">
                 <AnimatedSection type="slideLeft">
                   <img
-                    src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70"
+                    src="/event-dashboard.png"
                     alt="Ticketing payments"
                   />
                 </AnimatedSection>
@@ -202,7 +202,7 @@ const EventDiscovery = () => {
           <div className="services-grid">
             <AnimatedSection type="scale" delay={0.1} className="service-card">
               <img
-                src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=1200&auto=format&fit=crop"
+                src="/eventhome1.png"
                 alt="Event discovery"
               />
               <div className="card-overlay">
@@ -216,7 +216,7 @@ const EventDiscovery = () => {
 
             <AnimatedSection type="scale" delay={0.2} className="service-card">
               <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+                src="/registaration.png"
                 alt="Registration"
               />
               <div className="card-overlay">
@@ -229,8 +229,9 @@ const EventDiscovery = () => {
             </AnimatedSection>
 
             <AnimatedSection type="scale" delay={0.3} className="service-card">
+              {/* Force reload comment */}
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                src="/event-dashboard.png?v=3"
                 alt="Dashboard"
               />
               <div className="card-overlay">

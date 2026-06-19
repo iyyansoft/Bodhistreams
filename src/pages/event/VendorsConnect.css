@@ -835,6 +835,7 @@ padding: 80px 8%;
 
   .hero-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
   .btn-primary,
@@ -843,6 +844,12 @@ padding: 80px 8%;
   .ticket-btn {
     width: 100%;
     max-width: 100%;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    width: 100%;
+    max-width: 280px;
   }
 
   .event-text {

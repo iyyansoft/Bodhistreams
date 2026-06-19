@@ -203,25 +203,34 @@ export default function ExpertNetwork() {
           </div>
         </section>
 
-        {/* CTA SPLIT */}
-        <section className="cta-split">
-          <div className="cta-image">
-            <AnimatedSection type="slideRight" duration={0.7}>
-              <img
-                src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1600"
-                alt="Team collaboration"
-              />
-            </AnimatedSection>
-          </div>
+        {/* EXPERT CTA SECTION */}
+        <section className="expert-cta-section">
+          <div className="expert-cta-container">
+            <div className="expert-cta-grid">
+              <div className="expert-cta-image-wrapper">
+                <AnimatedSection type="slideRight" duration={0.7}>
+                  <div className="image-glow-effect"></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1600"
+                    alt="Team collaboration"
+                  />
+                </AnimatedSection>
+              </div>
 
-          <AnimatedSection type="slideLeft" className="cta-content" duration={0.7}>
-            <h2>Collaborate with Experts</h2>
-            <p>
-              Connect with professionals, gain insights, and transform
-              your ideas into real-world impact with confidence.
-            </p>
-            <button>Connect Now →</button>
-          </AnimatedSection>
+              <AnimatedSection type="slideLeft" className="expert-cta-text-wrapper" duration={0.7}>
+                <span className="expert-cta-tag">Let's Build the Future</span>
+                <h2>Collaborate with Experts</h2>
+                <p>
+                  Connect with professionals, gain insights, and transform
+                  your ideas into real-world impact with confidence.
+                </p>
+                <button className="expert-cta-btn">
+                  Connect Now <span className="arrow">→</span>
+                </button>
+              </AnimatedSection>
+            </div>
+            <div className="expert-cta-blob"></div>
+          </div>
         </section>
       </div>
     </PageWrapper>

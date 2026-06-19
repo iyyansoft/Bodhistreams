@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import './styles/global.css';
 import FloatingButtons from "./components/FloatingButtons";
 import ChatBot from "./components/ChatBot";
+import CustomCursor from "./components/CustomCursor";
 
 import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <>
+      <CustomCursor />
       <FloatingButtons/> 
       <Navbar />
 

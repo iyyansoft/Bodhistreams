@@ -99,25 +99,28 @@
 }
 
 .ep-btn--white {
-  background: var(--white);
-  color: var(--blue-700);
-  border-color: var(--white);
-  box-shadow: 0 4px 18px rgba(0,0,0,.15);
+  background: #c5f870 !important;
+  color: #04230e !important;
+  border-color: #c5f870 !important;
+  border-radius: 100px !important;
+  box-shadow: 0 4px 18px rgba(197,248,112,.15) !important;
 }
 .ep-btn--white:hover {
-  background: var(--blue-50);
-  transform: translateY(-2px);
+  background: #b3ea59 !important;
+  border-color: #b3ea59 !important;
+  transform: translateY(-2px) !important;
 }
 
 .ep-btn--ghost-light {
-  background: transparent;
-  color: var(--white);
-  border-color: rgba(255,255,255,.45);
+  background: transparent !important;
+  color: var(--white) !important;
+  border: 1px solid rgba(255,255,255,.25) !important;
+  border-radius: 100px !important;
 }
 .ep-btn--ghost-light:hover {
-  background: rgba(255,255,255,.1);
-  border-color: rgba(255,255,255,.8);
-  transform: translateY(-2px);
+  background: rgba(255,255,255,.1) !important;
+  border-color: rgba(255,255,255,.8) !important;
+  transform: translateY(-2px) !important;
 }
 
 
@@ -598,7 +601,7 @@
    6. CTA BANNER
    ================================================================ */
 .ep-cta {
-  background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 40%, #3d7020 100%);
+  background: #04230e;
   padding: var(--section-pad);
   text-align: center;
   position: relative;
@@ -610,10 +613,10 @@
   position: absolute;
   width: 700px;
   height: 700px;
-  border-radius: 50%;
-  border: 90px solid rgba(255,255,255,.04);
+  background: radial-gradient(circle, rgba(140, 198, 63, 0.08), transparent 65%);
   top: -220px;
   right: -160px;
+  filter: blur(80px);
   pointer-events: none;
 }
 .ep-cta::after {
@@ -621,10 +624,10 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  border-radius: 50%;
-  border: 60px solid rgba(255,255,255,.04);
+  background: radial-gradient(circle, rgba(140, 198, 63, 0.06), transparent 65%);
   bottom: -160px;
   left: -100px;
+  filter: blur(60px);
   pointer-events: none;
 }
 

@@ -1,0 +1,62 @@
+/* Neat and Clean Custom Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+  /* Hide default cursor globally */
+  html, body, a, button, [role="button"], input, select, textarea {
+    cursor: none !important;
+  }
+
+  .clean-cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #386f18; /* Main brand green */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+  }
+
+  .clean-cursor-dot.hovered {
+    width: 3px;
+    height: 3px;
+    background-color: #2b5512;
+  }
+
+  .clean-cursor-dot.clicked {
+    width: 8px;
+    height: 8px;
+    background-color: #2b5512;
+  }
+
+  .clean-cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(56, 111, 24, 0.35); /* Subtle brand green border */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                height 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .clean-cursor-trail.hovered {
+    width: 46px;
+    height: 46px;
+    background-color: rgba(56, 111, 24, 0.05); /* Light translucent green background fill */
+    border-color: #386f18;
+  }
+
+  .clean-cursor-trail.clicked {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(56, 111, 24, 0.15);
+    border-color: #386f18;
+  }
+}

@@ -92,3 +92,54 @@ section {
 
 /* Prevent unexpected horizontal scroll from transforms */
 html, body { width: 100%; overflow-x: hidden; }
+
+/* ==========================================================================
+   Typography Design System (Based on Reference Image)
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.hero-main-heading,
+.hero-main-heading span,
+.hero-gradient-span,
+[class*="-heading"],
+[class*="-title"],
+.bs-loop-container h2,
+.bs-transform-container h2,
+.bs-employee-container h2,
+.report-content h1,
+.story-heading,
+.contact-heading,
+.about-hero-title,
+.about-section-heading,
+.help-title {
+  font-family: 'Inter', 'Outfit', system-ui, -apple-system, sans-serif !important;
+  font-weight: 600 !important; /* Matches the medium/semibold weight of the reference */
+  letter-spacing: -0.025em !important; /* Clean tracking matching reference */
+  text-shadow: none !important; /* Flat crisp presentation, no shadow glows */
+  line-height: 1.15 !important; /* Tight line height */
+}
+
+/* Base scale rules for headings (reduced for consistent and refined hierarchy) */
+h1, .hero-main-heading {
+  font-size: clamp(32px, 4.5vw, 44px);
+}
+
+h2 {
+  font-size: clamp(24px, 3.2vw, 32px);
+}
+
+h3 {
+  font-size: clamp(20px, 2.2vw, 24px);
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+h5 {
+  font-size: 18px !important;
+}
+
+h6 {
+  font-size: 16px !important;
+}
+

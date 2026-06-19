@@ -124,35 +124,59 @@ const Digital = () => {
           </div>
         </section>
 
-        {/* SECTION 2 */}
-        <section className="eventtech-section">
-          <div className="eventtech-left">
-            <AnimatedSection type="slideRight" duration={0.7}>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
-                alt="Event Technology"
-              />
+        {/* SECTION 2 - DARK HERO CARD */}
+        <section className="eventtech-section-container">
+          <div className="eventtech-dark-card">
+            <div className="eventtech-grid-overlay"></div>
+            
+            <div className="eventtech-left">
+              <AnimatedSection type="slideRight" duration={0.7} className="eventtech-image-wrapper">
+                <div className="eventtech-glow-backdrop"></div>
+                <img
+                  src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?auto=format&fit=crop&w=900&q=80"
+                  alt="Event Technology & Digital Infrastructure"
+                  className="eventtech-premium-image"
+                />
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection type="slideLeft" className="eventtech-right" duration={0.7}>
+              <div className="eventtech-badge-lime">
+                <span>EVENT ARCHITECTURE</span>
+              </div>
+              <h2 className="eventtech-heading-white">
+                Digital Infrastructure for Event Management
+              </h2>
+              <p className="eventtech-text-light">
+                Power your events with a fully integrated digital system that simplifies 
+                event operations from start to finish. Manage event listings, handle 
+                participant registrations, and maintain accurate attendance records.
+              </p>
+              
+              <div className="eventtech-mini-features">
+                <div className="mini-feature-item">
+                  <span className="feature-dot">✓</span>
+                  <span>Live Participant Tracking</span>
+                </div>
+                <div className="mini-feature-item">
+                  <span className="feature-dot">✓</span>
+                  <span>Automated Reporting</span>
+                </div>
+                <div className="mini-feature-item">
+                  <span className="feature-dot">✓</span>
+                  <span>Secure Payments</span>
+                </div>
+                <div className="mini-feature-item">
+                  <span className="feature-dot">✓</span>
+                  <span>Real-time Analytics</span>
+                </div>
+              </div>
+
+              <button className="eventtech-btn-lime">
+                Explore Platform <span className="btn-arrow">→</span>
+              </button>
             </AnimatedSection>
           </div>
-
-          <AnimatedSection type="slideLeft" className="eventtech-right" duration={0.7}>
-            <h2 className="eventtech-heading">
-              Digital Infrastructure for Event Management
-            </h2>
-            <p className="eventtech-text">
-              Power your events with a fully integrated digital system that simplifies 
-              event operations from start to finish. Manage event listings, handle 
-              participant registrations, and maintain accurate attendance records 
-              through a single streamlined platform.
-
-              Leverage built-in tools for feedback collection, automated report 
-              generation, and real-time performance monitoring, while ensuring 
-              secure payment processing and efficient event execution.
-            </p>
-            <button className="eventtech-btn">
-              Explore Platform →
-            </button>
-          </AnimatedSection>
         </section>
 
         {/* PARALLAX CARDS */}

@@ -60,50 +60,7 @@
   line-height: 1.15;
 }
 
-/* Monospaced Metadata Injectors for Sections */
-.future-section::after {
-  content: '[SYS_SEC.01 // HERO_SCHEMATIC]';
-  position: absolute;
-  top: 40px;
-  left: 8%;
-  font-family: 'Fira Code', monospace;
-  font-size: 11px;
-  color: var(--color-green-medium);
-  opacity: 0.6;
-}
 
-.dt-framework::after {
-  content: '[SYS_SEC.02 // FRAMEWORK_MODELS]';
-  position: absolute;
-  top: 40px;
-  left: 8%;
-  font-family: 'Fira Code', monospace;
-  font-size: 11px;
-  color: var(--color-green-medium);
-  opacity: 0.6;
-}
-
-.dt-enterprise::after {
-  content: '[SYS_SEC.03 // INTEGRATION_FLOW]';
-  position: absolute;
-  top: 40px;
-  left: 8%;
-  font-family: 'Fira Code', monospace;
-  font-size: 11px;
-  color: var(--color-green-medium);
-  opacity: 0.6;
-}
-
-.dt-support::after {
-  content: '[SYS_SEC.04 // AUTOMATION_SIMULATOR]';
-  position: absolute;
-  top: 40px;
-  left: 8%;
-  font-family: 'Fira Code', monospace;
-  font-size: 11px;
-  color: var(--color-green-medium);
-  opacity: 0.6;
-}
 
 /* ===================================== */
 /* 1. HERO SECTION */
@@ -650,20 +607,20 @@
   flex-wrap: wrap;
 }
 
-/* White filled primary button */
+/* Lime filled primary button */
 .transform-cta-section .transform-primary-btn {
   padding: 14px 32px !important;
-  background-color: #ffffff !important;
+  background-color: #c5f870 !important;
   color: #04230e !important;
   font-weight: 800 !important;
-  border: 1px solid var(--color-green-dark) !important;
-  border-radius: 6px !important;
+  border: none !important;
+  border-radius: 100px !important;
   cursor: pointer !important;
   transition: var(--transition-tech) !important;
 }
 
 .transform-cta-section .transform-primary-btn:hover {
-  background-color: #f7faf5 !important;
+  background-color: #b3ea59 !important;
   transform: translateY(-2px) !important;
 }
 
@@ -673,7 +630,7 @@
   background-color: transparent !important;
   color: #ffffff !important;
   font-weight: 600 !important;
-  border-radius: 6px !important;
+  border-radius: 100px !important;
   border: 1px solid rgba(255, 255, 255, 0.25) !important;
   cursor: pointer !important;
   transition: var(--transition-tech) !important;

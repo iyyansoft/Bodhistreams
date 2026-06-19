@@ -2,19 +2,20 @@ import "./SoftwareDevelopment.css";
 import { Home, MessageSquare, Users, BarChart2, Settings, Sparkles } from "lucide-react";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const SoftwareDevelopment = () => {
+  const [activeTab, setActiveTab] = useState("gateway");
+
   return (
     <PageWrapper>
-      <section className="zendesk-hero">
+      <section className="zendesk-hero tabbed-hero">
         {/* LEFT CONTENT */}
         <AnimatedSection type="slideRight" className="zendesk-left" duration={0.7}>
           <p className="mini-title">IT SERVICES FOR ENTERPRISES</p>
           <h1>
-            Deliver powerful 
-            software solutions 
-            with scalable <br />
-            IT infrastructure
+            Deliver powerful software solutions with scalable IT infrastructure
           </h1>
           <p className="description">
             We design, develop, deploy and manage web applications,
@@ -22,16 +23,53 @@ const SoftwareDevelopment = () => {
             solutions. From consulting to automation and managed IT
             services, we help organizations innovate and scale.
           </p>
+          <div className="hero-cta-group">
+            <button className="primary-hero-btn">Get Started</button>
+            <button className="secondary-hero-btn">Explore Services</button>
+          </div>
         </AnimatedSection>
 
-        {/* RIGHT IMAGE */}
+        {/* RIGHT CONTENT (Minimalist Architecture Flow Diagram) */}
         <div className="zendesk-right">
-          <AnimatedSection type="slideLeft" className="image-wrapper-sofrtware" duration={0.7}>
-            <img
-              src="https://www.libertycenterone.com/wp-content/uploads/2024/11/img-blog-scalable-IT-strategies-and-solutions-for-tech-startups.webp"
-              alt="Developer Coding"
-              className="hero-image"
-            />
+          <AnimatedSection type="slideLeft" className="wireframe-composition" duration={0.7}>
+            {/* Connecting Vertical Pipeline */}
+            <div className="wireframe-connector"></div>
+
+            {/* Layer 1: Experience Layer */}
+            <div className="wireframe-node">
+              <div className="wireframe-icon">
+                <BarChart2 size={18} />
+              </div>
+              <div className="wireframe-info">
+                <h4>Experience Layer</h4>
+                <p>Web & Mobile Applications</p>
+              </div>
+              <span className="wireframe-status">ACTIVE</span>
+            </div>
+
+            {/* Layer 2: Integration Layer */}
+            <div className="wireframe-node">
+              <div className="wireframe-icon">
+                <Settings size={18} />
+              </div>
+              <div className="wireframe-info">
+                <h4>Integration Layer</h4>
+                <p>APIs & Middleware Systems</p>
+              </div>
+              <span className="wireframe-status">ACTIVE</span>
+            </div>
+
+            {/* Layer 3: Infrastructure Layer */}
+            <div className="wireframe-node">
+              <div className="wireframe-icon">
+                <Sparkles size={18} />
+              </div>
+              <div className="wireframe-info">
+                <h4>Infrastructure Layer</h4>
+                <p>Cloud Databases & Load Balancers</p>
+              </div>
+              <span className="wireframe-status">ACTIVE</span>
+            </div>
           </AnimatedSection>
         </div>
       </section>
@@ -76,7 +114,7 @@ const SoftwareDevelopment = () => {
             </p>
           </AnimatedSection>
         </div>
-      </section >
+      </section>
 
       {/* ======================================================================================== */}
       <section className="ai-section">
@@ -187,6 +225,13 @@ const SoftwareDevelopment = () => {
               <h3>
                 Design, Development & Deployment of Scalable Web, Mobile and Enterprise Applications
               </h3>
+              <div className="resource-footer">
+                <span className="resource-link">Explore Service</span>
+                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </div>
           </AnimatedSection>
 
@@ -202,6 +247,13 @@ const SoftwareDevelopment = () => {
               <h3>
                 SaaS, PaaS & IaaS Based Application Development with Scalable Cloud Integration
               </h3>
+              <div className="resource-footer">
+                <span className="resource-link">Explore Service</span>
+                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </div>
           </AnimatedSection>
 
@@ -217,6 +269,13 @@ const SoftwareDevelopment = () => {
               <h3>
                 System Integration, Automation, Testing and Managed IT Support for Applications
               </h3>
+              <div className="resource-footer">
+                <span className="resource-link">Explore Service</span>
+                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
             </div>
           </AnimatedSection>
         </div>
