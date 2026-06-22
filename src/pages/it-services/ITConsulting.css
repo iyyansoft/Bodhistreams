@@ -1037,6 +1037,23 @@
     height: auto;
   }
 
+  .itc-bubble {
+    font-size: 11px;
+    padding: 10px 14px;
+    max-width: 170px;
+    border-radius: 18px;
+  }
+
+  .itc-bubble-green {
+    bottom: 55%;
+    right: 10px;
+  }
+
+  .itc-bubble-white {
+    bottom: 10%;
+    left: 10px;
+  }
+
   .itc-enterprise {
     padding: 60px 4%;
     gap: 40px;
