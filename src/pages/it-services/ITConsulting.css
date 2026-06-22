@@ -1045,13 +1045,14 @@
   }
 
   .itc-bubble-green {
-    bottom: 55%;
-    right: 10px;
+    top: 15px;
+    bottom: auto;
+    right: 15px;
   }
 
   .itc-bubble-white {
-    bottom: 10%;
-    left: 10px;
+    bottom: 15px;
+    left: 15px;
   }
 
   .itc-enterprise {
