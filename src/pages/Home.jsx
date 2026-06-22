@@ -189,58 +189,58 @@ const Home = () => {
 
 
 
-  const slides = [
-    {
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900",
-      quote: "BodhiStreams AI automation transformed our enterprise infrastructure and reduced operational costs by 40%.",
-      name: "Ananya Rao",
-      role: "CTO, FinTech Enterprise"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900",
-      quote: "Their cloud scalability solutions helped us expand globally without infrastructure bottlenecks.",
-      name: "Rahul Mehta",
-      role: "Founder, SaaS Platform"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=900",
-      quote: "BodhiStreams’ AI engine optimized our analytics pipeline in real-time.",
-      name: "Sneha Kapoor",
-      role: "Head of Data, RetailTech"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900",
-      quote: "From automation to security, everything is integrated seamlessly.",
-      name: "Meera Iyer",
-      role: "IT Director, Enterprise Group"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900",
-      quote: "We scaled faster than ever with BodhiStreams intelligent systems.",
-      name: "Vikram Shah",
-      role: "CEO, Digital Solutions"
-    }
-  ];
+  // const slides = [
+  //   {
+  //     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900",
+  //     quote: "BodhiStreams AI automation transformed our enterprise infrastructure and reduced operational costs by 40%.",
+  //     name: "Ananya Rao",
+  //     role: "CTO, FinTech Enterprise"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900",
+  //     quote: "Their cloud scalability solutions helped us expand globally without infrastructure bottlenecks.",
+  //     name: "Rahul Mehta",
+  //     role: "Founder, SaaS Platform"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=900",
+  //     quote: "BodhiStreams’ AI engine optimized our analytics pipeline in real-time.",
+  //     name: "Sneha Kapoor",
+  //     role: "Head of Data, RetailTech"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900",
+  //     quote: "From automation to security, everything is integrated seamlessly.",
+  //     name: "Meera Iyer",
+  //     role: "IT Director, Enterprise Group"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900",
+  //     quote: "We scaled faster than ever with BodhiStreams intelligent systems.",
+  //     name: "Vikram Shah",
+  //     role: "CEO, Digital Solutions"
+  //   }
+  // ];
 
-  const [index, setIndex] = useState(0);
+  // const [index, setIndex] = useState(0);
 
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % slides.length);
-  };
+  // const nextSlide = () => {
+  //   setIndex((prev) => (prev + 1) % slides.length);
+  // };
 
-  const prevSlide = () => {
-    setIndex((prev) =>
-      prev === 0 ? slides.length - 1 : prev - 1
-    );
-  };
+  // const prevSlide = () => {
+  //   setIndex((prev) =>
+  //     prev === 0 ? slides.length - 1 : prev - 1
+  //   );
+  // };
 
-  // Auto slide
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // // Auto slide
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
 
   return (
@@ -666,10 +666,10 @@ const Home = () => {
 
       <section className="bs-story-section">
 
-        <div className="bs-story-wrapper">
+        {/* <div className="bs-story-wrapper"> */}
 
-          <button className="bs-arrow left" onClick={prevSlide}>←</button>
-
+          {/* <button className="bs-arrow left" onClick={prevSlide}>←</button> */}
+{/* 
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -678,33 +678,33 @@ const Home = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -80 }}
               transition={{ duration: 0.6 }}
-            >
+            > */}
 
-              {/* LEFT IMAGE */}
+              {/* LEFT IMAGE
               <div className="bs-slide-image">
                 <img src={slides[index].image} alt="client" />
-              </div>
+              </div> */}
 
               {/* RIGHT CONTENT */}
-              <div className="bs-slide-content">
-                <h2>“{slides[index].quote}”</h2>
+              {/* <div className="bs-slide-content">
+                <h2>“{slides[index].quote}”</h2> */}
 
-                <div className="bs-client-info">
+                {/* <div className="bs-client-info">
                   <h4>{slides[index].name}</h4>
                   <p>{slides[index].role}</p>
-                </div>
-
+                </div> */}
+{/* 
                 <button className="bs-read-btn">
                   Read customer story
                 </button>
-              </div>
+              </div> */}
 
-            </motion.div>
+            {/* </motion.div>
           </AnimatePresence>
 
           <button className="bs-arrow right" onClick={nextSlide}>→</button>
 
-        </div>
+        </div> */}
 
       </section>
 
