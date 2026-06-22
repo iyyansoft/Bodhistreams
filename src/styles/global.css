@@ -143,3 +143,25 @@ h6 {
   font-size: 16px !important;
 }
 
+/* Responsive mobile heading override to reduce typography sizes globally */
+@media (max-width: 768px) {
+  h1, .hero-main-heading, .report-content h1, .about-hero-title, .help-title {
+    font-size: 28px !important;
+  }
+  h2, [class*="-heading"], .bs-loop-container h2, .bs-transform-container h2, .bs-employee-container h2 {
+    font-size: 24px !important;
+  }
+  h3, [class*="-title"] {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  h5 {
+    font-size: 15px !important;
+  }
+  h6 {
+    font-size: 13px !important;
+  }
+}
+
