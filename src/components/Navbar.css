@@ -435,7 +435,7 @@ body {
   .nav-menu {
     position: fixed;
     top: 80px;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: calc(100vh - 80px);
     background: #ffffff;
@@ -446,11 +446,55 @@ body {
     padding: 30px 20px;
     gap: 25px;
     z-index: 999;
-    transition: left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    
+    /* Circular Reveal animation */
+    clip-path: circle(0px at 100% 0px);
+    opacity: 0;
+    visibility: hidden;
+    transition: clip-path 0.5s cubic-bezier(0.77, 0, 0.175, 1),
+                opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.4s;
   }
 
   .nav-menu.active {
-    left: 0;
+    clip-path: circle(150% at 100% 0px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Fade-in and slide-up animation for list items */
+  .nav-menu > .nav-link,
+  .nav-menu > .nav-item {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-menu.active > .nav-link,
+  .nav-menu.active > .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Staggered transition delays for menu links */
+  .nav-menu.active > .nav-link {
+    transition-delay: 0.12s;
+  }
+  .nav-menu.active > .nav-item:nth-child(2) {
+    transition-delay: 0.18s;
+  }
+  .nav-menu.active > .nav-item:nth-child(3) {
+    transition-delay: 0.24s;
+  }
+  .nav-menu.active > .nav-item:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .nav-menu.active > .nav-item:nth-child(5) {
+    transition-delay: 0.36s;
+  }
+  .nav-menu.active > .nav-item:nth-child(6) {
+    transition-delay: 0.42s;
   }
 
   .nav-link {
