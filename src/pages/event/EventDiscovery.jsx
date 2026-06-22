@@ -48,7 +48,9 @@ const EventDiscovery = () => {
               <div className="feature-card">⚡ Fast Settlements</div>
             </div>
 
-            <button className="event-btn">Explore Platform</button>
+            <a href="https://eventzgo.com" target="_blank" rel="noopener noreferrer" className="event-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>
+              Explore Platform
+            </a>
           </AnimatedSection>
 
           <div className="event-image">
@@ -188,7 +190,9 @@ const EventDiscovery = () => {
                 gain full control to handle registrations, monitor participant flow, and 
                 manage event data efficiently from a single dashboard.
               </p>
-              <button className="about-btn">Get Started</button>
+              <a href="https://eventzgo.com" target="_blank" rel="noopener noreferrer" className="about-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>
+                Get Started
+              </a>
             </AnimatedSection>
           </div>
         </section>

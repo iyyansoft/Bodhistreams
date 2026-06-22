@@ -127,7 +127,6 @@ const ElectronicProducts = () => {
             <li>Annual Maintenance Contracts (AMC)</li>
             <li>Bulk & institutional pricing available</li>
           </ul>
-          <button className="ep-btn ep-btn--solid">Explore Products</button>
         </AnimatedSection>
       </section>
 

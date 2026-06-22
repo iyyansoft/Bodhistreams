@@ -166,10 +166,6 @@ const Networking = () => {
                 Configure secure routers, high-speed switches, intelligent firewalls, and structured 
                 cabling frameworks designed for modern enterprise scaling.
               </p>
-              <div className="nw-hero-minimal-actions">
-                <button className="nw-minimal-btn-primary">Get Started</button>
-                <button className="nw-minimal-btn-outline">View Specifications</button>
-              </div>
             </div>
 
             {/* RIGHT CONTENT */}
@@ -216,9 +212,6 @@ const Networking = () => {
                 to structured cabling and wireless solutions — we deliver performance
                 that keeps you connected.
               </p>
-              <button className="nw-explore-btn">
-                Explore Solutions <ArrowRight className="arrow" size={18} />
-              </button>
             </AnimatedSection>
 
             {/* RIGHT */}

@@ -118,7 +118,6 @@ export default function MegaEvents() {
                 We ensure smooth event delivery with planning,
                 management, and high-quality engagement.
               </p>
-              <button>Explore More →</button>
             </div>
           </AnimatedSection>
         </section>
@@ -191,7 +190,6 @@ export default function MegaEvents() {
               Deliver high-impact events with expert-driven strategies,
               seamless execution, and meaningful outcomes.
             </p>
-            <button>Launch Your Event →</button>
           </AnimatedSection>
         </section>
       </div>

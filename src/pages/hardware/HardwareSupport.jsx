@@ -24,9 +24,6 @@ const HardwareSupport = () => {
               From setup to maintenance and upgrades, we ensure reliable,
               secure, and high-performance IT environments.
             </p>
-            <button className="support-btn">
-              Request Technical Support
-            </button>
           </AnimatedSection>
         </section>
 
@@ -45,7 +42,6 @@ const HardwareSupport = () => {
                 Supply of computers, servers, networking equipment
                 and IT infrastructure solutions.
               </p>
-              <button className="card-btn">More</button>
             </AnimatedSection>
 
             <AnimatedSection type="slideUp" delay={0.2} className="support-card">
@@ -55,7 +51,6 @@ const HardwareSupport = () => {
                 Installation, configuration and deployment of
                 enterprise IT systems and infrastructure.
               </p>
-              <button className="card-btn">More</button>
             </AnimatedSection>
 
             <AnimatedSection type="slideUp" delay={0.3} className="support-card">
@@ -65,7 +60,6 @@ const HardwareSupport = () => {
                 Maintenance, upgrades and technical support
                 for reliable system performance.
               </p>
-              <button className="card-btn">More</button>
             </AnimatedSection>
           </div>
         </section>
@@ -198,9 +192,6 @@ const HardwareSupport = () => {
                 and continuous technical support to ensure stable,
                 secure and high-performance IT environments.
               </p>
-              <button className="premium-btn">
-                Explore Services →
-              </button>
             </AnimatedSection>
 
             {/* RIGHT SIDE */}

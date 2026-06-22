@@ -69,9 +69,6 @@ const VendorsConnect = () => {
               <li>✔ Logistics, venue, and technical support</li>
               <li>✔ Streamlined coordination</li>
             </ul>
-            <button className="ticket-btn">
-              Explore Vendors →
-            </button>
           </AnimatedSection>
         </section>
 
@@ -159,9 +156,6 @@ const VendorsConnect = () => {
                   Without visibility, your event doesn’t exist — we ensure your brand
                   reaches the right audience at the right time.
                 </p>
-                <div className="ticketing-corner">
-                  <span className="ticketing-arrow">→</span>
-                </div>
               </a>
             </AnimatedSection>
           </div>

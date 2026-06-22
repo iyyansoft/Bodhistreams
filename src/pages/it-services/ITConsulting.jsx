@@ -250,14 +250,6 @@ const ITConsulting = () => {
             Transform your business with reliable infrastructure,
             cloud integration and smart digital solutions.
           </p>
-          <div className="modern-cta-actions">
-            <button className="modern-btn-fill">
-              Get Started
-            </button>
-            <button className="modern-btn-border">
-              View Services
-            </button>
-          </div>
         </AnimatedSection>
       </section>
     </PageWrapper>

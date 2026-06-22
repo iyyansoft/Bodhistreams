@@ -171,10 +171,6 @@ const Digital = () => {
                   <span>Real-time Analytics</span>
                 </div>
               </div>
-
-              <button className="eventtech-btn-lime">
-                Explore Platform <span className="btn-arrow">→</span>
-              </button>
             </AnimatedSection>
           </div>
         </section>

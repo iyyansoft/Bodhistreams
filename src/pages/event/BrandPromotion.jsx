@@ -85,9 +85,6 @@ function BrandPromotion() {
                 insights, businesses can effectively measure reach and enhance their 
                 promotional strategies through live and interactive events.
               </p>
-              <button className="event-btn">
-                Promote Your Brand →
-              </button>
             </AnimatedSection>
           </div>
         </section>
@@ -148,7 +145,9 @@ function BrandPromotion() {
               <p>
                 Create strong brand awareness and ensure your event reaches the right audience effectively.
               </p>
-              <button>Promote Your Event →</button>
+              <button onClick={() => window.open("https://eventzgo.com", "_blank")}>
+                Promote Your Event →
+              </button>
             </AnimatedSection>
           </section>
         </div>

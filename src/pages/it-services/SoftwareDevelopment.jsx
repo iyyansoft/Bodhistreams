@@ -23,10 +23,6 @@ const SoftwareDevelopment = () => {
             solutions. From consulting to automation and managed IT
             services, we help organizations innovate and scale.
           </p>
-          <div className="hero-cta-group">
-            <button className="primary-hero-btn">Get Started</button>
-            <button className="secondary-hero-btn">Explore Services</button>
-          </div>
         </AnimatedSection>
 
         {/* RIGHT CONTENT (Minimalist Architecture Flow Diagram) */}

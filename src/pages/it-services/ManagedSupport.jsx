@@ -53,15 +53,6 @@ const ManagedSupport = () => {
             <div className="it-support-point">✔ Secure Infrastructure</div>
           </div>
 
-          {/* BUTTONS */}
-          <div className="it-support-buttons">
-            <button className="it-support-primary-btn">
-              Get Support
-            </button>
-            <button className="it-support-secondary-btn">
-              Explore Services
-            </button>
-          </div>
         </AnimatedSection>
       </section>
 
