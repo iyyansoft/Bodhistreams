@@ -933,5 +933,14 @@
 
   .cta-buttons1 {
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .cta-primary1,
+  .cta-outline1 {
+    width: 100%;
+    max-width: 280px;
   }
 }
