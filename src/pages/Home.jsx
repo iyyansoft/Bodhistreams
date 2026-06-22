@@ -660,6 +660,53 @@ const Home = () => {
 
 {/* --------------------------------------------------------------------------------------------------------------------------------- */}
 
+      {/* ================= BODHISTREAMS STORY SLIDER (COMMENTED OUT TO HIDE IT) ================= */}
+      {/* 
+      <section className="bs-story-section">
+
+        <div className="bs-story-wrapper">
+
+          <button className="bs-arrow left" onClick={prevSlide}>←</button>
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={index}
+              className="bs-slide"
+              initial={{ opacity: 0, x: 80 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -80 }}
+              transition={{ duration: 0.6 }}
+            >
+
+              {/* LEFT IMAGE
+              <div className="bs-slide-image">
+                <img src={slides[index].image} alt="client" />
+              </div>
+
+              {/* RIGHT CONTENT */}
+              {/* <div className="bs-slide-content">
+                <h2>“{slides[index].quote}”</h2>
+
+                <div className="bs-client-info">
+                  <h4>{slides[index].name}</h4>
+                  <p>{slides[index].role}</p>
+                </div>
+
+                <button className="bs-read-btn">
+                  Read customer story
+                </button>
+              </div>
+
+            </motion.div>
+          </AnimatePresence>
+
+          <button className="bs-arrow right" onClick={nextSlide}>→</button>
+
+        </div>
+
+      </section>
+      */}
+
 
 
 
