@@ -56,16 +56,6 @@ const DigitalTransformation = () => {
               <p>Automation Support</p>
             </div>
           </div>
-
-          {/* BUTTONS */}
-          <div className="future-buttons">
-            <button className="future-primary-btn">
-              Start Now
-            </button>
-            <button className="future-outline-btn">
-              View Services
-            </button>
-          </div>
         </AnimatedSection>
       </section>
 

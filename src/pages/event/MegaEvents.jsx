@@ -11,12 +11,12 @@ export default function MegaEvents() {
         {/* HERO */}
         <section className="hero-split">
           <AnimatedSection type="slideRight" className="hero-left" duration={0.7}>
+            <p className="mega-mini-title">CONCLAVES & EVENTS</p>
             <h1>Mega Events & Conclaves</h1>
             <p>
               Startup summits, hackathons, and innovation events designed to
               create real business impact and collaboration.
             </p>
-            <button>Explore Events →</button>
           </AnimatedSection>
 
           <div className="hero-right">

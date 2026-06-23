@@ -85,10 +85,6 @@ const ElectronicProducts = () => {
             Authorized supply of computers, servers, networking gear, IoT kits, and lab
             equipment — complete with installation, integration, and lifetime support.
           </p>
-          <div className="ep-hero__cta">
-            <button className="ep-btn ep-btn--solid">Explore Solutions</button>
-            <button className="ep-btn ep-btn--ghost">Get a Quote</button>
-          </div>
         </AnimatedSection>
 
         {/* Stat bar pinned to hero bottom */}

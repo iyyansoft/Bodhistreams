@@ -24,6 +24,7 @@ export default function CustomCursor() {
     }
 
     setHidden(false);
+    document.body.classList.add("custom-cursor-active");
 
     const handleMouseMove = (e) => {
       mouseX.set(e.clientX);
@@ -64,6 +65,7 @@ export default function CustomCursor() {
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
+      document.body.classList.remove("custom-cursor-active");
       window.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("mouseenter", handleMouseEnter);
@@ -76,27 +78,14 @@ export default function CustomCursor() {
   if (hidden) return null;
 
   return (
-    <>
-      {/* Inner precise dot */}
-      <motion.div
-        className={`clean-cursor-dot ${clicked ? "clicked" : ""} ${hovered ? "hovered" : ""}`}
-        style={{
-          x: mouseX,
-          y: mouseY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-      />
-      {/* Outer smooth trail ring */}
-      <motion.div
-        className={`clean-cursor-trail ${clicked ? "clicked" : ""} ${hovered ? "hovered" : ""}`}
-        style={{
-          x: trailX,
-          y: trailY,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-      />
-    </>
+    <motion.div
+      className={`clean-cursor-dot ${clicked ? "clicked" : ""} ${hovered ? "hovered" : ""}`}
+      style={{
+        x: trailX,
+        y: trailY,
+        translateX: "-50%",
+        translateY: "-50%",
+      }}
+    />
   );
 }

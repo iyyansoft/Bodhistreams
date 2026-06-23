@@ -2,6 +2,7 @@ import React from "react";
 import "./ExpertNetwork.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
+import { Link } from "react-router-dom";
 
 export default function ExpertNetwork() {
   return (
@@ -17,7 +18,6 @@ export default function ExpertNetwork() {
               Unlock the power of collaboration by connecting with industry experts,
               mentors, and specialists who bring real-world knowledge and proven experience.
             </p>
-            <button>Explore Experts →</button>
           </AnimatedSection>
         </section>
 
@@ -224,9 +224,9 @@ export default function ExpertNetwork() {
                   Connect with professionals, gain insights, and transform
                   your ideas into real-world impact with confidence.
                 </p>
-                <button className="expert-cta-btn">
+                <Link to="/contactus" className="expert-cta-btn" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
                   Connect Now <span className="arrow">→</span>
-                </button>
+                </Link>
               </AnimatedSection>
             </div>
             <div className="expert-cta-blob"></div>

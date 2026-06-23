@@ -22,10 +22,9 @@ const Navbar = () => {
     };
 
     const handleClickOutside = (event) => {
-      if (
-        navRef.current &&
-        !navRef.current.contains(event.target)
-      ) {
+      const clickedInsideDropdown = event.target.closest(".dropdown-content");
+      const clickedNavHeader = event.target.closest(".nav-link") || event.target.closest(".hamburger");
+      if (!clickedInsideDropdown && !clickedNavHeader) {
         setActiveMenu(null);
       }
     };
@@ -45,56 +44,113 @@ const Navbar = () => {
   const navItems = [
     {
       label: "IT Services",
-      title: "Digital Solutions Suite",
-      desc: "Powerful AI & IT products built for modern businesses.",
+      title: "Enterprise IT & Software Services",
+      desc: "Tailored software development, expert systems consulting, digital automation, and proactive 24/7 managed support.",
       image:
         "https://kemsys.com/wp-content/uploads/2021/07/Digital-Engineering-Services-IoT-by-Kemsys-500x500.jpg",
       features: [
         {
           name: "Software Development Solutions",
-          path: "/software-development"
+          path: "/software-development",
+          icon: "💻",
+          desc: "Tailored web, mobile, and cloud software solutions."
         },
-
         {
           name: "IT Consulting & System Integration",
-          path: "/it-consulting"
+          path: "/it-consulting",
+          icon: "🤝",
+          desc: "Expert advisory for robust systems integration."
         },
         {
           name: "Digital Transformation & Automation",
-          path: "/digital-transformation"
+          path: "/digital-transformation",
+          icon: "⚡",
+          desc: "Automate legacy workflows with smart tools."
         },
         {
           name: "Managed IT & Technical Support",
-          path: "/managed-support"
+          path: "/managed-support",
+          icon: "🛡️",
+          desc: "24/7 proactive monitoring and system support."
         }
       ]
     },
     {
       label: "Hardware & Electronic Solutions",
-      title: "End-to-End IT Services",
-      desc: "Customized digital transformation strategies.",
+      title: "IT Hardware & Electronics Supply",
+      desc: "Authorized distribution, hardware procurement, networking gear, and on-site technical deployment services.",
       image:
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
       features: [
-        { name: "IT Hardware Trading & Distribution", path: "/hardware-trading" },
-        { name: "Electronic & Digital Products Supply", path: "/electronic-products" },
-        { name: "Networking & Communication Equipment", path: "/networking" },
-        { name: "Installation & Technical Support Services", path: "/hardware-support" }
+        {
+          name: "IT Hardware Trading & Distribution",
+          path: "/hardware-trading",
+          icon: "🖥️",
+          desc: "Enterprise servers, clients, and workstation supplies."
+        },
+        {
+          name: "Electronic & Digital Products Supply",
+          path: "/electronic-products",
+          icon: "🔌",
+          desc: "Smart electronics, IoT, and custom lab materials."
+        },
+        {
+          name: "Networking & Communication Equipment",
+          path: "/networking",
+          icon: "📡",
+          desc: "High-speed routers, switches, and cabling."
+        },
+        {
+          name: "Installation & Technical Support Services",
+          path: "/hardware-support",
+          icon: "⚙️",
+          desc: "On-site setup, deployment, and SLA maintenance."
+        }
       ]
     },
     {
       label: "Event infra",
-      title: "Knowledge Hub",
-      desc: "Explore insights & case studies.",
+      title: "Event Technology Suite",
+      desc: "Complete digital ticketing, management apps, brand promotion, and physical setup infrastructure.",
       image:
         "https://www.eventsindustryforum.co.uk/images/articles/about_the_eif.jpg",
       features: [
-        { name: "Event Discovery & Registration Platform", path: "/event-discovery" },
-        { name: "Digital infrastructure for event management", path: "/digital-infra" },
-        { name: "Brand Promotion", path: "/brand-promotion" },
-        { name: "Vendors Connect", path: "/vendors-connect" },
-        { name: "Expert Network", path: "/expert-network" },
-        { name: "Mega Events & Conclaves", path: "/megaEvents-Conclaves" },
+        {
+          name: "Event Discovery & Registration Platform",
+          path: "/event-discovery",
+          icon: "🎫",
+          desc: "Secure ticketing and streamlined attendee registration."
+        },
+        {
+          name: "Digital infrastructure for event management",
+          path: "/digital-infra",
+          icon: "🌐",
+          desc: "Event apps, check-in kiosks, and cloud infrastructure."
+        },
+        {
+          name: "Brand Promotion",
+          path: "/brand-promotion",
+          icon: "📢",
+          desc: "Sponsor activation, target marketing, and brand boost."
+        },
+        {
+          name: "Vendors Connect",
+          path: "/vendors-connect",
+          icon: "🤝",
+          desc: "Matchmaking portals connecting organizers and vendors."
+        },
+        {
+          name: "Expert Network",
+          path: "/expert-network",
+          icon: "🎓",
+          desc: "Connect with event planners, techs, and speakers."
+        },
+        {
+          name: "Mega Events & Conclaves",
+          path: "/megaEvents-Conclaves",
+          icon: "✨",
+          desc: "Startup summits, hackathons, and conclaves."
+        }
       ]
     }
   ];
@@ -152,10 +208,7 @@ const Navbar = () => {
               <div
                 key={index}
                 className="nav-item"
-                onMouseEnter={() => !isMobile && setActiveMenu(index)}
-                onMouseLeave={() => !isMobile && setActiveMenu(null)}
-
-                onClick={() => isMobile && setActiveMenu(activeMenu === index ? null : index)}
+                onClick={() => setActiveMenu(activeMenu === index ? null : index)}
               >
                 <span className="nav-link">{item.label}</span>
 
@@ -163,6 +216,7 @@ const Navbar = () => {
                   {activeMenu === index && (
                     <motion.div
                       className="dropdown"
+                      onClick={(e) => e.stopPropagation()}
 
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -170,31 +224,36 @@ const Navbar = () => {
                       transition={{ duration: 0.25 }}
                     >
                       <div className="dropdown-content">
-                        <div className="dropdown-left">
+                        <div className="dropdown-col-1">
+                          <span className="dropdown-badge">{item.label}</span>
                           <h3>{item.title}</h3>
                           <p>{item.desc}</p>
-                          <div className="image-wrapper1">
-                            <img src={item.image} alt="preview" />
+                        </div>
+
+                        <div className="dropdown-col-2">
+                          <h4>FEATURES</h4>
+                          <div className="dropdown-links-list">
+                            {item.features.map((feature, i) => (
+                              <Link
+                                key={i}
+                                to={feature.path}
+                                className="dropdown-clean-link"
+                                onClick={() => {
+                                  setActiveMenu(null);
+                                  setMobileOpen(false);
+                                }}
+                              >
+                                <span className="link-title">{feature.name}</span>
+                                <span className="link-arrow">→</span>
+                              </Link>
+                            ))}
                           </div>
                         </div>
 
-                        <div className="dropdown-right">
-                          <h4>FEATURES</h4>
-                          <ul>
-                            {item.features.map((feature, i) => (
-                              <li key={i}>
-                                <Link
-                                  to={feature.path}
-                                  onClick={() => {
-                                    setActiveMenu(null);
-                                    setMobileOpen(false);
-                                  }}
-                                >
-                                  {feature.name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
+                        <div className="dropdown-col-3">
+                          <div className="image-wrapper1">
+                            <img src={item.image} alt="preview" />
+                          </div>
                         </div>
                       </div>
                     </motion.div>

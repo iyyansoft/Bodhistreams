@@ -4,6 +4,7 @@ import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const SoftwareDevelopment = () => {
   const [activeTab, setActiveTab] = useState("gateway");
@@ -156,9 +157,6 @@ const SoftwareDevelopment = () => {
                   <li>✔ System Integration</li>
                   <li>✔ Automation & AI Solutions</li>
                 </ul>
-                <button className="ai-btn">
-                  Explore Solutions
-                </button>
               </div>
             </div>
           </AnimatedSection>
@@ -210,69 +208,75 @@ const SoftwareDevelopment = () => {
 
         <div className="resources-grid">
           <AnimatedSection type="scale" delay={0.1} className="resource-card">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-                alt="Software Development"
-              />
-            </div>
-            <div className="resource-content">
-              <span className="resource-tag">SOFTWARE DEVELOPMENT</span>
-              <h3>
-                Design, Development & Deployment of Scalable Web, Mobile and Enterprise Applications
-              </h3>
-              <div className="resource-footer">
-                <span className="resource-link">Explore Service</span>
-                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
+            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%', width: '100%' }}>
+              <div className="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                  alt="Software Development"
+                />
               </div>
-            </div>
+              <div className="resource-content">
+                <span className="resource-tag">SOFTWARE DEVELOPMENT</span>
+                <h3>
+                  Design, Development & Deployment of Scalable Web, Mobile and Enterprise Applications
+                </h3>
+                <div className="resource-footer">
+                  <span className="resource-link">Explore Service</span>
+                  <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </Link>
           </AnimatedSection>
 
           <AnimatedSection type="scale" delay={0.2} className="resource-card">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8"
-                alt="Cloud Platforms"
-              />
-            </div>
-            <div className="resource-content">
-              <span className="resource-tag">CLOUD & DIGITAL PLATFORMS</span>
-              <h3>
-                SaaS, PaaS & IaaS Based Application Development with Scalable Cloud Integration
-              </h3>
-              <div className="resource-footer">
-                <span className="resource-link">Explore Service</span>
-                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
+            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%', width: '100%' }}>
+              <div className="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8"
+                  alt="Cloud Platforms"
+                />
               </div>
-            </div>
+              <div className="resource-content">
+                <span className="resource-tag">CLOUD & DIGITAL PLATFORMS</span>
+                <h3>
+                  SaaS, PaaS & IaaS Based Application Development with Scalable Cloud Integration
+                </h3>
+                <div className="resource-footer">
+                  <span className="resource-link">Explore Service</span>
+                  <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </Link>
           </AnimatedSection>
 
           <AnimatedSection type="scale" delay={0.3} className="resource-card">
-            <div className="image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                alt="IT Services"
-              />
-            </div>
-            <div className="resource-content">
-              <span className="resource-tag">IT & SOFTWARE SERVICES</span>
-              <h3>
-                System Integration, Automation, Testing and Managed IT Support for Applications
-              </h3>
-              <div className="resource-footer">
-                <span className="resource-link">Explore Service</span>
-                <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
+            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%', width: '100%' }}>
+              <div className="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                  alt="IT Services"
+                />
               </div>
-            </div>
+              <div className="resource-content">
+                <span className="resource-tag">IT & SOFTWARE SERVICES</span>
+                <h3>
+                  System Integration, Automation, Testing and Managed IT Support for Applications
+                </h3>
+                <div className="resource-footer">
+                  <span className="resource-link">Explore Service</span>
+                  <svg className="arrow-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </Link>
           </AnimatedSection>
         </div>
       </section>

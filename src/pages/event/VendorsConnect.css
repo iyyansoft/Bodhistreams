@@ -105,7 +105,7 @@
   }
 
   .ticket-title {
-    font-size: 48px;
+    font-size: 82px;
   }
 
   .ticket-content ul {
@@ -736,7 +736,6 @@ padding: 80px 8%;
   .ticket-hero,
   .ticket-info-section,
   .ticketing-wrapper,
-  .event-strip,
   .feedback-section,
   .event-hero {
     flex-direction: column;
@@ -749,7 +748,6 @@ padding: 80px 8%;
 
   .ticket-image,
   .ticketing-image-box,
-  .event-card,
   .feedback-card {
     width: 100%;
     max-width: 100%;
@@ -780,14 +778,31 @@ padding: 80px 8%;
     padding: 35px 25px;
   }
 
+  /* Make event-strip horizontally scrollable / responsive on mobile but preserve desktop side-by-side look */
+  .event-strip-wrapper {
+    padding: 40px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .event-strip {
-    flex-wrap: wrap;
-    height: auto;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 10px;
+    height: 480px;
+    width: 100%;
+    min-width: 600px; /* Keep it side-by-side */
   }
 
   .event-card {
-    flex: 1 1 100%;
-    min-height: 260px;
+    flex: 0.8 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .event-card:hover {
+    flex: 3.5 !important;
   }
 
   .feedback-section {
@@ -809,15 +824,24 @@ padding: 80px 8%;
 @media (max-width: 600px) {
 
   .ticket-title {
-    font-size: 42px;
+    font-size: 110px;
+    margin-bottom: 12px;
+  }
+
+  .ticket-content p {
+    font-size: 20px;
+    margin-top: -10px;
+    line-height: 1.6;
   }
 
   .ticket-hero {
-    padding: 30px 4%;
+    padding: 30px 4% 10px;
+    gap: 15px !important;
   }
 
   .ticket-image {
     height: 240px;
+    margin-bottom: -20px;
   }
 
   .ticket-content,
@@ -850,12 +874,6 @@ padding: 80px 8%;
   .hero-buttons .btn-outline {
     width: 100%;
     max-width: 280px;
-  }
-
-  .event-text {
-    position: static;
-    transform: none;
-    margin-top: 20px;
   }
 
 }

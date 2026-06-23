@@ -1,6 +1,7 @@
 import "./About.css";
 import PageWrapper from "../components/PageWrapper";
 import AnimatedSection from "../components/AnimatedSection";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (

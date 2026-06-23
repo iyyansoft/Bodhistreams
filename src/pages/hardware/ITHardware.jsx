@@ -38,9 +38,6 @@ const ITHardware = () => {
                 systems to networking devices and components — we deliver quality,
                 authentic products from leading global brands.
               </p>
-              <button className="hw-explore-btn">
-                Explore Solutions <span className="arrow">→</span>
-              </button>
             </AnimatedSection>
 
             {/* RIGHT */}

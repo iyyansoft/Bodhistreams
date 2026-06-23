@@ -44,7 +44,7 @@ const Footer = () => {
 
         <div className="footer-cta">
           <h2 className="footer-cta-title">
-            How can we help? <Link to="/contact" className="footer-cta-link">Contact us</Link>
+            How can we help? <Link to="/contactus" className="footer-cta-link">Contact us</Link>
           </h2>
           <div className="footer-social">
             <a href="#" className="social-icon" aria-label="Twitter">𝕏</a>

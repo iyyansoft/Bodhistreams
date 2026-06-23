@@ -273,20 +273,7 @@ const Home = () => {
                 Through Technology & Innovation
               </motion.span>
             </motion.h1> <p className="hero-subtext"> BodhiStreams Convergence Pvt Ltd provides complete software, IT, and electronic solutions along with a secure online ticketing platform to support modern business growth.</p>
-            <div className="hero-input-wrapper">
-              <div className="hero-input-group">
-
-
-                <input
-                  type="email"
-                  placeholder="Enter your business email"
-                />
-                <button>
-                  Get Started →
-                </button>
-              </div>
-
-            </div>
+            {/* Email input block removed */}
           </motion.div>
         </div>
       </section>
@@ -452,18 +439,28 @@ const Home = () => {
           Institutions and Enterprises
         </h1>
 
-      <p>
-    We design and establish Innovation Labs, STEM Labs, and Makerspaces 
-    with complete end-to-end solutions.
-    <br /><br />
-    From planning and equipment setup to training and execution, 
-    we ensure labs are not just installed—but actively used 
-    for real innovation and outcomes.
-  </p>
+        <p>
+          We design and establish Innovation Labs, STEM Labs, and Makerspaces 
+          with complete end-to-end solutions.
+          <br /><br />
+          From planning and equipment setup to training and execution, 
+          we ensure labs are not just installed—but actively used 
+          for real innovation and outcomes.
+        </p>
 
       </div>
 
     </div>
+
+    {/* Small Landscape Images Strip placed below the entire split section */}
+    <div className="report-images-strip">
+      <img src="/lab1.jpg" alt="Lab Work 1" />
+      <img src="/lab2.jpg" alt="Lab Work 2" />
+      <img src="/lab3.jpg" alt="Lab Work 3" />
+      <img src="/lab4.jpg" alt="Lab Work 4" />
+      <img src="/lab5.jpg" alt="Lab Work 5" />
+    </div>
+
   </AnimatedSection>
 </section>
 
@@ -498,9 +495,9 @@ const Home = () => {
         create impactful outcomes.
       </p>
 
-      <button className="bs-loop-btn">
+      <Link to="/contactus" className="bs-loop-btn" style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>
         Start Your Innovation Journey
-      </button>
+      </Link>
     </motion.div>
 
     {/* RIGHT IMAGE */}
@@ -578,12 +575,7 @@ const Home = () => {
         designed for long-term performance and growth.
       </p>
 
-      <div className="bs-buttons">
-        <button className="primary-btn2">
-          Explore IT Solutions
-        </button>
-      </div>
-
+      {/* Button removed */}
     </motion.div>
 
   </div>
@@ -612,10 +604,6 @@ const Home = () => {
         actively explore ideas, develop prototypes, and transform concepts 
         into real-world solutions through structured lab ecosystems.
       </p>
-
-      <button className="secondary-btn">
-        Discover Innovation Solutions
-      </button>
     </motion.div>
 
     {/* RIGHT IMAGE */}
