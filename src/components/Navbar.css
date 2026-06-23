@@ -524,19 +524,16 @@ body {
   }
 
   .dropdown-content {
-
     width: 100%;
     max-width: 100%;
-
+    height: auto;
+    overflow: visible;
     padding: 25px 20px;
     border-radius: 18px;
-
     display: flex;
     flex-direction: column;
     gap: 25px;
-
     background: #fff;
-
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   }
 
