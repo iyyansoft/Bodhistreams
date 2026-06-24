@@ -807,21 +807,63 @@
   box-sizing: border-box;
 }
 
-.report-images-strip img {
+.report-images-strip .strip-item {
   flex: 1;
   min-width: 0;
   height: 170px;
-  object-fit: cover;
+  position: relative;
   border-radius: 14px;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
 }
 
-.report-images-strip img:hover {
-  transform: translateY(-3px) scale(1.05);
-  border-color: #8cf020;
+.report-images-strip .strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.report-images-strip .strip-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.report-images-strip .strip-overlay span {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.report-images-strip .strip-item:hover {
+  transform: translateY(-3px) scale(1.03);
   box-shadow: 0 8px 24px rgba(140, 198, 63, 0.2);
-  cursor: pointer;
+}
+
+.report-images-strip .strip-item:hover img {
+  transform: scale(1.06);
+}
+
+.report-images-strip .strip-item:hover .strip-overlay {
+  opacity: 1;
 }
 
 /* RESPONSIVE */
@@ -868,11 +910,18 @@
   .report-images-strip {
     justify-content: center;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
-  .report-images-strip img {
+  .report-images-strip .strip-item {
     height: 100px;
     border-radius: 10px;
+    flex: 1 1 140px; /* Let cards wrap gracefully on small screens */
+    max-width: 170px;
+  }
+
+  .report-images-strip .strip-overlay span {
+    font-size: 10px;
   }
 
 }

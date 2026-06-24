@@ -454,11 +454,36 @@ const Home = () => {
 
     {/* Small Landscape Images Strip placed below the entire split section */}
     <div className="report-images-strip">
-      <img src="/lab1.jpg" alt="Lab Work 1" />
-      <img src="/lab2.jpg" alt="Lab Work 2" />
-      <img src="/lab3.jpg" alt="Lab Work 3" />
-      <img src="/lab4.jpg" alt="Lab Work 4" />
-      <img src="/lab5.jpg" alt="Lab Work 5" />
+      <div className="strip-item">
+        <img src="/lab1.jpg" alt="IOT workshop for school student" />
+        <div className="strip-overlay">
+          <span>IOT workshop for school student</span>
+        </div>
+      </div>
+      <div className="strip-item">
+        <img src="/lab2.jpg" alt="IOT workshop for collage student" />
+        <div className="strip-overlay">
+          <span>IOT workshop for college student</span>
+        </div>
+      </div>
+      <div className="strip-item">
+        <img src="/lab3.jpg" alt="designthinking work shop" />
+        <div className="strip-overlay">
+          <span>design thinking workshop</span>
+        </div>
+      </div>
+      <div className="strip-item">
+        <img src="/lab4.jpg" alt="Ideation camp" />
+        <div className="strip-overlay">
+          <span>Ideation camp</span>
+        </div>
+      </div>
+      <div className="strip-item">
+        <img src="/lab5.jpg" alt="Newprodect development" />
+        <div className="strip-overlay">
+          <span>New product development</span>
+        </div>
+      </div>
     </div>
 
   </AnimatedSection>
