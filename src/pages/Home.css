@@ -1306,7 +1306,7 @@
 @media (max-width: 768px) {
 
   .bs-transform-section {
-    padding: 60px 20px;
+    padding: 40px 20px 20px;
     height: auto;
     margin-top: 40px;
   }
@@ -1314,6 +1314,7 @@
   .bs-transform-container {
     flex-direction: column;
     gap: 35px;
+    margin-bottom: 0px;
   }
 
   .bs-transform-image {
