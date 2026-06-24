@@ -649,6 +649,8 @@
 @media (max-width: 768px) {
 
   .zendesk-style-section {
+    display: flex;
+    flex-direction: column;
     height: auto;
     padding: 80px 15px;
   }
