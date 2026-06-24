@@ -649,8 +649,6 @@
 @media (max-width: 768px) {
 
   .zendesk-style-section {
-    display: flex;
-    flex-direction: column;
     height: auto;
     padding: 80px 15px;
   }
@@ -689,32 +687,7 @@
   }
 
   .side-image {
-    display: block;
-    position: relative;
-    top: auto;
-    left: auto !important;
-    right: auto !important;
-    transform: none;
-    width: 100%;
-    max-width: 100%;
-    height: 180px;
-    margin: 20px 0;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  }
-
-  .side-image.left {
-    transform: rotate(-2deg);
-  }
-
-  .side-image.right {
-    transform: rotate(2deg);
-  }
-
-  .side-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: none;
   }
 
   .ai-guidance {
