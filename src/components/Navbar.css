@@ -405,6 +405,10 @@ body {
   transition: 0.3s;
 }
 
+.mobile-utility-links {
+  display: none;
+}
+
 /* ================================= */
 /* MOBILE NAVBAR FIX */
 /* ================================= */
