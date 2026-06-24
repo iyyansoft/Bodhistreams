@@ -264,6 +264,11 @@ const Navbar = () => {
 
          
 
+            <div className="mobile-utility-links">
+              <Link to="/help-centre" onClick={() => setMobileOpen(false)}>Help Centre</Link>
+              <Link to="/about" onClick={() => setMobileOpen(false)}>About Us</Link>
+              <Link to="/contactus" onClick={() => setMobileOpen(false)}>Contact Us</Link>
+            </div>
           </div>
         </div>
       </div>
