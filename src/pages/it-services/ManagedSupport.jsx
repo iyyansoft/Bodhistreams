@@ -39,7 +39,7 @@ const ManagedSupport = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % supportSlides.length);
-    }, 4500);
+    }, 3000);
     return () => clearInterval(timer);
   }, []);
 
@@ -62,7 +62,7 @@ const ManagedSupport = () => {
                   initial={{ opacity: 0, clipPath: "circle(0% at 50% 50%)" }}
                   animate={{ opacity: 1, clipPath: "circle(100% at 50% 50%)" }}
                   exit={{ opacity: 0, clipPath: "circle(0% at 50% 50%)" }}
-                  transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
+                  transition={{ duration: 0.55, ease: [0.76, 0, 0.24, 1] }}
                   className="slide-wrapper"
                 >
                   <img
