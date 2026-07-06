@@ -122,8 +122,9 @@
   border-radius: 4px;
 }
 
-/* STATUS BOX */
-.it-support-status {
+/* STATUS BOX & TITLE BADGE */
+.it-support-status,
+.slide-title-badge {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -134,13 +135,15 @@
   padding: 12px 18px;
   border-radius: 14px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #111827;
   display: flex;
   align-items: center;
   gap: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   z-index: 12;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .image-overlay-shade {

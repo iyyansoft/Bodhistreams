@@ -73,6 +73,28 @@ const ManagedSupport = () => {
                 </motion.div>
               </AnimatePresence>
 
+              {/* Title overlay in the bottom-right corner */}
+              <div className="slide-title-badge">
+                <span
+                  className="it-support-dot"
+                  style={{
+                    backgroundColor: supportSlides[currentSlide].dotColor,
+                    boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
+                  }}
+                ></span>
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={currentSlide}
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {supportSlides[currentSlide].title}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
+
               {/* Dots Indicator */}
               <div className="slide-dots">
                 {supportSlides.map((_, idx) => (
