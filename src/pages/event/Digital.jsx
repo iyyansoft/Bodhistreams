@@ -4,6 +4,8 @@ import { CalendarSearch, Ticket, Users, ShieldCheck, Gauge, Layers } from "lucid
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 
+import { motion } from "framer-motion";
+
 const Digital = () => {
 
   useEffect(() => {
@@ -98,28 +100,68 @@ const Digital = () => {
       <div className="digital-page">
         {/* HERO */}
         <section className="eventtech-hero">
+          {/* Background Mesh Blurs */}
+          <div className="mesh-blur-1"></div>
+          <div className="mesh-blur-2"></div>
+          <div className="mesh-blur-3"></div>
+
           <AnimatedSection type="slideRight" className="eventtech-content" duration={0.7}>
+            <div className="hero-badge">
+              <span>Next-Gen Event Technology</span>
+            </div>
+            
             <h1 className="eventtech-title">
               Digital Infrastructure <br />
-              <span>for Event Management</span>
+              <span className="gradient-text">for Event Management</span>
             </h1>
+            
             <p className="eventtech-desc">
               Build and manage events with a complete digital ecosystem that supports 
               event listing, participant registration, attendance tracking, and 
               structured feedback collection — all from a single platform.
-
-              Enable integrated ticket booking, access real-time dashboards, and 
-              generate automated reports while ensuring smooth payments, faster 
-              settlements, and transparent event operations.
             </p>
+
+            <div className="hero-cta-buttons">
+              <button className="hero-primary-btn">Deploy Infrastructure</button>
+              <button className="hero-secondary-btn">Explore Features</button>
+            </div>
           </AnimatedSection>
 
-          <div className="eventtech-image">
-            <AnimatedSection type="slideLeft" duration={0.7}>
-              <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
-                alt="Event technology"
-              />
+          <div className="eventtech-image-side">
+            <AnimatedSection type="slideLeft" duration={0.8} className="hero-collage-wrapper">
+              <div className="main-image-card">
+                <img
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
+                  alt="Event technology"
+                  className="hero-main-img"
+                />
+              </div>
+
+              {/* Floating Stat Card 1 */}
+              <motion.div 
+                className="floating-metric-card stat-card-1"
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <div className="stat-icon">🎟️</div>
+                <div>
+                  <h4>150k+</h4>
+                  <p>Tickets Issued</p>
+                </div>
+              </motion.div>
+
+              {/* Floating Stat Card 2 */}
+              <motion.div 
+                className="floating-metric-card stat-card-2"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              >
+                <div className="stat-icon">⚡</div>
+                <div>
+                  <h4>Live Tracking</h4>
+                  <p>Real-time analytics</p>
+                </div>
+              </motion.div>
             </AnimatedSection>
           </div>
         </section>
