@@ -79,7 +79,17 @@
   height: 400px;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.16);
+  
+  /* Curved Screen 3D Effect */
+  transform: perspective(1500px) rotateY(-8deg) rotateX(2deg) scale(0.97);
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.it-support-image-card:hover {
+  transform: perspective(1500px) rotateY(-2deg) rotateX(0deg) scale(1);
+  box-shadow: 0 30px 60px rgba(140, 198, 63, 0.15);
 }
 
 .slide-wrapper {
@@ -938,6 +948,10 @@
 
   .it-support-buttons {
     justify-content: center;
+  }
+
+  .it-support-image-card {
+    transform: none !important;
   }
 
   .it-support-image-card,
