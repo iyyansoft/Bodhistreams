@@ -56,14 +56,14 @@ const ManagedSupport = () => {
             <div className="deco-ring ring-3"></div>
 
             <div className="it-support-image-card">
-              <AnimatePresence mode="wait">
+              <AnimatePresence>
                 <motion.div
                   key={currentSlide}
-                  initial={{ opacity: 0, x: 70 }}
+                  initial={{ opacity: 0, x: "100%" }}
                   animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -70 }}
-                  transition={{ duration: 0.45, ease: [0.25, 1, 0.5, 1] }}
-                  className="slide-wrapper"
+                  exit={{ opacity: 0, x: "-100%" }}
+                  transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
+                  className="slide-wrapper absolute-slide"
                 >
                   <img
                     src={supportSlides[currentSlide].image}
