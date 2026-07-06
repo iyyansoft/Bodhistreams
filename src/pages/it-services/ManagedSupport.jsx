@@ -16,16 +16,19 @@ const supportSlides = [
   {
     image: "/support1.png",
     status: "Systems Running Smoothly",
+    title: "PROACTIVE MONITORING",
     dotColor: "#8cc63f"
   },
   {
     image: "/support2.png",
     status: "Network Protected & Secure",
+    title: "INFRASTRUCTURE SECURITY",
     dotColor: "#00f0ff"
   },
   {
     image: "/support3.png",
     status: "Cloud Infrastructure Scaled",
+    title: "ENTERPRISE SUPPORT",
     dotColor: "#ff9900"
   }
 ];
@@ -67,6 +70,18 @@ const ManagedSupport = () => {
                     alt={supportSlides[currentSlide].status}
                     className="it-support-image"
                   />
+                  
+                  {/* Premium Title Overlay matching the reference layout */}
+                  <div className="image-overlay-shade"></div>
+                  <motion.div 
+                    className="image-title-overlay"
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -15 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                  >
+                    <h2>{supportSlides[currentSlide].title}</h2>
+                  </motion.div>
                 </motion.div>
               </AnimatePresence>
 
