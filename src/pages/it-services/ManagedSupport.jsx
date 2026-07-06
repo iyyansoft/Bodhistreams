@@ -59,10 +59,10 @@ const ManagedSupport = () => {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentSlide}
-                  initial={{ opacity: 0, scale: 1.05, filter: "blur(6px)" }}
-                  animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-                  exit={{ opacity: 0, scale: 0.95, filter: "blur(6px)" }}
-                  transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
+                  initial={{ opacity: 0, x: 70 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -70 }}
+                  transition={{ duration: 0.45, ease: [0.25, 1, 0.5, 1] }}
                   className="slide-wrapper"
                 >
                   <img
