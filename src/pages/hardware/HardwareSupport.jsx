@@ -1,7 +1,7 @@
 import "./HardwareSupport.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
-import { HelpCircle, ShieldCheck, Server, Network, Monitor, Headphones } from "lucide-react";
+import { HelpCircle, ShieldCheck, Server, Network, Monitor, Headphones, Clock, Activity, Cpu } from "lucide-react";
 
 const HardwareSupport = () => {
   return (
@@ -192,6 +192,49 @@ const HardwareSupport = () => {
                 and continuous technical support to ensure stable,
                 secure and high-performance IT environments.
               </p>
+              
+              {/* Value highlights grid */}
+              <div className="premium-support-grid">
+                <div className="support-grid-item">
+                  <div className="support-grid-icon-box">
+                    <Clock size={20} />
+                  </div>
+                  <div className="support-grid-text">
+                    <h4>24/7 Support</h4>
+                    <p>Round-the-clock help desk availability.</p>
+                  </div>
+                </div>
+                
+                <div className="support-grid-item">
+                  <div className="support-grid-icon-box">
+                    <Activity size={20} />
+                  </div>
+                  <div className="support-grid-text">
+                    <h4>Proactive Monitoring</h4>
+                    <p>Continuous system health checks.</p>
+                  </div>
+                </div>
+                
+                <div className="support-grid-item">
+                  <div className="support-grid-icon-box">
+                    <Cpu size={20} />
+                  </div>
+                  <div className="support-grid-text">
+                    <h4>Smart Integration</h4>
+                    <p>Seamless hardware deployment.</p>
+                  </div>
+                </div>
+                
+                <div className="support-grid-item">
+                  <div className="support-grid-icon-box">
+                    <ShieldCheck size={20} />
+                  </div>
+                  <div className="support-grid-text">
+                    <h4>Secure Infrastructure</h4>
+                    <p>Guaranteed security & SLA compliance.</p>
+                  </div>
+                </div>
+              </div>
             </AnimatedSection>
 
             {/* RIGHT SIDE */}
