@@ -107,6 +107,13 @@ const ITHardware = () => {
                 and lifecycle support to ensure reliability, scalability, 
                 and long-term performance.
               </p>
+              <div className="hw-fit-image-wrapper">
+                <img 
+                  src="/school_lab_setup.png" 
+                  alt="IT Hardware Lab Setup" 
+                  className="hw-fit-image" 
+                />
+              </div>
             </AnimatedSection>
 
             {/* RIGHT SIDE */}
