@@ -61,9 +61,6 @@ function BrandPromotion() {
                       <span className="metric-num" style={{ color: events[activeEventIndex].color }}>{events[activeEventIndex].metric}</span>
                       <span className="metric-label">Projected Impact</span>
                     </div>
-                    <button className="display-action-btn" style={{ background: events[activeEventIndex].color }}>
-                      Configure Setup →
-                    </button>
                   </div>
                 </motion.div>
               </AnimatePresence>
