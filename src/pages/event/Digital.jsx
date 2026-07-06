@@ -120,11 +120,6 @@ const Digital = () => {
               event listing, participant registration, attendance tracking, and 
               structured feedback collection — all from a single platform.
             </p>
-
-            <div className="hero-cta-buttons">
-              <button className="hero-primary-btn">Deploy Infrastructure</button>
-              <button className="hero-secondary-btn">Explore Features</button>
-            </div>
           </AnimatedSection>
 
           <div className="eventtech-image-side">
