@@ -55,58 +55,56 @@ const ManagedSupport = () => {
             <div className="deco-ring ring-2"></div>
             <div className="deco-ring ring-3"></div>
 
-            <div className="wavy-border-frame">
-              <div className="it-support-image-card">
-                <AnimatePresence>
-                  <motion.div
+            <div className="it-support-image-card">
+              <AnimatePresence>
+                <motion.div
+                  key={currentSlide}
+                  initial={{ opacity: 0, x: "100%" }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: "-100%" }}
+                  transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
+                  className="slide-wrapper absolute-slide"
+                >
+                  <img
+                    src={supportSlides[currentSlide].image}
+                    alt="IT Support Slide"
+                    className="it-support-image"
+                  />
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Title overlay in the bottom-right corner */}
+              <div className="slide-title-badge">
+                <span
+                  className="it-support-dot"
+                  style={{
+                    backgroundColor: supportSlides[currentSlide].dotColor,
+                    boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
+                  }}
+                ></span>
+                <AnimatePresence mode="wait">
+                  <motion.span
                     key={currentSlide}
-                    initial={{ opacity: 0, x: "100%" }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: "-100%" }}
-                    transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
-                    className="slide-wrapper absolute-slide"
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -5 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <img
-                      src={supportSlides[currentSlide].image}
-                      alt="IT Support Slide"
-                      className="it-support-image"
-                    />
-                  </motion.div>
+                    {supportSlides[currentSlide].title}
+                  </motion.span>
                 </AnimatePresence>
+              </div>
 
-                {/* Title overlay in the bottom-right corner */}
-                <div className="slide-title-badge">
-                  <span
-                    className="it-support-dot"
-                    style={{
-                      backgroundColor: supportSlides[currentSlide].dotColor,
-                      boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
-                    }}
-                  ></span>
-                  <AnimatePresence mode="wait">
-                    <motion.span
-                      key={currentSlide}
-                      initial={{ opacity: 0, y: 5 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -5 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      {supportSlides[currentSlide].title}
-                    </motion.span>
-                  </AnimatePresence>
-                </div>
-
-                {/* Dots Indicator */}
-                <div className="slide-dots">
-                  {supportSlides.map((_, idx) => (
-                    <button
-                      key={idx}
-                      className={`slide-dot ${idx === currentSlide ? "active" : ""}`}
-                      onClick={() => setCurrentSlide(idx)}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    ></button>
-                  ))}
-                </div>
+              {/* Dots Indicator */}
+              <div className="slide-dots">
+                {supportSlides.map((_, idx) => (
+                  <button
+                    key={idx}
+                    className={`slide-dot ${idx === currentSlide ? "active" : ""}`}
+                    onClick={() => setCurrentSlide(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  ></button>
+                ))}
               </div>
             </div>
           </div>
@@ -340,14 +338,7 @@ const ManagedSupport = () => {
         </AnimatedSection>
       </section>
 
-      {/* Custom Wavy ClipPath Definition */}
-      <svg width="0" height="0" style={{ position: "absolute", zIndex: -1 }}>
-        <defs>
-          <clipPath id="wavy-card-clip" clipPathUnits="objectBoundingBox">
-            <path d="M 0.12 0.08 C 0.35 0.18, 0.65 0.18, 0.88 0.08 C 0.94 0.08, 0.92 0.18, 0.92 0.25 C 0.82 0.45, 0.82 0.55, 0.92 0.75 C 0.92 0.82, 0.94 0.92, 0.88 0.92 C 0.65 0.82, 0.35 0.82, 0.12 0.92 C 0.06 0.92, 0.08 0.82, 0.08 0.75 C 0.18 0.55, 0.18 0.45, 0.08 0.25 C 0.08 0.18, 0.06 0.08, 0.12 0.08 Z" />
-          </clipPath>
-        </defs>
-      </svg>
+
     </PageWrapper>
   );
 };
