@@ -1,37 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "./BrandPromotion.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 
-const initialEvents = [
-  { title: "Seminars", desc: "Knowledge sharing", icon: "📘", color: "#7C3AED" },
-  { title: "Workshops", desc: "Hands-on learning", icon: "💡", color: "#2563EB" },
-  { title: "Hackathons", desc: "Build & innovate", icon: "💻", color: "#059669" },
-  { title: "Conclaves", desc: "Expert gatherings", icon: "👥", color: "#EA580C" },
-  { title: "Conference", desc: "Professional events", icon: "🎤", color: "#DB2777" },
-  { title: "Culturals", desc: "Art & performance", icon: "🎵", color: "#7C3AED" },
-  { title: "Business", desc: "Networking & trade", icon: "💼", color: "#374151" },
-  { title: "Community", desc: "Social causes", icon: "❤️", color: "#DC2626" }
+const events = [
+  { title: "Seminars", desc: "Knowledge sharing", icon: "📘", color: "#7C3AED", details: "Host engaging educational events, webinars, and expert lectures with integrated presentation materials and secure attendance records.", metric: "12k+ Attendees" },
+  { title: "Workshops", desc: "Hands-on learning", icon: "💡", color: "#2563EB", details: "Facilitate collaborative learning sessions, live exercises, task boards, and interactive whiteboard integrations.", metric: "4.8/5 Rating" },
+  { title: "Hackathons", desc: "Build & innovate", icon: "💻", color: "#059669", details: "Coordinate design challenges and coding sprints with automated registration, team profiles, and submission tracking.", metric: "250+ Teams" },
+  { title: "Conclaves", desc: "Expert gatherings", icon: "👥", color: "#EA580C", details: "Bring industry experts together for panel discussions, live Q&A formats, private lounges, and customized access tiers.", metric: "80+ Speakers" },
+  { title: "Conference", desc: "Professional events", icon: "🎤", color: "#DB2777", details: "Organize large-scale summits featuring multi-track sessions, virtual stages, sponsor booths, and real-time polls.", metric: "50+ Sessions" },
+  { title: "Culturals", desc: "Art & performance", icon: "🎵", color: "#7C3AED", details: "Showcase talent hunts, music festivals, and performances with HD live streaming and ticket integrations.", metric: "30k+ Reach" },
+  { title: "Business", desc: "Networking & trade", icon: "💼", color: "#374151", details: "Drive commercial impact with B2B networking hubs, structured appointments, and digital company profiles.", metric: "500+ Deals Done" },
+  { title: "Community", desc: "Social causes", icon: "❤️", color: "#DC2626", details: "Mobilize volunteers, raise awareness, and manage donations through transparent event registration portals.", metric: "$45k+ Raised" }
 ];
 
 function BrandPromotion() {
-  const [events, setEvents] = useState(initialEvents);
-
-  const shuffleArray = (arr) => {
-    let newArr = [...arr];
-    for (let i = newArr.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-    }
-    return newArr;
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setEvents(prev => shuffleArray(prev));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+  const [activeEventIndex, setActiveEventIndex] = useState(0);
 
   return (
     <PageWrapper>
@@ -40,29 +25,71 @@ function BrandPromotion() {
         <section className="events-section">
           <AnimatedSection type="fade">
             <h2 className="title">Brand Promotion & Audience Engagement</h2>
+            <p className="subtitle-desc">Hover over any format on the right to preview features and projected scale.</p>
           </AnimatedSection>
 
-          <div className="events-grid">
-            {events.map((item, i) => (
-              <AnimatedSection 
-                type="scale" 
-                delay={(i % 4) * 0.05} 
-                key={i} 
-                className="event-brand-card"
-                style={{ '--theme-color': item.color }}
-              >
-                <div className="card-left">
-                  <div className="icon-wrapper" style={{ backgroundColor: `${item.color}12`, border: `1px solid ${item.color}25` }}>
-                    <span className="emoji-icon">{item.icon}</span>
+          <div className="event-hub-container">
+            {/* ACTIVE EVENT DISPLAY CARD (LEFT) */}
+            <div className="event-hub-display-side">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeEventIndex}
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -15 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="active-display-card"
+                  style={{ '--theme-color': events[activeEventIndex].color }}
+                >
+                  <div className="active-card-glow" style={{ background: `radial-gradient(circle at 50% 50%, ${events[activeEventIndex].color}12, transparent 70%)` }}></div>
+                  <div className="display-header">
+                    <div className="display-icon-box" style={{ backgroundColor: `${events[activeEventIndex].color}12`, border: `1px solid ${events[activeEventIndex].color}30` }}>
+                      <span>{events[activeEventIndex].icon}</span>
+                    </div>
+                    <div className="display-title-block">
+                      <span className="display-tag">EVENT CAPABILITY</span>
+                      <h2>{events[activeEventIndex].title}</h2>
+                    </div>
                   </div>
-                </div>
-                <div className="card-right">
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-                <div className="card-hover-border" style={{ background: item.color }}></div>
-              </AnimatedSection>
-            ))}
+                  
+                  <p className="display-details">
+                    {events[activeEventIndex].details}
+                  </p>
+                  
+                  <div className="display-footer">
+                    <div className="display-metric">
+                      <span className="metric-num" style={{ color: events[activeEventIndex].color }}>{events[activeEventIndex].metric}</span>
+                      <span className="metric-label">Projected Impact</span>
+                    </div>
+                    <button className="display-action-btn" style={{ background: events[activeEventIndex].color }}>
+                      Configure Setup →
+                    </button>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* SELECTION GRID (RIGHT) */}
+            <div className="event-hub-selector-side">
+              <div className="events-grid-interactive">
+                {events.map((item, i) => (
+                  <div 
+                    key={i} 
+                    className={`selector-card ${i === activeEventIndex ? "active" : ""}`}
+                    onMouseEnter={() => setActiveEventIndex(i)}
+                    style={{ '--theme-color': item.color }}
+                  >
+                    <div className="selector-icon" style={{ backgroundColor: i === activeEventIndex ? `${item.color}` : `${item.color}10` }}>
+                      <span style={{ filter: i === activeEventIndex ? 'brightness(1.5)' : 'none' }}>{item.icon}</span>
+                    </div>
+                    <div className="selector-text">
+                      <h4>{item.title}</h4>
+                      <p>{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
