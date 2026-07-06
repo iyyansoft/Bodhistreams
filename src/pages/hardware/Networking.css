@@ -516,6 +516,28 @@
     color: #444;
 }
 
+.nw-fit-image-wrapper {
+  margin-top: 80px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.nw-fit-image {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.nw-fit-image-wrapper:hover .nw-fit-image {
+  transform: scale(1.03);
+}
+
 /* RIGHT SCROLL */
 
 .nw-fit-right {

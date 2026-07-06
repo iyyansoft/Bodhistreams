@@ -279,6 +279,13 @@ const Networking = () => {
                 maintenance, we ensure stable network infrastructure
                 and uninterrupted communication systems.
               </p>
+              <div className="nw-fit-image-wrapper">
+                <img 
+                  src="/network_rack_setup.png" 
+                  alt="Network Infrastructure Setup" 
+                  className="nw-fit-image" 
+                />
+              </div>
             </AnimatedSection>
 
             <div className="nw-fit-right">
