@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import "./ManagedSupport.css";
 import {
   Server,
@@ -10,24 +12,99 @@ import {
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 
+const supportSlides = [
+  {
+    image: "/support1.png",
+    status: "Systems Running Smoothly",
+    dotColor: "#8cc63f"
+  },
+  {
+    image: "/support2.png",
+    status: "Network Protected & Secure",
+    dotColor: "#00f0ff"
+  },
+  {
+    image: "/support3.png",
+    status: "Cloud Infrastructure Scaled",
+    dotColor: "#ff9900"
+  }
+];
+
 const ManagedSupport = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % supportSlides.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <PageWrapper>
       {/* ================= HERO ================= */}
       <section className="it-support-section">
         {/* LEFT IMAGE */}
         <div className="it-support-image-side">
-          <AnimatedSection type="slideRight" className="it-support-image-card" duration={0.7}>
-            <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&q=80"
-              alt="IT Support"
-              className="it-support-image"
-            />
-            <div className="it-support-status">
-              <span className="it-support-dot"></span>
-              Systems Running Smoothly
+          <div className="premium-image-container">
+            {/* Concentric Decorative Rings */}
+            <div className="deco-ring ring-1"></div>
+            <div className="deco-ring ring-2"></div>
+            <div className="deco-ring ring-3"></div>
+
+            <div className="it-support-image-card">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentSlide}
+                  initial={{ opacity: 0, scale: 0.96 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.96 }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  className="slide-wrapper"
+                >
+                  <img
+                    src={supportSlides[currentSlide].image}
+                    alt={supportSlides[currentSlide].status}
+                    className="it-support-image"
+                  />
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Status Box */}
+              <div className="it-support-status">
+                <span
+                  className="it-support-dot"
+                  style={{
+                    backgroundColor: supportSlides[currentSlide].dotColor,
+                    boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
+                  }}
+                ></span>
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={currentSlide}
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -5 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {supportSlides[currentSlide].status}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
+
+              {/* Dots Indicator */}
+              <div className="slide-dots">
+                {supportSlides.map((_, idx) => (
+                  <button
+                    key={idx}
+                    className={`slide-dot ${idx === currentSlide ? "active" : ""}`}
+                    onClick={() => setCurrentSlide(idx)}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  ></button>
+                ))}
+              </div>
             </div>
-          </AnimatedSection>
+          </div>
         </div>
 
         {/* RIGHT CONTENT */}

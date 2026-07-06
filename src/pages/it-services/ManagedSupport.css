@@ -13,30 +13,125 @@
 }
 
 /* LEFT IMAGE */
-.it-support-image-side{
+.it-support-image-side {
   flex: 0.9;
   min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.it-support-image-card{
+.premium-image-container {
   position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.it-support-image{
+/* Concentric decorative rings overlay inspired by modern vinyl record design */
+.deco-ring {
+  position: absolute;
+  border: 1px dashed rgba(140, 198, 63, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ring-1 {
+  width: 95%;
+  height: 95%;
+  animation: rotateClockwise 25s linear infinite;
+}
+
+.ring-2 {
+  width: 105%;
+  height: 105%;
+  border-style: dotted;
+  border-color: rgba(99, 175, 28, 0.15);
+  animation: rotateCounterClockwise 35s linear infinite;
+}
+
+.ring-3 {
+  width: 115%;
+  height: 115%;
+  border-style: solid;
+  border-color: rgba(99, 175, 28, 0.08);
+  animation: rotateClockwise 45s linear infinite;
+}
+
+@keyframes rotateClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateCounterClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.it-support-image-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.slide-wrapper {
   width: 100%;
   height: 400px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 30px;
+}
+
+.it-support-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
+/* Dots Indicator */
+.slide-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slide-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.slide-dot.active {
+  background: #ffffff;
+  width: 24px;
+  border-radius: 4px;
+}
+
 /* STATUS BOX */
-.it-support-status{
+.it-support-status {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background: rgba(255,255,255,0.95);
-  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 12px 18px;
   border-radius: 14px;
   font-size: 14px;
   font-weight: 600;
@@ -44,14 +139,16 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  z-index: 10;
 }
 
-.it-support-dot{
+.it-support-dot {
   width: 10px;
   height: 10px;
-  background: #16a34a;
   border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* RIGHT CONTENT */
