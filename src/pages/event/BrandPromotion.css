@@ -1,72 +1,125 @@
-/* SECTION */
+/* EVENTS SECTION */
 .events-section {
-  padding: 100px 8%;
-  background: #f5f2ef;
+  padding: 120px 8%;
+  background: radial-gradient(circle at 10% 20%, rgba(140, 198, 63, 0.03) 0%, rgba(255, 255, 255, 1) 90%);
   text-align: center;
   margin-top: 80px;
+  position: relative;
 }
 
 /* TITLE */
-.title {
-  font-size: 32px;
-  margin-bottom: 50px;
+.events-section .title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #111827;
+  letter-spacing: -0.5px;
 }
 
 /* GRID */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 28px;
 }
 
-/* CARD */
-.card {
-  background: #f1f1f1;
-  padding: 30px 20px;
+/* NEW ASYMMETRICAL CARD */
+.event-brand-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #ffffff;
   border-radius: 20px;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
 }
 
-/* ICON */
-.icon {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  border-radius: 50%;
+.event-brand-card .card-left {
+  flex-shrink: 0;
+}
+
+.event-brand-card .icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 24px;
-  margin-bottom: 15px;
+  transition: transform 0.4s ease;
 }
 
-/* TEXT */
-.card h3 {
-  margin-bottom: 5px;
+.event-brand-card .emoji-icon {
+  font-size: 22px;
 }
 
-.card p {
-  color: #666;
-  font-size: 14px;
+.event-brand-card .card-right h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+  transition: color 0.3s ease;
 }
 
-/* HOVER */
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
+.event-brand-card .card-right p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #6b7280;
+  margin: 0;
+}
+
+.event-brand-card .card-hover-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* HOVER EFFECT */
+.event-brand-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--theme-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.event-brand-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.event-brand-card:hover h3 {
+  color: var(--theme-color);
+}
+
+.event-brand-card:hover .card-hover-border {
+  transform: scaleX(1);
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .events-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .events-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .events-section .title {
+    font-size: 28px;
+    margin-bottom: 40px;
   }
 }
 /* ------------------------------------------------------------------------------------------------------------ */

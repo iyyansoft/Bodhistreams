@@ -44,15 +44,23 @@ function BrandPromotion() {
 
           <div className="events-grid">
             {events.map((item, i) => (
-              <AnimatedSection type="scale" delay={(i % 4) * 0.05} key={i} className="card">
-                <div
-                  className="icon"
-                  style={{ background: item.color }}
-                >
-                  {item.icon}
+              <AnimatedSection 
+                type="scale" 
+                delay={(i % 4) * 0.05} 
+                key={i} 
+                className="event-brand-card"
+                style={{ '--theme-color': item.color }}
+              >
+                <div className="card-left">
+                  <div className="icon-wrapper" style={{ backgroundColor: `${item.color}12`, border: `1px solid ${item.color}25` }}>
+                    <span className="emoji-icon">{item.icon}</span>
+                  </div>
                 </div>
-                <h3 style={{ color: item.color }}>{item.title}</h3>
-                <p>{item.desc}</p>
+                <div className="card-right">
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+                <div className="card-hover-border" style={{ background: item.color }}></div>
               </AnimatedSection>
             ))}
           </div>
