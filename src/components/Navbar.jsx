@@ -109,7 +109,7 @@ const Navbar = () => {
       ]
     },
     {
-      label: "Event infra",
+      label: "Event Infra",
       title: "Event Technology Suite",
       desc: "Complete digital ticketing, management apps, brand promotion, and physical setup infrastructure.",
       image:
