@@ -59,10 +59,10 @@ const ManagedSupport = () => {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentSlide}
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  initial={{ opacity: 0, clipPath: "circle(0% at 50% 50%)" }}
+                  animate={{ opacity: 1, clipPath: "circle(100% at 50% 50%)" }}
+                  exit={{ opacity: 0, clipPath: "circle(0% at 50% 50%)" }}
+                  transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
                   className="slide-wrapper"
                 >
                   <img
@@ -73,15 +73,17 @@ const ManagedSupport = () => {
                   
                   {/* Premium Title Overlay matching the reference layout */}
                   <div className="image-overlay-shade"></div>
-                  <motion.div 
-                    className="image-title-overlay"
-                    initial={{ opacity: 0, y: 15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -15 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                  >
-                    <h2>{supportSlides[currentSlide].title}</h2>
-                  </motion.div>
+                  <div className="center-circle-wrapper">
+                    <motion.div 
+                      className="glass-circle-overlay"
+                      initial={{ scale: 0.75, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      exit={{ scale: 0.75, opacity: 0 }}
+                      transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                      <h2>{supportSlides[currentSlide].title}</h2>
+                    </motion.div>
+                  </div>
                 </motion.div>
               </AnimatePresence>
 
