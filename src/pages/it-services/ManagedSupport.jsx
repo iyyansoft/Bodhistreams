@@ -67,47 +67,11 @@ const ManagedSupport = () => {
                 >
                   <img
                     src={supportSlides[currentSlide].image}
-                    alt={supportSlides[currentSlide].status}
+                    alt="IT Support Slide"
                     className="it-support-image"
                   />
-                  
-                  {/* Premium Title Overlay matching the reference layout */}
-                  <div className="image-overlay-shade"></div>
-                  <div className="center-circle-wrapper">
-                    <motion.div 
-                      className="glass-circle-overlay"
-                      initial={{ scale: 0.75, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      exit={{ scale: 0.75, opacity: 0 }}
-                      transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                      <h2>{supportSlides[currentSlide].title}</h2>
-                    </motion.div>
-                  </div>
                 </motion.div>
               </AnimatePresence>
-
-              {/* Status Box */}
-              <div className="it-support-status">
-                <span
-                  className="it-support-dot"
-                  style={{
-                    backgroundColor: supportSlides[currentSlide].dotColor,
-                    boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
-                  }}
-                ></span>
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={currentSlide}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {supportSlides[currentSlide].status}
-                  </motion.span>
-                </AnimatePresence>
-              </div>
 
               {/* Dots Indicator */}
               <div className="slide-dots">
