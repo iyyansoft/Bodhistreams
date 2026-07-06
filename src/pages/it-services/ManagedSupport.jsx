@@ -55,56 +55,58 @@ const ManagedSupport = () => {
             <div className="deco-ring ring-2"></div>
             <div className="deco-ring ring-3"></div>
 
-            <div className="it-support-image-card">
-              <AnimatePresence>
-                <motion.div
-                  key={currentSlide}
-                  initial={{ opacity: 0, x: "100%" }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: "-100%" }}
-                  transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
-                  className="slide-wrapper absolute-slide"
-                >
-                  <img
-                    src={supportSlides[currentSlide].image}
-                    alt="IT Support Slide"
-                    className="it-support-image"
-                  />
-                </motion.div>
-              </AnimatePresence>
-
-              {/* Title overlay in the bottom-right corner */}
-              <div className="slide-title-badge">
-                <span
-                  className="it-support-dot"
-                  style={{
-                    backgroundColor: supportSlides[currentSlide].dotColor,
-                    boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
-                  }}
-                ></span>
-                <AnimatePresence mode="wait">
-                  <motion.span
+            <div className="wavy-border-frame">
+              <div className="it-support-image-card">
+                <AnimatePresence>
+                  <motion.div
                     key={currentSlide}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -5 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0, x: "100%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: "-100%" }}
+                    transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
+                    className="slide-wrapper absolute-slide"
                   >
-                    {supportSlides[currentSlide].title}
-                  </motion.span>
+                    <img
+                      src={supportSlides[currentSlide].image}
+                      alt="IT Support Slide"
+                      className="it-support-image"
+                    />
+                  </motion.div>
                 </AnimatePresence>
-              </div>
 
-              {/* Dots Indicator */}
-              <div className="slide-dots">
-                {supportSlides.map((_, idx) => (
-                  <button
-                    key={idx}
-                    className={`slide-dot ${idx === currentSlide ? "active" : ""}`}
-                    onClick={() => setCurrentSlide(idx)}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  ></button>
-                ))}
+                {/* Title overlay in the bottom-right corner */}
+                <div className="slide-title-badge">
+                  <span
+                    className="it-support-dot"
+                    style={{
+                      backgroundColor: supportSlides[currentSlide].dotColor,
+                      boxShadow: `0 0 10px ${supportSlides[currentSlide].dotColor}`
+                    }}
+                  ></span>
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={currentSlide}
+                      initial={{ opacity: 0, y: 5 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -5 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {supportSlides[currentSlide].title}
+                    </motion.span>
+                  </AnimatePresence>
+                </div>
+
+                {/* Dots Indicator */}
+                <div className="slide-dots">
+                  {supportSlides.map((_, idx) => (
+                    <button
+                      key={idx}
+                      className={`slide-dot ${idx === currentSlide ? "active" : ""}`}
+                      onClick={() => setCurrentSlide(idx)}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    ></button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -256,47 +258,51 @@ const ManagedSupport = () => {
           </AnimatedSection>
         </div>
 
-        <AnimatedSection type="slideLeft" className="ms-support-right" duration={0.7}>
-          <h1>
-            Managed IT & Technical Support <br />
-            for Reliable Enterprise Operations
-          </h1>
-          <p>
-            BodhiStreams Convergence delivers end-to-end managed IT services 
-            including monitoring, maintenance, cloud infrastructure management, 
-            system integration, and technical support to ensure secure and 
-            scalable IT environments.
-          </p>
-        </AnimatedSection>
+        <div className="ms-support-right">
+          <AnimatedSection type="slideLeft" className="ms-support-right-content" duration={0.7}>
+            <p className="ms-support-tag">
+              ENTERPRISE-GRADE SERVICE
+            </p>
+            <h1>
+              Stable and secure IT solutions
+            </h1>
+            <p>
+              We provide information technology consulting, advisory services,
+              system analysis and design, system integration, software testing
+              and quality assurance, digital transformation, automation, managed
+              IT services, and 24/7 technical support.
+            </p>
+          </AnimatedSection>
+        </div>
       </section>
 
-      {/* ================= PREMIUM PERFORMANCE ================= */}
-      <section className="ms-premium">
-        <AnimatedSection type="fade">
-          <h2 className="ms-premium-title">
-            Reliable IT Support & System Performance
-          </h2>
-        </AnimatedSection>
-
+      {/* ================= PREMIUM METRICS ================= */}
+      <section className="ms-premium-metrics">
+        <h2 className="ms-premium-title">
+          Scale your business operations
+        </h2>
         <div className="ms-premium-grid">
+          {/* STAT 1 */}
           <AnimatedSection type="scale" delay={0.1} className="ms-premium-card">
-            <h1>99.9%</h1>
-            <h3>System Uptime</h3>
-            <p>
-              Continuous monitoring and maintenance to ensure maximum
-              availability and minimal downtime.
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection type="scale" delay={0.2} className="ms-premium-card highlight">
             <h1>24/7</h1>
-            <h3>Monitoring & Support</h3>
+            <h3>Active Monitoring</h3>
             <p>
-              Round-the-clock technical support and proactive issue
-              resolution for all IT systems.
+              Continuous security monitoring, server health checks,
+              and real-time system performance analysis.
             </p>
           </AnimatedSection>
 
+          {/* STAT 2 */}
+          <AnimatedSection type="scale" delay={0.2} className="ms-premium-card">
+            <h1>99.9%</h1>
+            <h3>Uptime Guaranteed</h3>
+            <p>
+              Optimizing legacy workflows and cloud resources
+              to minimize disruptions and ensure business continuity.
+            </p>
+          </AnimatedSection>
+
+          {/* STAT 3 */}
           <AnimatedSection type="scale" delay={0.3} className="ms-premium-card">
             <h1>500+</h1>
             <h3>Systems Managed</h3>
@@ -333,6 +339,15 @@ const ManagedSupport = () => {
           </div>
         </AnimatedSection>
       </section>
+
+      {/* Custom Wavy ClipPath Definition */}
+      <svg width="0" height="0" style={{ position: "absolute", zIndex: -1 }}>
+        <defs>
+          <clipPath id="wavy-card-clip" clipPathUnits="objectBoundingBox">
+            <path d="M 0.1 0.05 C 0.35 0.12, 0.65 0.12, 0.9 0.05 C 0.96 0.05, 0.95 0.15, 0.95 0.2 C 0.9 0.45, 0.9 0.55, 0.95 0.8 C 0.95 0.85, 0.96 0.95, 0.9 0.95 C 0.65 0.88, 0.35 0.88, 0.1 0.95 C 0.04 0.95, 0.05 0.85, 0.05 0.8 C 0.1 0.55, 0.1 0.45, 0.05 0.2 C 0.05 0.15, 0.04 0.05, 0.1 0.05 Z" />
+          </clipPath>
+        </defs>
+      </svg>
     </PageWrapper>
   );
 };
