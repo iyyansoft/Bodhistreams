@@ -686,7 +686,7 @@
 
 
 
-.ms-premium {
+.ms-premium-metrics {
   padding: 90px 6%;
   background: #ffffff;
   text-align: center;
@@ -694,7 +694,7 @@
 }
 
 /* 🔥 SOFT BACKGROUND GLOW */
-.ms-premium::before {
+.ms-premium-metrics::before {
   content: "";
   position: absolute;
   top: 120px;
@@ -715,6 +715,7 @@
   margin-bottom: 60px;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 /* GRID */
