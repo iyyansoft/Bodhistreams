@@ -292,7 +292,7 @@ const SoftwareDevelopment = () => {
             <Link to="/contactus" className="cta-primary">
               Contact Sales
             </Link>
-            <Link to="/software-development" className="cta-outline">
+            <Link to="/it-consulting" className="cta-outline">
               View IT Services
             </Link>
           </div>

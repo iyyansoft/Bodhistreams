@@ -257,7 +257,7 @@ const ITHardware = () => {
               <Link to="/contactus" className="cta-primary1">
                 Contact Sales
               </Link>
-              <Link to="/software-development" className="cta-outline1">
+              <Link to="/it-consulting" className="cta-outline1">
                 View IT Services
               </Link>
             </div>

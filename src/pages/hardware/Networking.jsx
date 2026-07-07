@@ -402,7 +402,7 @@ const Networking = () => {
               <Link to="/contactus" className="nw-cta-primary">
                 Contact Sales
               </Link>
-              <Link to="/software-development" className="nw-cta-outline">
+              <Link to="/it-consulting" className="nw-cta-outline">
                 View IT Services
               </Link>
             </div>
