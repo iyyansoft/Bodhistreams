@@ -201,7 +201,7 @@ const ElectronicProducts = () => {
           </p>
           <div className="ep-cta__btns">
             <Link to="/contactus" className="ep-btn ep-btn--white">Contact Sales</Link>
-            <Link to="/it-consulting" className="ep-btn ep-btn--ghost-light">View All Services</Link>
+            <Link to="/about" className="ep-btn ep-btn--ghost-light">View All Services</Link>
           </div>
         </AnimatedSection>
       </section>
