@@ -23,30 +23,57 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-
   background: #fdfdfc;
   padding: 8px clamp(16px, 6vw, 90px) 60px;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-
   z-index: 1400;
   height: 110px;
-
-
 }
 
+/* DESKTOP VIEW SCROLL EFFECTS */
+@media (min-width: 769px) {
+  .navbar {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    background: #ffffff;
+  }
+  
+  .navbar,
+  .utility-row,
+  .navbar-container,
+  .logo img {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
 
+  .navbar.scrolled {
+    height: 75px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
 
+  .navbar.scrolled .utility-row {
+    height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    overflow: hidden;
+  }
 
+  .navbar.scrolled .navbar-container {
+    margin-top: -6px;
+  }
 
-.navbar.scrolled {
-  background: white;
-  /* transparent white */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  .navbar.scrolled .logo img {
+    height: 52px;
+    margin-top: -5px;
+  }
 }
 
 /* ============================= */
