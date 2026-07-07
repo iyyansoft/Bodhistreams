@@ -47,20 +47,27 @@ body {
   .navbar,
   .utility-row,
   .navbar-container,
+  .logo,
+  .nav-menu,
   .logo img,
   .nav-link {
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .navbar.scrolled {
-    height: 75px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: rgba(17, 24, 39, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    height: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: none;
+    pointer-events: none; /* Let clicks pass through empty space */
+  }
+
+  /* Reactivate pointer events on actual interactive headers */
+  .navbar.scrolled .logo,
+  .navbar.scrolled .nav-menu {
+    pointer-events: auto;
   }
 
   .navbar.scrolled .utility-row {
@@ -74,20 +81,47 @@ body {
 
   .navbar.scrolled .navbar-container {
     margin-top: -6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Logo glass pill container */
+  .navbar.scrolled .logo {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 24px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
   }
 
   .navbar.scrolled .logo img {
-    height: 52px;
-    margin-top: -5px;
-    filter: brightness(0) invert(1);
+    height: 46px;
+    margin-top: 0;
+  }
+
+  /* Navigation menu glass pill container */
+  .navbar.scrolled .nav-menu {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 36px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .navbar.scrolled .nav-link {
-    color: #f3f4f6;
-  }
-
-  .navbar.scrolled .nav-link:hover {
-    color: #8CC63F;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 15.5px;
   }
 }
 
