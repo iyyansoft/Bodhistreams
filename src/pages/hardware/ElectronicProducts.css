@@ -682,7 +682,7 @@
 
   .ep-split {
     padding: 80px 5%;
-    gap: 60px;
+    gap: 90px;
   }
 
   .ep-caps {
@@ -713,7 +713,7 @@
     margin: 0 -5%;
   }
 
-  .ep-split { gap: 48px; }
+  .ep-split { gap: 75px; }
 }
 
 @media (max-width: 768px) {
