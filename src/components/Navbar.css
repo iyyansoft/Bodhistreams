@@ -47,27 +47,32 @@ body {
   .navbar,
   .utility-row,
   .navbar-container,
-  .logo,
-  .nav-menu,
   .logo img,
   .nav-link {
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .navbar.scrolled {
-    height: 90px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: transparent;
-    box-shadow: none;
-    border-bottom: none;
-    pointer-events: none; /* Let clicks pass through empty space */
+    height: 75px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
   }
 
-  /* Reactivate pointer events on actual interactive headers */
-  .navbar.scrolled .logo,
-  .navbar.scrolled .nav-menu {
-    pointer-events: auto;
+  /* Centered animated bottom gradient border */
+  .navbar.scrolled::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8CC63F 50%, transparent);
+    box-shadow: 0 1px 6px rgba(140, 198, 63, 0.3);
+    animation: expandLine 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
   .navbar.scrolled .utility-row {
@@ -81,47 +86,27 @@ body {
 
   .navbar.scrolled .navbar-container {
     margin-top: -6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Logo glass pill container */
-  .navbar.scrolled .logo {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 8px 24px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    display: flex;
-    align-items: center;
   }
 
   .navbar.scrolled .logo img {
-    height: 46px;
-    margin-top: 0;
-  }
-
-  /* Navigation menu glass pill container */
-  .navbar.scrolled .nav-menu {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 10px 36px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    height: 52px;
+    margin-top: -5px;
   }
 
   .navbar.scrolled .nav-link {
-    margin-left: 14px;
-    margin-right: 14px;
-    font-size: 15.5px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+}
+
+@keyframes expandLine {
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 80%;
+    left: 10%;
   }
 }
 
