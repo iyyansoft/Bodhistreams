@@ -151,7 +151,7 @@ const ITHardware = () => {
               <div className="hw-v7-inner">
                 <div className="hw-v7-front">
                   <img
-                    src="https://foreexcel.com/wp-content/uploads/2026/04/fccb9ef2355b5ddcb6975fb194530154.jpg"
+                    src="/hw_supply_distribution.png"
                     alt="IT Hardware Supply"
                   />
                 </div>
@@ -171,7 +171,7 @@ const ITHardware = () => {
               <div className="hw-v7-inner">
                 <div className="hw-v7-front">
                   <img
-                    src="https://sysracks.com/wp-content/uploads/2024/09/setting-up-a-server-rack.png"
+                    src="/hw_installation_setup.png"
                     alt="Installation Setup"
                   />
                 </div>
@@ -191,7 +191,7 @@ const ITHardware = () => {
               <div className="hw-v7-inner">
                 <div className="hw-v7-front">
                   <img
-                    src="https://cdn11.bigcommerce.com/s-bfxxgrup/images/stencil/1000x1000/uploaded_images/server.jpeg?t=1711732358"
+                    src="/hw_maintenance_support.png"
                     alt="Maintenance Support"
                   />
                 </div>
