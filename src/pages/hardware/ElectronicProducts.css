@@ -228,7 +228,7 @@
 .ep-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 110px;
   align-items: center;
   padding: var(--section-pad);
   max-width: var(--max-w);
