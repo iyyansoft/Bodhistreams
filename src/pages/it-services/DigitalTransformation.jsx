@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
+import { Link } from "react-router-dom";
 
 const DigitalTransformation = () => {
   return (
@@ -223,12 +224,12 @@ const DigitalTransformation = () => {
             cloud solutions, and intelligent systems.
           </p>
           <div className="transform-cta-actions">
-            <button className="transform-primary-btn">
+            <Link to="/contactus" className="transform-primary-btn">
               Talk to Experts
-            </button>
-            <button className="transform-outline-btn">
+            </Link>
+            <Link to="/it-consulting" className="transform-outline-btn">
               View Services
-            </button>
+            </Link>
           </div>
         </AnimatedSection>
       </section>

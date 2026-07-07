@@ -642,6 +642,14 @@
   transform: translateY(-2px) !important;
 }
 
+.transform-cta-section .transform-primary-btn,
+.transform-cta-section .transform-outline-btn {
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /* ==========================================================================
    RESPONSIVENESS
    ========================================================================== */
