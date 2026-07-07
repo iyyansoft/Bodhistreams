@@ -105,7 +105,7 @@ const HardwareSupport = () => {
             <AnimatedSection type="slideRight" className="hw-support-split-card" duration={0.7}>
               <div className="hw-support-card-image-wrap">
                 <img
-                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80"
+                  src="/it_system_installation_support.png"
                   alt="Server Room Infrastructure Support"
                 />
               </div>
