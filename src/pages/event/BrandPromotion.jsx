@@ -24,7 +24,7 @@ function BrandPromotion() {
         {/* SHUFFLING EVENTS */}
         <section className="events-section">
           <AnimatedSection type="fade">
-            <h2 className="title">Brand Promotion & Audience Engagement</h2>
+            <h2 className="title">Brand Promotion <span className="highlight-text">&amp; Audience Engagement</span></h2>
             <p className="subtitle-desc">Hover over any format on the right to preview features and projected scale.</p>
           </AnimatedSection>
 

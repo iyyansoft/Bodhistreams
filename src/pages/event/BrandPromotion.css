@@ -9,15 +9,16 @@
 
 /* TITLE & SUBTITLE */
 .events-section .title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 42px;
+  font-family: 'Syne', sans-serif;
+  font-size: 46px;
   font-weight: 800;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, #0f172a 30%, #597d1b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  letter-spacing: -0.5px;
+  color: #0f172a;
+  letter-spacing: -1.2px;
+}
+
+.events-section .title .highlight-text {
+  color: #597d1b;
 }
 
 .subtitle-desc {
