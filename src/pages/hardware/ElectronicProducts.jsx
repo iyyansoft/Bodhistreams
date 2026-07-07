@@ -1,6 +1,7 @@
 import "./ElectronicProducts.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
+import { Link } from "react-router-dom";
 
 const ElectronicProducts = () => {
   const stats = [
@@ -199,8 +200,8 @@ const ElectronicProducts = () => {
             is ready to help you plan, procure, and deploy.
           </p>
           <div className="ep-cta__btns">
-            <button className="ep-btn ep-btn--white">Contact Sales</button>
-            <button className="ep-btn ep-btn--ghost-light">View All Services</button>
+            <Link to="/contactus" className="ep-btn ep-btn--white">Contact Sales</Link>
+            <Link to="/software-development" className="ep-btn ep-btn--ghost-light">View All Services</Link>
           </div>
         </AnimatedSection>
       </section>

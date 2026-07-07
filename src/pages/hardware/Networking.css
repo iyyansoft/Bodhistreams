@@ -815,6 +815,14 @@
     transform: translateY(-2px);
 }
 
+.nw-cta-primary,
+.nw-cta-outline {
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 @media (max-width: 992px) {
   .nw-customer-section,
   .nw-premium-section,

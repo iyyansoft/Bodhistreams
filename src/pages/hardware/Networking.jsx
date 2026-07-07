@@ -3,6 +3,7 @@ import "./Networking.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ShieldCheck, Gauge, Layers, Network, Activity, Cpu, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const Networking = () => {
@@ -398,12 +399,12 @@ const Networking = () => {
               Networking & Communication Solutions
             </h2>
             <div className="nw-cta-buttons">
-              <button className="nw-cta-primary">
+              <Link to="/contactus" className="nw-cta-primary">
                 Contact Sales
-              </button>
-              <button className="nw-cta-outline">
+              </Link>
+              <Link to="/software-development" className="nw-cta-outline">
                 View IT Services
-              </button>
+              </Link>
             </div>
           </AnimatedSection>
         </section>

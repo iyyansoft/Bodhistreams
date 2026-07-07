@@ -289,12 +289,12 @@ const SoftwareDevelopment = () => {
             development & IT services
           </h2>
           <div className="cta-buttons">
-            <button className="cta-primary">
+            <Link to="/contactus" className="cta-primary">
               Contact Sales
-            </button>
-            <button className="cta-outline">
+            </Link>
+            <Link to="/software-development" className="cta-outline">
               View IT Services
-            </button>
+            </Link>
           </div>
         </AnimatedSection>
       </section>

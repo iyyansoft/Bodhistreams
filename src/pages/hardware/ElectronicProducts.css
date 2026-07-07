@@ -71,6 +71,7 @@
   border: 2px solid transparent;
   transition: background .18s, color .18s, border-color .18s, transform .15s, box-shadow .18s;
   letter-spacing: .2px;
+  text-decoration: none;
 }
 .ep-btn:active { transform: scale(.97); }
 

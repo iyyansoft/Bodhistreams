@@ -2,6 +2,7 @@ import "./ITHardware.css";
 import PageWrapper from "../../components/PageWrapper";
 import AnimatedSection from "../../components/AnimatedSection";
 import { ShieldCheck, Headphones, Truck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ITHardware = () => {
   return (
@@ -253,12 +254,12 @@ const ITHardware = () => {
               IT Hardware Trading & Distribution
             </h2>
             <div className="cta-buttons1">
-              <button className="cta-primary1">
+              <Link to="/contactus" className="cta-primary1">
                 Contact Sales
-              </button>
-              <button className="cta-outline1">
+              </Link>
+              <Link to="/software-development" className="cta-outline1">
                 View IT Services
-              </button>
+              </Link>
             </div>
           </AnimatedSection>
         </section>
