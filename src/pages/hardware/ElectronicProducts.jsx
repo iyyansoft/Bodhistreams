@@ -180,7 +180,7 @@ const ElectronicProducts = () => {
         </AnimatedSection>
         <div className="ep-process__steps">
           {steps.map(({ num, title, desc }, i) => (
-            <AnimatedSection type="scale" delay={i * 0.08} className="ep-step" key={num}>
+            <AnimatedSection type="slideUp" delay={i * 0.12} className="ep-step" key={num}>
               <div className="ep-step__num">{num}</div>
               {i < steps.length - 1 && <div className="ep-step__line" />}
               <h3>{title}</h3>
