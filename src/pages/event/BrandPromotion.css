@@ -9,16 +9,24 @@
 
 /* TITLE & SUBTITLE */
 .events-section .title {
-  font-family: 'Syne', sans-serif;
-  font-size: 46px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   color: #0f172a;
-  letter-spacing: -1.2px;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
 }
 
-.events-section .title .highlight-text {
+.events-section .title .title-sub {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   color: #597d1b;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .subtitle-desc {
