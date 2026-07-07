@@ -24,7 +24,7 @@
 
 .hw-top-banner {
   
-  height: 220px;
+  height: 340px;
   width: 100%;
   border-radius: 20px;
   margin-left: 10px;
@@ -658,7 +658,7 @@
 
   .hw-top-banner {
     height: auto;
-    min-height: 220px;
+    min-height: 280px;
     margin: 20px 0 0;
     max-width: 100%;
   }
@@ -666,7 +666,7 @@
   .hw-overlay {
     padding: 32px 28px;
     align-items: flex-start;
-    min-height: 220px;
+    min-height: 280px;
   }
 
   .hw-premium-section {
