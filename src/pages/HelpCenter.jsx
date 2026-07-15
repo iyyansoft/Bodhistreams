@@ -33,7 +33,7 @@ const HelpCenter = () => {
     },
     {
       q: "How can I contact support?",
-      a: "Our customer support team is available 24/7. Submit your request through the form below, or reach out to us at support@bodhistreams.com."
+      a: "Our customer support team is available 24/7. Submit your request through the form below, or reach out to us at support@bodhistreams.net."
     }
   ];
 

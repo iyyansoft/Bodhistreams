@@ -9,24 +9,17 @@
 
 /* TITLE & SUBTITLE */
 .events-section .title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 48px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 44px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: #0f172a;
-  letter-spacing: -1.5px;
-  line-height: 1.2;
+  letter-spacing: -1px;
 }
 
-.events-section .title .title-sub {
-  display: block;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #597d1b;
-  letter-spacing: 5px;
-  margin-top: 10px;
-  text-transform: uppercase;
+.events-section .title .brand-dot {
+  color: #8CC63F;
+  margin-left: 2px;
 }
 
 .subtitle-desc {

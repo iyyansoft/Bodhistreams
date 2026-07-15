@@ -3,6 +3,7 @@ import React from "react";
 const FloatingButtons = () => {
   return (
     <div
+      className="no-print"
       style={{
         position: "fixed",
         bottom: "20px",

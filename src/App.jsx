@@ -33,6 +33,8 @@ import BrandPromotion from "./pages/event/BrandPromotion";
 import VendorsConnect from "./pages/event/VendorsConnect";
 import ExpertNetwork from "./pages/event/ExpertNetwork";
 import MegaEvents from "./pages/event/MegaEvents";
+import Invoice from "./pages/Invoice";
+import Admin from "./pages/Admin";
 
 
 
@@ -55,6 +57,8 @@ function App() {
           <Route path="/help-centre" element={<HelpCenter />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
+          <Route path="/invoice" element={<Invoice />} />
+          <Route path="/admin" element={<Admin />} />
 
           
           <Route path="/" element={<Home />} />

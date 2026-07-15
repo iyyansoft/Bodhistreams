@@ -11,12 +11,17 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "emailjs-com": "^3.2.0",
+    "express": "^5.2.1",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.575.0",
+    "nodemailer": "^9.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.3"
+    "react-router-dom": "^6.30.3",
+    "resend": "^6.17.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
