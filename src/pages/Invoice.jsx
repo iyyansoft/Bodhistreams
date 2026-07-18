@@ -345,8 +345,12 @@ export default function Invoice() {
         .then((pdfBase64) => {
           if (pdfParent.parentNode) pdfParent.parentNode.removeChild(pdfParent);
           const cleanBase64 = pdfBase64.includes(',') ? pdfBase64.split(',')[1] : pdfBase64;
+          
+          const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:5000/api/send-invoice'
+            : '/api/send-invoice';
 
-          return fetch('http://localhost:5000/api/send-invoice', {
+          return fetch(apiUrl, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
