@@ -16,9 +16,9 @@ export default async function handler(req, res) {
     return;
   }
 
-  console.log('[Diagnostic] GMAIL_USER defined:', !!process.env.GMAIL_USER);
-  console.log('[Diagnostic] GMAIL_APP_PASS defined:', !!process.env.GMAIL_APP_PASS);
-  console.log('[Diagnostic] RESEND_API_KEY defined:', !!process.env.RESEND_API_KEY);
+  console.log('[Diagnostic] GMAIL_USER:', !!process.env.GMAIL_USER, 'gmail_user:', !!process.env.gmail_user);
+  console.log('[Diagnostic] GMAIL_APP_PASS:', !!process.env.GMAIL_APP_PASS, 'gmail_app_pass:', !!process.env.gmail_app_pass);
+  console.log('[Diagnostic] RESEND_API_KEY:', !!process.env.RESEND_API_KEY);
 
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -41,20 +41,23 @@ export default async function handler(req, res) {
     </div>
   `;
 
-  // Option A: If Gmail SMTP configuration is provided in process.env, use Nodemailer
-  if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASS) {
+  // Option A: If Gmail SMTP configuration is provided, use Nodemailer (case-insensitive checks)
+  const gmailUser = process.env.GMAIL_USER || process.env.gmail_user || process.env.Gmail_User;
+  const gmailAppPass = process.env.GMAIL_APP_PASS || process.env.gmail_app_pass || process.env.Gmail_App_Pass;
+
+  if (gmailUser && gmailAppPass) {
     try {
       console.log('Sending invoice using Gmail SMTP...');
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: process.env.GMAIL_USER,
-          pass: process.env.GMAIL_APP_PASS,
+          user: gmailUser,
+          pass: gmailAppPass,
         },
       });
 
       const mailOptions = {
-        from: `"BodhiStreams" <${process.env.GMAIL_USER}>`,
+        from: `"BodhiStreams" <${gmailUser}>`,
         to: to,
         subject: `Invoice ${invoiceNumber || ''} - BodhiStreams`,
         html: htmlContent,

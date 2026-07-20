@@ -16,6 +16,10 @@ const port = process.env.PORT || 5000;
 const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder');
 
 app.post('/api/send-invoice', async (req, res) => {
+  console.log('[Diagnostic] GMAIL_USER:', !!process.env.GMAIL_USER, 'gmail_user:', !!process.env.gmail_user);
+  console.log('[Diagnostic] GMAIL_APP_PASS:', !!process.env.GMAIL_APP_PASS, 'gmail_app_pass:', !!process.env.gmail_app_pass);
+  console.log('[Diagnostic] RESEND_API_KEY:', !!process.env.RESEND_API_KEY);
+
   const { to, company, invoiceNumber, pdfBase64 } = req.body;
 
   if (!to || !pdfBase64) {
@@ -33,20 +37,23 @@ app.post('/api/send-invoice', async (req, res) => {
     </div>
   `;
 
-  // Option A: If Gmail SMTP configuration is provided in .env, use Nodemailer
-  if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASS) {
+  // Option A: If Gmail SMTP configuration is provided, use Nodemailer (case-insensitive checks)
+  const gmailUser = process.env.GMAIL_USER || process.env.gmail_user || process.env.Gmail_User;
+  const gmailAppPass = process.env.GMAIL_APP_PASS || process.env.gmail_app_pass || process.env.Gmail_App_Pass;
+
+  if (gmailUser && gmailAppPass) {
     try {
       console.log('Sending invoice using Gmail SMTP...');
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: process.env.GMAIL_USER,
-          pass: process.env.GMAIL_APP_PASS,
+          user: gmailUser,
+          pass: gmailAppPass,
         },
       });
 
       const mailOptions = {
-        from: `"BodhiStreams" <${process.env.GMAIL_USER}>`,
+        from: `"BodhiStreams" <${gmailUser}>`,
         to: to,
         subject: `Invoice ${invoiceNumber || ''} - BodhiStreams`,
         html: htmlContent,
