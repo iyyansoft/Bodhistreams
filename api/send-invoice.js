@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  // CORS configuration for local/cross-origin requests
+  // CORS configuration for local/cross-origin requests (Trigger Redeploy)
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
