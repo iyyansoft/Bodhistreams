@@ -71,7 +71,7 @@ app.post('/api/send-invoice', async (req, res) => {
   // Option B: Fallback/Default to Resend API
   try {
     console.log('Sending invoice using Resend API...');
-    const data = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM || 'Invoice <onboarding@resend.dev>',
       to: to,
       subject: `Invoice ${invoiceNumber || ''} - BodhiStreams`,
@@ -83,6 +83,14 @@ app.post('/api/send-invoice', async (req, res) => {
         },
       ],
     });
+
+    if (error) {
+      console.error('Resend API returned an error:', error);
+      return res.status(error.statusCode || 500).json({ 
+        error: error.message || 'Failed to send email via Resend', 
+        details: error 
+      });
+    }
 
     console.log('Resend API email sent successfully!');
     res.status(200).json({ message: 'Email sent successfully via Resend!', data });

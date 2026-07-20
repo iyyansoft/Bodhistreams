@@ -76,7 +76,7 @@ export default async function handler(req, res) {
   try {
     console.log('Sending invoice using Resend API...');
     const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder');
-    const data = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM || 'Invoice <onboarding@resend.dev>',
       to: to,
       subject: `Invoice ${invoiceNumber || ''} - BodhiStreams`,
@@ -88,6 +88,14 @@ export default async function handler(req, res) {
         },
       ],
     });
+
+    if (error) {
+      console.error('Resend API returned an error:', error);
+      return res.status(error.statusCode || 500).json({ 
+        error: error.message || 'Failed to send email via Resend', 
+        details: error 
+      });
+    }
 
     console.log('Resend API email sent successfully!');
     res.status(200).json({ message: 'Email sent successfully via Resend!', data });
