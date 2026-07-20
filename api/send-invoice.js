@@ -16,6 +16,10 @@ export default async function handler(req, res) {
     return;
   }
 
+  console.log('[Diagnostic] GMAIL_USER defined:', !!process.env.GMAIL_USER);
+  console.log('[Diagnostic] GMAIL_APP_PASS defined:', !!process.env.GMAIL_APP_PASS);
+  console.log('[Diagnostic] RESEND_API_KEY defined:', !!process.env.RESEND_API_KEY);
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
