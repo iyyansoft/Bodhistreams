@@ -1,0 +1,860 @@
+.agritech-page {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background-color: #fcfdfc;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Badges */
+.badge, .section-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e7d32;
+  background: rgba(76, 175, 80, 0.12);
+  border-radius: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(76, 175, 80, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(46, 125, 50, 0.08);
+  border-color: rgba(76, 175, 80, 0.35);
+}
+
+.glass-card.accent {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.05), rgba(46, 125, 50, 0.02));
+  border-color: rgba(76, 175, 80, 0.25);
+}
+
+/* Split Grids */
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Section Title Centers */
+.section-title-center {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title-center h2 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+/* HERO SECTION */
+.agritech-hero {
+  position: relative;
+  background: radial-gradient(circle at 10% 20%, #1e3c1f 0%, #112212 90%);
+  padding: 100px 0 140px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.agritech-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(76, 175, 80, 0.15) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 68px;
+  font-weight: 850;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #ffffff 60%, #a5d6a7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #a5d6a7;
+  margin-bottom: 24px;
+}
+
+.hero-text p {
+  font-size: 19px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-accent {
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.18) 0%, transparent 70%);
+  z-index: 1;
+}
+
+/* STATS SECTION */
+.stats-section {
+  position: relative;
+  z-index: 3;
+  margin-top: -60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ffffff;
+  padding: 48px 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(76, 175, 80, 0.12);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 0 16px;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card:last-child {
+  border-right: none;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin: 0 0 10px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 550;
+}
+
+/* ABOUT AGRISORT SECTION */
+.about-agrisort {
+  padding: 120px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 17px;
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.quick-specs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 30px;
+  background: #f4fbf4;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 5px solid #4caf50;
+}
+
+.spec-item {
+  font-size: 16px;
+  color: #2e7d32;
+}
+
+/* Scanning Effect Card */
+.feature-preview-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.12);
+}
+
+.feature-preview-card img {
+  width: 100%;
+  display: block;
+}
+
+.vision-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.scan-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(180deg, transparent, #4caf50, transparent);
+  animation: scan 3.5s linear infinite;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.8);
+}
+
+@keyframes scan {
+  0% { top: 0%; }
+  50% { top: 100%; }
+  100% { top: 0%; }
+}
+
+.vision-overlay .label.premium {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: #2e7d32;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.vision-overlay .accuracy {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #4caf50;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+/* PROBLEM & SOLUTION Split Section */
+.problem-solution {
+  padding: 100px 0;
+  background: #f4fbf4;
+}
+
+.problem-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.problem-card ul li {
+  position: relative;
+  padding-left: 32px;
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.problem-card ul li::before {
+  content: "✕";
+  position: absolute;
+  left: 0;
+  color: #d32f2f;
+  font-weight: 800;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card-icon {
+  font-size: 32px;
+}
+
+.solution-card p {
+  font-size: 17px;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.solution-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solution-features-list span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e7d32;
+  background: rgba(76, 175, 80, 0.08);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  width: max-content;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  padding: 120px 0;
+}
+
+.features-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  padding: 30px;
+}
+
+.feature-card .feat-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.feature-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* HOW IT WORKS TIMELINE */
+.how-it-works {
+  padding: 120px 0;
+  background-color: #fafbfa;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: repeating-linear-gradient(to right, #4caf50, #4caf50 8px, transparent 8px, transparent 16px);
+  z-index: 1;
+}
+
+.timeline-item {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-num {
+  width: 70px;
+  height: 70px;
+  background: #2e7d32;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 0 auto 24px;
+  box-shadow: 0 0 0 10px rgba(76, 175, 80, 0.15);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .step-num {
+  transform: scale(1.1);
+  background: #4caf50;
+  box-shadow: 0 0 0 14px rgba(76, 175, 80, 0.25);
+}
+
+.timeline-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+/* BENEFITS SECTION */
+.benefits-section {
+  padding: 120px 0;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-tag {
+  background: #ffffff;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.benefit-tag:hover {
+  background: #2e7d32;
+  color: #ffffff;
+  border-color: #2e7d32;
+}
+
+.benefit-tag .check-icon {
+  font-weight: 800;
+}
+
+/* TARGET CUSTOMERS & ADVANTAGE Split */
+.target-advantage {
+  padding: 100px 0;
+  background-color: #fafbfa;
+}
+
+.target-card h3, .advantage-card h3 {
+  font-size: 26px;
+  font-weight: 750;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.target-card p, .advantage-card p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+.target-list, .advantage-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.target-list span, .advantage-list span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.advantage-card.accent .advantage-list span {
+  background: #f4fbf4;
+  border-color: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+/* BUSINESS REVENUE MODEL & STRATEGY */
+.business-strategy {
+  padding: 120px 0;
+}
+
+.revenue-card h3, .market-card h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.model-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.model-item, .road-item {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f8faf8;
+}
+
+.model-item strong {
+  color: #2e7d32;
+}
+
+.road-item {
+  background: #ffffff;
+  border-left: 4px solid #4caf50;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 120px 0;
+  background-color: #fafbfa;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  text-align: center;
+  padding: 40px 30px;
+}
+
+.team-avatar {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.team-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.team-card .role {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.team-card p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* CONTACT DEMO SECTION */
+.contact-demo-section {
+  padding: 120px 0;
+}
+
+.demo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 60px;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(46, 125, 50, 0.1);
+}
+
+.demo-info h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.demo-info p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-item .icon {
+  font-size: 28px;
+}
+
+.contact-item div strong {
+  font-size: 16px;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-item div p a {
+  font-size: 16px;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.demo-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fafbfa;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #2e7d32;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.1);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* RESPONSIVE LAYOUTS */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 52px;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .stat-card {
+    border-right: none;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .demo-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  
+  .hero-text p {
+    font-size: 16px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+  }
+  
+  .section-title-center h2 {
+    font-size: 32px;
+  }
+  
+  .features-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .target-list, .advantage-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .revenue-card h3, .market-card h3 {
+    font-size: 30px;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .demo-info h2 {
+    font-size: 30px;
+  }
+}

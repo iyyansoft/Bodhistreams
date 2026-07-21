@@ -35,11 +35,7 @@ import ExpertNetwork from "./pages/event/ExpertNetwork";
 import MegaEvents from "./pages/event/MegaEvents";
 import Invoice from "./pages/Invoice";
 import Admin from "./pages/Admin";
-
-
-
-
-
+import AgriTech from "./pages/AgriTech";
 
 function App() {
   const location = useLocation();
@@ -59,6 +55,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/agri-tech-solutions" element={<AgriTech />} />
 
           
           <Route path="/" element={<Home />} />

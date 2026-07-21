@@ -9,6 +9,10 @@ const Footer = () => {
           <div className="footer-column footer-main">
             <div className="footer-brand">
               <img src="/bodhiwhite.png" alt="BodhiStreams" className="footer-logo" />
+              <div className="footer-dpiit">
+                <span className="dpiit-badge">A DPIIT Recognized Startup</span>
+                <span className="dpiit-no">DPIIT No: DIPP257242</span>
+              </div>
               <p className="footer-description">
                 Empowering businesses through innovative software solutions, <br></br>
                 IT services, and cutting-edge digital platforms.

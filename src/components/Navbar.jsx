@@ -203,6 +203,7 @@ const Navbar = () => {
 
 
             <Link to="/" className="nav-link" onClick={() => setMobileOpen(false)}>Home</Link>
+            <Link to="/agri-tech-solutions" className="nav-link" onClick={() => setMobileOpen(false)}>Agri Tech Solutions</Link>
 
             {navItems.map((item, index) => (
               <div

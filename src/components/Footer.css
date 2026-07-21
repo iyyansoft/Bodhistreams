@@ -89,11 +89,45 @@
   transform: scale(1.08);
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-dpiit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin-top: 20px;
+  background: rgba(140, 198, 63, 0.08);
+  border: 1px solid rgba(140, 198, 63, 0.2);
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+
+.dpiit-badge {
+  font-size: 13px;
+  font-weight: 700;
+  color: #8CC63F;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.dpiit-no {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 4px;
+  font-family: monospace;
+  letter-spacing: 0.4px;
+}
+
 .footer-description {
   color: rgba(255,255,255,0.85);
   line-height: 1.7;
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* ================================
