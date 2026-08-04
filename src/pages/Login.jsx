@@ -42,7 +42,7 @@ const Login = () => {
                 <p>Please log in using your administrator credentials</p>
               </div>
 
-              <form onSubmit={handleLogin} className="login-form">
+              <form onSubmit={handleLogin} className="login-form" autoComplete="off">
                 {error && (
                   <motion.div 
                     className="login-error-message"
@@ -62,6 +62,7 @@ const Login = () => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
+                    autoComplete="off"
                   />
                 </div>
 
@@ -74,6 +75,7 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
+                    autoComplete="new-password"
                   />
                 </div>
 
