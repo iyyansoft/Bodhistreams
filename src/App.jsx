@@ -36,6 +36,8 @@ import MegaEvents from "./pages/event/MegaEvents";
 import Invoice from "./pages/Invoice";
 import Admin from "./pages/Admin";
 import AgriTech from "./pages/AgriTech";
+import Login from "./pages/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   const location = useLocation();
@@ -53,8 +55,9 @@ function App() {
           <Route path="/help-centre" element={<HelpCenter />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/about" element={<About />} />
-          <Route path="/invoice" element={<Invoice />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/invoice" element={<ProtectedRoute><Invoice /></ProtectedRoute>} />
+          <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
           <Route path="/agri-tech-solutions" element={<AgriTech />} />
 
           
