@@ -11,10 +11,10 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Custom credentials: username = admin, password = admin@bodhistreams
+  // Custom credentials: username = Invoicebodhi, password = Invoice@123
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username.trim() === 'admin' && password === 'admin@bodhistreams') {
+    if (username.trim() === 'Invoicebodhi' && password === 'Invoice@123') {
       sessionStorage.setItem('isInvoiceAuthenticated', 'true');
       setError('');
       // Redirect to invoice page or admin dashboard depending on intent
@@ -82,9 +82,7 @@ const Login = () => {
                 </button>
               </form>
 
-              <div className="login-hint">
-                <p>💡 Hint: Username: <code>admin</code> | Password: <code>admin@bodhistreams</code></p>
-              </div>
+
             </div>
           </motion.div>
         </div>
