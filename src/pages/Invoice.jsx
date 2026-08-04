@@ -537,6 +537,19 @@ export default function Invoice() {
   return (
     <PageWrapper>
       <div className="invoice-page-container">
+        <div className="invoice-portal-header no-print" style={{ display: 'flex', justifyContent: 'flex-end', padding: '12px 24px', background: '#f8fafc', borderRadius: '8px', marginBottom: '20px', border: '1px solid #e2e8f0' }}>
+          <button 
+            type="button" 
+            className="invoice-btn" 
+            style={{ background: '#dc2626', color: '#ffffff', border: 'none', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer', fontWeight: '600' }}
+            onClick={() => {
+              sessionStorage.removeItem('isInvoiceAuthenticated');
+              window.location.reload();
+            }}
+          >
+            Logout Portal
+          </button>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="invoice-wrapper">
             {/* ================= HERO HEADER ================= */}
