@@ -36,6 +36,9 @@ export default function Invoice() {
   // Checkbox state for sending email copy
   const [sendEmailCopy, setSendEmailCopy] = useState(false);
 
+  // State for tax rate (dropdown options: 0%, 5%, 18%)
+  const [gstRate, setGstRate] = useState(0.18);
+
   // Custom modal state
   const [modalState, setModalState] = useState({ isOpen: false, type: 'success', message: '' });
 
@@ -262,7 +265,7 @@ export default function Invoice() {
   };
 
   const subtotal = calculateSubtotal();
-  const taxRate = 0.18; // 18% GST standard
+  const taxRate = gstRate;
   const tax = subtotal * taxRate;
   const discount = 0;
   const totalDue = subtotal + tax - discount;
@@ -996,8 +999,31 @@ export default function Invoice() {
                   <span>Discount:</span>
                   <span>₹{discount.toFixed(2)}</span>
                 </div>
-                <div className="invoice-total-row">
-                  <span>Tax (18% GST):</span>
+                 <div className="invoice-total-row">
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    Tax 
+                    <select 
+                      value={gstRate} 
+                      onChange={(e) => setGstRate(parseFloat(e.target.value))}
+                      className="no-print"
+                      style={{
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        border: '1px solid #cbd5e1',
+                        background: '#ffffff',
+                        fontSize: '13px',
+                        color: '#334155',
+                        cursor: 'pointer',
+                        fontWeight: '600'
+                      }}
+                    >
+                      <option value="0.00">0%</option>
+                      <option value="0.05">5%</option>
+                      <option value="0.18">18%</option>
+                    </select>
+                    <span className="print-only">({(gstRate * 100).toFixed(0)}% GST)</span>
+                    <span className="no-print">GST</span>:
+                  </span>
                   <span>₹{tax.toFixed(2)}</span>
                 </div>
                 <div className="invoice-total-row grand-total">
