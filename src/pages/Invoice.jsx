@@ -43,15 +43,7 @@ export default function Invoice() {
   const [discountAmount, setDiscountAmount] = useState(0);
   const [isDiscountManual, setIsDiscountManual] = useState(false);
 
-  // Auto-calculate decimal value after dot (.) as default discount unless manually edited
-  useEffect(() => {
-    if (!isDiscountManual) {
-      const sub = items.reduce((sum, item) => sum + ((item.quantity || 0) * (item.unitPrice || 0)), 0);
-      const rawTotal = sub + (sub * gstRate);
-      const decimalVal = Math.round((rawTotal - Math.floor(rawTotal)) * 100) / 100;
-      setDiscountAmount(decimalVal > 0 ? decimalVal.toFixed(2) : '0');
-    }
-  }, [items, gstRate, isDiscountManual]);
+
 
   // Custom modal state
   const [modalState, setModalState] = useState({ isOpen: false, type: 'success', message: '' });
@@ -125,6 +117,16 @@ export default function Invoice() {
   const [items, setItems] = useState([
     { id: Date.now(), description: '', quantity: 1, unitPrice: 0, hsnCode: '' }
   ]);
+
+  // Auto-calculate decimal value after dot (.) as default discount unless manually edited
+  useEffect(() => {
+    if (!isDiscountManual) {
+      const sub = items.reduce((sum, item) => sum + ((item.quantity || 0) * (item.unitPrice || 0)), 0);
+      const rawTotal = sub + (sub * gstRate);
+      const decimalVal = Math.round((rawTotal - Math.floor(rawTotal)) * 100) / 100;
+      setDiscountAmount(decimalVal > 0 ? decimalVal.toFixed(2) : '0');
+    }
+  }, [items, gstRate, isDiscountManual]);
 
   const [dateMode, setDateMode] = useState('system'); // 'system' or 'manual'
   const [invoiceDate, setInvoiceDate] = useState(() => new Date().toISOString().split('T')[0]); // YYYY-MM-DD
