@@ -39,6 +39,20 @@ export default function Invoice() {
   // State for tax rate (dropdown options: 0%, 5%, 18%)
   const [gstRate, setGstRate] = useState(0.18);
 
+  // State for discount amount (default: 0, editable by user)
+  const [discountAmount, setDiscountAmount] = useState(0);
+  const [isDiscountManual, setIsDiscountManual] = useState(false);
+
+  // Auto-calculate decimal value after dot (.) as default discount unless manually edited
+  useEffect(() => {
+    if (!isDiscountManual) {
+      const sub = items.reduce((sum, item) => sum + ((item.quantity || 0) * (item.unitPrice || 0)), 0);
+      const rawTotal = sub + (sub * gstRate);
+      const decimalVal = Math.round((rawTotal - Math.floor(rawTotal)) * 100) / 100;
+      setDiscountAmount(decimalVal > 0 ? decimalVal.toFixed(2) : '0');
+    }
+  }, [items, gstRate, isDiscountManual]);
+
   // Custom modal state
   const [modalState, setModalState] = useState({ isOpen: false, type: 'success', message: '' });
 
@@ -173,6 +187,9 @@ export default function Invoice() {
     setBillingAddress({ name: '', company: '', address: '', city: '', state: '', phone: '', email: '' });
     setShippingAddress({ name: '', address: '', city: '', state: '', phone: '', email: '' });
     setItems([{ id: Date.now(), description: '', quantity: 1, unitPrice: 0, hsnCode: '' }]);
+    setDiscountAmount(0);
+    setIsDiscountManual(false);
+    setGstRate(0.18);
     // 2. Increment the sequence in localStorage so it updates to the next invoice number
     setHasIncremented(false);
     incrementInvoiceSequence(true);
@@ -267,7 +284,7 @@ export default function Invoice() {
   const subtotal = calculateSubtotal();
   const taxRate = gstRate;
   const tax = subtotal * taxRate;
-  const discount = 0;
+  const discount = Math.max(0, parseFloat(discountAmount) || 0);
   const totalDue = subtotal + tax - discount;
 
   // Separate handler to send invoice copy via EmailJS
@@ -997,7 +1014,32 @@ export default function Invoice() {
                 </div>
                 <div className="invoice-total-row">
                   <span>Discount:</span>
-                  <span>₹{discount.toFixed(2)}</span>
+                  <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '4px' }}>
+                    <span className="no-print" style={{ color: '#334155', fontWeight: '600' }}>₹</span>
+                    <input 
+                      type="number"
+                      min="0"
+                      step="any"
+                      value={discountAmount}
+                      onChange={(e) => {
+                        setIsDiscountManual(true);
+                        setDiscountAmount(e.target.value);
+                      }}
+                      className="no-print"
+                      style={{
+                        width: '90px',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        border: '1px solid #cbd5e1',
+                        background: '#ffffff',
+                        fontSize: '13px',
+                        textAlign: 'right',
+                        fontWeight: '600',
+                        color: '#334155'
+                      }}
+                    />
+                    <span className="print-only">₹{discount.toFixed(2)}</span>
+                  </span>
                 </div>
                  <div className="invoice-total-row">
                   <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
