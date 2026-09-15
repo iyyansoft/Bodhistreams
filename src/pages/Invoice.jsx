@@ -302,6 +302,7 @@ export default function Invoice() {
     if (!liveElement) return;
 
     // 2. Clone the container in memory to isolate it
+    document.body.classList.add('html2pdf-mode');
     const clonedElement = liveElement.cloneNode(true);
     clonedElement.classList.add('html2pdf-mode');
 
@@ -476,6 +477,7 @@ export default function Invoice() {
     if (!liveElement) return;
 
     // 2. Clone the container in memory to isolate it from active window scrolls and page offsets
+    document.body.classList.add('html2pdf-mode');
     const clonedElement = liveElement.cloneNode(true);
     clonedElement.classList.add('html2pdf-mode');
 
@@ -540,11 +542,13 @@ export default function Invoice() {
         .set(opt)
         .save()
         .then(() => {
+          document.body.classList.remove('html2pdf-mode');
           if (pdfParent.parentNode) pdfParent.parentNode.removeChild(pdfParent);
           incrementInvoiceSequence();
           saveInvoiceToLocalStorage();
         })
         .catch((err) => {
+          document.body.classList.remove('html2pdf-mode');
           if (pdfParent.parentNode) pdfParent.parentNode.removeChild(pdfParent);
           console.error('PDF generation error:', err);
         });

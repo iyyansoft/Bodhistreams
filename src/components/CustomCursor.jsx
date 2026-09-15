@@ -79,7 +79,7 @@ export default function CustomCursor() {
 
   return (
     <motion.div
-      className={`clean-cursor-dot ${clicked ? "clicked" : ""} ${hovered ? "hovered" : ""}`}
+      className={`clean-cursor-dot no-print ${clicked ? "clicked" : ""} ${hovered ? "hovered" : ""}`}
       style={{
         x: trailX,
         y: trailY,
